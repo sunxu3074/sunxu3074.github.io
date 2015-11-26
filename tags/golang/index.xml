@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on isunxu</title>
+    <link>http://sunxu.win/tags/golang/</link>
+    <description>Recent content in Golang on isunxu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Nov 2015 01:32:47 +0800</lastBuildDate>
+    <atom:link href="http://sunxu.win/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>half life</title>
+      <link>http://sunxu.win/welcome/</link>
+      <pubDate>Tue, 24 Nov 2015 01:32:47 +0800</pubDate>
+      
+      <guid>http://sunxu.win/welcome/</guid>
+      <description>
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;go-bed:2cc7dc244eed4480e8b46c91e911e96b&#34;&gt;:) Go bed!&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public static void main (String[] args){
+	System.out.println(&amp;quot;Talk is cheap,show me the code!&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://sunxu.win/media/wangyin.png&#34; alt=&#34;wangyin&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/p&gt;
+
+&lt;h1 id=&#34;关于我:2cc7dc244eed4480e8b46c91e911e96b&#34;&gt;关于我&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;github is secret&lt;/li&gt;
+&lt;li&gt;zhihu is secret&lt;/li&gt;
+&lt;li&gt;fanfou is secret&lt;/li&gt;
+&lt;li&gt;douban is secret&lt;/li&gt;
+&lt;li&gt;说出来就没劲了&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

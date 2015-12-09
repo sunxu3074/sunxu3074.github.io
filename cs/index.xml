@@ -3,7 +3,7 @@
   <channel>
       <title>Cs on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/cs/</link>
+    <link>http://isunxu.xyz/cs/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>cs1</title>
-      <link>http://localhost:1313/cs/cs1/</link>
+      <link>http://isunxu.xyz/cs/cs1/</link>
       <pubDate>Wed, 09 Dec 2015 22:31:48 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://localhost:1313/cs/cs1/</guid>
+      <guid>http://isunxu.xyz/cs/cs1/</guid>
       <description>
 
 &lt;h1 id=&#34;test-for-cs-cs1:d5a297ef4478b464bfa923829856224a&#34;&gt;Test for /cs/cs1&lt;/h1&gt;

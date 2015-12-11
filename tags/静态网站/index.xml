@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>静态网站 on ban&amp;pick </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://isunxu.xyz/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
+    <language>en-us</language>
+    <author>Xu Sun</author>
+    <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
+    <updated>Wed, 09 Dec 2015 22:31:48 CST</updated>
+    
+    <item>
+      <title>Hugo静态网站生成不完全教程</title>
+      <link>http://isunxu.xyz/cs/make-personal-website-by-hugo/</link>
+      <pubDate>Wed, 09 Dec 2015 22:31:48 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>http://isunxu.xyz/cs/make-personal-website-by-hugo/</guid>
+      <description>
+
+&lt;h3 id=&#34;参考资料:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;参考资料&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tonybai.com/2015/09/23/intro-of-gohugo/&#34;&gt;使用Hugo搭建静态站点 - by Tony Bai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://nanshu.wang/post/2015-01-31/&#34;&gt;Hugo静态网站生成器中文教程 - by Nanshu Wang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点 - by Coderzh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;阅读官方文档:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;阅读官方文档&lt;/h3&gt;
+
+&lt;p&gt;相信你读了上面的资料就会很轻松的搭建自己的博客了.如果还不是很明白,那么恭喜你,跟我一样笨.
+笨就没办法了,去&lt;a href=&#34;http://guhugo.io&#34;&gt;hugo官方网站&lt;/a&gt;读Docs.读完之后你大概能明白到底是怎么回事了,每个文件都是干什么的,怎么改模板等等,从一个小白变成一个不太白,顺便了解一下 &lt;em&gt;Go&lt;/em&gt; 语言的语法.&lt;/p&gt;
+
+&lt;p&gt;官网上值得推荐给大家的是:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/community/press/&#34;&gt;关于hugo的博客&lt;/a&gt;,英文居多,也有少量中文的,自己斟酌选读.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;hugo的主题模板&lt;/a&gt;,非常符合hugo的设计理念&lt;em&gt;to be the perfect balance betweensimplicity and functionality&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;关于如何方便快捷地发布到 &lt;em&gt;Github Pages&lt;/em&gt; 上,有很多方案.利用 &lt;em&gt;wercker&lt;/em&gt; , &lt;em&gt;webhook&lt;/em&gt; 等等,上面的博客和官网都有提到,不再赘述.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;github-ribbons:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;GitHub Ribbons&lt;/h3&gt;
+
+&lt;p&gt;设置GitHub Ribbons,Github官网给出解决方案.&lt;a href=&#34;https://github.com/blog/273-github-ribbons&#34;&gt;在这里&lt;/a&gt; 选中你喜欢的 &lt;em&gt;Ribbons&lt;/em&gt; .代码中href属性中的字段换成自己的Github网址,复制到 &lt;em&gt;/layouts/partials/head_includes.html/&lt;/em&gt; 中即可生效.&lt;/p&gt;
+
+&lt;h3 id=&#34;制作icon:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;制作icon&lt;/h3&gt;
+
+&lt;p&gt;推荐 &lt;em&gt;&lt;a href=&#34;http://www.faviconer.com/&#34;&gt;http://www.faviconer.com/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;域名选择:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;域名选择&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;推荐西部数码,阿里云,Goddy.&lt;/li&gt;
+&lt;li&gt;DNS解析推荐 &lt;em&gt;dnspod&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;我自己选的域名是xyz,第一年4元.流量用的 &lt;em&gt;Github Pages&lt;/em&gt; .&lt;/li&gt;
+&lt;li&gt;推荐云存储空间使用 &lt;em&gt;七牛云&lt;/em&gt; ,不仅免费而且速度也很快.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;建站心得:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;建站心得&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第一次运行时,命令用 &lt;em&gt;hugo&lt;/em&gt; 即可.如果用 &lt;em&gt;hugo server&lt;/em&gt; ,那么生成的文件BaseURL都是 &lt;em&gt;localhost:1313&lt;/em&gt; .就因为这个问题我纠结过一天,甚至写了个java文件遍历所有的文件替换字符串&amp;hellip;&lt;/li&gt;
+&lt;li&gt;有的东西多试试就明白了,看着怎么都不懂,把东西改改看网页有什么变化就清晰明了了.&lt;/li&gt;
+&lt;li&gt;上传到 &lt;em&gt;Github Pages&lt;/em&gt; 会有延迟,如果刷不出网页,请耐心等待.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;结语:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;结语&lt;/h3&gt;
+
+&lt;p&gt;马上就两点了,明儿还得早起上班.就先写到这儿了,如果有什么不明白的.
+  Hugo交流群:512499080.&lt;/p&gt;
+
+&lt;p&gt;Hugo中文文档网站：&lt;a href=&#34;http://www.gohugo.org/&#34;&gt;http://www.gohugo.org/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;相信这里的朋友会帮你解决问题的.
+  第一次这么隆重地写博客,想想也挺开心的.&lt;/p&gt;
+
+&lt;p&gt;最后,祝好:)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

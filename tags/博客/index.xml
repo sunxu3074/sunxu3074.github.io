@@ -42,6 +42,61 @@
 
 &lt;p&gt;设置GitHub Ribbons,Github官网给出解决方案.&lt;a href=&#34;https://github.com/blog/273-github-ribbons&#34;&gt;在这里&lt;/a&gt; 选中你喜欢的 &lt;em&gt;Ribbons&lt;/em&gt; .代码中href属性中的字段换成自己的Github网址,复制到 &lt;em&gt;/layouts/partials/head_includes.html/&lt;/em&gt; 中即可生效.&lt;/p&gt;
 
+&lt;h3 id=&#34;添加rss:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加RSS&lt;/h3&gt;
+
+&lt;p&gt;RSS2.0模板&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;rss version=&amp;quot;2.0&amp;quot; xmlns:atom=&amp;quot;http://www.w3.org/2005/Atom&amp;quot;&amp;gt;
+  &amp;lt;channel&amp;gt;
+    &amp;lt;title&amp;gt;{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}&amp;lt;/title&amp;gt;
+    &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
+    &amp;lt;description&amp;gt;Recent content {{ with .Title }}in {{.}} {{ end }}on {{ .Site.Title }}&amp;lt;/description&amp;gt;
+    &amp;lt;generator&amp;gt;Hugo -- gohugo.io&amp;lt;/generator&amp;gt;{{ with .Site.LanguageCode }}
+    &amp;lt;language&amp;gt;{{.}}&amp;lt;/language&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;managingEditor&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/managingEditor&amp;gt;{{end}}{{ with .Site.Author.email }}
+    &amp;lt;webMaster&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/webMaster&amp;gt;{{end}}{{ with .Site.Copyright }}
+    &amp;lt;copyright&amp;gt;{{.}}&amp;lt;/copyright&amp;gt;{{end}}{{ if not .Date.IsZero }}
+    &amp;lt;lastBuildDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/lastBuildDate&amp;gt;{{ end }}
+    &amp;lt;atom:link href=&amp;quot;{{.URL}}&amp;quot; rel=&amp;quot;self&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; /&amp;gt;
+    {{ range first 15 .Data.Pages }}
+    &amp;lt;item&amp;gt;
+      &amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
+      &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
+      &amp;lt;pubDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/pubDate&amp;gt;
+      {{ with .Site.Author.email }}&amp;lt;author&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/author&amp;gt;{{end}}
+      &amp;lt;guid&amp;gt;{{ .Permalink }}&amp;lt;/guid&amp;gt;
+      &amp;lt;description&amp;gt;{{ .Content | html }}&amp;lt;/description&amp;gt;
+    &amp;lt;/item&amp;gt;
+    {{ end }}
+  &amp;lt;/channel&amp;gt;
+&amp;lt;/rss&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;把上面这段代码分别复制到&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;/layouts/rss.xml&lt;/li&gt;
+&lt;li&gt;/layouts/_default/rss.xml&lt;/li&gt;
+&lt;li&gt;/layouts/section/SECTION.rss.xml&lt;/li&gt;
+&lt;li&gt;/layouts/_default/rss.xml&lt;/li&gt;
+&lt;li&gt;/themes/THEME/layouts/section/SECTION.rss.xml&lt;/li&gt;
+&lt;li&gt;/themes/THEME/layouts/_default/rss.xml&lt;/li&gt;
+&lt;li&gt;/layouts/taxonomy/SINGULAR.rss.xml&lt;/li&gt;
+&lt;li&gt;/layouts/_default/rss.xml&lt;/li&gt;
+&lt;li&gt;/themes/THEME/layouts/taxonomy/SINGULAR.rss.xml&lt;/li&gt;
+&lt;li&gt;/themes/THEME/layouts/_default/rss.xml&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;然后在 &lt;strong&gt;/layouts/partials/header.html&lt;/strong&gt; 中的 &lt;strong&gt;head&lt;/strong&gt; 标签内加入下面这段代码即可.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;{{ if .RSSlink }}
+  &amp;lt;link href=&amp;quot;{{ .RSSlink }}&amp;quot; rel=&amp;quot;alternate&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; title=&amp;quot;{{ .Site.Title }}&amp;quot; /&amp;gt;
+  &amp;lt;link href=&amp;quot;{{ .RSSlink }}&amp;quot; rel=&amp;quot;feed&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; title=&amp;quot;{{ .Site.Title }}&amp;quot; /&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后将你的RSS链接 &lt;strong&gt;(yourwebsite/index.xml)&lt;/strong&gt; 加入你想加到的地方就行了.&lt;/p&gt;
+
 &lt;h3 id=&#34;制作icon:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;制作icon&lt;/h3&gt;
 
 &lt;p&gt;推荐 &lt;em&gt;&lt;a href=&#34;http://www.faviconer.com/&#34;&gt;http://www.faviconer.com/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;

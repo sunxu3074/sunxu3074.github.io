@@ -44,6 +44,8 @@
 
 &lt;h3 id=&#34;添加rss:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加RSS&lt;/h3&gt;
 
+&lt;p&gt;参考: &lt;a href=&#34;http://gohugo.io/templates/rss/&#34;&gt;http://gohugo.io/templates/rss/&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;RSS2.0模板&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;rss version=&amp;quot;2.0&amp;quot; xmlns:atom=&amp;quot;http://www.w3.org/2005/Atom&amp;quot;&amp;gt;
@@ -96,6 +98,25 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;最后将你的RSS链接 &lt;strong&gt;(yourwebsite/index.xml)&lt;/strong&gt; 加入你想加到的地方就行了.&lt;/p&gt;
+
+&lt;h3 id=&#34;排序:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;排序&lt;/h3&gt;
+
+&lt;p&gt;如果你想让自己的某些文章置顶或者让某些文章不那么排在前边的话,就可以用到这段介绍了.像我写些日记什么的,没什么价值,就希望放在后边啦.&lt;/p&gt;
+
+&lt;p&gt;参考: &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;http://gohugo.io/content/ordering/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在 &lt;strong&gt;config.toml&lt;/strong&gt; 中添加 &lt;strong&gt;weight&lt;/strong&gt; 属性,weight的值越高越排在后边.至于最大最小我也不知道,有兴趣的可以去看&lt;a href=&#34;https://github.com/spf13/hugo/&#34;&gt;源码&lt;/a&gt;.尝试过1-100都可以,好像这基本就够大家的需要了.&lt;/p&gt;
+
+&lt;p&gt;示例:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+weight = 100
+date = &amp;quot;2015-12-15T00:38:58+08:00&amp;quot;
+draft = false
+title = &amp;quot;title&amp;quot;
+tags = [&amp;quot;tags&amp;quot;]
++++
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;制作icon:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;制作icon&lt;/h3&gt;
 

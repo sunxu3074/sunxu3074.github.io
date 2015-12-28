@@ -15,7 +15,7 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Hugo静态网站生成不完全教程 : isunxu.xyz"/>
+<meta property="og:title" content="Hugo静态网站生成不完全教程(不定期更新) : isunxu.xyz"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -38,13 +38,21 @@
 
 
     <base href="http://isunxu.xyz/">
-    <title> Hugo静态网站生成不完全教程 - isunxu.xyz </title>
+    <title> Hugo静态网站生成不完全教程(不定期更新) - isunxu.xyz </title>
     <link rel="canonical" href="http://isunxu.xyz/cs/make-personal-website-by-hugo/">
     
 
     <link href='http://fonts.useso.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
-<a href="https://github.com/sunxu3074"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<a href="https://github.com/sunxu3074"><img style="position: absolute; top: 0; right: 0; border: 0;display: block;
+    box-shadow: 0 0 0px #000;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" 
+	></a>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     
@@ -136,7 +144,7 @@
 
 
 <section id="main">
-  <h1 itemprop="name" >Hugo静态网站生成不完全教程</h1>
+  <h1 itemprop="name" >Hugo静态网站生成不完全教程(不定期更新)</h1>
   
 
 <aside id="meta">
@@ -163,7 +171,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="284">
+<meta itemprop="wordCount" content="364">
 <meta itemprop="datePublished" content="2015-12-09">
 <meta itemprop="url" content="http://isunxu.xyz/cs/make-personal-website-by-hugo/">
 
@@ -254,6 +262,45 @@
 
 <p>最后将你的RSS链接 <strong>(yourwebsite/index.xml)</strong> 加入你想加到的地方就行了.</p>
 
+<h3 id="自定义图片的css样式:49f2d3cb5c8cde2db974e263077945f1">自定义图片的css样式</h3>
+
+<p>在 <strong>yourwebsite/static/static/css/style.css</strong> 中找到img标签定义想要生成的图片效果.</p>
+
+<p>就像这样:</p>
+
+<pre><code>figure{position:relative}
+figure img,figure object,figure embed,figure video{max-width:100%;display:block}
+img{border:0;-ms-interpolation-mode:bicubic;}
+</code></pre>
+
+<p>添加过后:</p>
+
+<pre><code>figure{position:relative}
+figure img,figure object,figure embed,figure video{max-width:100%;display:block}
+img{border:0;-ms-interpolation-mode:bicubic;display: block;
+    box-shadow: 0 0 10px #555;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0 0 10px #555;}
+</code></pre>
+
+<p>这个是扒<a href="www.yinwang.org">王垠博客</a>的图片的样式,看着高上大就拿过来用了.稍微改了下,自己觉得喜欢就好.当修改过后博客右上角的 <strong>GitHub Ribbons</strong> 也变成了这种样式,如果不喜欢的话可以单独在你定义 <strong>GitHub Ribbons</strong> 的html中修改回来.</p>
+
+<pre><code>&lt;img style=&quot;position: absolute; top: 0; right: 0; border: 0;display: block;
+    box-shadow: 0 0 0px #000;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0 0 0px #000;&quot; 
+    alt=&quot;...&quot;
+    src=&quot;...&quot;&gt;
+</code></pre>
+
 <h3 id="排序:49f2d3cb5c8cde2db974e263077945f1">排序</h3>
 
 <p>如果你想让自己的某些文章置顶或者让某些文章不那么排在前边的话,就可以用到这段介绍了.像我写些日记什么的,没什么价值,就希望放在后边啦.</p>
@@ -316,7 +363,7 @@ tags = [&quot;tags&quot;]
 <script type="text/javascript">
     var disqus_shortname = 'taken2016';
     var disqus_identifier = 'http:\/\/isunxu.xyz\/cs\/make-personal-website-by-hugo\/';
-    var disqus_title = 'Hugo静态网站生成不完全教程';
+    var disqus_title = 'Hugo静态网站生成不完全教程(不定期更新)';
     var disqus_url = 'http:\/\/isunxu.xyz\/cs\/make-personal-website-by-hugo\/';
 
     (function() {

@@ -207,7 +207,7 @@ local.properties
     </item>
     
     <item>
-      <title>Hugo静态网站生成不完全教程</title>
+      <title>Hugo静态网站生成不完全教程(不定期更新)</title>
       <link>http://isunxu.xyz/cs/make-personal-website-by-hugo/</link>
       <pubDate>Wed, 09 Dec 2015 22:31:48 +0800</pubDate>
       
@@ -295,6 +295,45 @@ local.properties
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;最后将你的RSS链接 &lt;strong&gt;(yourwebsite/index.xml)&lt;/strong&gt; 加入你想加到的地方就行了.&lt;/p&gt;
+
+&lt;h3 id=&#34;自定义图片的css样式:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;自定义图片的css样式&lt;/h3&gt;
+
+&lt;p&gt;在 &lt;strong&gt;yourwebsite/static/static/css/style.css&lt;/strong&gt; 中找到img标签定义想要生成的图片效果.&lt;/p&gt;
+
+&lt;p&gt;就像这样:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;figure{position:relative}
+figure img,figure object,figure embed,figure video{max-width:100%;display:block}
+img{border:0;-ms-interpolation-mode:bicubic;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;添加过后:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;figure{position:relative}
+figure img,figure object,figure embed,figure video{max-width:100%;display:block}
+img{border:0;-ms-interpolation-mode:bicubic;display: block;
+    box-shadow: 0 0 10px #555;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0 0 10px #555;}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个是扒&lt;a href=&#34;www.yinwang.org&#34;&gt;王垠博客&lt;/a&gt;的图片的样式,看着高上大就拿过来用了.稍微改了下,自己觉得喜欢就好.当修改过后博客右上角的 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 也变成了这种样式,如果不喜欢的话可以单独在你定义 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 的html中修改回来.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;img style=&amp;quot;position: absolute; top: 0; right: 0; border: 0;display: block;
+    box-shadow: 0 0 0px #000;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-box-shadow: 0 0 0px #000;&amp;quot; 
+    alt=&amp;quot;...&amp;quot;
+    src=&amp;quot;...&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;排序:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;排序&lt;/h3&gt;
 

@@ -45,7 +45,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &amp;lt;/LinearLayout&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;注意LinearLayout中的属性 &lt;strong&gt;android:weightSum&lt;/strong&gt;. 默认情况下weightSum的值是父控件里面所有child的数量.&lt;/p&gt;
+&lt;p&gt;注意LinearLayout中的属性 &lt;em&gt;android:weightSum&lt;/em&gt; . 默认情况下weightSum的值是父控件里面所有child的数量.&lt;/p&gt;
 
 &lt;p&gt;上面这段代码实现了button的width是父控件的50%.
 &amp;gt;计算公式:&lt;/p&gt;
@@ -61,13 +61,13 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;这个技巧将会学到:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;用&lt;strong&gt;include&lt;/strong&gt;标签避免xml代码的重复&lt;/li&gt;
+&lt;li&gt;用 &lt;em&gt;include&lt;/em&gt; 标签避免xml代码的重复&lt;/li&gt;
 &lt;li&gt;使用ViewStub Class实现视图的懒加载&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;2-1-avoid-replication-using-the-include-tag:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;2.1 Avoid replication using the &lt;include /&gt; tag&lt;/h4&gt;
 
-&lt;p&gt;我们想象一下在我们应用的每一个页面中添加一个同样的页脚,例如一个只带有应用名字的TextView.如果我们有很多个Activity,很多个xml文件.我们该怎么编辑它们?复制粘贴将会解决这个问题,但是看上去不是高效的.一个简单的途径就是用 &lt;strong&gt;include&lt;/strong&gt; 标签添加这个页脚到我们应用里.我们的其中一个Activity的xml文件就可以像这样:&lt;/p&gt;
+&lt;p&gt;我们想象一下在我们应用的每一个页面中添加一个同样的页脚,例如一个只带有应用名字的TextView.如果我们有很多个Activity,很多个xml文件.我们该怎么编辑它们?复制粘贴将会解决这个问题,但是看上去不是高效的.一个简单的途径就是用 &lt;em&gt;include&lt;/em&gt; 标签添加这个页脚到我们应用里.我们的其中一个Activity的xml文件就可以像这样:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
     android:layout_width=&amp;quot;match_parent&amp;quot;
@@ -94,7 +94,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
         android:text=&amp;quot;@string/footer_text&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 &lt;strong&gt;include&lt;/strong&gt;标签内定义android:layout_*这些属性.&lt;/p&gt;
+&lt;p&gt;在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 &lt;em&gt;include&lt;/em&gt; 标签内定义android:layout_*这些属性.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
         android:layout_width=&amp;quot;fill_parent&amp;quot;
@@ -134,7 +134,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. When a ViewStub is made visible, or when inflate() is invoked, the layout resource is inflated. The ViewStub then replaces itself in its parent with the inflated View or Views.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;你已经知道了ViewStub是什么,让我们来看一下该怎么用.在下面的例子中,你将会用一个ViewStub去懒加载 &lt;strong&gt;MapView&lt;/strong&gt;.想象创建一个用来描述地方详细信息的View.我们来看以下两种情况:&lt;/p&gt;
+&lt;p&gt;你已经知道了ViewStub是什么,让我们来看一下该怎么用.在下面的例子中,你将会用一个ViewStub去懒加载 &lt;em&gt;MapView&lt;/em&gt; .想象创建一个用来描述地方详细信息的View.我们来看以下两种情况:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;一些地区没有GPS信息&lt;/li&gt;
@@ -174,7 +174,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
         android:apiKey=&amp;quot;my_api_key&amp;quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;我们需要讨论的是最后这个属性android:inflatedId.我们可以用 &lt;strong&gt;inflate()&lt;/strong&gt; 或者 &lt;strong&gt;setVisibility&lt;/strong&gt; 方法让这个View显示出来.在这个例子中,我们用了 &lt;strong&gt;setVisibility(View.VISIBLE)&lt;/strong&gt; ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, &lt;strong&gt;inflate()&lt;/strong&gt; 会返回这个View避免第二次去调用 &lt;strong&gt;findViewById()&lt;/strong&gt; .&lt;/p&gt;
+&lt;p&gt;我们需要讨论的是最后这个属性android:inflatedId.我们可以用 &lt;em&gt;inflate()&lt;/em&gt; 或者 &lt;em&gt;setVisibility&lt;/em&gt; 方法让这个View显示出来.在这个例子中,我们用了 &lt;em&gt;setVisibility(View.VISIBLE)&lt;/em&gt; ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, &lt;em&gt;inflate()&lt;/em&gt; 会返回这个View避免第二次去调用 &lt;em&gt;findViewById()&lt;/em&gt; .&lt;/p&gt;
 
 &lt;p&gt;Activity 代码:&lt;/p&gt;
 
@@ -198,7 +198,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;就像你看见的一样,是否展示这个地图只需要改变ViewStub的 &lt;strong&gt;visibility&lt;/strong&gt; 变量值即可.&lt;/p&gt;
+&lt;p&gt;就像你看见的一样,是否展示这个地图只需要改变ViewStub的 &lt;em&gt;visibility&lt;/em&gt; 变量值即可.&lt;/p&gt;
 
 &lt;h3 id=&#34;hack-3-creating-a-custom-viewgroup-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;Hack 3 Creating a custom ViewGroup (Android v1.6+)&lt;/h3&gt;
 
@@ -254,7 +254,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 
 &lt;/p&gt;
 
-&lt;p&gt;下面介绍另外一种方式来创建相同类型的布局&amp;ndash;创建一个自定义 &lt;strong&gt;ViewGroup&lt;/strong&gt; .相比在xml中手动添加margins,自定义 &lt;strong&gt;ViewGroup&lt;/strong&gt; 的优点有:&lt;/p&gt;
+&lt;p&gt;下面介绍另外一种方式来创建相同类型的布局&amp;ndash;创建一个自定义 &lt;em&gt;ViewGroup&lt;/em&gt; .相比在xml中手动添加margins,自定义 &lt;em&gt;ViewGroup&lt;/em&gt; 的优点有:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;ul&gt;
@@ -272,7 +272,7 @@ child’s margin.&lt;/li&gt;
 &lt;p&gt;Drawing the layout is a two-pass process: a measure pass and a layout pass. The measuring pass is implemented in measure(int, int) and is a top-down traversal of the View tree. Each View pushes dimension specifications down the tree during the recursion. At the end of the measure pass, every View has stored its measurements. The second pass happens in layout(int, int, int, int) and is also top-down. During this pass each parent is responsible for positioning all of its children using the sizes computed in the measure pass.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;为了理解这个概念,我们来分析一下绘制 &lt;strong&gt;ViewGroup&lt;/strong&gt; 的方式.第一步在 &lt;strong&gt;onMeasure()&lt;/strong&gt; 这个方法里面去测量宽和高.在这个方法里面, &lt;strong&gt;ViewGroup&lt;/strong&gt; 会通过里面的子视图来计算它的大小.第二步通过在 &lt;strong&gt;onLayout()&lt;/strong&gt; 这个方法里面去放置它的子视图.在这个方法里面, &lt;strong&gt;ViewGroup&lt;/strong&gt; 通过在 &lt;strong&gt;onMeasure()&lt;/strong&gt; 方法里收集到子视图的信息来放置它们.&lt;/p&gt;
+&lt;p&gt;为了理解这个概念,我们来分析一下绘制 &lt;em&gt;ViewGroup&lt;/em&gt; 的方式.第一步在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面去测量宽和高.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 会通过里面的子视图来计算它的大小.第二步通过在 &lt;em&gt;onLayout()&lt;/em&gt; 这个方法里面去放置它的子视图.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 通过在 &lt;em&gt;onMeasure()&lt;/em&gt; 方法里收集到子视图的信息来放置它们.&lt;/p&gt;
 
 &lt;h4 id=&#34;3-2-creating-the-cascadelayout:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;3.2 Creating the CascadeLayout&lt;/h4&gt;
 
@@ -308,7 +308,7 @@ child’s margin.&lt;/li&gt;
 &amp;lt;/FrameLayout&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;接着,我们来定义这些自定义属性.在 &lt;strong&gt;res/values&lt;/strong&gt; 这个文件夹下创建 &lt;strong&gt;attrs.xml&lt;/strong&gt; .代码:&lt;/p&gt;
+&lt;p&gt;接着,我们来定义这些自定义属性.在 &lt;em&gt;res/values&lt;/em&gt; 这个文件夹下创建 &lt;em&gt;attrs.xml&lt;/em&gt; .代码:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
     &amp;lt;resources&amp;gt;
@@ -326,7 +326,7 @@ child’s margin.&lt;/li&gt;
     &amp;lt;/resources&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在 &lt;strong&gt;res/values/dimens.xml&lt;/strong&gt; 中定义自定义属性的值.&lt;/p&gt;
+&lt;p&gt;在 &lt;em&gt;res/values/dimens.xml&lt;/em&gt; 中定义自定义属性的值.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt; &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
     &amp;lt;resources&amp;gt;
@@ -335,7 +335,7 @@ child’s margin.&lt;/li&gt;
     &amp;lt;/resources&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在理解完Android怎样绘制视图后,你可能该想着去创建一个 &lt;strong&gt;CascadeLayout&lt;/strong&gt; 的类去继承 &lt;strong&gt;ViewGroup&lt;/strong&gt; ,在这个类里面去重写 &lt;strong&gt;onMeasure()&lt;/strong&gt; 和 &lt;strong&gt;onLayout()&lt;/strong&gt; 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, &lt;strong&gt;onMeasure()&lt;/strong&gt; , &lt;strong&gt;onLayout()&lt;/strong&gt; .
+&lt;p&gt;在理解完Android怎样绘制视图后,你可能该想着去创建一个 &lt;em&gt;CascadeLayout&lt;/em&gt; 的类去继承 &lt;em&gt;ViewGroup&lt;/em&gt; ,在这个类里面去重写 &lt;em&gt;onMeasure()&lt;/em&gt; 和 &lt;em&gt;onLayout()&lt;/em&gt; 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, &lt;em&gt;onMeasure()&lt;/em&gt; , &lt;em&gt;onLayout()&lt;/em&gt; .
 下面是构造方法的代码:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class CascadeLayout extends ViewGroup {
@@ -360,7 +360,7 @@ child’s margin.&lt;/li&gt;
     ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;在 &lt;strong&gt;onMeasure()&lt;/strong&gt; 这个方法里面写代码前,我们创建一个自定义的 &lt;strong&gt;LayoutParams&lt;/strong&gt; 类,作为 &lt;strong&gt;CascadeLayout&lt;/strong&gt; 的内部类,为每一个子view保留x,y的坐标值.代码:&lt;/p&gt;
+&lt;p&gt;在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面写代码前,我们创建一个自定义的 &lt;em&gt;LayoutParams&lt;/em&gt; 类,作为 &lt;em&gt;CascadeLayout&lt;/em&gt; 的内部类,为每一个子view保留x,y的坐标值.代码:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public static class LayoutParams extends ViewGroup.LayoutParams {
         int x;
@@ -378,7 +378,7 @@ child’s margin.&lt;/li&gt;
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;为了去使用 &lt;strong&gt;CascadeLayout.LayoutParams&lt;/strong&gt; 这个类,我们需要在 &lt;strong&gt;CascadeLayout&lt;/strong&gt; 这个类中重写一些额外的方法: &lt;strong&gt;checkLayoutParams()&lt;/strong&gt; , &lt;strong&gt;generateDefaultLayoutParams()&lt;/strong&gt; , &lt;strong&gt;generateLayoutParams(AttributeSet attrs)&lt;/strong&gt; , &lt;strong&gt;generateLayoutParams(ViewGroup.LayoutParams p)&lt;/strong&gt; .代码:&lt;/p&gt;
+&lt;p&gt;为了去使用 &lt;em&gt;CascadeLayout.LayoutParams&lt;/em&gt; 这个类,我们需要在 &lt;em&gt;CascadeLayout&lt;/em&gt; 这个类中重写一些额外的方法: &lt;em&gt;checkLayoutParams()&lt;/em&gt; , &lt;em&gt;generateDefaultLayoutParams()&lt;/em&gt; , &lt;em&gt;generateLayoutParams(AttributeSet attrs)&lt;/em&gt; , &lt;em&gt;generateLayoutParams(ViewGroup.LayoutParams p)&lt;/em&gt; .代码:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;    @Override protected boolean checkLayoutParams(ViewGroup.LayoutParams p) {
         return p instanceof LayoutParams;
@@ -400,7 +400,7 @@ child’s margin.&lt;/li&gt;
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;onMeasure()&lt;/strong&gt; ,是这个类的关键.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;onMeasure()&lt;/em&gt; ,是这个类的关键.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -426,7 +426,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;最后一步是创建 &lt;strong&gt;onLayout()&lt;/strong&gt; .&lt;/p&gt;
+&lt;p&gt;最后一步是创建 &lt;em&gt;onLayout()&lt;/em&gt; .&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
 protected void onLayout(boolean changed, int l, int t, int r, int b) {
@@ -453,7 +453,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;/p&gt;
 
-&lt;p&gt;添加新的属性到 &lt;strong&gt;attrs.xml&lt;/strong&gt; 中:&lt;/p&gt;
+&lt;p&gt;添加新的属性到 &lt;em&gt;attrs.xml&lt;/em&gt; 中:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;declare-styleable name=&amp;quot;CascadeLayout_LayoutParams&amp;quot;&amp;gt;
         &amp;lt;attr name=&amp;quot;layout_vertical_spacing&amp;quot;
@@ -461,7 +461,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
     &amp;lt;/declare-styleable&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;因为这个属性名是以 &lt;strong&gt;layout_&lt;/strong&gt; 开始的,所以它被添加到 &lt;strong&gt;LayoutParams&lt;/strong&gt; 属性中.在 &lt;strong&gt;LayoutParams&lt;/strong&gt; 这个构造方法中取出这个属性.&lt;/p&gt;
+&lt;p&gt;因为这个属性名是以 &lt;em&gt;layout_&lt;/em&gt; 开始的,所以它被添加到 &lt;em&gt;LayoutParams&lt;/em&gt; 属性中.在 &lt;em&gt;LayoutParams&lt;/em&gt; 这个构造方法中取出这个属性.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; public LayoutParams(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -476,7 +476,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;verticalSpacing&lt;/strong&gt; 是一个 &lt;strong&gt;public field&lt;/strong&gt; .我们会在 &lt;strong&gt;CascadeLayout&lt;/strong&gt; 中用到,如果子视图的 &lt;strong&gt;LayoutParams&lt;/strong&gt; 中包含 &lt;strong&gt;verticalSpacing&lt;/strong&gt; ,我们就可以使用它.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;verticalSpacing&lt;/em&gt; 是一个 &lt;em&gt;public field&lt;/em&gt; .我们会在 &lt;em&gt;CascadeLayout&lt;/em&gt; 中用到,如果子视图的 &lt;em&gt;LayoutParams&lt;/em&gt; 中包含 &lt;em&gt;verticalSpacing&lt;/em&gt; ,我们就可以使用它.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; verticalSpacing = mVerticalSpacing;
         ...
@@ -505,7 +505,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;/p&gt;
 
-&lt;p&gt;在 &lt;strong&gt;res/xml&lt;/strong&gt; 中创建 &lt;strong&gt;prefs.xml&lt;/strong&gt; .&lt;/p&gt;
+&lt;p&gt;在 &lt;em&gt;res/xml&lt;/em&gt; 中创建 &lt;em&gt;prefs.xml&lt;/em&gt; .&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
 &amp;lt;!--
@@ -564,7 +564,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 &lt;strong&gt;android.preference.PreferenceActivity&lt;/strong&gt; .&lt;/p&gt;
+&lt;p&gt;xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 &lt;em&gt;android.preference.PreferenceActivity&lt;/em&gt; .&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class MainActivity extends PreferenceActivity implements
     OnSharedPreferenceChangeListener {
@@ -631,7 +631,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;自定义一个 &lt;strong&gt;preferences&lt;/strong&gt; 就像自定义view一样.为了更好地理解它,我们来看一下 &lt;strong&gt;EmailDialog&lt;/strong&gt; 这个类的代码.&lt;/p&gt;
+&lt;p&gt;自定义一个 &lt;em&gt;preferences&lt;/em&gt; 就像自定义view一样.为了更好地理解它,我们来看一下 &lt;em&gt;EmailDialog&lt;/em&gt; 这个类的代码.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;// Custom class should extend some of existing preferences widgets. In this case, we’ll use DialogPreference.
 

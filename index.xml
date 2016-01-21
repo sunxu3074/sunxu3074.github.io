@@ -525,15 +525,10 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 
 &lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
 
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34; /&gt;
-    
-    
+&lt;figure&gt;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
+    attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
-
-&lt;/p&gt;
 
 &lt;p&gt;可以在RelativeLayout中设置margin,这是可行的.代码如下:&lt;/p&gt;
 
@@ -565,15 +560,10 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 
 &lt;p&gt;效果是介个样子的:&lt;/p&gt;
 
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34; /&gt;
-    
-    
+&lt;figure&gt;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
+    attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
-
-&lt;/p&gt;
 
 &lt;p&gt;下面介绍另外一种方式来创建相同类型的布局&amp;ndash;创建一个自定义 &lt;em&gt;ViewGroup&lt;/em&gt; .相比在xml中手动添加margins,自定义 &lt;em&gt;ViewGroup&lt;/em&gt; 的优点有:&lt;/p&gt;
 
@@ -764,15 +754,10 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
 
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34; /&gt;
-    
-    
+&lt;figure&gt;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
+    attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
-
-&lt;/p&gt;
 
 &lt;p&gt;添加新的属性到 &lt;em&gt;attrs.xml&lt;/em&gt; 中:&lt;/p&gt;
 
@@ -816,15 +801,10 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 
 &lt;p&gt;效果图:&lt;/p&gt;
 
-&lt;p&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34; /&gt;
-    
-    
+&lt;figure&gt;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
+    attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
-
-&lt;/p&gt;
 
 &lt;p&gt;在 &lt;em&gt;res/xml&lt;/em&gt; 中创建 &lt;em&gt;prefs.xml&lt;/em&gt; .&lt;/p&gt;
 
@@ -993,6 +973,10 @@ public class EmailDialog extends DialogPreference {
 &lt;p&gt;15年就这么过去了,元旦那天朋友圈里,公众号里大家都在忙着自我检讨.想了想去年除了像每年一样都感觉孤独外,还有就是焦虑,每天都在焦虑.这一年有努力,有懈怠,有期待,有迷茫.知乎上的名字是taken2016,还没来得及改.记得当初起这名是想16年是收获的一年,而如今已经步入16年了.今年真的会是收获的一年咩?实在不行就换成taken2017吧:)不断积累,期待着,期待着.&lt;/p&gt;
 
 &lt;p&gt;好了,写了点没用的.希望写的东西对大家有用,非常期待大家对我的建议,无论是生活上还是技术上.毕竟我还是个刚入职不到一年的小菜鸟~~&lt;/p&gt;
+
+&lt;p&gt;有的朋友给我发邮件说这书太老,已经没有翻译的价值,况且世面上已经有中文版了.我去找了下确实,而且还有相应的中文PDF.所以我不打算再写后边的关于这书的篇章了.&lt;/p&gt;
+
+&lt;p&gt;有兴趣的小伙伴可以变看变参考完整的代码.&lt;a href=&#34;https://github.com/Macarse/50AH-code&#34;&gt;本书github项目地址&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最后,祝好:)&lt;/p&gt;
 </description>
@@ -1223,6 +1207,8 @@ local.properties
 &lt;p&gt;相信你读了上面的资料就会很轻松的搭建自己的博客了.如果还不是很明白,那么恭喜你,跟我一样笨.
 笨就没办法了,去&lt;a href=&#34;http://guhugo.io&#34;&gt;hugo官方网站&lt;/a&gt;读Docs.读完之后你大概能明白到底是怎么回事了,每个文件都是干什么的,怎么改模板等等,从一个小白变成一个不太白,顺便了解一下 &lt;em&gt;Go&lt;/em&gt; 语言的语法.&lt;/p&gt;
 
+&lt;p&gt;我主要写一些小技巧或者不常用,或者大家在别处没有找到的.&lt;/p&gt;
+
 &lt;p&gt;官网上值得推荐给大家的是:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1234,6 +1220,16 @@ local.properties
 &lt;h3 id=&#34;github-ribbons:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;GitHub Ribbons&lt;/h3&gt;
 
 &lt;p&gt;设置GitHub Ribbons,Github官网给出解决方案.&lt;a href=&#34;https://github.com/blog/273-github-ribbons&#34;&gt;在这里&lt;/a&gt; 选中你喜欢的 &lt;em&gt;Ribbons&lt;/em&gt; .代码中href属性中的字段换成自己的Github网址,复制到 &lt;em&gt;/layouts/partials/head_includes.html/&lt;/em&gt; 中即可生效.&lt;/p&gt;
+
+&lt;h3 id=&#34;添加youtube:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加YouTube&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=w7Ft2ymGmfc&#34;&gt;https://www.youtube.com/watch?v=w7Ft2ymGmfc&lt;/a&gt;格式是介样的.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!--在文种中插入类似以下代码即可,注意后边的字符串跟你想要加入链接的YouTube的最后一段字符串对应--&amp;gt;
+{{ &amp;lt; youtube w7Ft2ymGmfc &amp;gt; }}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;实际代码中 &lt;strong&gt;{{&lt;/strong&gt; 和 &lt;strong&gt;}}&lt;/strong&gt; 前面是没有空格的,这里是为了不让被系统识别成YouTube视频才故意这样写的,加入时注意去掉.&lt;/p&gt;
 
 &lt;h3 id=&#34;添加rss:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加RSS&lt;/h3&gt;
 
@@ -1329,6 +1325,19 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     -webkit-box-shadow: 0 0 0px #000;&amp;quot; 
     alt=&amp;quot;...&amp;quot;
     src=&amp;quot;...&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;定义图片大小:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;定义图片大小&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
+    &amp;lt;img src=&amp;quot;/media/alipay.jpg&amp;quot; alt=&amp;quot;alipay&amp;quot;
+    &amp;lt;!--图片大小--&amp;gt;
+    attr width=&amp;quot;40%&amp;quot;  /&amp;gt;
+     &amp;lt;figcaption&amp;gt;
+     	  &amp;lt;!--标题--&amp;gt;
+        &amp;lt;h4&amp;gt; alipay &amp;lt;/h4&amp;gt;
+    &amp;lt;/figcaption&amp;gt;
+&amp;lt;/figure&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;排序:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;排序&lt;/h3&gt;

@@ -171,7 +171,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="364">
+<meta itemprop="wordCount" content="395">
 <meta itemprop="datePublished" content="2015-12-09">
 <meta itemprop="url" content="http://isunxu.xyz/cs/make-personal-website-by-hugo/">
 
@@ -193,6 +193,8 @@
 <p>相信你读了上面的资料就会很轻松的搭建自己的博客了.如果还不是很明白,那么恭喜你,跟我一样笨.
 笨就没办法了,去<a href="http://guhugo.io">hugo官方网站</a>读Docs.读完之后你大概能明白到底是怎么回事了,每个文件都是干什么的,怎么改模板等等,从一个小白变成一个不太白,顺便了解一下 <em>Go</em> 语言的语法.</p>
 
+<p>我主要写一些小技巧或者不常用,或者大家在别处没有找到的.</p>
+
 <p>官网上值得推荐给大家的是:</p>
 
 <ul>
@@ -204,6 +206,16 @@
 <h3 id="github-ribbons:49f2d3cb5c8cde2db974e263077945f1">GitHub Ribbons</h3>
 
 <p>设置GitHub Ribbons,Github官网给出解决方案.<a href="https://github.com/blog/273-github-ribbons">在这里</a> 选中你喜欢的 <em>Ribbons</em> .代码中href属性中的字段换成自己的Github网址,复制到 <em>/layouts/partials/head_includes.html/</em> 中即可生效.</p>
+
+<h3 id="添加youtube:49f2d3cb5c8cde2db974e263077945f1">添加YouTube</h3>
+
+<p><a href="https://www.youtube.com/watch?v=w7Ft2ymGmfc">https://www.youtube.com/watch?v=w7Ft2ymGmfc</a>格式是介样的.</p>
+
+<pre><code>&lt;!--在文种中插入类似以下代码即可,注意后边的字符串跟你想要加入链接的YouTube的最后一段字符串对应--&gt;
+{{ &lt; youtube w7Ft2ymGmfc &gt; }}
+</code></pre>
+
+<p>实际代码中 <strong>{{</strong> 和 <strong>}}</strong> 前面是没有空格的,这里是为了不让被系统识别成YouTube视频才故意这样写的,加入时注意去掉.</p>
 
 <h3 id="添加rss:49f2d3cb5c8cde2db974e263077945f1">添加RSS</h3>
 
@@ -299,6 +311,19 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     -webkit-box-shadow: 0 0 0px #000;&quot; 
     alt=&quot;...&quot;
     src=&quot;...&quot;&gt;
+</code></pre>
+
+<h3 id="定义图片大小:49f2d3cb5c8cde2db974e263077945f1">定义图片大小</h3>
+
+<pre><code>&lt;figure&gt;
+    &lt;img src=&quot;/media/alipay.jpg&quot; alt=&quot;alipay&quot;
+    &lt;!--图片大小--&gt;
+    attr width=&quot;40%&quot;  /&gt;
+     &lt;figcaption&gt;
+     	  &lt;!--标题--&gt;
+        &lt;h4&gt; alipay &lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
 </code></pre>
 
 <h3 id="排序:49f2d3cb5c8cde2db974e263077945f1">排序</h3>

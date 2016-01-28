@@ -991,25 +991,21 @@ public class EmailDialog extends DialogPreference {
       <description>
 
 &lt;blockquote&gt;
-&lt;p&gt;编程让我很快乐&lt;/p&gt;
+&lt;p&gt;只有菜鸟才会觉得自己特别牛，因为物以类聚，他的圈子里全是菜鸟。
+你越牛，接触的圈子也越牛，你越会觉得自己渺小。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;&lt;code&gt;待续&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;donate:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Donate&lt;/h3&gt;
 
-&lt;h3 id=&#34;支付宝:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;支付宝&lt;/h3&gt;
-
-&lt;figure&gt;
+&lt;figure style=&#34;display:inline-bock;&#34;&gt;
     &lt;img src=&#34;http://isunxu.xyz/media/alipay.jpg&#34; alt=&#34;alipay&#34;
-    attr width=&#34;40%&#34;  /&gt;
-&lt;/figure&gt;
-
-&lt;h3 id=&#34;微信:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;微信&lt;/h3&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;http://isunxu.xyz/media/wechat.png&#34; alt=&#34;wechat&#34;
-    attr width=&#34;40%&#34; /&gt;
+    width=&#34;40%&#34; title=&#34;支付宝&#34; style=&#34;display:inline&#34;/&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;img src=&#34;http://isunxu.xyz/media/wechat.png&#34; alt=&#34;wechat&#34;
+    width=&#34;40%&#34; title=&#34;微信&#34; style=&#34;display:inline-block&#34;;
+    /&gt;
 &lt;/figure&gt;
 </description>
     </item>

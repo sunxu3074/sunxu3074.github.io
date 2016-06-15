@@ -3,7 +3,7 @@
   <channel>
       <title>Ijkplayer on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://localhost:1313/tags/ijkplayer/</link>
+    <link>http://sunxu3074.github.io/tags/ijkplayer/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
-      <link>http://localhost:1313/android/between-rtmp-and-hls-third-party-choice/</link>
+      <link>http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/</link>
       <pubDate>Wed, 15 Jun 2016 17:50:54 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://localhost:1313/android/between-rtmp-and-hls-third-party-choice/</guid>
+      <guid>http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/</guid>
       <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
 
 &lt;ul&gt;

@@ -15,16 +15,16 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Github : isunxu.xyz"/>
+<meta property="og:title" content="Hls : isunxu.xyz"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://localhost:1313/tags/github/">
+<meta property="og:url" content="http://localhost:1313/tags/hls/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2016-01-04"/>
-<meta property="article:modified_time" content="2016-01-04"/>
+<meta property="article:published_time" content="2016-06-15"/>
+<meta property="article:modified_time" content="2016-06-15"/>
 
 
 
@@ -32,9 +32,9 @@
 
 
     <base href="http://localhost:1313/">
-    <title> Github - isunxu.xyz </title>
-    <link rel="canonical" href="http://localhost:1313/tags/github/">
-    <link href="http://localhost:1313/tags/github/index.xml" rel="alternate" type="application/rss+xml" title="Github" />
+    <title> Hls - isunxu.xyz </title>
+    <link rel="canonical" href="http://localhost:1313/tags/hls/">
+    <link href="http://localhost:1313/tags/hls/index.xml" rel="alternate" type="application/rss+xml" title="Hls" />
 
     <link href='http://fonts.useso.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
@@ -61,8 +61,8 @@
 	</script>
 
 	
-    <link href="http://localhost:1313/tags/github/index.xml" rel="alternate" type="application/rss+xml" title="ban&amp;pick" />
-    <link href="http://localhost:1313/tags/github/index.xml" rel="feed" type="application/rss+xml" title="ban&amp;pick" />
+    <link href="http://localhost:1313/tags/hls/index.xml" rel="alternate" type="application/rss+xml" title="ban&amp;pick" />
+    <link href="http://localhost:1313/tags/hls/index.xml" rel="feed" type="application/rss+xml" title="ban&amp;pick" />
 
 
 
@@ -141,60 +141,31 @@
 
 <section id="main">
   <div>
-   <h1 id="title">Github</h1>
+   <h1 id="title">Hls</h1>
     
         <article class="post">
     <header>
-      <h2><a href="http://localhost:1313/android/android-50-hack-part-1/">《Android 50 Hacks》读书笔记-布局篇 </a> </h2>
-      <div class="post-meta">Mon, Jan 4, 2016 </div>
+      <h2><a href="http://localhost:1313/android/between-rtmp-and-hls-third-party-choice/">Android基于HLS和RTMP协议的第三方SDK选择 </a> </h2>
+      <div class="post-meta">Wed, Jun 15, 2016 </div>
     </header>
     <article itemprop="articleBody" id="content">
-    	<p>最近在<a href="http://www.it-ebooks.info/">http://www.it-ebooks.info/</a>看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.</p>
+    	<p>协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。</p>
 
-<p>前言:</p>
+<ul>
+<li>提到流播放就不得不提到 <em>Vitamio</em> .协议支持全面，嵌入项目简单，对个人开发者免费。项目地址: <a href="https://github.com/yixia/VitamioBundle">https://github.com/yixia/VitamioBundle</a>.</li>
+<li>B站开源出来的 <em>ijkplayer</em> .项目维护及时，许多大公司都在用。网易云音乐，斗鱼TV，火猫TV等等，影响力可见一斑。支持RTMP，HLS。项目地址:<a href="https://github.com/Bilibili/ijkplayer">https://github.com/Bilibili/ijkplayer</a>.</li>
+<li>七牛开源出来的 <em>PLDroidPlayer</em>. 这个是基于B站的 <em>ijkplayer</em> 进行二次开发的。项目维护也很及时，你去上边提issue，很快就会有人回复你。同样支持RTMP,HLS。继承步骤简单，有wiki，我现在用的就是这个;) ,但以后收不收费就不一定了。项目地址:<a href="https://github.com/pili-engineering/PLDroidPlayer">https://github.com/pili-engineering/PLDroidPlayer</a>.</li>
+<li>大牛直播出品的 <em>SmarterStreaming</em>. 个人使用免费，项目地址:<a href="https://github.com/daniulive/SmarterStreaming">https://github.com/daniulive/SmarterStreaming</a>.</li>
+<li>新浪开源出来的 <em>sinavideo_playersdk</em>. 完全免费，你甚至可以修改备注。不过只支持hls协议，定制简单。项目地址:<a href="https://github.com/SinaVDDeveloper/sinavideo_playersdk">https://github.com/SinaVDDeveloper/sinavideo_playersdk</a>.</li>
+</ul>
 
-<p>我不知道作为一个没过四级的人是怎么看完这本书的.记得以前英语考试时,读阅读时总是不耐心,读着读着就烦气了.后来的考试总是喜欢看着答案蒙.至于现在为什么能耐心阅读关于计算机的一些英文文档,可能就是我对自己有野心,对程序员这个行业有野心吧.希望有一天我能骄傲地跟别人说我是一个程序员.</p>
+<p>希望能帮助到一些刚接触流播放的同学，下篇我会写用Mac搭建 <em>nginx</em> + <em>HLS</em> 的点播服务器。</p>
 
-<h3 id="hack-1-centering-views-using-weights-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5">Hack 1 Centering views using weights (Android v1.6+)</h3>
-
-<blockquote>
-<p>What should I write if I want a but- ton to be centered and 50% of its parent width?</p>
-</blockquote>
+<p>最后，祝好:)</p>
 
 	</article>
     <footer>
-        <a href='http://localhost:1313/android/android-50-hack-part-1/'><nobr>Read more →</nobr></a>
-    </footer>
-</article>
-
-    
-        <article class="post">
-    <header>
-      <h2><a href="http://localhost:1313/android/commit-what-to-github-in-as/">Android Studio项目应该提交哪些文件到GitHub上 </a> </h2>
-      <div class="post-meta">Fri, Dec 11, 2015 </div>
-    </header>
-    <article itemprop="articleBody" id="content">
-    	<p>在知乎上看到的提问,原问题链接: <a href="http://www.zhihu.com/question/37910193">http://www.zhihu.com/question/37910193</a></p>
-
-<p>当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？</p>
-
-<p>查阅相关资料:</p>
-
-<ol>
-<li><a href="http://www.jetbrains.com/idea/help/project.html">http://www.jetbrains.com/idea/help/project.html</a></li>
-<li><a href="http://qiita.com/amanoiverse/items/71b7dccf992b33930c35">http://qiita.com/amanoiverse/items/71b7dccf992b33930c35</a></li>
-<li><a href="http://stackoverflow.com/questions/16736856/what-should-be-in-my-gitignore-for-an-android-studio-project">http://stackoverflow.com/questions/16736856/what-should-be-in-my-gitignore-for-an-android-studio-project</a></li>
-<li><a href="https://gist.github.com/iainconnor/8605514">https://gist.github.com/iainconnor/8605514</a></li>
-<li><a href="https://github.com/drakeet/Meizhi/blob/master/.gitignore">https://github.com/drakeet/Meizhi/blob/master/.gitignore</a></li>
-<li><a href="https://github.com/JakeWharton/butterknife/blob/master/.gitignore">https://github.com/JakeWharton/butterknife/blob/master/.gitignore</a></li>
-<li><a href="https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore">https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore</a></li>
-</ol>
-
-<p>找了一些资料后,每个给出的答案都不一样,我把上面的答案总结后融合了一下添加到平常在在本地练习的 <em>.gitignore</em> 文件中,并上传到Github上然后down下来重新导入,发现导入没有任何异常,运行顺利.</p>
-
-	</article>
-    <footer>
-        <a href='http://localhost:1313/android/commit-what-to-github-in-as/'><nobr>Read more →</nobr></a>
+        <a href='http://localhost:1313/android/between-rtmp-and-hls-third-party-choice/'><nobr>Read more →</nobr></a>
     </footer>
 </article>
 

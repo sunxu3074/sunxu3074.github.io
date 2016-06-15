@@ -2,42 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://isunxu.xyz/</loc>
-    <lastmod>2016-01-15T01:36:52+08:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/android/auto-rob-red-package/</loc>
+    <loc>http://localhost:1313/android/between-rtmp-and-hls-third-party-choice/</loc>
+    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/android/auto-rob-red-package/</loc>
     <lastmod>2016-01-15T01:36:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/android/android-50-hack-part-1/</loc>
+    <loc>http://localhost:1313/android/android-50-hack-part-1/</loc>
     <lastmod>2016-01-04T18:06:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2015-12-09T00:52:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/google4999e5e555b30243/</loc>
+    <loc>http://localhost:1313/google4999e5e555b30243/</loc>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/android/commit-what-to-github-in-as/</loc>
+    <loc>http://localhost:1313/android/commit-what-to-github-in-as/</loc>
     <lastmod>2015-12-11T23:34:50+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/cs/make-personal-website-by-hugo/</loc>
+    <loc>http://localhost:1313/cs/make-personal-website-by-hugo/</loc>
     <lastmod>2015-12-09T22:31:48+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://isunxu.xyz/thinking/2015-12-15-diary/</loc>
+    <loc>http://localhost:1313/thinking/2015-12-15-diary/</loc>
     <lastmod>2015-12-15T00:38:58+08:00</lastmod>
   </url>
   

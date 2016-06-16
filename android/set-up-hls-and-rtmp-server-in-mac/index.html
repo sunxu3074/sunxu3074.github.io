@@ -10,34 +10,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="keywords" content="周记, 王垠, ">
+<meta name="keywords" content="rtmp, hls, nginx, mac, ">
 
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="2015.12.15 周记 : isunxu.xyz"/>
+<meta property="og:title" content="Mac搭建nginx&#43;hls&#43;rtmp服务器 : isunxu.xyz"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://isunxu.xyz/thinking/2015-12-15-diary/">
+<meta property="og:url" content="http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2015-12-15"/>
-<meta property="article:modified_time" content="2015-12-15"/>
+<meta property="article:published_time" content="2016-06-16"/>
+<meta property="article:modified_time" content="2016-06-16"/>
 
 
 
-<meta property="article:tag" content="周记">
-<meta property="article:tag" content="王垠">
+<meta property="article:tag" content="rtmp">
+<meta property="article:tag" content="hls">
+<meta property="article:tag" content="nginx">
+<meta property="article:tag" content="mac">
 
 
 
 
 
     <base href="http://isunxu.xyz/">
-    <title> 2015.12.15 周记 - isunxu.xyz </title>
-    <link rel="canonical" href="http://isunxu.xyz/thinking/2015-12-15-diary/">
+    <title> Mac搭建nginx&#43;hls&#43;rtmp服务器 - isunxu.xyz </title>
+    <link rel="canonical" href="http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/">
     
 
     <link href='http://fonts.useso.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -142,7 +144,7 @@
 
 
 <section id="main">
-  <h1 itemprop="name" >2015.12.15 周记</h1>
+  <h1 itemprop="name" >Mac搭建nginx&#43;hls&#43;rtmp服务器</h1>
   
 
 <aside id="meta">
@@ -150,67 +152,185 @@
     <div>
 
         <section id="datecount">
-          <h4 id="date"> Tue Dec 15, 2015 </h4>
+          <h4 id="date"> Thu Jun 16, 2016 </h4>
           
         </section>
         
         <ul id="tags">
           
-            <li> <a href="http://isunxu.xyz//tags/%E5%91%A8%E8%AE%B0">周记</a> </li>
+            <li> <a href="http://isunxu.xyz//tags/rtmp">rtmp</a> </li>
           
-            <li> <a href="http://isunxu.xyz//tags/%E7%8E%8B%E5%9E%A0">王垠</a> </li>
+            <li> <a href="http://isunxu.xyz//tags/hls">hls</a> </li>
+          
+            <li> <a href="http://isunxu.xyz//tags/nginx">nginx</a> </li>
+          
+            <li> <a href="http://isunxu.xyz//tags/mac">mac</a> </li>
           
         </ul>
     </div>
 
 </aside>
 
-<meta itemprop="wordCount" content="41">
-<meta itemprop="datePublished" content="2015-12-15">
-<meta itemprop="url" content="http://isunxu.xyz/thinking/2015-12-15-diary/">
+<meta itemprop="wordCount" content="231">
+<meta itemprop="datePublished" content="2016-06-16">
+<meta itemprop="url" content="http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/">
 
 
   <div>
         <article itemprop="articleBody" id="content">
            
 
-<h1 id="上周随想:d814fabfbd9c067f076c15c591048487">上周随想</h1>
+<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
 
-<p>好像每天过了11点才会进入状态..</p>
+<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
 
-<p>电脑里放着许巍的歌,今天很累可还是舍不得去睡觉,总感觉再去干点什么.</p>
+<p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
 
-<p>回忆上周已经记不清自己干了些什么.</p>
+<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
 
-<ul>
-<li>搭了个个人博客,马马虎虎地写了两篇.</li>
-<li>看了《Android群英传》120页左右.</li>
-<li>对着 <em>Android Training</em> 看到了<a href="http://developer.android.com/intl/zh-cn/training/displaying-bitmaps/index.html">第四章第一节 Displaying Bitmaps Efficiently</a>,相对于全部刚刚看了不到<strong><sup>1</sup>&frasl;<sub>5</sub></strong>.</li>
-<li>别的记不起来了.</li>
-</ul>
+<pre><code>brew tap homebrew/nginx
+</code></pre>
 
-<p>上周感觉自己成长了的时候就是看了王垠的<a href="http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy/">《编程与智慧》</a>.认真地看了每一段并在内心鼓掌叫好,艳羡王垠的才华.思考真是一个可贵的品质.让你的人跟代码上升一个档次.给人与众不同的感觉.程序员是不是也因此分类,会思考的程序员,不会思考的程序员.前者慢慢变成了真正的程序员,后者堕为码农.而我现在连个码农都不是.</p>
+<pre><code>brew install nginx-full --with-rtmp-module
+</code></pre>
 
-<p>我会加油先变成一个码农的,然后努力成为一个真正的程序员的:)</p>
+<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
 
-<h1 id="本周计划:d814fabfbd9c067f076c15c591048487">本周计划</h1>
+<pre><code>brew options nginx-full
+</code></pre>
 
-<ul>
-<li>看完《Android群英传》的第<strong>绘图机制</strong>与<strong>动画机制</strong>章节.</li>
-<li>看到 <em>Android Training</em> 中第七章 <em>Building Apps with User Info &amp; Sign-In</em>.</li>
-<li>阅读《50 Android Hacks》.</li>
-<li>剩下的就是写代码跟上班了.</li>
-</ul>
+<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
 
-<p>对了上周末请老姐吃了顿呷浦,然后去买了件毛衣,双12六折,很happy.</p>
+<h3 id="运行-nginx:4a9c6fc472c116c64096855aa4e81846">运行 nginx</h3>
 
-<p>把Android Studio升级到了2.0 perview 3体验了下InstantRun.</p>
+<p>执行:</p>
 
-<p>在Mac上新装了好多提高效率的工具,都试了试,确实好用.</p>
+<pre><code>nginx
+</code></pre>
 
-<p>好了就记这些吧,给自己加油!</p>
+<p>然后在浏览器打开 <a href="localhost:8080">localhost:8080</a> 如果出现nginx，那么你的nginx就安装成功了。</p>
 
-<p>晚安:)</p>
+<h3 id="配置:4a9c6fc472c116c64096855aa4e81846">配置</h3>
+
+<pre><code>brew info nginx 
+</code></pre>
+
+<p>通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。</p>
+
+<pre><code>==&gt; Caveats
+Docroot is: /usr/local/var/www
+ 
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+ 
+nginx will load all files in /usr/local/etc/nginx/servers/.
+ 
+- Tips -
+Run port 80:
+ $ sudo chown root:wheel /usr/local/Cellar/nginx-full/1.10.0/bin/nginx
+ $ sudo chmod u+s /usr/local/Cellar/nginx-full/1.10.0/bin/nginx
+Reload config:
+ $ nginx -s reload
+Reopen Logfile:
+ $ nginx -s reopen
+Stop process:
+ $ nginx -s stop
+Waiting on exit process
+ $ nginx -s quit
+ 
+To have launchd start homebrew/nginx/nginx-full now and restart at login:
+  brew services start homebrew/nginx/nginx-full
+Or, if you don't want/need a background service you can just run:
+  nginx
+</code></pre>
+
+<p>nginx的配置文件在:</p>
+
+<pre><code>/usr/local/etc/nginx/nginx.conf
+</code></pre>
+
+<p>打开配置文件并编辑:</p>
+
+<pre><code>http {
+   #  这个模块是默认的，注意rtmp与http平级
+}
+ 
+# 在http节点后面加上rtmp配置：
+rtmp {
+    server {
+        listen 1935;
+        application sunxulive {
+            live on;
+            record off;
+        }
+    }
+}
+</code></pre>
+
+<p>重启nginx:</p>
+
+<pre><code>nginx -s reload
+</code></pre>
+
+<pre><code>nginx -s stop
+</code></pre>
+
+<pre><code>nginx
+</code></pre>
+
+<h3 id="安装-ffmpeg:4a9c6fc472c116c64096855aa4e81846">安装 FFmpeg</h3>
+
+<pre><code>brew install ffmpeg
+</code></pre>
+
+<h3 id="推流:4a9c6fc472c116c64096855aa4e81846">推流</h3>
+
+<pre><code>ffmpeg -re -i ~/Desktop/test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost:1935/sunxulive/test
+</code></pre>
+
+<p>然后在支持rtmp协议的机器上播放url即可。</p>
+
+<pre><code>rtmp://localhost:1935/sunxulive/test
+</code></pre>
+
+<p>这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。</p>
+
+<h3 id="hls-点播:4a9c6fc472c116c64096855aa4e81846">hls 点播</h3>
+
+<p>http里面的server模块里添加:</p>
+
+<pre><code>location /hls {   
+		  types {  
+             application/vnd.apple.mpegurl m3u8;  
+             video/mp2t ts;  
+         }  
+         root /temp;
+}  
+</code></pre>
+
+<p>重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。</p>
+
+<pre><code>http://192.168.0.149:8082/test.m3u8
+</code></pre>
+
+<p>这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。</p>
+
+<p>如果是很多.m3u8文件，可以每个文件夹放一个.m3u8，然后访问 <a href="http://192.168.0.149:8082/hls/filename/test.m3u8">http://192.168.0.149:8082/hls/filename/test.m3u8</a> 即可。</p>
+
+<h3 id="切片:4a9c6fc472c116c64096855aa4e81846">切片</h3>
+
+<pre><code>ffmpeg -i ~/Desktop/1080p_4_3_HQ.mp4 -c:v libx264  -c:a aac -f hls -hls_list_size 0 -hls_time 5 /temp/616/test.m3u8
+</code></pre>
+
+<h3 id="缓存和视频压缩:4a9c6fc472c116c64096855aa4e81846">缓存和视频压缩</h3>
+
+<p>用proxy_cache 实现ts静态资源的缓存，但是试了各种方法参数，还是未能实现，待解决。</p>
+
+<p>视频压缩涉及到码率，帧率，分辨率，清晰度等一系列的概念，我试了1080p下各种码率下视频的清晰度，然而基于图片质量的高低不同，分辨率和码率没有明确的换算关系，全凭肉眼感觉~尝试压缩一些录屏软件录好的一些720p视频，80k的码率就够用了，而我用电脑录得720p的80k码率视频已经看不清人了！可能跟二次解码有关系，也可能跟我直接转成m3u8文件有关系。</p>
+
+<p>这就是最近忙的了，希望能对看到的人有些帮助。</p>
+
+<p>最后，祝好;)</p>
 
         </article>
   </div>
@@ -221,9 +341,9 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'http:\/\/isunxu.xyz\/thinking\/2015-12-15-diary\/';
-    var disqus_title = '2015.12.15 周记';
-    var disqus_url = 'http:\/\/isunxu.xyz\/thinking\/2015-12-15-diary\/';
+    var disqus_identifier = 'http:\/\/isunxu.xyz\/android\/set-up-hls-and-rtmp-server-in-mac\/';
+    var disqus_title = 'Mac搭建nginx\x2bhls\x2brtmp服务器';
+    var disqus_url = 'http:\/\/isunxu.xyz\/android\/set-up-hls-and-rtmp-server-in-mac\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

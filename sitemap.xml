@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://sunxu3074.github.io/</loc>
-    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
+    <loc>http://isunxu.xyz/</loc>
+    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/</loc>
+    <loc>http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/</loc>
+    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/</loc>
     <lastmod>2016-06-15T17:50:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/android/auto-rob-red-package/</loc>
+    <loc>http://isunxu.xyz/android/auto-rob-red-package/</loc>
     <lastmod>2016-01-15T01:36:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/android/android-50-hack-part-1/</loc>
+    <loc>http://isunxu.xyz/android/android-50-hack-part-1/</loc>
     <lastmod>2016-01-04T18:06:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/about/</loc>
+    <loc>http://isunxu.xyz/about/</loc>
     <lastmod>2015-12-09T00:52:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/google4999e5e555b30243/</loc>
+    <loc>http://isunxu.xyz/google4999e5e555b30243/</loc>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/android/commit-what-to-github-in-as/</loc>
+    <loc>http://isunxu.xyz/android/commit-what-to-github-in-as/</loc>
     <lastmod>2015-12-11T23:34:50+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/cs/make-personal-website-by-hugo/</loc>
+    <loc>http://isunxu.xyz/cs/make-personal-website-by-hugo/</loc>
     <lastmod>2015-12-09T22:31:48+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sunxu3074.github.io/thinking/2015-12-15-diary/</loc>
+    <loc>http://isunxu.xyz/thinking/2015-12-15-diary/</loc>
     <lastmod>2015-12-15T00:38:58+08:00</lastmod>
   </url>
   

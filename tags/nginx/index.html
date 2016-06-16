@@ -10,35 +10,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<meta name="keywords" content="周记, 王垠, ">
+<meta name="keywords" content="">
 
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="2015.12.15 周记 : isunxu.xyz"/>
+<meta property="og:title" content="Nginx : isunxu.xyz"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://isunxu.xyz/thinking/2015-12-15-diary/">
+<meta property="og:url" content="http://isunxu.xyz/tags/nginx/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2015-12-15"/>
-<meta property="article:modified_time" content="2015-12-15"/>
+<meta property="article:published_time" content="2016-06-16"/>
+<meta property="article:modified_time" content="2016-06-16"/>
 
-
-
-<meta property="article:tag" content="周记">
-<meta property="article:tag" content="王垠">
 
 
 
 
 
     <base href="http://isunxu.xyz/">
-    <title> 2015.12.15 周记 - isunxu.xyz </title>
-    <link rel="canonical" href="http://isunxu.xyz/thinking/2015-12-15-diary/">
-    
+    <title> Nginx - isunxu.xyz </title>
+    <link rel="canonical" href="http://isunxu.xyz/tags/nginx/">
+    <link href="http://isunxu.xyz/tags/nginx/index.xml" rel="alternate" type="application/rss+xml" title="Nginx" />
 
     <link href='http://fonts.useso.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
@@ -65,11 +61,14 @@
 	</script>
 
 	
+    <link href="http://isunxu.xyz/tags/nginx/index.xml" rel="alternate" type="application/rss+xml" title="ban&amp;pick" />
+    <link href="http://isunxu.xyz/tags/nginx/index.xml" rel="feed" type="application/rss+xml" title="ban&amp;pick" />
+
 
 
 </head>
 
-<body lang="en" itemscope itemtype="http://schema.org/Article">
+<body lang="en">
 <header id="header">
 	<nav id="nav">
 	<div id="title"><a href="/">Xu Sun</a></div>
@@ -140,100 +139,48 @@
 </header>
 
 
-
 <section id="main">
-  <h1 itemprop="name" >2015.12.15 周记</h1>
-  
-
-<aside id="meta">
-
-    <div>
-
-        <section id="datecount">
-          <h4 id="date"> Tue Dec 15, 2015 </h4>
-          
-        </section>
-        
-        <ul id="tags">
-          
-            <li> <a href="http://isunxu.xyz//tags/%E5%91%A8%E8%AE%B0">周记</a> </li>
-          
-            <li> <a href="http://isunxu.xyz//tags/%E7%8E%8B%E5%9E%A0">王垠</a> </li>
-          
-        </ul>
-    </div>
-
-</aside>
-
-<meta itemprop="wordCount" content="41">
-<meta itemprop="datePublished" content="2015-12-15">
-<meta itemprop="url" content="http://isunxu.xyz/thinking/2015-12-15-diary/">
-
-
   <div>
-        <article itemprop="articleBody" id="content">
-           
+   <h1 id="title">Nginx</h1>
+    
+        <article class="post">
+    <header>
+      <h2><a href="http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/">Mac搭建nginx&#43;hls&#43;rtmp服务器 </a> </h2>
+      <div class="post-meta">Thu, Jun 16, 2016 </div>
+    </header>
+    <article itemprop="articleBody" id="content">
+    	<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
 
-<h1 id="上周随想:d814fabfbd9c067f076c15c591048487">上周随想</h1>
+<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
 
-<p>好像每天过了11点才会进入状态..</p>
+<p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
 
-<p>电脑里放着许巍的歌,今天很累可还是舍不得去睡觉,总感觉再去干点什么.</p>
+<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
 
-<p>回忆上周已经记不清自己干了些什么.</p>
+<pre><code>brew tap homebrew/nginx
+</code></pre>
 
-<ul>
-<li>搭了个个人博客,马马虎虎地写了两篇.</li>
-<li>看了《Android群英传》120页左右.</li>
-<li>对着 <em>Android Training</em> 看到了<a href="http://developer.android.com/intl/zh-cn/training/displaying-bitmaps/index.html">第四章第一节 Displaying Bitmaps Efficiently</a>,相对于全部刚刚看了不到<strong><sup>1</sup>&frasl;<sub>5</sub></strong>.</li>
-<li>别的记不起来了.</li>
-</ul>
+<pre><code>brew install nginx-full --with-rtmp-module
+</code></pre>
 
-<p>上周感觉自己成长了的时候就是看了王垠的<a href="http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy/">《编程与智慧》</a>.认真地看了每一段并在内心鼓掌叫好,艳羡王垠的才华.思考真是一个可贵的品质.让你的人跟代码上升一个档次.给人与众不同的感觉.程序员是不是也因此分类,会思考的程序员,不会思考的程序员.前者慢慢变成了真正的程序员,后者堕为码农.而我现在连个码农都不是.</p>
+<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
 
-<p>我会加油先变成一个码农的,然后努力成为一个真正的程序员的:)</p>
+<pre><code>brew options nginx-full
+</code></pre>
 
-<h1 id="本周计划:d814fabfbd9c067f076c15c591048487">本周计划</h1>
+<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
 
-<ul>
-<li>看完《Android群英传》的第<strong>绘图机制</strong>与<strong>动画机制</strong>章节.</li>
-<li>看到 <em>Android Training</em> 中第七章 <em>Building Apps with User Info &amp; Sign-In</em>.</li>
-<li>阅读《50 Android Hacks》.</li>
-<li>剩下的就是写代码跟上班了.</li>
-</ul>
+	</article>
+    <footer>
+        <a href='http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/'><nobr>Read more →</nobr></a>
+    </footer>
+</article>
 
-<p>对了上周末请老姐吃了顿呷浦,然后去买了件毛衣,双12六折,很happy.</p>
-
-<p>把Android Studio升级到了2.0 perview 3体验了下InstantRun.</p>
-
-<p>在Mac上新装了好多提高效率的工具,都试了试,确实好用.</p>
-
-<p>好了就记这些吧,给自己加油!</p>
-
-<p>晚安:)</p>
-
-        </article>
+    
   </div>
 </section>
 
-<aside id=comments>
-    <div><h2> Comments </h2></div>
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'http:\/\/isunxu.xyz\/thinking\/2015-12-15-diary\/';
-    var disqus_title = '2015.12.15 周记';
-    var disqus_url = 'http:\/\/isunxu.xyz\/thinking\/2015-12-15-diary\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</aside>
+<aside id="meta"> </aside>
 
 <footer>
   <div>
@@ -269,5 +216,3 @@ fitText(document.getElementById('title'), 1)
 </body>
 </html>
 
-
-</body>

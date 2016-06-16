@@ -3,18 +3,180 @@
   <channel>
       <title>Androids on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://sunxu3074.github.io/android/</link>
+    <link>http://isunxu.xyz/android/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
-    <updated>Wed, 15 Jun 2016 17:50:54 CST</updated>
+    <updated>Thu, 16 Jun 2016 23:51:45 CST</updated>
+    
+    <item>
+      <title>Mac搭建nginx&#43;hls&#43;rtmp服务器</title>
+      <link>http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/</link>
+      <pubDate>Thu, 16 Jun 2016 23:51:45 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/</guid>
+      <description>
+
+&lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;
+
+&lt;h3 id=&#34;安装-homebrew:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 homebrew&lt;/h3&gt;
+
+&lt;p&gt;去 &lt;em&gt;homebrew&lt;/em&gt; 的官网&lt;a href=&#34;http://brew.sh/&#34;&gt;http://brew.sh/&lt;/a&gt;下载homebrew ，如果有则省略该步骤。&lt;/p&gt;
+
+&lt;h3 id=&#34;安装-nginx:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 nginx&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;brew tap homebrew/nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install nginx-full --with-rtmp-module
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &amp;ndash;with-rtmp-module 这段代码。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;brew options nginx-full
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通过上面这段代码可以看见编译nginx的选项模块。&lt;/p&gt;
+
+&lt;h3 id=&#34;运行-nginx:4a9c6fc472c116c64096855aa4e81846&#34;&gt;运行 nginx&lt;/h3&gt;
+
+&lt;p&gt;执行:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在浏览器打开 &lt;a href=&#34;localhost:8080&#34;&gt;localhost:8080&lt;/a&gt; 如果出现nginx，那么你的nginx就安装成功了。&lt;/p&gt;
+
+&lt;h3 id=&#34;配置:4a9c6fc472c116c64096855aa4e81846&#34;&gt;配置&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;brew info nginx 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;==&amp;gt; Caveats
+Docroot is: /usr/local/var/www
+ 
+The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
+nginx can run without sudo.
+ 
+nginx will load all files in /usr/local/etc/nginx/servers/.
+ 
+- Tips -
+Run port 80:
+ $ sudo chown root:wheel /usr/local/Cellar/nginx-full/1.10.0/bin/nginx
+ $ sudo chmod u+s /usr/local/Cellar/nginx-full/1.10.0/bin/nginx
+Reload config:
+ $ nginx -s reload
+Reopen Logfile:
+ $ nginx -s reopen
+Stop process:
+ $ nginx -s stop
+Waiting on exit process
+ $ nginx -s quit
+ 
+To have launchd start homebrew/nginx/nginx-full now and restart at login:
+  brew services start homebrew/nginx/nginx-full
+Or, if you don&#39;t want/need a background service you can just run:
+  nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;nginx的配置文件在:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/local/etc/nginx/nginx.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;打开配置文件并编辑:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http {
+   #  这个模块是默认的，注意rtmp与http平级
+}
+ 
+# 在http节点后面加上rtmp配置：
+rtmp {
+    server {
+        listen 1935;
+        application sunxulive {
+            live on;
+            record off;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重启nginx:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;nginx -s reload
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;nginx -s stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;安装-ffmpeg:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 FFmpeg&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;brew install ffmpeg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;推流:4a9c6fc472c116c64096855aa4e81846&#34;&gt;推流&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -re -i ~/Desktop/test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost:1935/sunxulive/test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后在支持rtmp协议的机器上播放url即可。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rtmp://localhost:1935/sunxulive/test
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。&lt;/p&gt;
+
+&lt;h3 id=&#34;hls-点播:4a9c6fc472c116c64096855aa4e81846&#34;&gt;hls 点播&lt;/h3&gt;
+
+&lt;p&gt;http里面的server模块里添加:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;location /hls {   
+		  types {  
+             application/vnd.apple.mpegurl m3u8;  
+             video/mp2t ts;  
+         }  
+         root /temp;
+}  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://192.168.0.149:8082/test.m3u8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。&lt;/p&gt;
+
+&lt;p&gt;如果是很多.m3u8文件，可以每个文件夹放一个.m3u8，然后访问 &lt;a href=&#34;http://192.168.0.149:8082/hls/filename/test.m3u8&#34;&gt;http://192.168.0.149:8082/hls/filename/test.m3u8&lt;/a&gt; 即可。&lt;/p&gt;
+
+&lt;h3 id=&#34;切片:4a9c6fc472c116c64096855aa4e81846&#34;&gt;切片&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i ~/Desktop/1080p_4_3_HQ.mp4 -c:v libx264  -c:a aac -f hls -hls_list_size 0 -hls_time 5 /temp/616/test.m3u8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;缓存和视频压缩:4a9c6fc472c116c64096855aa4e81846&#34;&gt;缓存和视频压缩&lt;/h3&gt;
+
+&lt;p&gt;用proxy_cache 实现ts静态资源的缓存，但是试了各种方法参数，还是未能实现，待解决。&lt;/p&gt;
+
+&lt;p&gt;视频压缩涉及到码率，帧率，分辨率，清晰度等一系列的概念，我试了1080p下各种码率下视频的清晰度，然而基于图片质量的高低不同，分辨率和码率没有明确的换算关系，全凭肉眼感觉~尝试压缩一些录屏软件录好的一些720p视频，80k的码率就够用了，而我用电脑录得720p的80k码率视频已经看不清人了！可能跟二次解码有关系，也可能跟我直接转成m3u8文件有关系。&lt;/p&gt;
+
+&lt;p&gt;这就是最近忙的了，希望能对看到的人有些帮助。&lt;/p&gt;
+
+&lt;p&gt;最后，祝好;)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
-      <link>http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/</link>
+      <link>http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/</link>
       <pubDate>Wed, 15 Jun 2016 17:50:54 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/</guid>
+      <guid>http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/</guid>
       <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
 
 &lt;ul&gt;
@@ -33,10 +195,10 @@
     
     <item>
       <title>实现全自动微信抢红包自带关闭技能</title>
-      <link>http://sunxu3074.github.io/android/auto-rob-red-package/</link>
+      <link>http://isunxu.xyz/android/auto-rob-red-package/</link>
       <pubDate>Fri, 15 Jan 2016 01:36:52 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu3074.github.io/android/auto-rob-red-package/</guid>
+      <guid>http://isunxu.xyz/android/auto-rob-red-package/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -144,7 +306,7 @@
 &lt;/blockquote&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/node_info.png&#34; alt=&#34;node_info&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/node_info.png&#34; alt=&#34;node_info&#34;
     /&gt;
 &lt;/figure&gt;
 
@@ -157,7 +319,7 @@
 &lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
      /&gt;
 &lt;/figure&gt;
 
@@ -180,7 +342,7 @@
 &lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -203,7 +365,7 @@
 &lt;p&gt;手慢了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -212,7 +374,7 @@
 &lt;p&gt;领取过了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -353,10 +515,10 @@ public class RobRedPackageService extends AccessibilityService {
     
     <item>
       <title>《Android 50 Hacks》读书笔记-布局篇</title>
-      <link>http://sunxu3074.github.io/android/android-50-hack-part-1/</link>
+      <link>http://isunxu.xyz/android/android-50-hack-part-1/</link>
       <pubDate>Mon, 04 Jan 2016 18:06:04 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu3074.github.io/android/android-50-hack-part-1/</guid>
+      <guid>http://isunxu.xyz/android/android-50-hack-part-1/</guid>
       <description>
 
 &lt;p&gt;最近在&lt;a href=&#34;http://www.it-ebooks.info/&#34;&gt;http://www.it-ebooks.info/&lt;/a&gt;看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.&lt;/p&gt;
@@ -547,7 +709,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -582,7 +744,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;效果是介个样子的:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -776,7 +938,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -823,7 +985,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;效果图:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu3074.github.io/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
+    &lt;img src=&#34;http://isunxu.xyz/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1005,10 +1167,10 @@ public class EmailDialog extends DialogPreference {
     
     <item>
       <title>Android Studio项目应该提交哪些文件到GitHub上</title>
-      <link>http://sunxu3074.github.io/android/commit-what-to-github-in-as/</link>
+      <link>http://isunxu.xyz/android/commit-what-to-github-in-as/</link>
       <pubDate>Fri, 11 Dec 2015 23:34:50 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu3074.github.io/android/commit-what-to-github-in-as/</guid>
+      <guid>http://isunxu.xyz/android/commit-what-to-github-in-as/</guid>
       <description>&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？&lt;/p&gt;
@@ -1096,7 +1258,7 @@ jniLibs
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -1110,7 +1272,7 @@ jniLibs
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -1122,7 +1284,7 @@ jniLibs
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
     
     
 &lt;/figure&gt;

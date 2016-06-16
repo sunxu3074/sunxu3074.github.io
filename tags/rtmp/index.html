@@ -21,20 +21,20 @@
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://sunxu3074.github.io/tags/rtmp/">
+<meta property="og:url" content="http://isunxu.xyz/tags/rtmp/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2016-06-15"/>
-<meta property="article:modified_time" content="2016-06-15"/>
+<meta property="article:published_time" content="2016-06-16"/>
+<meta property="article:modified_time" content="2016-06-16"/>
 
 
 
 
 
 
-    <base href="http://sunxu3074.github.io/">
+    <base href="http://isunxu.xyz/">
     <title> Rtmp - isunxu.xyz </title>
-    <link rel="canonical" href="http://sunxu3074.github.io/tags/rtmp/">
-    <link href="http://sunxu3074.github.io/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="Rtmp" />
+    <link rel="canonical" href="http://isunxu.xyz/tags/rtmp/">
+    <link href="http://isunxu.xyz/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="Rtmp" />
 
     <link href='http://fonts.useso.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
@@ -61,8 +61,8 @@
 	</script>
 
 	
-    <link href="http://sunxu3074.github.io/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="ban&amp;pick" />
-    <link href="http://sunxu3074.github.io/tags/rtmp/index.xml" rel="feed" type="application/rss+xml" title="ban&amp;pick" />
+    <link href="http://isunxu.xyz/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="ban&amp;pick" />
+    <link href="http://isunxu.xyz/tags/rtmp/index.xml" rel="feed" type="application/rss+xml" title="ban&amp;pick" />
 
 
 
@@ -145,7 +145,41 @@
     
         <article class="post">
     <header>
-      <h2><a href="http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/">Android基于HLS和RTMP协议的第三方SDK选择 </a> </h2>
+      <h2><a href="http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/">Mac搭建nginx&#43;hls&#43;rtmp服务器 </a> </h2>
+      <div class="post-meta">Thu, Jun 16, 2016 </div>
+    </header>
+    <article itemprop="articleBody" id="content">
+    	<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
+
+<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
+
+<p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
+
+<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
+
+<pre><code>brew tap homebrew/nginx
+</code></pre>
+
+<pre><code>brew install nginx-full --with-rtmp-module
+</code></pre>
+
+<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
+
+<pre><code>brew options nginx-full
+</code></pre>
+
+<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
+
+	</article>
+    <footer>
+        <a href='http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/'><nobr>Read more →</nobr></a>
+    </footer>
+</article>
+
+    
+        <article class="post">
+    <header>
+      <h2><a href="http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/">Android基于HLS和RTMP协议的第三方SDK选择 </a> </h2>
       <div class="post-meta">Wed, Jun 15, 2016 </div>
     </header>
     <article itemprop="articleBody" id="content">
@@ -165,7 +199,7 @@
 
 	</article>
     <footer>
-        <a href='http://sunxu3074.github.io/android/between-rtmp-and-hls-third-party-choice/'><nobr>Read more →</nobr></a>
+        <a href='http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/'><nobr>Read more →</nobr></a>
     </footer>
 </article>
 

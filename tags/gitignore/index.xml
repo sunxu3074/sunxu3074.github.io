@@ -3,7 +3,7 @@
   <channel>
       <title>Gitignore on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://sunxu3074.github.io/tags/gitignore/</link>
+    <link>http://isunxu.xyz/tags/gitignore/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Android Studio项目应该提交哪些文件到GitHub上</title>
-      <link>http://sunxu3074.github.io/android/commit-what-to-github-in-as/</link>
+      <link>http://isunxu.xyz/android/commit-what-to-github-in-as/</link>
       <pubDate>Fri, 11 Dec 2015 23:34:50 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu3074.github.io/android/commit-what-to-github-in-as/</guid>
+      <guid>http://isunxu.xyz/android/commit-what-to-github-in-as/</guid>
       <description>&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？&lt;/p&gt;
@@ -102,7 +102,7 @@ jniLibs
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -116,7 +116,7 @@ jniLibs
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -128,7 +128,7 @@ jniLibs
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu3074.github.io/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
+        &lt;img src=&#34;http://isunxu.xyz/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
     
     
 &lt;/figure&gt;

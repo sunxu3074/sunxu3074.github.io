@@ -19,6 +19,9 @@
 
 &lt;p&gt;对以前star过的项目进行分类整理，大致结构如下。资源类里有很多宝贵的资料，有算法，教程，源码分析等等。时间紧，没有对一些库进行清楚的分类，建议直接搜索关键字，希望对你有所帮助。&lt;/p&gt;
 
+&lt;p&gt;项目地址： &lt;a href=&#34;https://github.com/sunxu3074/StarredRepository&#34;&gt;https://github.com/sunxu3074/StarredRepository&lt;/a&gt; &amp;nbsp;&amp;nbsp;
+欢迎star&amp;amp;fork&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;│------ Android
 │          │----- View
 │				│----- 图表

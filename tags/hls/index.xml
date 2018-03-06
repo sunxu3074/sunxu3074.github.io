@@ -3,7 +3,7 @@
   <channel>
       <title>Hls on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://isunxu.xyz/tags/hls/</link>
+    <link>http://sunxu.work/tags/hls/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Mac搭建nginx&#43;hls&#43;rtmp服务器</title>
-      <link>http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/</link>
+      <link>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
       <pubDate>Thu, 16 Jun 2016 23:51:45 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://isunxu.xyz/android/set-up-hls-and-rtmp-server-in-mac/</guid>
+      <guid>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
       <description>
 
 &lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;
@@ -173,10 +173,10 @@ rtmp {
     
     <item>
       <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
-      <link>http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/</link>
+      <link>http://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</link>
       <pubDate>Wed, 15 Jun 2016 17:50:54 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://isunxu.xyz/android/between-rtmp-and-hls-third-party-choice/</guid>
+      <guid>http://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
       <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
 
 &lt;ul&gt;

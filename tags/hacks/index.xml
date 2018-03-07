@@ -3,7 +3,7 @@
   <channel>
       <title>Hacks on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://sunxu.work/tags/hacks/</link>
+    <link>https://sunxu.work/tags/hacks/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>《Android 50 Hacks》读书笔记-布局篇</title>
-      <link>http://sunxu.work/android/android-50-hack-part-1/</link>
+      <link>https://sunxu.work/android/android-50-hack-part-1/</link>
       <pubDate>Mon, 04 Jan 2016 18:06:04 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu.work/android/android-50-hack-part-1/</guid>
+      <guid>https://sunxu.work/android/android-50-hack-part-1/</guid>
       <description>
 
 &lt;p&gt;最近在&lt;a href=&#34;http://www.it-ebooks.info/&#34;&gt;http://www.it-ebooks.info/&lt;/a&gt;看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.&lt;/p&gt;
@@ -205,7 +205,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -240,7 +240,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;效果是介个样子的:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -434,7 +434,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -481,7 +481,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;效果图:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 

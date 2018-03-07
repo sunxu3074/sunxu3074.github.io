@@ -3,7 +3,7 @@
   <channel>
       <title>Mac on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://sunxu.work/tags/mac/</link>
+    <link>https://sunxu.work/tags/mac/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Mac搭建nginx&#43;hls&#43;rtmp服务器</title>
-      <link>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
+      <link>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
       <pubDate>Thu, 16 Jun 2016 23:51:45 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
+      <guid>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
       <description>
 
 &lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ban&amp;pick</title>
-    <link>http://sunxu.work/</link>
+    <link>https://sunxu.work/</link>
     <description>Recent content on ban&amp;pick</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
     <lastBuildDate>Tue, 05 Jul 2016 14:48:41 +0800</lastBuildDate>
-    <atom:link href="http://sunxu.work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sunxu.work/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Github Starred Repository</title>
-      <link>http://sunxu.work/cs/github_starred_repository/</link>
+      <link>https://sunxu.work/cs/github_starred_repository/</link>
       <pubDate>Tue, 05 Jul 2016 14:48:41 +0800</pubDate>
       
-      <guid>http://sunxu.work/cs/github_starred_repository/</guid>
+      <guid>https://sunxu.work/cs/github_starred_repository/</guid>
       <description>
 
 &lt;p&gt;对以前star过的项目进行分类整理，大致结构如下。资源类里有很多宝贵的资料，有算法，教程，源码分析等等。时间紧，没有对一些库进行清楚的分类，建议直接搜索关键字，希望对你有所帮助。&lt;/p&gt;
@@ -569,10 +569,10 @@
     
     <item>
       <title>Mac搭建nginx&#43;hls&#43;rtmp服务器</title>
-      <link>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
+      <link>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
       <pubDate>Thu, 16 Jun 2016 23:51:45 +0800</pubDate>
       
-      <guid>http://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
+      <guid>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
       <description>
 
 &lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;
@@ -731,10 +731,10 @@ rtmp {
     
     <item>
       <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
-      <link>http://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</link>
+      <link>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</link>
       <pubDate>Wed, 15 Jun 2016 17:50:54 +0800</pubDate>
       
-      <guid>http://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
+      <guid>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
       <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
 
 &lt;ul&gt;
@@ -753,10 +753,10 @@ rtmp {
     
     <item>
       <title>实现全自动微信抢红包自带关闭技能</title>
-      <link>http://sunxu.work/android/auto-rob-red-package/</link>
+      <link>https://sunxu.work/android/auto-rob-red-package/</link>
       <pubDate>Fri, 15 Jan 2016 01:36:52 +0800</pubDate>
       
-      <guid>http://sunxu.work/android/auto-rob-red-package/</guid>
+      <guid>https://sunxu.work/android/auto-rob-red-package/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -864,7 +864,7 @@ rtmp {
 &lt;/blockquote&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
+    &lt;img src=&#34;https://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
     /&gt;
 &lt;/figure&gt;
 
@@ -877,7 +877,7 @@ rtmp {
 &lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
      /&gt;
 &lt;/figure&gt;
 
@@ -900,7 +900,7 @@ rtmp {
 &lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -923,7 +923,7 @@ rtmp {
 &lt;p&gt;手慢了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -932,7 +932,7 @@ rtmp {
 &lt;p&gt;领取过了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1073,10 +1073,10 @@ public class RobRedPackageService extends AccessibilityService {
     
     <item>
       <title>《Android 50 Hacks》读书笔记-布局篇</title>
-      <link>http://sunxu.work/android/android-50-hack-part-1/</link>
+      <link>https://sunxu.work/android/android-50-hack-part-1/</link>
       <pubDate>Mon, 04 Jan 2016 18:06:04 +0800</pubDate>
       
-      <guid>http://sunxu.work/android/android-50-hack-part-1/</guid>
+      <guid>https://sunxu.work/android/android-50-hack-part-1/</guid>
       <description>
 
 &lt;p&gt;最近在&lt;a href=&#34;http://www.it-ebooks.info/&#34;&gt;http://www.it-ebooks.info/&lt;/a&gt;看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.&lt;/p&gt;
@@ -1267,7 +1267,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1302,7 +1302,7 @@ android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
 &lt;p&gt;效果是介个样子的:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1496,7 +1496,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1543,7 +1543,7 @@ protected void onLayout(boolean changed, int l, int t, int r, int b) {
 &lt;p&gt;效果图:&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
     attr width=&#34;40%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -1725,10 +1725,10 @@ public class EmailDialog extends DialogPreference {
     
     <item>
       <title>about me</title>
-      <link>http://sunxu.work/about/</link>
+      <link>https://sunxu.work/about/</link>
       <pubDate>Wed, 09 Dec 2015 00:52:59 +0800</pubDate>
       
-      <guid>http://sunxu.work/about/</guid>
+      <guid>https://sunxu.work/about/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -1741,10 +1741,10 @@ public class EmailDialog extends DialogPreference {
 &lt;h3 id=&#34;donate:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Donate&lt;/h3&gt;
 
 &lt;figure style=&#34;display:inline-bock;&#34;&gt;
-    &lt;img src=&#34;http://sunxu.work/media/alipay.jpg&#34; alt=&#34;alipay&#34;
+    &lt;img src=&#34;https://sunxu.work/media/alipay.jpg&#34; alt=&#34;alipay&#34;
     width=&#34;40%&#34; title=&#34;支付宝&#34; style=&#34;display:inline&#34;/&gt;
     &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
-     &lt;img src=&#34;http://sunxu.work/media/wechat.png&#34; alt=&#34;wechat&#34;
+     &lt;img src=&#34;https://sunxu.work/media/wechat.png&#34; alt=&#34;wechat&#34;
     width=&#34;40%&#34; title=&#34;微信&#34; style=&#34;display:inline-block&#34;;
     /&gt;
 &lt;/figure&gt;
@@ -1753,19 +1753,19 @@ public class EmailDialog extends DialogPreference {
     
     <item>
       <title></title>
-      <link>http://sunxu.work/google4999e5e555b30243/</link>
+      <link>https://sunxu.work/google4999e5e555b30243/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://sunxu.work/google4999e5e555b30243/</guid>
+      <guid>https://sunxu.work/google4999e5e555b30243/</guid>
       <description>google-site-verification: google4999e5e555b30243.html</description>
     </item>
     
     <item>
       <title>Android Studio项目应该提交哪些文件到GitHub上</title>
-      <link>http://sunxu.work/android/commit-what-to-github-in-as/</link>
+      <link>https://sunxu.work/android/commit-what-to-github-in-as/</link>
       <pubDate>Fri, 11 Dec 2015 23:34:50 +0800</pubDate>
       
-      <guid>http://sunxu.work/android/commit-what-to-github-in-as/</guid>
+      <guid>https://sunxu.work/android/commit-what-to-github-in-as/</guid>
       <description>&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？&lt;/p&gt;
@@ -1853,7 +1853,7 @@ jniLibs
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu.work/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
+        &lt;img src=&#34;https://sunxu.work/media/test-gitignore.png&#34; alt=&#34;test-gitignore&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -1867,7 +1867,7 @@ jniLibs
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu.work/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
+        &lt;img src=&#34;https://sunxu.work/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -1879,7 +1879,7 @@ jniLibs
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://sunxu.work/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
+        &lt;img src=&#34;https://sunxu.work/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -1925,10 +1925,10 @@ local.properties
     
     <item>
       <title>Hugo静态网站生成不完全教程(不定期更新)</title>
-      <link>http://sunxu.work/cs/make-personal-website-by-hugo/</link>
+      <link>https://sunxu.work/cs/make-personal-website-by-hugo/</link>
       <pubDate>Wed, 09 Dec 2015 22:31:48 +0800</pubDate>
       
-      <guid>http://sunxu.work/cs/make-personal-website-by-hugo/</guid>
+      <guid>https://sunxu.work/cs/make-personal-website-by-hugo/</guid>
       <description>
 
 &lt;h3 id=&#34;参考资料:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;参考资料&lt;/h3&gt;
@@ -2133,10 +2133,10 @@ tags = [&amp;quot;tags&amp;quot;]
     
     <item>
       <title>2015.12.15 周记</title>
-      <link>http://sunxu.work/thinking/2015-12-15-diary/</link>
+      <link>https://sunxu.work/thinking/2015-12-15-diary/</link>
       <pubDate>Tue, 15 Dec 2015 00:38:58 +0800</pubDate>
       
-      <guid>http://sunxu.work/thinking/2015-12-15-diary/</guid>
+      <guid>https://sunxu.work/thinking/2015-12-15-diary/</guid>
       <description>
 
 &lt;h1 id=&#34;上周随想:d814fabfbd9c067f076c15c591048487&#34;&gt;上周随想&lt;/h1&gt;

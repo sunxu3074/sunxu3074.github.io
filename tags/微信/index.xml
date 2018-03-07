@@ -3,7 +3,7 @@
   <channel>
       <title>微信 on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://sunxu.work/tags/%E5%BE%AE%E4%BF%A1/</link>
+    <link>https://sunxu.work/tags/%E5%BE%AE%E4%BF%A1/</link>
     <language>en-us</language>
     <author>Xu Sun</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
@@ -11,10 +11,10 @@
     
     <item>
       <title>实现全自动微信抢红包自带关闭技能</title>
-      <link>http://sunxu.work/android/auto-rob-red-package/</link>
+      <link>https://sunxu.work/android/auto-rob-red-package/</link>
       <pubDate>Fri, 15 Jan 2016 01:36:52 CST</pubDate>
       <author>Xu Sun</author>
-      <guid>http://sunxu.work/android/auto-rob-red-package/</guid>
+      <guid>https://sunxu.work/android/auto-rob-red-package/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -122,7 +122,7 @@
 &lt;/blockquote&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
+    &lt;img src=&#34;https://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
     /&gt;
 &lt;/figure&gt;
 
@@ -135,7 +135,7 @@
 &lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
      /&gt;
 &lt;/figure&gt;
 
@@ -158,7 +158,7 @@
 &lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -181,7 +181,7 @@
 &lt;p&gt;手慢了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 
@@ -190,7 +190,7 @@
 &lt;p&gt;领取过了&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&#34;http://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
     attr width=&#34;50%&#34;  /&gt;
 &lt;/figure&gt;
 

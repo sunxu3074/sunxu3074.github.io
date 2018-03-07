@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>微信 on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
@@ -32,7 +32,7 @@
 &lt;p&gt;传到&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html&#34;&gt;优酷空间&lt;/a&gt;里面了,墙外的小伙伴可观看YouTube.&lt;/p&gt;
 
 &lt;div class=&#34;embed video-player&#34;&gt;
-&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;https://www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -240,9 +240,9 @@ public class RobRedPackageService extends AccessibilityService {
                 else {
                     return;
                 }
-                
+
             }
-            
+
         }
 
         if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
@@ -286,7 +286,7 @@ public class RobRedPackageService extends AccessibilityService {
 
     }
 
-    
+
 }
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -318,7 +318,7 @@ public class RobRedPackageService extends AccessibilityService {
 
 &lt;ul&gt;
 &lt;li&gt;在github上给我一个star就好.&lt;/li&gt;
-&lt;li&gt;捐赠: &lt;a href=&#34;http://isunxu.xyz/about&#34;&gt;http://isunxu.xyz/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
+&lt;li&gt;捐赠: &lt;a href=&#34;https://sunxu.work/about&#34;&gt;https://sunxu.work/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;这个程序完全是娱乐为主,并不作商业目的.&lt;/p&gt;
@@ -331,4 +331,3 @@ public class RobRedPackageService extends AccessibilityService {
     
   </channel>
 </rss>
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Mac on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
@@ -49,19 +49,19 @@
 
 &lt;h3 id=&#34;配置:4a9c6fc472c116c64096855aa4e81846&#34;&gt;配置&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;brew info nginx 
+&lt;pre&gt;&lt;code&gt;brew info nginx
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;==&amp;gt; Caveats
 Docroot is: /usr/local/var/www
- 
+
 The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
 nginx can run without sudo.
- 
+
 nginx will load all files in /usr/local/etc/nginx/servers/.
- 
+
 - Tips -
 Run port 80:
  $ sudo chown root:wheel /usr/local/Cellar/nginx-full/1.10.0/bin/nginx
@@ -74,7 +74,7 @@ Stop process:
  $ nginx -s stop
 Waiting on exit process
  $ nginx -s quit
- 
+
 To have launchd start homebrew/nginx/nginx-full now and restart at login:
   brew services start homebrew/nginx/nginx-full
 Or, if you don&#39;t want/need a background service you can just run:
@@ -91,7 +91,7 @@ Or, if you don&#39;t want/need a background service you can just run:
 &lt;pre&gt;&lt;code&gt;http {
    #  这个模块是默认的，注意rtmp与http平级
 }
- 
+
 # 在http节点后面加上rtmp配置：
 rtmp {
     server {
@@ -173,4 +173,3 @@ rtmp {
     
   </channel>
 </rss>
-

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Hacks on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
@@ -346,7 +346,7 @@ child’s margin.&lt;/li&gt;
             a.recycle();
         }
     }
-    
+
     ...
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -392,7 +392,7 @@ child’s margin.&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;onMeasure()&lt;/em&gt; ,是这个类的关键.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 	     // Use width and height to calculate layout’s final size and children’s x and y positions.
         int width = 0;
@@ -408,7 +408,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             lp.y = height;
             width += child.getMeasuredWidth();
             height += mVerticalSpacing;
-        } 
+        }
         width += getPaddingRight();
         height += getChildAt(getChildCount() - 1).getMeasuredHeight() + getPaddingBottom();
         // Uses calculated width and height to set measured dimensions of whole layout.
@@ -418,7 +418,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
 &lt;p&gt;最后一步是创建 &lt;em&gt;onLayout()&lt;/em&gt; .&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
 protected void onLayout(boolean changed, int l, int t, int r, int b) {
         final int count = getChildCount();
         for (int i = 0; i &amp;lt; count; i++) {
@@ -627,15 +627,15 @@ public class EmailDialog extends DialogPreference {
   }
 
   public EmailDialog(Context context, AttributeSet attrs, int defStyle) {
-  
+
   // Constructors are the same as those used to create a custom view extending the View class.
-  
+
     super(context, attrs, defStyle);
     mContext = context;
   }
 
   // onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
-  
+
   @Override
   public void onClick(DialogInterface dialog, int which) {
     super.onClick(dialog, which);
@@ -663,4 +663,3 @@ public class EmailDialog extends DialogPreference {
     
   </channel>
 </rss>
-

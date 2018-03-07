@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Personal Website on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
@@ -145,7 +145,7 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    -webkit-box-shadow: 0 0 0px #000;&amp;quot; 
+    -webkit-box-shadow: 0 0 0px #000;&amp;quot;
     alt=&amp;quot;...&amp;quot;
     src=&amp;quot;...&amp;quot;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -219,4 +219,3 @@ tags = [&amp;quot;tags&amp;quot;]
     
   </channel>
 </rss>
-

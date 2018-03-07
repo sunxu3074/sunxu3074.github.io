@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Android on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
@@ -54,7 +54,7 @@
 &lt;p&gt;传到&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html&#34;&gt;优酷空间&lt;/a&gt;里面了,墙外的小伙伴可观看YouTube.&lt;/p&gt;
 
 &lt;div class=&#34;embed video-player&#34;&gt;
-&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;https://www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -262,9 +262,9 @@ public class RobRedPackageService extends AccessibilityService {
                 else {
                     return;
                 }
-                
+
             }
-            
+
         }
 
         if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
@@ -308,7 +308,7 @@ public class RobRedPackageService extends AccessibilityService {
 
     }
 
-    
+
 }
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -340,7 +340,7 @@ public class RobRedPackageService extends AccessibilityService {
 
 &lt;ul&gt;
 &lt;li&gt;在github上给我一个star就好.&lt;/li&gt;
-&lt;li&gt;捐赠: &lt;a href=&#34;http://isunxu.xyz/about&#34;&gt;http://isunxu.xyz/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
+&lt;li&gt;捐赠: &lt;a href=&#34;https://sunxu.work/about&#34;&gt;https://sunxu.work/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;这个程序完全是娱乐为主,并不作商业目的.&lt;/p&gt;
@@ -688,7 +688,7 @@ child’s margin.&lt;/li&gt;
             a.recycle();
         }
     }
-    
+
     ...
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -734,7 +734,7 @@ child’s margin.&lt;/li&gt;
 
 &lt;p&gt;&lt;em&gt;onMeasure()&lt;/em&gt; ,是这个类的关键.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 	     // Use width and height to calculate layout’s final size and children’s x and y positions.
         int width = 0;
@@ -750,7 +750,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             lp.y = height;
             width += child.getMeasuredWidth();
             height += mVerticalSpacing;
-        } 
+        }
         width += getPaddingRight();
         height += getChildAt(getChildCount() - 1).getMeasuredHeight() + getPaddingBottom();
         // Uses calculated width and height to set measured dimensions of whole layout.
@@ -760,7 +760,7 @@ protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
 &lt;p&gt;最后一步是创建 &lt;em&gt;onLayout()&lt;/em&gt; .&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override 
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
 protected void onLayout(boolean changed, int l, int t, int r, int b) {
         final int count = getChildCount();
         for (int i = 0; i &amp;lt; count; i++) {
@@ -969,15 +969,15 @@ public class EmailDialog extends DialogPreference {
   }
 
   public EmailDialog(Context context, AttributeSet attrs, int defStyle) {
-  
+
   // Constructors are the same as those used to create a custom view extending the View class.
-  
+
     super(context, attrs, defStyle);
     mContext = context;
   }
 
   // onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
-  
+
   @Override
   public void onClick(DialogInterface dialog, int which) {
     super.onClick(dialog, which);
@@ -1168,4 +1168,3 @@ local.properties
     
   </channel>
 </rss>
-

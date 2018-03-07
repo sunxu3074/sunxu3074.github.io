@@ -1,0 +1,9 @@
+baseurl = "https://sunxu.work/"
+languageCode = "en-us"
+title = "ban&pick"
+disqusShortname = "taken2016"
+copyright = "Copyright (c) 2015, Xu Sun; all rights reserved."
+ignoreFiles = [ "\\.foo$", "\\.boo$" ]
+
+[author]
+    name = "Xu Sun"

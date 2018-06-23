@@ -23,8 +23,8 @@
 <meta property="og:image:height" content="" />
 <meta property="og:url" content="https://sunxu.work/404/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2016-07-05"/>
-<meta property="article:modified_time" content="2016-07-05"/>
+<meta property="article:published_time" content="2018-06-04"/>
+<meta property="article:modified_time" content="2018-06-04"/>
 
 
 
@@ -186,6 +186,15 @@ fitText(document.getElementById('title'), 1)
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js"></script>
+<script>
+var ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh: function(){ window.location.reload(); }
+});
+</script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 </body>

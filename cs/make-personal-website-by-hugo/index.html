@@ -184,7 +184,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="395">
+<meta itemprop="wordCount" content="422">
 <meta itemprop="datePublished" content="2015-12-09">
 <meta itemprop="url" content="https://sunxu.work/cs/make-personal-website-by-hugo/">
 
@@ -338,6 +338,26 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 </code></pre>
+
+<h3 id="支持下拉刷新-mobile:49f2d3cb5c8cde2db974e263077945f1">支持下拉刷新( <strong>Mobile</strong> )</h3>
+
+<ol>
+<li>res: <a href="https://github.com/BoxFactura/pulltorefresh.js">pulltorefresh.js</a></li>
+<li>使用方法:</li>
+</ol>
+
+<pre><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh: function(){ window.location.reload(); }
+});
+&lt;/script&gt;
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+</code></pre>
+
+<p>添加以上代码到 <strong>/layouts/partials/footer.html</strong> 中即可。</p>
 
 <h3 id="排序:49f2d3cb5c8cde2db974e263077945f1">排序</h3>
 

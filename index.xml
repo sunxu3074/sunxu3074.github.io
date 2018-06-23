@@ -2112,6 +2112,26 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
 &amp;lt;/figure&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;支持下拉刷新-mobile:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;支持下拉刷新( &lt;strong&gt;Mobile&lt;/strong&gt; )&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;res: &lt;a href=&#34;https://github.com/BoxFactura/pulltorefresh.js&#34;&gt;pulltorefresh.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;使用方法:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+var ptr = PullToRefresh.init({
+  mainElement: &#39;body&#39;,
+  onRefresh: function(){ window.location.reload(); }
+});
+&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;添加以上代码到 &lt;strong&gt;/layouts/partials/footer.html&lt;/strong&gt; 中即可。&lt;/p&gt;
+
 &lt;h3 id=&#34;排序:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;排序&lt;/h3&gt;
 
 &lt;p&gt;如果你想让自己的某些文章置顶或者让某些文章不那么排在前边的话,就可以用到这段介绍了.像我写些日记什么的,没什么价值,就希望放在后边啦.&lt;/p&gt;

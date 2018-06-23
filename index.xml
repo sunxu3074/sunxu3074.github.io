@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 04 Jun 2018 23:48:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 23 Jun 2018 23:48:47 +0800</lastBuildDate>
     <atom:link href="https://sunxu.work/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mac上的神兵利器（不定时更新）</title>
       <link>https://sunxu.work/cs/magic_weapon_on_mac/</link>
-      <pubDate>Mon, 04 Jun 2018 23:48:47 +0800</pubDate>
+      <pubDate>Sat, 23 Jun 2018 23:48:47 +0800</pubDate>
       
       <guid>https://sunxu.work/cs/magic_weapon_on_mac/</guid>
       <description>
@@ -40,6 +40,7 @@
 &lt;li&gt;物尽其用&lt;/li&gt;
 &lt;li&gt;git svn&lt;/li&gt;
 &lt;li&gt;python java javascrpit mysql&lt;/li&gt;
+&lt;li&gt;还没写完&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

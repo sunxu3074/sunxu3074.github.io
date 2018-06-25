@@ -7,8 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 23 Jun 2018 23:48:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 12:54:51 +0800</lastBuildDate>
     <atom:link href="https://sunxu.work/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Android保存静态密钥</title>
+      <link>https://sunxu.work/android/encrypt-third-party-keys/</link>
+      <pubDate>Sun, 24 Jun 2018 12:54:51 +0800</pubDate>
+      
+      <guid>https://sunxu.work/android/encrypt-third-party-keys/</guid>
+      <description>
+
+&lt;h3 id=&#34;参考资料:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;参考资料&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://juejin.im/entry/5791c4b78ac247005f0c4333&#34;&gt;android 中保存静态秘钥实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/venusic/article/details/52347316&#34;&gt;JNI签名验证防止恶意调用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;先mark再写:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;&lt;strong&gt;先mark再写&lt;/strong&gt;&lt;/h4&gt;
+</description>
+    </item>
     
     <item>
       <title>Mac上的神兵利器（不定时更新）</title>

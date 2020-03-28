@@ -47,7 +47,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -71,6 +71,8 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
+
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -170,32 +172,20 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="5">
+<meta itemprop="wordCount" content="4">
 <meta itemprop="datePublished" content="2015-12-09">
 <meta itemprop="url" content="https://sunxu.work/about/">
 
 
   <div>
         <article itemprop="articleBody" id="content">
-           
-
-<blockquote>
+           <blockquote>
 <p>只有菜鸟才会觉得自己特别牛，因为物以类聚，他的圈子里全是菜鸟。
 你越牛，接触的圈子也越牛，你越会觉得自己渺小。</p>
 </blockquote>
-
 <p><code>待续</code></p>
-
-<h3 id="donate:6083a88ee3411b0d17ce02d738f69d47">Donate</h3>
-
-<figure style="display:inline-bock;">
-    <img src="/media/alipay.jpg" alt="alipay"
-    width="40%" title="支付宝" style="display:inline"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <img src="/media/wechat.png" alt="wechat"
-    width="40%" title="微信" style="display:inline-block";
-    />
-</figure>
+<h3 id="donate">Donate</h3>
+<!-- raw HTML omitted -->
 
         </article>
   </div>
@@ -204,20 +194,25 @@
 <aside id=comments>
     <div><h2> Comments </h2></div>
     <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'https:\/\/sunxu.work\/about\/';
-    var disqus_title = 'about me';
-    var disqus_url = 'https:\/\/sunxu.work\/about\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taken2016" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </aside>
 
 <footer>
@@ -237,11 +232,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

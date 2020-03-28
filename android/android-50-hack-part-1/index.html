@@ -52,7 +52,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -76,6 +76,8 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
+
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -181,657 +183,514 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="1312">
+<meta itemprop="wordCount" content="1313">
 <meta itemprop="datePublished" content="2016-01-04">
 <meta itemprop="url" content="https://sunxu.work/android/android-50-hack-part-1/">
 
 
   <div>
         <article itemprop="articleBody" id="content">
-           
-
-<p>最近在<a href="http://www.it-ebooks.info/">http://www.it-ebooks.info/</a>看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.</p>
-
+           <p>最近在<a href="http://www.it-ebooks.info/">http://www.it-ebooks.info/</a>看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.</p>
 <p>前言:</p>
-
 <p>我不知道作为一个没过四级的人是怎么看完这本书的.记得以前英语考试时,读阅读时总是不耐心,读着读着就烦气了.后来的考试总是喜欢看着答案蒙.至于现在为什么能耐心阅读关于计算机的一些英文文档,可能就是我对自己有野心,对程序员这个行业有野心吧.希望有一天我能骄傲地跟别人说我是一个程序员.</p>
-
-<h3 id="hack-1-centering-views-using-weights-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5">Hack 1 Centering views using weights (Android v1.6+)</h3>
-
+<h3 id="hack-1-centering-views-using-weights-android-v16">Hack 1 Centering views using weights (Android v1.6+)</h3>
 <blockquote>
 <p>What should I write if I want a but- ton to be centered and 50% of its parent width?</p>
 </blockquote>
-
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-android:layout_width=&quot;fill_parent&quot;
-android:layout_height=&quot;fill_parent&quot;
-android:background=&quot;#FFFFFF&quot;
-android:gravity=&quot;center&quot;
-android:orientation=&quot;horizontal&quot;
-android:weightSum=&quot;1&quot;&gt;
-&lt;Button
-    android:layout_width=&quot;0dp&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:layout_weight=&quot;0.5&quot;
-    android:text=&quot;Click me&quot;/&gt;
-&lt;/LinearLayout&gt;
-</code></pre>
-
-<p>注意LinearLayout中的属性 <em>android:weightSum</em> . 默认情况下weightSum的值是父控件里面所有child的数量.</p>
-
-<p>上面这段代码实现了button的width是父控件的50%.
-&gt;计算公式:</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span><span style="color:#f92672">&lt;LinearLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+<span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span><span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span><span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#FFFFFF&#34;</span><span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span><span style="color:#a6e22e">android:orientation=</span><span style="color:#e6db74">&#34;horizontal&#34;</span><span style="color:#a6e22e">android:weightSum=</span><span style="color:#e6db74">&#34;1&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">&lt;Button</span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;0dp&#34;</span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>    <span style="color:#a6e22e">android:layout_weight=</span><span style="color:#e6db74">&#34;0.5&#34;</span>    <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;Click me&#34;</span><span style="color:#f92672">/&gt;</span><span style="color:#f92672">&lt;/LinearLayout&gt;</span>
+</code></pre></div><p>注意LinearLayout中的属性 <em>android:weightSum</em> . 默认情况下weightSum的值是父控件里面所有child的数量.</p>
+<p>上面这段代码实现了button的width是父控件的50%.</p>
+<blockquote>
+<p>计算公式:</p>
+</blockquote>
 <blockquote>
 <p>Button&rsquo;s width + Button&rsquo;s weight * 200 / sum(weight);(假设LinearLayout的宽度是200)</p>
-
+</blockquote>
+<blockquote>
 <p>也就是 控件宽度+父控件剩余宽度*比例 (首先按照控件声明的尺寸进行分配,然后剩下的尺寸按照weight分配)</p>
 </blockquote>
-
-<h3 id="hack-2-using-lazy-loading-and-avoiding-replication-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5">Hack 2 Using lazy loading and avoiding replication (Android v1.6+)</h3>
-
+<h3 id="hack-2-using-lazy-loading-and-avoiding-replication-android-v16">Hack 2 Using lazy loading and avoiding replication (Android v1.6+)</h3>
 <p>这个技巧将会学到:</p>
-
 <ul>
 <li>用 <em>include</em> 标签避免xml代码的重复</li>
 <li>使用ViewStub Class实现视图的懒加载</li>
 </ul>
-
-<h4 id="2-1-avoid-replication-using-the-include-tag:1e33089dd85e7ee1909260ca9a39f4a5">2.1 Avoid replication using the <include /> tag</h4>
-
+<h4 id="21-avoid-replication-using-the-include--tag">2.1 Avoid replication using the <!-- raw HTML omitted --> tag</h4>
 <p>我们想象一下在我们应用的每一个页面中添加一个同样的页脚,例如一个只带有应用名字的TextView.如果我们有很多个Activity,很多个xml文件.我们该怎么编辑它们?复制粘贴将会解决这个问题,但是看上去不是高效的.一个简单的途径就是用 <em>include</em> 标签添加这个页脚到我们应用里.我们的其中一个Activity的xml文件就可以像这样:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+   <span style="color:#f92672">&gt;</span>  <span style="color:#f92672">&lt;TextView</span>    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>    <span style="color:#a6e22e">android:layout_centerInParent=</span><span style="color:#e6db74">&#34;true&#34;</span>    <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center_horizontal&#34;</span>    <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;@string/hello&#34;</span><span style="color:#f92672">/&gt;</span>  <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">layout=</span><span style="color:#e6db74">&#34;@layout/footer&#34;</span><span style="color:#f92672">/&gt;</span>
+<span style="color:#960050;background-color:#1e0010">&lt;</span>/RelativeLayout/&gt;
+</code></pre></div><p>footer的xml代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"> <span style="color:#f92672">&lt;TextView</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+        <span style="color:#a6e22e">android:layout_alignParentBottom=</span><span style="color:#e6db74">&#34;true&#34;</span>
+        <span style="color:#a6e22e">android:layout_marginBottom=</span><span style="color:#e6db74">&#34;30dp&#34;</span>
+        <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center_horizontal&#34;</span>
+        <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;@string/footer_text&#34;</span><span style="color:#f92672">/&gt;</span>
+</code></pre></div><p>在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 <em>include</em> 标签内定义android:layout_*这些属性.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span><span style="color:#f92672">&gt;</span>
 
-<pre><code class="language-xml">&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;match_parent&quot;
-   &gt;
-  &lt;TextView
-    android:layout_width=&quot;fill_parent&quot;
-    android:layout_height=&quot;wrap_content&quot;
-    android:layout_centerInParent=&quot;true&quot;
-    android:gravity=&quot;center_horizontal&quot;
-    android:text=&quot;@string/hello&quot;/&gt;
-  &lt;include layout=&quot;@layout/footer&quot;/&gt;
-&lt;/RelativeLayout/&gt;
-</code></pre>
+        <span style="color:#f92672">&lt;TextView</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+            <span style="color:#a6e22e">android:layout_centerInParent=</span><span style="color:#e6db74">&#34;true&#34;</span>
+            <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center_horizontal&#34;</span>
+            <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;@string/hello&#34;</span><span style="color:#f92672">/&gt;</span>
 
-<p>footer的xml代码:</p>
-
-<pre><code class="language-xml"> &lt;TextView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;wrap_content&quot;
-        android:layout_alignParentBottom=&quot;true&quot;
-        android:layout_marginBottom=&quot;30dp&quot;
-        android:gravity=&quot;center_horizontal&quot;
-        android:text=&quot;@string/footer_text&quot;/&gt;
-</code></pre>
-
-<p>在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 <em>include</em> 标签内定义android:layout_*这些属性.</p>
-
-<pre><code class="language-xml">&lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;fill_parent&quot;&gt;
-
-        &lt;TextView
-            android:layout_width=&quot;fill_parent&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            android:layout_centerInParent=&quot;true&quot;
-            android:gravity=&quot;center_horizontal&quot;
-            android:text=&quot;@string/hello&quot;/&gt;
-
-        &lt;include
-            layout=&quot;@layout/footer&quot;
-            android:layout_width=&quot;fill_parent&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            android:layout_alignParentBottom=&quot;true&quot;
-            android:layout_marginBottom=&quot;30dp&quot;/&gt;
-</code></pre>
-
-<p>修改过后的footer.xml:</p>
-
-<pre><code class="language-xml">&lt;TextView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-            android:layout_width=&quot;0dp&quot;
-            android:layout_height=&quot;0dp&quot;
-            android:gravity=&quot;center&quot;
-            android:text=&quot;@string/footer_text&quot;/&gt;
-</code></pre>
-
-<p>注意footer.xml中的宽和高都要设置才能被有效覆盖.</p>
-
-<h4 id="2-2-lazy-loading-views-with-the-viewstub-class:1e33089dd85e7ee1909260ca9a39f4a5">2.2 Lazy loading views with the ViewStub class</h4>
-
+        <span style="color:#f92672">&lt;include</span>
+            <span style="color:#a6e22e">layout=</span><span style="color:#e6db74">&#34;@layout/footer&#34;</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+            <span style="color:#a6e22e">android:layout_alignParentBottom=</span><span style="color:#e6db74">&#34;true&#34;</span>
+            <span style="color:#a6e22e">android:layout_marginBottom=</span><span style="color:#e6db74">&#34;30dp&#34;</span><span style="color:#f92672">/&gt;</span>
+</code></pre></div><p>修改过后的footer.xml:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;TextView</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;0dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;0dp&#34;</span>
+            <span style="color:#a6e22e">android:gravity=</span><span style="color:#e6db74">&#34;center&#34;</span>
+            <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;@string/footer_text&#34;</span><span style="color:#f92672">/&gt;</span>
+</code></pre></div><p>注意footer.xml中的宽和高都要设置才能被有效覆盖.#### 2.2 Lazy loading views with the ViewStub class</p>
 <p>ViewStub Class:</p>
-
 <blockquote>
 <p>A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. When a ViewStub is made visible, or when inflate() is invoked, the layout resource is inflated. The ViewStub then replaces itself in its parent with the inflated View or Views.</p>
 </blockquote>
-
 <p>你已经知道了ViewStub是什么,让我们来看一下该怎么用.在下面的例子中,你将会用一个ViewStub去懒加载 <em>MapView</em> .想象创建一个用来描述地方详细信息的View.我们来看以下两种情况:</p>
-
 <ul>
 <li>一些地区没有GPS信息</li>
 <li>用户可能不需要地图展示</li>
 </ul>
-
 <p>SampleCode:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">  <span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+    <span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span><span style="color:#f92672">&gt;</span>
 
-<pre><code class="language-xml">  &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-    &lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;fill_parent&quot;&gt;
+        <span style="color:#f92672">&lt;Button</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;wrap_content&#34;</span>
+            <span style="color:#a6e22e">android:text=</span><span style="color:#e6db74">&#34;@string/show_map&#34;</span>
+            <span style="color:#a6e22e">android:onClick=</span><span style="color:#e6db74">&#34;onShowMap&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;Button
-            android:layout_width=&quot;fill_parent&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            android:text=&quot;@string/show_map&quot;
-            android:onClick=&quot;onShowMap&quot;/&gt;
-
-        &lt;ViewStub
-            android:id=&quot;@+id/map_stub&quot;
-            android:layout_width=&quot;fill_parent&quot;
-            android:layout_height=&quot;fill_parent&quot;
-            android:layout=&quot;@layout/map&quot;
-            android:inflatedId=&quot;@+id/map_view&quot;/&gt;
-    &lt;/RelativeLayout&gt;
-</code></pre>
-
-<p>很明显,我们在Activity中用map_stub得到ViewStub,layout属性告诉ViewStub应该去加载哪个布局文件.</p>
-
+        <span style="color:#f92672">&lt;ViewStub</span>
+            <span style="color:#a6e22e">android:id=</span><span style="color:#e6db74">&#34;@+id/map_stub&#34;</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+            <span style="color:#a6e22e">android:layout=</span><span style="color:#e6db74">&#34;@layout/map&#34;</span>
+            <span style="color:#a6e22e">android:inflatedId=</span><span style="color:#e6db74">&#34;@+id/map_view&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
+</code></pre></div><p>很明显,我们在Activity中用map_stub得到ViewStub,layout属性告诉ViewStub应该去加载哪个布局文件.</p>
 <p>map.xml代码如下:</p>
-
-<pre><code class="language-xml">&lt;com.google.android.maps.MapView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;fill_parent&quot;
-        android:clickable=&quot;true&quot;
-        android:apiKey=&quot;my_api_key&quot;/&gt;
-</code></pre>
-
-<p>我们需要讨论的是最后这个属性android:inflatedId.我们可以用 <em>inflate()</em> 或者 <em>setVisibility</em> 方法让这个View显示出来.在这个例子中,我们用了 <em>setVisibility(View.VISIBLE)</em> ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, <em>inflate()</em> 会返回这个View避免第二次去调用 <em>findViewById()</em> .</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;com.google.android.maps.MapView</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:clickable=</span><span style="color:#e6db74">&#34;true&#34;</span>
+        <span style="color:#a6e22e">android:apiKey=</span><span style="color:#e6db74">&#34;my_api_key&#34;</span><span style="color:#f92672">/&gt;</span>
+</code></pre></div><p>我们需要讨论的是最后这个属性android:inflatedId.我们可以用 <em>inflate()</em> 或者 <em>setVisibility</em> 方法让这个View显示出来.在这个例子中,我们用了 <em>setVisibility(View.VISIBLE)</em> ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, <em>inflate()</em> 会返回这个View避免第二次去调用 <em>findViewById()</em> .</p>
 <p>Activity 代码:</p>
-
-<pre><code class="language-java"> public class MainActivity extends MapActivity {
-        private View mViewStub;
-
-
-        @Override public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.main);
-            mViewStub = findViewById(R.id.map_stub);
-        }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MainActivity</span> <span style="color:#66d9ef">extends</span> MapActivity <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">private</span> View mViewStub<span style="color:#f92672">;</span>
 
 
-        public void onShowMap(View v) {
-            mViewStub.setVisibility(View.VISIBLE);
-        }
+        <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
+            setContentView<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">.</span><span style="color:#a6e22e">main</span><span style="color:#f92672">);</span>
+            mViewStub <span style="color:#f92672">=</span> findViewById<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">map_stub</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
 
 
-        ...
-    }
-</code></pre>
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onShowMap</span><span style="color:#f92672">(</span>View v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            mViewStub<span style="color:#f92672">.</span><span style="color:#a6e22e">setVisibility</span><span style="color:#f92672">(</span>View<span style="color:#f92672">.</span><span style="color:#a6e22e">VISIBLE</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
 
-<p>就像你看见的一样,是否展示这个地图只需要改变ViewStub的 <em>visibility</em> 变量值即可.</p>
 
-<h3 id="hack-3-creating-a-custom-viewgroup-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5">Hack 3 Creating a custom ViewGroup (Android v1.6+)</h3>
-
+        <span style="color:#f92672">...</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>就像你看见的一样,是否展示这个地图只需要改变ViewStub的 <em>visibility</em> 变量值即可.</p>
+<h3 id="hack-3-creating-a-custom-viewgroup-android-v16">Hack 3 Creating a custom ViewGroup (Android v1.6+)</h3>
 <p>当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？</p>
-
-<figure>
-    <img src="/media/50hacks-1-1.png" alt="50hacks-1-1"
-    attr width="40%"  />
-</figure>
-
+<!-- raw HTML omitted -->
 <p>可以在RelativeLayout中设置margin,这是可行的.代码如下:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"> <span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+    <span style="color:#f92672">&lt;RelativeLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span><span style="color:#f92672">&gt;</span>
 
-<pre><code class="language-xml"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-    &lt;RelativeLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;fill_parent&quot;&gt;
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#FF0000&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:background=&quot;#FF0000&quot;/&gt;
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_marginLeft=</span><span style="color:#e6db74">&#34;30dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_marginTop=</span><span style="color:#e6db74">&#34;20dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#00FF00&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:layout_marginLeft=&quot;30dp&quot;
-            android:layout_marginTop=&quot;20dp&quot;
-            android:background=&quot;#00FF00&quot;/&gt;
-
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:layout_marginLeft=&quot;60dp&quot;
-            android:layout_marginTop=&quot;40dp&quot;
-            android:background=&quot;#0000FF&quot;/&gt;
-    &lt;/RelativeLayout&gt;
-</code></pre>
-
-<p>效果是介个样子的:</p>
-
-<figure>
-    <img src="/media/50hacks-1-2.png" alt="50hacks-1-2"
-    attr width="40%"  />
-</figure>
-
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_marginLeft=</span><span style="color:#e6db74">&#34;60dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_marginTop=</span><span style="color:#e6db74">&#34;40dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#0000FF&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/RelativeLayout&gt;</span>
+</code></pre></div><p>效果是介个样子的:</p>
+<!-- raw HTML omitted -->
 <p>下面介绍另外一种方式来创建相同类型的布局&ndash;创建一个自定义 <em>ViewGroup</em> .相比在xml中手动添加margins,自定义 <em>ViewGroup</em> 的优点有:</p>
-
 <blockquote>
 <ul>
 <li>It’s easier to maintain if you’re using it in differ- ent activities.</li>
-<li>You can use custom attributes to customize the position of the ViewGroup chil- dren.</li>
-<li>The XML will be easier to understand because it’ll be more concise.</li>
-<li>If you need to change the margins, you won’t need to recalculate by hand every
-child’s margin.</li>
 </ul>
 </blockquote>
-
-<h4 id="3-1-understanding-how-android-draws-views:1e33089dd85e7ee1909260ca9a39f4a5">3.1 Understanding how Android draws views</h4>
-
+<ul>
+<li>You can use custom attributes to customize the position of the ViewGroup chil- dren.</li>
+<li>The XML will be easier to understand because it’ll be more concise.</li>
+<li>If you need to change the margins, you won’t need to recalculate by hand everychild’s margin.</li>
+</ul>
+<h4 id="31-understanding-how-android-draws-views">3.1 Understanding how Android draws views</h4>
 <blockquote>
 <p>Drawing the layout is a two-pass process: a measure pass and a layout pass. The measuring pass is implemented in measure(int, int) and is a top-down traversal of the View tree. Each View pushes dimension specifications down the tree during the recursion. At the end of the measure pass, every View has stored its measurements. The second pass happens in layout(int, int, int, int) and is also top-down. During this pass each parent is responsible for positioning all of its children using the sizes computed in the measure pass.</p>
 </blockquote>
-
 <p>为了理解这个概念,我们来分析一下绘制 <em>ViewGroup</em> 的方式.第一步在 <em>onMeasure()</em> 这个方法里面去测量宽和高.在这个方法里面, <em>ViewGroup</em> 会通过里面的子视图来计算它的大小.第二步通过在 <em>onLayout()</em> 这个方法里面去放置它的子视图.在这个方法里面, <em>ViewGroup</em> 通过在 <em>onMeasure()</em> 方法里收集到子视图的信息来放置它们.</p>
-
-<h4 id="3-2-creating-the-cascadelayout:1e33089dd85e7ee1909260ca9a39f4a5">3.2 Creating the CascadeLayout</h4>
-
+<h4 id="32-creating-the-cascadelayout">3.2 Creating the CascadeLayout</h4>
 <p>xml代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;FrameLayout</span> <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">xmlns:cascade=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res-auto&#34;</span>
+    <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;match_parent&#34;</span>
+    <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;match_parent&#34;</span><span style="color:#f92672">&gt;</span>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:cascade=&quot;http://schemas.android.com/apk/res-auto&quot;
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;match_parent&quot;&gt;
+    <span style="color:#f92672">&lt;com.manning.androidhacks.hack003.view.CascadeLayout</span>
+        <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;fill_parent&#34;</span>
+        <span style="color:#a6e22e">cascade:horizontal_spacing=</span><span style="color:#e6db74">&#34;30dp&#34;</span>
+        <span style="color:#a6e22e">cascade:vertical_spacing=</span><span style="color:#e6db74">&#34;20dp&#34;</span><span style="color:#f92672">&gt;</span>
 
-    &lt;com.manning.androidhacks.hack003.view.CascadeLayout
-        android:layout_width=&quot;fill_parent&quot;
-        android:layout_height=&quot;fill_parent&quot;
-        cascade:horizontal_spacing=&quot;30dp&quot;
-        cascade:vertical_spacing=&quot;20dp&quot;&gt;
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#FF0000&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:background=&quot;#FF0000&quot;/&gt;
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#00FF00&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:background=&quot;#00FF00&quot;/&gt;
+        <span style="color:#f92672">&lt;View</span>
+            <span style="color:#a6e22e">android:layout_width=</span><span style="color:#e6db74">&#34;100dp&#34;</span>
+            <span style="color:#a6e22e">android:layout_height=</span><span style="color:#e6db74">&#34;150dp&#34;</span>
+            <span style="color:#a6e22e">android:background=</span><span style="color:#e6db74">&#34;#0000FF&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/com.manning.androidhacks.hack003.view.CascadeLayout&gt;</span>
+<span style="color:#f92672">&lt;/FrameLayout&gt;</span>
+</code></pre></div><p>接着,我们来定义这些自定义属性.在 <em>res/values</em> 这个文件夹下创建 <em>attrs.xml</em> .代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+    <span style="color:#f92672">&lt;resources&gt;</span>
 
-        &lt;View
-            android:layout_width=&quot;100dp&quot;
-            android:layout_height=&quot;150dp&quot;
-            android:background=&quot;#0000FF&quot;/&gt;
-    &lt;/com.manning.androidhacks.hack003.view.CascadeLayout&gt;
-&lt;/FrameLayout&gt;
-</code></pre>
+        <span style="color:#f92672">&lt;declare-styleable</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;CascadeLayout&#34;</span><span style="color:#f92672">&gt;</span>
 
-<p>接着,我们来定义这些自定义属性.在 <em>res/values</em> 这个文件夹下创建 <em>attrs.xml</em> .代码:</p>
+            <span style="color:#f92672">&lt;attr</span>
+                <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;horizontal_spacing&#34;</span>
+                <span style="color:#a6e22e">format=</span><span style="color:#e6db74">&#34;dimension&#34;</span><span style="color:#f92672">/&gt;</span>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-    &lt;resources&gt;
-
-        &lt;declare-styleable name=&quot;CascadeLayout&quot;&gt;
-
-            &lt;attr
-                name=&quot;horizontal_spacing&quot;
-                format=&quot;dimension&quot;/&gt;
-
-            &lt;attr
-                name=&quot;vertical_spacing&quot;
-                format=&quot;dimension&quot;/&gt;
-        &lt;/declare-styleable&gt;
-    &lt;/resources&gt;
-</code></pre>
-
-<p>在 <em>res/values/dimens.xml</em> 中定义自定义属性的值.</p>
-
-<pre><code class="language-xml"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-    &lt;resources&gt;
-        &lt;dimen name=&quot;cascade_horizontal_spacing&quot;&gt;10dp&lt;/dimen&gt;
-        &lt;dimen name=&quot;cascade_vertical_spacing&quot;&gt;10dp&lt;/dimen&gt;
-    &lt;/resources&gt;
-</code></pre>
-
-<p>在理解完Android怎样绘制视图后,你可能该想着去创建一个 <em>CascadeLayout</em> 的类去继承 <em>ViewGroup</em> ,在这个类里面去重写 <em>onMeasure()</em> 和 <em>onLayout()</em> 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, <em>onMeasure()</em> , <em>onLayout()</em> .
+            <span style="color:#f92672">&lt;attr</span>
+                <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;vertical_spacing&#34;</span>
+                <span style="color:#a6e22e">format=</span><span style="color:#e6db74">&#34;dimension&#34;</span><span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;/declare-styleable&gt;</span>
+    <span style="color:#f92672">&lt;/resources&gt;</span>
+</code></pre></div><p>在 <em>res/values/dimens.xml</em> 中定义自定义属性的值.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"> <span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+    <span style="color:#f92672">&lt;resources&gt;</span>
+        <span style="color:#f92672">&lt;dimen</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;cascade_horizontal_spacing&#34;</span><span style="color:#f92672">&gt;</span>10dp<span style="color:#f92672">&lt;/dimen&gt;</span>
+        <span style="color:#f92672">&lt;dimen</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;cascade_vertical_spacing&#34;</span><span style="color:#f92672">&gt;</span>10dp<span style="color:#f92672">&lt;/dimen&gt;</span>
+    <span style="color:#f92672">&lt;/resources&gt;</span>
+</code></pre></div><p>在理解完Android怎样绘制视图后,你可能该想着去创建一个 <em>CascadeLayout</em> 的类去继承 <em>ViewGroup</em> ,在这个类里面去重写 <em>onMeasure()</em> 和 <em>onLayout()</em> 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, <em>onMeasure()</em> , <em>onLayout()</em> .
 下面是构造方法的代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CascadeLayout</span> <span style="color:#66d9ef">extends</span> ViewGroup <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> mHorizontalSpacing<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> mVerticalSpacing<span style="color:#f92672">;</span>
 
-<pre><code class="language-java">public class CascadeLayout extends ViewGroup {
-    private int mHorizontalSpacing;
-    private int mVerticalSpacing;
+    <span style="color:#75715e">// Constructor called when view instance is created from an XML file.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">CascadeLayout</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> AttributeSet attrs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#75715e">// mHorizontalSpacing and mVerticalSpacing are read from custom attributes. If they’re not present, use default values.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> attrs<span style="color:#f92672">);</span>
+        TypedArray a <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span><span style="color:#a6e22e">obtainStyledAttributes</span><span style="color:#f92672">(</span>attrs<span style="color:#f92672">,</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">styleable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CascadeLayout</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            mHorizontalSpacing <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span><span style="color:#a6e22e">getDimensionPixelSize</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">styleable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CascadeLayout_horizontal_spacing</span><span style="color:#f92672">,</span>
+                    getResources<span style="color:#f92672">().</span><span style="color:#a6e22e">getDimensionPixelSize</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">dimen</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cascade_horizontal_spacing</span><span style="color:#f92672">));</span>
+            mVerticalSpacing <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span><span style="color:#a6e22e">getDimensionPixelSize</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">styleable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CascadeLayout_vertical_spacing</span><span style="color:#f92672">,</span>
+                    getResources<span style="color:#f92672">().</span><span style="color:#a6e22e">getDimensionPixelSize</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">dimen</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cascade_vertical_spacing</span><span style="color:#f92672">));</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">finally</span> <span style="color:#f92672">{</span>
+            a<span style="color:#f92672">.</span><span style="color:#a6e22e">recycle</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
 
-    // Constructor called when view instance is created from an XML file.
-    public CascadeLayout(Context context, AttributeSet attrs) {
-        // mHorizontalSpacing and mVerticalSpacing are read from custom attributes. If they’re not present, use default values.
-        super(context, attrs);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CascadeLayout);
-        try {
-            mHorizontalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_horizontal_spacing,
-                    getResources().getDimensionPixelSize(R.dimen.cascade_horizontal_spacing));
-            mVerticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_vertical_spacing,
-                    getResources().getDimensionPixelSize(R.dimen.cascade_vertical_spacing));
-        } finally {
-            a.recycle();
-        }
-    }
-
-    ...
-</code></pre>
-
-<p>在 <em>onMeasure()</em> 这个方法里面写代码前,我们创建一个自定义的 <em>LayoutParams</em> 类,作为 <em>CascadeLayout</em> 的内部类,为每一个子view保留x,y的坐标值.代码:</p>
-
-<pre><code class="language-java">public static class LayoutParams extends ViewGroup.LayoutParams {
-        int x;
-        int y;
+    <span style="color:#f92672">...</span>
+</code></pre></div><p>在 <em>onMeasure()</em> 这个方法里面写代码前,我们创建一个自定义的 <em>LayoutParams</em> 类,作为 <em>CascadeLayout</em> 的内部类,为每一个子view保留x,y的坐标值.代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LayoutParams</span> <span style="color:#66d9ef">extends</span> ViewGroup<span style="color:#f92672">.</span><span style="color:#a6e22e">LayoutParams</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> x<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> y<span style="color:#f92672">;</span>
 
 
-        public LayoutParams(Context context, AttributeSet attrs) {
-            super(context, attrs);
-        }
+        <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">LayoutParams</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> AttributeSet attrs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> attrs<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
 
 
-        public LayoutParams(int w, int h) {
-            super(w, h);
-        }
-    }
-</code></pre>
-
-<p>为了去使用 <em>CascadeLayout.LayoutParams</em> 这个类,我们需要在 <em>CascadeLayout</em> 这个类中重写一些额外的方法: <em>checkLayoutParams()</em> , <em>generateDefaultLayoutParams()</em> , <em>generateLayoutParams(AttributeSet attrs)</em> , <em>generateLayoutParams(ViewGroup.LayoutParams p)</em> .代码:</p>
-
-<pre><code class="language-java">    @Override protected boolean checkLayoutParams(ViewGroup.LayoutParams p) {
-        return p instanceof LayoutParams;
-    }
+        <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">LayoutParams</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> w<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> h<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>w<span style="color:#f92672">,</span> h<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>为了去使用 <em>CascadeLayout.LayoutParams</em> 这个类,我们需要在 <em>CascadeLayout</em> 这个类中重写一些额外的方法: <em>checkLayoutParams()</em> , <em>generateDefaultLayoutParams()</em> , <em>generateLayoutParams(AttributeSet attrs)</em> , <em>generateLayoutParams(ViewGroup.LayoutParams p)</em> .代码:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">checkLayoutParams</span><span style="color:#f92672">(</span>ViewGroup<span style="color:#f92672">.</span><span style="color:#a6e22e">LayoutParams</span> p<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> p <span style="color:#66d9ef">instanceof</span> LayoutParams<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
 
 
-    @Override protected LayoutParams generateDefaultLayoutParams() {
-        return new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-    }
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">protected</span> LayoutParams <span style="color:#a6e22e">generateDefaultLayoutParams</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> LayoutParams<span style="color:#f92672">(</span>LayoutParams<span style="color:#f92672">.</span><span style="color:#a6e22e">WRAP_CONTENT</span><span style="color:#f92672">,</span> LayoutParams<span style="color:#f92672">.</span><span style="color:#a6e22e">WRAP_CONTENT</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
 
 
-    @Override public LayoutParams generateLayoutParams(AttributeSet attrs) {
-        return new LayoutParams(getContext(), attrs);
-    }
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> LayoutParams <span style="color:#a6e22e">generateLayoutParams</span><span style="color:#f92672">(</span>AttributeSet attrs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> LayoutParams<span style="color:#f92672">(</span>getContext<span style="color:#f92672">(),</span> attrs<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
 
 
-    @Override protected LayoutParams generateLayoutParams(ViewGroup.LayoutParams p) {
-        return new LayoutParams(p.width, p.height);
-    }
-</code></pre>
-
-<p><em>onMeasure()</em> ,是这个类的关键.</p>
-
-<pre><code class="language-java">@Override
-protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-	     // Use width and height to calculate layout’s final size and children’s x and y positions.
-        int width = 0;
-        int height = getPaddingTop();
-        final int count = getChildCount();
-        for (int i = 0; i &lt; count; i++) {
-            View child = getChildAt(i);
-            // Make every child measure itself.
-            measureChild(child, widthMeasureSpec, heightMeasureSpec);
-            ￼LayoutParams lp = (LayoutParams) child.getLayoutParams();
-            width = getPaddingLeft() + mHorizontalSpacing * i;
-            lp.x = width;
-            lp.y = height;
-            width += child.getMeasuredWidth();
-            height += mVerticalSpacing;
-        }
-        width += getPaddingRight();
-        height += getChildAt(getChildCount() - 1).getMeasuredHeight() + getPaddingBottom();
-        // Uses calculated width and height to set measured dimensions of whole layout.
-        setMeasuredDimension(resolveSize(width, widthMeasureSpec), resolveSize(height, heightMeasureSpec));
-    }
-</code></pre>
-
-<p>最后一步是创建 <em>onLayout()</em> .</p>
-
-<pre><code class="language-java">@Override
-protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        final int count = getChildCount();
-        for (int i = 0; i &lt; count; i++) {
-            View child = getChildAt(i);
-            LayoutParams lp = (LayoutParams) child.getLayoutParams();
-            child.layout(lp.x, lp.y, lp.x + child.getMeasuredWidth(), lp.y + child.getMeasuredHeight());
-        }
-    }
-</code></pre>
-
-<h4 id="3-3-adding-custom-attributes-to-the-children:1e33089dd85e7ee1909260ca9a39f4a5">3.3 Adding custom attributes to the children</h4>
-
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">protected</span> LayoutParams <span style="color:#a6e22e">generateLayoutParams</span><span style="color:#f92672">(</span>ViewGroup<span style="color:#f92672">.</span><span style="color:#a6e22e">LayoutParams</span> p<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> LayoutParams<span style="color:#f92672">(</span>p<span style="color:#f92672">.</span><span style="color:#a6e22e">width</span><span style="color:#f92672">,</span> p<span style="color:#f92672">.</span><span style="color:#a6e22e">height</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p><em>onMeasure()</em> ,是这个类的关键.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onMeasure</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> widthMeasureSpec<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> heightMeasureSpec<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	     <span style="color:#75715e">// Use width and height to calculate layout’s final size and children’s x and y positions.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">int</span> width <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span> height <span style="color:#f92672">=</span> getPaddingTop<span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> getChildCount<span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> count<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            View child <span style="color:#f92672">=</span> getChildAt<span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+            <span style="color:#75715e">// Make every child measure itself.
+</span><span style="color:#75715e"></span>            measureChild<span style="color:#f92672">(</span>child<span style="color:#f92672">,</span> widthMeasureSpec<span style="color:#f92672">,</span> heightMeasureSpec<span style="color:#f92672">);</span>
+            <span style="color:#960050;background-color:#1e0010">￼</span>LayoutParams lp <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>LayoutParams<span style="color:#f92672">)</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getLayoutParams</span><span style="color:#f92672">();</span>
+            width <span style="color:#f92672">=</span> getPaddingLeft<span style="color:#f92672">()</span> <span style="color:#f92672">+</span> mHorizontalSpacing <span style="color:#f92672">*</span> i<span style="color:#f92672">;</span>
+            lp<span style="color:#f92672">.</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> width<span style="color:#f92672">;</span>
+            lp<span style="color:#f92672">.</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> height<span style="color:#f92672">;</span>
+            width <span style="color:#f92672">+=</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getMeasuredWidth</span><span style="color:#f92672">();</span>
+            height <span style="color:#f92672">+=</span> mVerticalSpacing<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+        width <span style="color:#f92672">+=</span> getPaddingRight<span style="color:#f92672">();</span>
+        height <span style="color:#f92672">+=</span> getChildAt<span style="color:#f92672">(</span>getChildCount<span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">getMeasuredHeight</span><span style="color:#f92672">()</span> <span style="color:#f92672">+</span> getPaddingBottom<span style="color:#f92672">();</span>
+        <span style="color:#75715e">// Uses calculated width and height to set measured dimensions of whole layout.
+</span><span style="color:#75715e"></span>        setMeasuredDimension<span style="color:#f92672">(</span>resolveSize<span style="color:#f92672">(</span>width<span style="color:#f92672">,</span> widthMeasureSpec<span style="color:#f92672">),</span> resolveSize<span style="color:#f92672">(</span>height<span style="color:#f92672">,</span> heightMeasureSpec<span style="color:#f92672">));</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>最后一步是创建 <em>onLayout()</em> .</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
+<span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onLayout</span><span style="color:#f92672">(</span><span style="color:#66d9ef">boolean</span> changed<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> l<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> t<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> r<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> b<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> getChildCount<span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> count<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            View child <span style="color:#f92672">=</span> getChildAt<span style="color:#f92672">(</span>i<span style="color:#f92672">);</span>
+            LayoutParams lp <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>LayoutParams<span style="color:#f92672">)</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getLayoutParams</span><span style="color:#f92672">();</span>
+            child<span style="color:#f92672">.</span><span style="color:#a6e22e">layout</span><span style="color:#f92672">(</span>lp<span style="color:#f92672">.</span><span style="color:#a6e22e">x</span><span style="color:#f92672">,</span> lp<span style="color:#f92672">.</span><span style="color:#a6e22e">y</span><span style="color:#f92672">,</span> lp<span style="color:#f92672">.</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">+</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getMeasuredWidth</span><span style="color:#f92672">(),</span> lp<span style="color:#f92672">.</span><span style="color:#a6e22e">y</span> <span style="color:#f92672">+</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getMeasuredHeight</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h4 id="33-adding-custom-attributes-to-the-children">3.3 Adding custom attributes to the children</h4>
 <p>在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图</p>
-
-<figure>
-    <img src="/media/50hacks-1-3.png" alt="50hacks-1-3"
-    attr width="40%"  />
-</figure>
-
+<!-- raw HTML omitted -->
 <p>添加新的属性到 <em>attrs.xml</em> 中:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;declare-styleable</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;CascadeLayout_LayoutParams&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;attr</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;layout_vertical_spacing&#34;</span>
+            <span style="color:#a6e22e">format=</span><span style="color:#e6db74">&#34;dimension&#34;</span><span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/declare-styleable&gt;</span>
+</code></pre></div><p>因为这个属性名是以 *layout_* 开始的,所以它被添加到 *LayoutParams* 属性中.在 *LayoutParams* 这个构造方法中取出这个属性.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">LayoutParams</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> AttributeSet attrs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> attrs<span style="color:#f92672">);</span>
+        TypedArray a <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span><span style="color:#a6e22e">obtainStyledAttributes</span><span style="color:#f92672">(</span>attrs<span style="color:#f92672">,</span> R<span style="color:#f92672">.</span><span style="color:#a6e22e">styleable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CascadeLayout_LayoutParams</span><span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
+            verticalSpacing <span style="color:#f92672">=</span> a<span style="color:#f92672">.</span><span style="color:#a6e22e">getDimensionPixelSize</span><span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">styleable</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CascadeLayout_LayoutParams_layout_vertical_spacing</span><span style="color:#f92672">,</span>
+                    <span style="color:#f92672">-</span>1<span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">finally</span> <span style="color:#f92672">{</span>
+            a<span style="color:#f92672">.</span><span style="color:#a6e22e">recycle</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
 
-<pre><code class="language-xml">&lt;declare-styleable name=&quot;CascadeLayout_LayoutParams&quot;&gt;
-        &lt;attr name=&quot;layout_vertical_spacing&quot;
-            format=&quot;dimension&quot;/&gt;
-    &lt;/declare-styleable&gt;
-</code></pre>
-
-<p>因为这个属性名是以 <em>layout_</em> 开始的,所以它被添加到 <em>LayoutParams</em> 属性中.在 <em>LayoutParams</em> 这个构造方法中取出这个属性.</p>
-
-<pre><code class="language-java"> public LayoutParams(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CascadeLayout_LayoutParams);
-        try {
-            verticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_LayoutParams_layout_vertical_spacing,
-                    -1);
-        } finally {
-            a.recycle();
-        }
-    }
-
-</code></pre>
-
-<p><em>verticalSpacing</em> 是一个 <em>public field</em> .我们会在 <em>CascadeLayout</em> 中用到,如果子视图的 <em>LayoutParams</em> 中包含 <em>verticalSpacing</em> ,我们就可以使用它.</p>
-
-<pre><code class="language-java"> verticalSpacing = mVerticalSpacing;
-        ...
-        LayoutParams lp = (LayoutParams) child.getLayoutParams();
-        if (lp.verticalSpacing &gt;= 0) {
-            verticalSpacing = lp.verticalSpacing;
-        }
-        ...
-        width += child.getMeasuredWidth();
-        height += verticalSpacing;
-</code></pre>
-
-<h3 id="hack-4-preferences-hacks-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5">Hack 4 Preferences hacks (Android v1.6+)</h3>
-
+</code></pre></div><p><em>verticalSpacing</em> 是一个 <em>public field</em> .我们会在 <em>CascadeLayout</em> 中用到,如果子视图的 <em>LayoutParams</em> 中包含 <em>verticalSpacing</em> ,我们就可以使用它.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> verticalSpacing <span style="color:#f92672">=</span> mVerticalSpacing<span style="color:#f92672">;</span>
+        <span style="color:#f92672">...</span>
+        LayoutParams lp <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>LayoutParams<span style="color:#f92672">)</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getLayoutParams</span><span style="color:#f92672">();</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lp<span style="color:#f92672">.</span><span style="color:#a6e22e">verticalSpacing</span> <span style="color:#f92672">&gt;=</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            verticalSpacing <span style="color:#f92672">=</span> lp<span style="color:#f92672">.</span><span style="color:#a6e22e">verticalSpacing</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#f92672">...</span>
+        width <span style="color:#f92672">+=</span> child<span style="color:#f92672">.</span><span style="color:#a6e22e">getMeasuredWidth</span><span style="color:#f92672">();</span>
+        height <span style="color:#f92672">+=</span> verticalSpacing<span style="color:#f92672">;</span>
+</code></pre></div><h3 id="hack-4-preferences-hacks-android-v16">Hack 4 Preferences hacks (Android v1.6+)</h3>
 <p>定义一个偏好设置界面,只需要写一些xml,就可以快速生成.大家看代码就可以懂了,跟自定义view类似.</p>
-
 <p>效果图:</p>
-
-<figure>
-    <img src="/media/50hacks-1-4.png" alt="50hacks-1-4"
-    attr width="40%"  />
-</figure>
-
+<!-- raw HTML omitted -->
 <p>在 <em>res/xml</em> 中创建 <em>prefs.xml</em> .</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;!--
+</span><span style="color:#75715e">  Copyright (c) 2012 Manning
+</span><span style="color:#75715e">  See the file license.txt for copying permission.
+</span><span style="color:#75715e">--&gt;</span>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;!--
-  Copyright (c) 2012 Manning
-  See the file license.txt for copying permission.
---&gt;
+<span style="color:#f92672">&lt;PreferenceScreen</span>
+    <span style="color:#a6e22e">xmlns:android=</span><span style="color:#e6db74">&#34;http://schemas.android.com/apk/res/android&#34;</span>
+    <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_first_preferencescreen_key&#34;</span>
+    <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Preferences&#34;</span><span style="color:#f92672">&gt;</span>
 
-&lt;PreferenceScreen
-    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    android:key=&quot;pref_first_preferencescreen_key&quot;
-    android:title=&quot;Preferences&quot;&gt;
+    <span style="color:#f92672">&lt;PreferenceCategory</span>
+        <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;User&#34;</span><span style="color:#f92672">&gt;</span>
 
-    &lt;PreferenceCategory
-        android:title=&quot;User&quot;&gt;
+        <span style="color:#f92672">&lt;EditTextPreference</span>
+            <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_username&#34;</span>
+            <span style="color:#a6e22e">android:summary=</span><span style="color:#e6db74">&#34;Username:&#34;</span>
+            <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Username&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;EditTextPreference
-            android:key=&quot;pref_username&quot;
-            android:summary=&quot;Username:&quot;
-            android:title=&quot;Username&quot;/&gt;
+    <span style="color:#f92672">&lt;/PreferenceCategory&gt;</span>
 
-    &lt;/PreferenceCategory&gt;
+    <span style="color:#f92672">&lt;PreferenceCategory</span>
+        <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Application&#34;</span><span style="color:#f92672">&gt;</span>
 
-    &lt;PreferenceCategory
-        android:title=&quot;Application&quot;&gt;
+        <span style="color:#f92672">&lt;Preference</span>
+            <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_rate&#34;</span>
+            <span style="color:#a6e22e">android:summary=</span><span style="color:#e6db74">&#34;Rate the app in the store!&#34;</span>
+            <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Rate the app&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;Preference
-            android:key=&quot;pref_rate&quot;
-            android:summary=&quot;Rate the app in the store!&quot;
-            android:title=&quot;Rate the app&quot;/&gt;
+        <span style="color:#f92672">&lt;Preference</span>
+            <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_share&#34;</span>
+            <span style="color:#a6e22e">android:summary=</span><span style="color:#e6db74">&#34;Share the app with your friends&#34;</span>
+            <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Share it&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;Preference
-            android:key=&quot;pref_share&quot;
-            android:summary=&quot;Share the app with your friends&quot;
-            android:title=&quot;Share it&quot;/&gt;
+        <span style="color:#f92672">&lt;com.manning.androidhacks.hack004.preference.EmailDialog</span>
+            <span style="color:#a6e22e">android:dialogIcon=</span><span style="color:#e6db74">&#34;@drawable/ic_launcher&#34;</span>
+            <span style="color:#a6e22e">android:dialogTitle=</span><span style="color:#e6db74">&#34;Send Feedback&#34;</span>
+            <span style="color:#a6e22e">android:dialogMessage=</span><span style="color:#e6db74">&#34;Do you want to send an email with feedback?&#34;</span>
+            <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_sendemail_key&#34;</span>
+            <span style="color:#a6e22e">android:negativeButtonText=</span><span style="color:#e6db74">&#34;Cancel&#34;</span>
+            <span style="color:#a6e22e">android:positiveButtonText=</span><span style="color:#e6db74">&#34;OK&#34;</span>
+            <span style="color:#a6e22e">android:summary=</span><span style="color:#e6db74">&#34;Send your feedback by e-mail&#34;</span>
+            <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;Send Feedback&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;com.manning.androidhacks.hack004.preference.EmailDialog
-            android:dialogIcon=&quot;@drawable/ic_launcher&quot;
-            android:dialogTitle=&quot;Send Feedback&quot;
-            android:dialogMessage=&quot;Do you want to send an email with feedback?&quot;
-            android:key=&quot;pref_sendemail_key&quot;
-            android:negativeButtonText=&quot;Cancel&quot;
-            android:positiveButtonText=&quot;OK&quot;
-            android:summary=&quot;Send your feedback by e-mail&quot;
-            android:title=&quot;Send Feedback&quot;/&gt;
+        <span style="color:#f92672">&lt;com.manning.androidhacks.hack004.preference.AboutDialog</span>
+            <span style="color:#a6e22e">android:dialogIcon=</span><span style="color:#e6db74">&#34;@drawable/ic_launcher&#34;</span>
+            <span style="color:#a6e22e">android:dialogTitle=</span><span style="color:#e6db74">&#34;About&#34;</span>
+            <span style="color:#a6e22e">android:key=</span><span style="color:#e6db74">&#34;pref_about_key&#34;</span>
+            <span style="color:#a6e22e">android:negativeButtonText=</span><span style="color:#e6db74">&#34;@null&#34;</span>
+            <span style="color:#a6e22e">android:title=</span><span style="color:#e6db74">&#34;About&#34;</span><span style="color:#f92672">/&gt;</span>
 
-        &lt;com.manning.androidhacks.hack004.preference.AboutDialog
-            android:dialogIcon=&quot;@drawable/ic_launcher&quot;
-            android:dialogTitle=&quot;About&quot;
-            android:key=&quot;pref_about_key&quot;
-            android:negativeButtonText=&quot;@null&quot;
-            android:title=&quot;About&quot;/&gt;
+    <span style="color:#f92672">&lt;/PreferenceCategory&gt;</span>
 
-    &lt;/PreferenceCategory&gt;
+<span style="color:#f92672">&lt;/PreferenceScreen&gt;</span>
 
-&lt;/PreferenceScreen&gt;
+</code></pre></div><p>xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 <em>android.preference.PreferenceActivity</em> .</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MainActivity</span> <span style="color:#66d9ef">extends</span> PreferenceActivity <span style="color:#66d9ef">implements</span>
+    OnSharedPreferenceChangeListener <span style="color:#f92672">{</span>
 
-</code></pre>
+  <span style="color:#a6e22e">@Override</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>Bundle savedInstanceState<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onCreate</span><span style="color:#f92672">(</span>savedInstanceState<span style="color:#f92672">);</span>
+    addPreferencesFromResource<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">xml</span><span style="color:#f92672">.</span><span style="color:#a6e22e">prefs</span><span style="color:#f92672">);</span>
 
-<p>xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 <em>android.preference.PreferenceActivity</em> .</p>
+    Preference sharePref <span style="color:#f92672">=</span> findPreference<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pref_share&#34;</span><span style="color:#f92672">);</span>
+    Intent shareIntent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">();</span>
+    shareIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">setAction</span><span style="color:#f92672">(</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_SEND</span><span style="color:#f92672">);</span>
+    shareIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">setType</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;text/plain&#34;</span><span style="color:#f92672">);</span>
+    shareIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">EXTRA_SUBJECT</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Check this app!&#34;</span><span style="color:#f92672">);</span>
+    shareIntent<span style="color:#f92672">.</span><span style="color:#a6e22e">putExtra</span><span style="color:#f92672">(</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">EXTRA_TEXT</span><span style="color:#f92672">,</span>
+        <span style="color:#e6db74">&#34;Check this awesome app at: ...&#34;</span><span style="color:#f92672">);</span>
+    sharePref<span style="color:#f92672">.</span><span style="color:#a6e22e">setIntent</span><span style="color:#f92672">(</span>shareIntent<span style="color:#f92672">);</span>
 
-<pre><code class="language-java">public class MainActivity extends PreferenceActivity implements
-    OnSharedPreferenceChangeListener {
+    Preference ratePref <span style="color:#f92672">=</span> findPreference<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pref_rate&#34;</span><span style="color:#f92672">);</span>
+    Uri uri <span style="color:#f92672">=</span> Uri<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;market://details?id=&#34;</span> <span style="color:#f92672">+</span> getPackageName<span style="color:#f92672">());</span>
+    Intent goToMarket <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>Intent<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_VIEW</span><span style="color:#f92672">,</span> uri<span style="color:#f92672">);</span>
+    ratePref<span style="color:#f92672">.</span><span style="color:#a6e22e">setIntent</span><span style="color:#f92672">(</span>goToMarket<span style="color:#f92672">);</span>
 
-  @Override
-  public void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    addPreferencesFromResource(R.xml.prefs);
+    updateUserText<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
 
-    Preference sharePref = findPreference(&quot;pref_share&quot;);
-    Intent shareIntent = new Intent();
-    shareIntent.setAction(Intent.ACTION_SEND);
-    shareIntent.setType(&quot;text/plain&quot;);
-    shareIntent.putExtra(Intent.EXTRA_SUBJECT, &quot;Check this app!&quot;);
-    shareIntent.putExtra(Intent.EXTRA_TEXT,
-        &quot;Check this awesome app at: ...&quot;);
-    sharePref.setIntent(shareIntent);
+  <span style="color:#a6e22e">@Override</span>
+  <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onResume</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onResume</span><span style="color:#f92672">();</span>
 
-    Preference ratePref = findPreference(&quot;pref_rate&quot;);
-    Uri uri = Uri.parse(&quot;market://details?id=&quot; + getPackageName());
-    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
-    ratePref.setIntent(goToMarket);
+    getPreferenceScreen<span style="color:#f92672">().</span><span style="color:#a6e22e">getSharedPreferences</span><span style="color:#f92672">()</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">registerOnSharedPreferenceChangeListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
 
-    updateUserText();
-  }
+  <span style="color:#f92672">}</span>
 
-  @Override
-  protected void onResume() {
-    super.onResume();
+  <span style="color:#a6e22e">@Override</span>
+  <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onPause</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onPause</span><span style="color:#f92672">();</span>
 
-    getPreferenceScreen().getSharedPreferences()
-        .registerOnSharedPreferenceChangeListener(this);
+    getPreferenceScreen<span style="color:#f92672">().</span><span style="color:#a6e22e">getSharedPreferences</span><span style="color:#f92672">()</span>
+        <span style="color:#f92672">.</span><span style="color:#a6e22e">unregisterOnSharedPreferenceChangeListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
 
-  }
+  <span style="color:#a6e22e">@Override</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onSharedPreferenceChanged</span><span style="color:#f92672">(</span>
+      SharedPreferences sharedPreferences<span style="color:#f92672">,</span> String key<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 
-  @Override
-  protected void onPause() {
-    super.onPause();
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>key<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pref_username&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+      updateUserText<span style="color:#f92672">();</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
 
-    getPreferenceScreen().getSharedPreferences()
-        .unregisterOnSharedPreferenceChangeListener(this);
-  }
+  <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">updateUserText</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    EditTextPreference pref<span style="color:#f92672">;</span>
+    pref <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>EditTextPreference<span style="color:#f92672">)</span> findPreference<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pref_username&#34;</span><span style="color:#f92672">);</span>
+    String user <span style="color:#f92672">=</span> pref<span style="color:#f92672">.</span><span style="color:#a6e22e">getText</span><span style="color:#f92672">();</span>
 
-  @Override
-  public void onSharedPreferenceChanged(
-      SharedPreferences sharedPreferences, String key) {
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>user <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      user <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;?&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
 
-    if (key.equals(&quot;pref_username&quot;)) {
-      updateUserText();
-    }
-  }
+    pref<span style="color:#f92672">.</span><span style="color:#a6e22e">setSummary</span><span style="color:#f92672">(</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Username: %s&#34;</span><span style="color:#f92672">,</span> user<span style="color:#f92672">));</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>自定义一个 <em>preferences</em> 就像自定义view一样.为了更好地理解它,我们来看一下 <em>EmailDialog</em> 这个类的代码.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Custom class should extend some of existing preferences widgets. In this case, we’ll use DialogPreference.
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EmailDialog</span> <span style="color:#66d9ef">extends</span> DialogPreference <span style="color:#f92672">{</span>
+  Context mContext<span style="color:#f92672">;</span>
 
-  private void updateUserText() {
-    EditTextPreference pref;
-    pref = (EditTextPreference) findPreference(&quot;pref_username&quot;);
-    String user = pref.getText();
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">EmailDialog</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
 
-    if (user == null) {
-      user = &quot;?&quot;;
-    }
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">EmailDialog</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> AttributeSet attrs<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> attrs<span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
 
-    pref.setSummary(String.format(&quot;Username: %s&quot;, user));
-  }
-}
-</code></pre>
+  <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">EmailDialog</span><span style="color:#f92672">(</span>Context context<span style="color:#f92672">,</span> AttributeSet attrs<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> defStyle<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 
-<p>自定义一个 <em>preferences</em> 就像自定义view一样.为了更好地理解它,我们来看一下 <em>EmailDialog</em> 这个类的代码.</p>
+  <span style="color:#75715e">// Constructors are the same as those used to create a custom view extending the View class.
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span>context<span style="color:#f92672">,</span> attrs<span style="color:#f92672">,</span> defStyle<span style="color:#f92672">);</span>
+    mContext <span style="color:#f92672">=</span> context<span style="color:#f92672">;</span>
+  <span style="color:#f92672">}</span>
 
-<pre><code class="language-java">// Custom class should extend some of existing preferences widgets. In this case, we’ll use DialogPreference.
+  <span style="color:#75715e">// onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
+</span><span style="color:#75715e"></span>
+  <span style="color:#a6e22e">@Override</span>
+  <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>DialogInterface dialog<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">super</span><span style="color:#f92672">.</span><span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>dialog<span style="color:#f92672">,</span> which<span style="color:#f92672">);</span>
 
-public class EmailDialog extends DialogPreference {
-  Context mContext;
-
-  public EmailDialog(Context context) {
-    this(context, null);
-  }
-
-  public EmailDialog(Context context, AttributeSet attrs) {
-    this(context, attrs, 0);
-  }
-
-  public EmailDialog(Context context, AttributeSet attrs, int defStyle) {
-
-  // Constructors are the same as those used to create a custom view extending the View class.
-
-    super(context, attrs, defStyle);
-    mContext = context;
-  }
-
-  // onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
-
-  @Override
-  public void onClick(DialogInterface dialog, int which) {
-    super.onClick(dialog, which);
-
-    if (DialogInterface.BUTTON_POSITIVE == which) {
-      LaunchEmailUtil.launchEmailToIntent(mContext);
-    }
-  }
-}
-</code></pre>
-
-<p>好了,以上就是这本书的第一章了,完成了4/50.有什么不对的,或者建议,大家可以直接留言给我,也可以给我发邮件.</p>
-
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>DialogInterface<span style="color:#f92672">.</span><span style="color:#a6e22e">BUTTON_POSITIVE</span> <span style="color:#f92672">==</span> which<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+      LaunchEmailUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">launchEmailToIntent</span><span style="color:#f92672">(</span>mContext<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>好了,以上就是这本书的第一章了,完成了4/50.有什么不对的,或者建议,大家可以直接留言给我,也可以给我发邮件.</p>
 <p>15年就这么过去了,元旦那天朋友圈里,公众号里大家都在忙着自我检讨.想了想去年除了像每年一样都感觉孤独外,还有就是焦虑,每天都在焦虑.这一年有努力,有懈怠,有期待,有迷茫.知乎上的名字是taken2016,还没来得及改.记得当初起这名是想16年是收获的一年,而如今已经步入16年了.今年真的会是收获的一年咩?实在不行就换成taken2017吧:)不断积累,期待着,期待着.</p>
-
 <p>好了,写了点没用的.希望写的东西对大家有用,非常期待大家对我的建议,无论是生活上还是技术上.毕竟我还是个刚入职不到一年的小菜鸟~~</p>
-
 <p>有的朋友给我发邮件说这书太老,已经没有翻译的价值,况且世面上已经有中文版了.我去找了下确实,而且还有相应的中文PDF.所以我不打算再写后边的关于这书的篇章了.</p>
-
 <p>有兴趣的小伙伴可以边看边参考完整的代码.<a href="https://github.com/Macarse/50AH-code">本书github项目地址</a></p>
-
 <p>最后,祝好:)</p>
-
         </article>
   </div>
 </section>
@@ -839,20 +698,25 @@ public class EmailDialog extends DialogPreference {
 <aside id=comments>
     <div><h2> Comments </h2></div>
     <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'https:\/\/sunxu.work\/android\/android-50-hack-part-1\/';
-    var disqus_title = '《Android 50 Hacks》读书笔记-布局篇';
-    var disqus_url = 'https:\/\/sunxu.work\/android\/android-50-hack-part-1\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taken2016" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </aside>
 
 <footer>
@@ -872,11 +736,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

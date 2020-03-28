@@ -53,7 +53,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -77,6 +77,8 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
+
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -184,7 +186,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="151">
+<meta itemprop="wordCount" content="159">
 <meta itemprop="datePublished" content="2015-12-11">
 <meta itemprop="url" content="https://sunxu.work/android/commit-what-to-github-in-as/">
 
@@ -192,11 +194,8 @@
   <div>
         <article itemprop="articleBody" id="content">
            <p>在知乎上看到的提问,原问题链接: <a href="http://www.zhihu.com/question/37910193">http://www.zhihu.com/question/37910193</a></p>
-
 <p>当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？</p>
-
 <p>查阅相关资料:</p>
-
 <ol>
 <li><a href="http://www.jetbrains.com/idea/help/project.html">http://www.jetbrains.com/idea/help/project.html</a></li>
 <li><a href="http://qiita.com/amanoiverse/items/71b7dccf992b33930c35">http://qiita.com/amanoiverse/items/71b7dccf992b33930c35</a></li>
@@ -206,11 +205,8 @@
 <li><a href="https://github.com/JakeWharton/butterknife/blob/master/.gitignore">https://github.com/JakeWharton/butterknife/blob/master/.gitignore</a></li>
 <li><a href="https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore">https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore</a></li>
 </ol>
-
 <p>找了一些资料后,每个给出的答案都不一样,我把上面的答案总结后融合了一下添加到平常在在本地练习的 <em>.gitignore</em> 文件中,并上传到Github上然后down下来重新导入,发现导入没有任何异常,运行顺利.</p>
-
 <p>融合后的 <em>.gitignore</em> :</p>
-
 <pre><code># IntelliJ IDEA
 .idea
 *.iml
@@ -272,9 +268,7 @@ proguard/
 #NDK
 obj/
 jniLibs
-</code></pre>
-
-<p>上传到GitHub后的项目预览:
+</code></pre><p>上传到GitHub后的项目预览:
 
 <figure >
     
@@ -284,37 +278,19 @@ jniLibs
 </figure>
 
 </p>
-
 <p>不需要额外的配置即可导入运行,那么这个融合的了 <em>.gitignore</em> 就是可行的.</p>
-
 <p>回过头再来看Android Studio中的 <em>.gitignore</em>,发现有绿色的代码,也有灰色的代码,当把鼠标移过去也会有不一样的提示.</p>
-
-
-<figure >
-    
-        <img src="/media/test-gitignore-covered.png" alt="test-gitignore-covered" />
-    
-    
-</figure>
-
-
-
+<!-- raw HTML omitted -->
+<pre><code>    &lt;img src=&quot;/media/test-gitignore-covered.png&quot; alt=&quot;test-gitignore-covered&quot; /&gt;
+</code></pre>
+<!-- raw HTML omitted -->
 <p>有这种提示的就是文件已经包含在其他的文件夹中,可以删除这些文件.</p>
-
-
-<figure >
-    
-        <img src="/media/test-gitignore-never-used.png" alt="test-gitignore-never-used" />
-    
-    
-</figure>
-
-
-
-<p>有这种提示的就是工程中不包含这种文件,没必要申明在 *.gitignore*文件中,也可删除.</p>
-
-<p>那么我们删除了上述这种文件后, *.gitignore*马上就变得清爽起来.</p>
-
+<!-- raw HTML omitted -->
+<pre><code>    &lt;img src=&quot;/media/test-gitignore-never-used.png&quot; alt=&quot;test-gitignore-never-used&quot; /&gt;
+</code></pre>
+<!-- raw HTML omitted -->
+<p>有这种提示的就是工程中不包含这种文件,没必要申明在 <em>.gitignore</em>文件中,也可删除.</p>
+<p>那么我们删除了上述这种文件后, <em>.gitignore</em>马上就变得清爽起来.</p>
 <pre><code># IntelliJ IDEA
 .idea
 *.iml
@@ -328,24 +304,23 @@ local.properties
 
 # Mac system files
 .DS_Store
-</code></pre>
-
-<p>为了科学严谨性,再次上传包含这份 <em>.gitignore</em> 的代码到GitHub中,结构跟上面的图显示是一样的.</p>
-
+</code></pre><p>为了科学严谨性,再次上传包含这份 <em>.gitignore</em> 的代码到GitHub中,结构跟上面的图显示是一样的.</p>
 <p>再次down下来导入AS,运行依旧顺利.</p>
-
 <p>总结:</p>
-
 <ul>
-<li><p>我们当然可以把融合后比较多的代码模板复制到自己的 *.gitignore*文件中,这样会容错率高,有助于防止多传一些没必要的东西.</p></li>
-
-<li><p>也可以根据自己代码的实际情况根据提示,决定究竟该上传些什么代码,但应该大于等于上面最后这段代码.(如项目中用到了NDK,就可以加上/obj)</p></li>
-
-<li><p>总之就是提供给大家一种思路,才疏学浅,还请大家多多提意见给我.</p></li>
-
-<li><p>最后,祝好:)</p></li>
+<li>
+<p>我们当然可以把融合后比较多的代码模板复制到自己的 <em>.gitignore</em>文件中,这样会容错率高,有助于防止多传一些没必要的东西.</p>
+</li>
+<li>
+<p>也可以根据自己代码的实际情况根据提示,决定究竟该上传些什么代码,但应该大于等于上面最后这段代码.(如项目中用到了NDK,就可以加上/obj)</p>
+</li>
+<li>
+<p>总之就是提供给大家一种思路,才疏学浅,还请大家多多提意见给我.</p>
+</li>
+<li>
+<p>最后,祝好:)</p>
+</li>
 </ul>
-
         </article>
   </div>
 </section>
@@ -353,20 +328,25 @@ local.properties
 <aside id=comments>
     <div><h2> Comments </h2></div>
     <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'https:\/\/sunxu.work\/android\/commit-what-to-github-in-as\/';
-    var disqus_title = 'Android Studio项目应该提交哪些文件到GitHub上';
-    var disqus_url = 'https:\/\/sunxu.work\/android\/commit-what-to-github-in-as\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taken2016" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </aside>
 
 <footer>
@@ -386,11 +366,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

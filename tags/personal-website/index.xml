@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Personal Website on ban&amp;pick </title>
@@ -15,79 +14,57 @@
       <pubDate>Wed, 09 Dec 2015 22:31:48 CST</pubDate>
       <author>Xu Sun</author>
       <guid>https://sunxu.work/cs/make-personal-website-by-hugo/</guid>
-      <description>
-
-&lt;h3 id=&#34;参考资料:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;参考资料&lt;/h3&gt;
-
+      <description>&lt;h3 id=&#34;参考资料&#34;&gt;参考资料&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tonybai.com/2015/09/23/intro-of-gohugo/&#34;&gt;使用Hugo搭建静态站点 - by Tony Bai&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://nanshu.wang/post/2015-01-31/&#34;&gt;Hugo静态网站生成器中文教程 - by Nanshu Wang&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点 - by Coderzh&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;阅读官方文档:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;阅读官方文档&lt;/h3&gt;
-
+&lt;h3 id=&#34;阅读官方文档&#34;&gt;阅读官方文档&lt;/h3&gt;
 &lt;p&gt;相信你读了上面的资料就会很轻松的搭建自己的博客了.如果还不是很明白,那么恭喜你,跟我一样笨.
 笨就没办法了,去&lt;a href=&#34;http://guhugo.io&#34;&gt;hugo官方网站&lt;/a&gt;读Docs.读完之后你大概能明白到底是怎么回事了,每个文件都是干什么的,怎么改模板等等,从一个小白变成一个不太白,顺便了解一下 &lt;em&gt;Go&lt;/em&gt; 语言的语法.&lt;/p&gt;
-
 &lt;p&gt;我主要写一些小技巧或者不常用,或者大家在别处没有找到的.&lt;/p&gt;
-
 &lt;p&gt;官网上值得推荐给大家的是:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://gohugo.io/community/press/&#34;&gt;关于hugo的博客&lt;/a&gt;,英文居多,也有少量中文的,自己斟酌选读.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;hugo的主题模板&lt;/a&gt;,非常符合hugo的设计理念&lt;em&gt;to be the perfect balance betweensimplicity and functionality&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;关于如何方便快捷地发布到 &lt;em&gt;Github Pages&lt;/em&gt; 上,有很多方案.利用 &lt;em&gt;wercker&lt;/em&gt; , &lt;em&gt;webhook&lt;/em&gt; 等等,上面的博客和官网都有提到,不再赘述.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;github-ribbons:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;GitHub Ribbons&lt;/h3&gt;
-
+&lt;h3 id=&#34;github-ribbons&#34;&gt;GitHub Ribbons&lt;/h3&gt;
 &lt;p&gt;设置GitHub Ribbons,Github官网给出解决方案.&lt;a href=&#34;https://github.com/blog/273-github-ribbons&#34;&gt;在这里&lt;/a&gt; 选中你喜欢的 &lt;em&gt;Ribbons&lt;/em&gt; .代码中href属性中的字段换成自己的Github网址,复制到 &lt;em&gt;/layouts/partials/head_includes.html/&lt;/em&gt; 中即可生效.&lt;/p&gt;
-
-&lt;h3 id=&#34;添加youtube:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加YouTube&lt;/h3&gt;
-
+&lt;h3 id=&#34;添加youtube&#34;&gt;添加YouTube&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=w7Ft2ymGmfc&#34;&gt;https://www.youtube.com/watch?v=w7Ft2ymGmfc&lt;/a&gt;格式是介样的.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--在文种中插入类似以下代码即可,注意后边的字符串跟你想要加入链接的YouTube的最后一段字符串对应--&amp;gt;
 {{ &amp;lt; youtube w7Ft2ymGmfc &amp;gt; }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;实际代码中 &lt;strong&gt;{{&lt;/strong&gt; 和 &lt;strong&gt;}}&lt;/strong&gt; 前面是没有空格的,这里是为了不让被系统识别成YouTube视频才故意这样写的,加入时注意去掉.&lt;/p&gt;
-
-&lt;h3 id=&#34;添加rss:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;添加RSS&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;实际代码中 &lt;strong&gt;{{&lt;/strong&gt; 和 &lt;strong&gt;}}&lt;/strong&gt; 前面是没有空格的,这里是为了不让被系统识别成YouTube视频才故意这样写的,加入时注意去掉.&lt;/p&gt;
+&lt;h3 id=&#34;添加rss&#34;&gt;添加RSS&lt;/h3&gt;
 &lt;p&gt;参考: &lt;a href=&#34;http://gohugo.io/templates/rss/&#34;&gt;http://gohugo.io/templates/rss/&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;RSS2.0模板&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;rss version=&amp;quot;2.0&amp;quot; xmlns:atom=&amp;quot;http://www.w3.org/2005/Atom&amp;quot;&amp;gt;
-  &amp;lt;channel&amp;gt;
-    &amp;lt;title&amp;gt;{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}&amp;lt;/title&amp;gt;
-    &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
-    &amp;lt;description&amp;gt;Recent content {{ with .Title }}in {{.}} {{ end }}on {{ .Site.Title }}&amp;lt;/description&amp;gt;
-    &amp;lt;generator&amp;gt;Hugo -- gohugo.io&amp;lt;/generator&amp;gt;{{ with .Site.LanguageCode }}
-    &amp;lt;language&amp;gt;{{.}}&amp;lt;/language&amp;gt;{{end}}{{ with .Site.Author.email }}
-    &amp;lt;managingEditor&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/managingEditor&amp;gt;{{end}}{{ with .Site.Author.email }}
-    &amp;lt;webMaster&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/webMaster&amp;gt;{{end}}{{ with .Site.Copyright }}
-    &amp;lt;copyright&amp;gt;{{.}}&amp;lt;/copyright&amp;gt;{{end}}{{ if not .Date.IsZero }}
-    &amp;lt;lastBuildDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/lastBuildDate&amp;gt;{{ end }}
-    &amp;lt;atom:link href=&amp;quot;{{.URL}}&amp;quot; rel=&amp;quot;self&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; /&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;rss&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;version=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2.0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:atom=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://www.w3.org/2005/Atom&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;channel&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;{{ .Permalink }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;Recent content {{ with .Title }}in {{.}} {{ end }}on {{ .Site.Title }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;generator&amp;gt;&lt;/span&gt;Hugo -- gohugo.io&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/generator&amp;gt;&lt;/span&gt;{{ with .Site.LanguageCode }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;language&amp;gt;&lt;/span&gt;{{.}}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/language&amp;gt;&lt;/span&gt;{{end}}{{ with .Site.Author.email }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;managingEditor&amp;gt;&lt;/span&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/managingEditor&amp;gt;&lt;/span&gt;{{end}}{{ with .Site.Author.email }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;webMaster&amp;gt;&lt;/span&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/webMaster&amp;gt;&lt;/span&gt;{{end}}{{ with .Site.Copyright }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;copyright&amp;gt;&lt;/span&gt;{{.}}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/copyright&amp;gt;&lt;/span&gt;{{end}}{{ if not .Date.IsZero }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;lastBuildDate&amp;gt;&lt;/span&gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/lastBuildDate&amp;gt;&lt;/span&gt;{{ end }}
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;atom:link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{.URL}}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;self&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/rss+xml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
     {{ range first 15 .Data.Pages }}
-    &amp;lt;item&amp;gt;
-      &amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
-      &amp;lt;link&amp;gt;{{ .Permalink }}&amp;lt;/link&amp;gt;
-      &amp;lt;pubDate&amp;gt;{{ .Date.Format &amp;quot;Mon, 02 Jan 2006 15:04:05 -0700&amp;quot; | safeHTML }}&amp;lt;/pubDate&amp;gt;
-      {{ with .Site.Author.email }}&amp;lt;author&amp;gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&amp;lt;/author&amp;gt;{{end}}
-      &amp;lt;guid&amp;gt;{{ .Permalink }}&amp;lt;/guid&amp;gt;
-      &amp;lt;description&amp;gt;{{ .Content | html }}&amp;lt;/description&amp;gt;
-    &amp;lt;/item&amp;gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;{{ .Title }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;{{ .Permalink }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;pubDate&amp;gt;&lt;/span&gt;{{ .Date.Format &amp;#34;Mon, 02 Jan 2006 15:04:05 -0700&amp;#34; | safeHTML }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/pubDate&amp;gt;&lt;/span&gt;
+      {{ with .Site.Author.email }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;author&amp;gt;&lt;/span&gt;{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/author&amp;gt;&lt;/span&gt;{{end}}
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;guid&amp;gt;&lt;/span&gt;{{ .Permalink }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/guid&amp;gt;&lt;/span&gt;
+      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;description&amp;gt;&lt;/span&gt;{{ .Content | html }}&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/description&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
     {{ end }}
-  &amp;lt;/channel&amp;gt;
-&amp;lt;/rss&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;把上面这段代码分别复制到&lt;/p&gt;
-
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/channel&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/rss&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把上面这段代码分别复制到&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;/layouts/rss.xml&lt;/li&gt;
 &lt;li&gt;/layouts/_default/rss.xml&lt;/li&gt;
@@ -100,30 +77,19 @@
 &lt;li&gt;/themes/THEME/layouts/taxonomy/SINGULAR.rss.xml&lt;/li&gt;
 &lt;li&gt;/themes/THEME/layouts/_default/rss.xml&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;然后在 &lt;strong&gt;/layouts/partials/header.html&lt;/strong&gt; 中的 &lt;strong&gt;head&lt;/strong&gt; 标签内加入下面这段代码即可.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;{{ if .RSSlink }}
-  &amp;lt;link href=&amp;quot;{{ .RSSlink }}&amp;quot; rel=&amp;quot;alternate&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; title=&amp;quot;{{ .Site.Title }}&amp;quot; /&amp;gt;
-  &amp;lt;link href=&amp;quot;{{ .RSSlink }}&amp;quot; rel=&amp;quot;feed&amp;quot; type=&amp;quot;application/rss+xml&amp;quot; title=&amp;quot;{{ .Site.Title }}&amp;quot; /&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;{{ if .RSSlink }}
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .RSSlink }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;alternate&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/rss+xml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .Site.Title }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .RSSlink }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;feed&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/rss+xml&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .Site.Title }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
 {{ end }}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;最后将你的RSS链接 &lt;strong&gt;(yourwebsite/index.xml)&lt;/strong&gt; 加入你想加到的地方就行了.&lt;/p&gt;
-
-&lt;h3 id=&#34;自定义图片的css样式:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;自定义图片的css样式&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后将你的RSS链接 &lt;strong&gt;(yourwebsite/index.xml)&lt;/strong&gt; 加入你想加到的地方就行了.&lt;/p&gt;
+&lt;h3 id=&#34;自定义图片的css样式&#34;&gt;自定义图片的css样式&lt;/h3&gt;
 &lt;p&gt;在 &lt;strong&gt;yourwebsite/static/static/css/style.css&lt;/strong&gt; 中找到img标签定义想要生成的图片效果.&lt;/p&gt;
-
 &lt;p&gt;就像这样:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;figure{position:relative}
 figure img,figure object,figure embed,figure video{max-width:100%;display:block}
 img{border:0;-ms-interpolation-mode:bicubic;}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;添加过后:&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;添加过后:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;figure{position:relative}
 figure img,figure object,figure embed,figure video{max-width:100%;display:block}
 img{border:0;-ms-interpolation-mode:bicubic;display: block;
@@ -134,10 +100,7 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     margin-top: 5px;
     margin-bottom: 5px;
     -webkit-box-shadow: 0 0 10px #555;}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这个是扒&lt;a href=&#34;www.yinwang.org&#34;&gt;王垠博客&lt;/a&gt;的图片的样式,看着高上大就拿过来用了.稍微改了下,自己觉得喜欢就好.当修改过后博客右上角的 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 也变成了这种样式,如果不喜欢的话可以单独在你定义 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 的html中修改回来.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个是扒&lt;a href=&#34;www.yinwang.org&#34;&gt;王垠博客&lt;/a&gt;的图片的样式,看着高上大就拿过来用了.稍微改了下,自己觉得喜欢就好.当修改过后博客右上角的 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 也变成了这种样式,如果不喜欢的话可以单独在你定义 &lt;strong&gt;GitHub Ribbons&lt;/strong&gt; 的html中修改回来.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;img style=&amp;quot;position: absolute; top: 0; right: 0; border: 0;display: block;
     box-shadow: 0 0 0px #000;
     border-radius: 0px;
@@ -148,10 +111,7 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
     -webkit-box-shadow: 0 0 0px #000;&amp;quot;
     alt=&amp;quot;...&amp;quot;
     src=&amp;quot;...&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;定义图片大小:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;定义图片大小&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;定义图片大小&#34;&gt;定义图片大小&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;figure&amp;gt;
     &amp;lt;img src=&amp;quot;/media/alipay.jpg&amp;quot; alt=&amp;quot;alipay&amp;quot;
     &amp;lt;!--图片大小--&amp;gt;
@@ -161,15 +121,11 @@ img{border:0;-ms-interpolation-mode:bicubic;display: block;
         &amp;lt;h4&amp;gt; alipay &amp;lt;/h4&amp;gt;
     &amp;lt;/figcaption&amp;gt;
 &amp;lt;/figure&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;支持下拉刷新-mobile:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;支持下拉刷新( &lt;strong&gt;Mobile&lt;/strong&gt; )&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;支持下拉刷新-__mobile__-&#34;&gt;支持下拉刷新( &lt;strong&gt;Mobile&lt;/strong&gt; )&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;res: &lt;a href=&#34;https://github.com/BoxFactura/pulltorefresh.js&#34;&gt;pulltorefresh.js&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;使用方法:&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script src=&amp;quot;//cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.14/pulltorefresh.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;
@@ -179,20 +135,12 @@ var ptr = PullToRefresh.init({
 });
 &amp;lt;/script&amp;gt;
 &amp;lt;script&amp;gt;hljs.initHighlightingOnLoad();&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;添加以上代码到 &lt;strong&gt;/layouts/partials/footer.html&lt;/strong&gt; 中即可。&lt;/p&gt;
-
-&lt;h3 id=&#34;排序:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;排序&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;添加以上代码到 &lt;strong&gt;/layouts/partials/footer.html&lt;/strong&gt; 中即可。&lt;/p&gt;
+&lt;h3 id=&#34;排序&#34;&gt;排序&lt;/h3&gt;
 &lt;p&gt;如果你想让自己的某些文章置顶或者让某些文章不那么排在前边的话,就可以用到这段介绍了.像我写些日记什么的,没什么价值,就希望放在后边啦.&lt;/p&gt;
-
 &lt;p&gt;参考: &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;http://gohugo.io/content/ordering/&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;在 &lt;strong&gt;config.toml&lt;/strong&gt; 中添加 &lt;strong&gt;weight&lt;/strong&gt; 属性,weight的值越高越排在后边.至于最大最小我也不知道,有兴趣的可以去看&lt;a href=&#34;https://github.com/spf13/hugo/&#34;&gt;源码&lt;/a&gt;.尝试过1-100都可以,好像这基本就够大家的需要了.&lt;/p&gt;
-
 &lt;p&gt;示例:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;+++
 weight = 100
 date = &amp;quot;2015-12-15T00:38:58+08:00&amp;quot;
@@ -200,41 +148,28 @@ draft = false
 title = &amp;quot;title&amp;quot;
 tags = [&amp;quot;tags&amp;quot;]
 +++
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;制作icon:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;制作icon&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;制作icon&#34;&gt;制作icon&lt;/h3&gt;
 &lt;p&gt;推荐 &lt;em&gt;&lt;a href=&#34;http://www.faviconer.com/&#34;&gt;http://www.faviconer.com/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;域名选择:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;域名选择&lt;/h3&gt;
-
+&lt;h3 id=&#34;域名选择&#34;&gt;域名选择&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;推荐西部数码,阿里云,Goddy.&lt;/li&gt;
 &lt;li&gt;DNS解析推荐 &lt;em&gt;dnspod&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;我自己选的域名是xyz,第一年4元.流量用的 &lt;em&gt;Github Pages&lt;/em&gt; .&lt;/li&gt;
 &lt;li&gt;推荐云存储空间使用 &lt;em&gt;七牛云&lt;/em&gt; ,不仅免费而且速度也很快.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;建站心得:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;建站心得&lt;/h3&gt;
-
+&lt;h3 id=&#34;建站心得&#34;&gt;建站心得&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;第一次运行时,命令用 &lt;em&gt;hugo&lt;/em&gt; 即可.如果用 &lt;em&gt;hugo server&lt;/em&gt; ,那么生成的文件BaseURL都是 &lt;em&gt;localhost:1313&lt;/em&gt; .就因为这个问题我纠结过一天,甚至写了个java文件遍历所有的文件替换字符串&amp;hellip;&lt;/li&gt;
 &lt;li&gt;有的东西多试试就明白了,看着怎么都不懂,把东西改改看网页有什么变化就清晰明了了.&lt;/li&gt;
 &lt;li&gt;上传到 &lt;em&gt;Github Pages&lt;/em&gt; 会有延迟,如果刷不出网页,请耐心等待.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;结语:49f2d3cb5c8cde2db974e263077945f1&#34;&gt;结语&lt;/h3&gt;
-
+&lt;h3 id=&#34;结语&#34;&gt;结语&lt;/h3&gt;
 &lt;p&gt;马上就两点了,明儿还得早起上班.就先写到这儿了,如果有什么不明白的.
-  Hugo交流群:512499080.&lt;/p&gt;
-
-&lt;p&gt;Hugo中文文档网站：&lt;a href=&#34;http://www.gohugo.org/&#34;&gt;http://www.gohugo.org/&lt;/a&gt;.&lt;/p&gt;
-
+Hugo交流群:512499080.&lt;/p&gt;
+&lt;p&gt;Hugo中文文档网站：http://www.gohugo.org/.&lt;/p&gt;
 &lt;p&gt;相信这里的朋友会帮你解决问题的.
-  第一次这么隆重地写博客,想想也挺开心的.&lt;/p&gt;
-
-&lt;p&gt;最后,祝好:)&lt;/p&gt;
-</description>
+第一次这么隆重地写博客,想想也挺开心的.&lt;/p&gt;
+&lt;p&gt;最后,祝好:)&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Android on ban&amp;pick </title>
@@ -9,14 +10,1030 @@
     <updated>Sun, 24 Jun 2018 12:54:51 CST</updated>
     
     <item>
+      <title>Android保存静态密钥</title>
+      <link>https://sunxu.work/android/encrypt-third-party-keys/</link>
+      <pubDate>Sun, 24 Jun 2018 12:54:51 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>https://sunxu.work/android/encrypt-third-party-keys/</guid>
+      <description>
+
+&lt;h3 id=&#34;参考资料:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;参考资料&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://juejin.im/entry/5791c4b78ac247005f0c4333&#34;&gt;android 中保存静态秘钥实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/venusic/article/details/52347316&#34;&gt;JNI签名验证防止恶意调用&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;先mark再写:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;&lt;strong&gt;先mark再写&lt;/strong&gt;&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
+      <link>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</link>
+      <pubDate>Wed, 15 Jun 2016 17:50:54 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
+      <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;提到流播放就不得不提到 &lt;em&gt;Vitamio&lt;/em&gt; .协议支持全面，嵌入项目简单，对个人开发者免费。项目地址: &lt;a href=&#34;https://github.com/yixia/VitamioBundle&#34;&gt;https://github.com/yixia/VitamioBundle&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;B站开源出来的 &lt;em&gt;ijkplayer&lt;/em&gt; .项目维护及时，许多大公司都在用。网易云音乐，斗鱼TV，火猫TV等等，影响力可见一斑。支持RTMP，HLS。项目地址:&lt;a href=&#34;https://github.com/Bilibili/ijkplayer&#34;&gt;https://github.com/Bilibili/ijkplayer&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;七牛开源出来的 &lt;em&gt;PLDroidPlayer&lt;/em&gt;. 这个是基于B站的 &lt;em&gt;ijkplayer&lt;/em&gt; 进行二次开发的。项目维护也很及时，你去上边提issue，很快就会有人回复你。同样支持RTMP,HLS。继承步骤简单，有wiki，我现在用的就是这个;) ,但以后收不收费就不一定了。项目地址:&lt;a href=&#34;https://github.com/pili-engineering/PLDroidPlayer&#34;&gt;https://github.com/pili-engineering/PLDroidPlayer&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;大牛直播出品的 &lt;em&gt;SmarterStreaming&lt;/em&gt;. 个人使用免费，项目地址:&lt;a href=&#34;https://github.com/daniulive/SmarterStreaming&#34;&gt;https://github.com/daniulive/SmarterStreaming&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;新浪开源出来的 &lt;em&gt;sinavideo_playersdk&lt;/em&gt;. 完全免费，你甚至可以修改备注。不过只支持hls协议，定制简单。项目地址:&lt;a href=&#34;https://github.com/SinaVDDeveloper/sinavideo_playersdk&#34;&gt;https://github.com/SinaVDDeveloper/sinavideo_playersdk&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;希望能帮助到一些刚接触流播放的同学，下篇我会写用Mac搭建 &lt;em&gt;nginx&lt;/em&gt; + &lt;em&gt;HLS&lt;/em&gt; 的点播服务器。&lt;/p&gt;
+
+&lt;p&gt;最后，祝好:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>实现全自动微信抢红包自带关闭技能</title>
+      <link>https://sunxu.work/android/auto-rob-red-package/</link>
+      <pubDate>Fri, 15 Jan 2016 01:36:52 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>https://sunxu.work/android/auto-rob-red-package/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;接受红包的洗礼吧,凡人们！！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;项目地址:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;项目地址&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/sunxu3074/AutoRobRedPackage&#34;&gt;https://github.com/sunxu3074/AutoRobRedPackage&lt;/a&gt; 如果觉还不错,请给个 &lt;strong&gt;star&lt;/strong&gt; .&lt;/p&gt;
+
+&lt;h4 id=&#34;功能介绍:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;功能介绍&lt;/h4&gt;
+
+&lt;p&gt;效果展示&lt;/p&gt;
+
+&lt;p&gt;传到&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html&#34;&gt;优酷空间&lt;/a&gt;里面了,墙外的小伙伴可观看YouTube.&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;//www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;效果&lt;/p&gt;
+
+&lt;p&gt;你只用把手机打开到你想要抢红包的群里,然后把屏幕熄灭时间调到10分钟(如果超过10了还没人发红包,说明你选错群了..)就ok了,然后就可以撒手不管该干嘛干嘛去了.&lt;/p&gt;
+
+&lt;h3 id=&#34;refer-link:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;Refer link&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&#34;&gt;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&#34;&gt;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&#34;&gt;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;refer-video:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;Refer video&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/q3HliaMjL38&#34;&gt;https://youtu.be/q3HliaMjL38&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&#34;&gt;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;实现原理:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;实现原理&lt;/h3&gt;
+
+&lt;p&gt;用到了 AccessibilityService 这个类.这个类的目的主要目的就是为了让有障碍人士进行无障碍操作.&lt;/p&gt;
+
+&lt;p&gt;小伙伴们可以按照上面最后一个Mars老师讲的视频写出个大概,我主要说明一下 &lt;strong&gt;当抢红包后怎么自动关闭&lt;/strong&gt; 以及 &lt;strong&gt;被别人抢了,或者已经是自己抢过的判断逻辑及自动关闭&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;首先我们注册一个Service继承AccessibilityService,重写onAccessibilityEvent() 和onInterrupt() 两个方法.在AndroidManifest.xml 中注册并配置service.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;service
+            android:name=&amp;quot;.service.RobRedPackageService&amp;quot;
+            android:permission=&amp;quot;android.permission.BIND_ACCESSIBILITY_SERVICE&amp;quot;&amp;gt;
+            &amp;lt;intent-filter&amp;gt;
+                &amp;lt;action android:name=&amp;quot;android.accessibilityservice.AccessibilityService&amp;quot;/&amp;gt;
+            &amp;lt;/intent-filter&amp;gt;
+
+            &amp;lt;meta-data
+                android:name=&amp;quot;android.accessibilityservice&amp;quot;
+                android:resource=&amp;quot;@xml/robber&amp;quot;/&amp;gt;
+        &amp;lt;/service&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;至于为啥这样写,android/training上写的很明白.直接复制过来就OK.&lt;/p&gt;
+
+&lt;p&gt;接着在res/xml中创建robber.xml(名字随意,符合规范就好).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;accessibility-service
+    xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    android:description=&amp;quot;@string/app_name&amp;quot;
+    android:accessibilityEventTypes=&amp;quot;typeWindowStateChanged|typeWindowContentChanged&amp;quot;
+    android:packageNames=&amp;quot;com.tencent.mm&amp;quot;
+    android:accessibilityFeedbackType=&amp;quot;feedbackAllMask&amp;quot;
+    android:notificationTimeout=&amp;quot;10&amp;quot;
+    android:accessibilityFlags=&amp;quot;flagDefault&amp;quot;
+    android:canRetrieveWindowContent=&amp;quot;true&amp;quot;
+    /&amp;gt;
+    &amp;lt;!--android:canRequestTouchExplorationMode=&amp;quot;true&amp;quot;--&amp;gt;
+    &amp;lt;!--android:canRequestEnhancedWebAccessibility=&amp;quot;true&amp;quot;--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;description的属性值会显示在 服务/yourapp/一段描述,说白了就是服务的描述说明,告诉他咋用,我不会骗你,相信我吧!&lt;/li&gt;
+&lt;li&gt;packageNames 对哪个程序有效,com.tencent.mm就是微信的包名&lt;/li&gt;
+&lt;li&gt;accessibilityEventTypes 监听的事件类型. &lt;strong&gt;typeWindowContentChanged&lt;/strong&gt; 是当窗口内容发生变化,也就是当前页面有人说话或者你要打字弹出软键盘,或者有人发红包这都是窗口状态发生变化. &lt;strong&gt;typeWindowStateChanged&lt;/strong&gt; 是在你与应用互动时,当你点开红包,还没有抢时,这个就会被触发.&lt;/li&gt;
+&lt;li&gt;canRetrieveWindowContent这个属性很关键,注意设置为true.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;注意 &lt;strong&gt;android:resource=&amp;ldquo;@xml/robber&amp;rdquo;&lt;/strong&gt; 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.&lt;/p&gt;
+
+&lt;p&gt;在MainActivity中设置一个按钮打开辅助服务.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;findViewById(R.id.btn_open_setting).setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                startActivity(intent);
+            }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This class represents a node of the window content as well as actions that can be requested from its source. From the point of view of an AccessibilityService a window content is presented as tree of accessibility node info which may or may not map one-to-one to the view hierarchy. In other words, a custom view is free to report itself as a tree of accessibility node info.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
+    /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;微信红包是一个NodeInfo,领取红包也是一个NodeInfo,他们的父布局也是一个NodeInfo.&lt;/p&gt;
+
+&lt;h4 id=&#34;基本逻辑:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;基本逻辑&lt;/h4&gt;
+
+&lt;p&gt;如图所示:&lt;/p&gt;
+
+&lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
+     /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;怎么判断？&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;判断微信红包这四个字&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;怎么模拟点击操作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;accessibilityNodeInfo.perform(AccessibilityNodeInfo.ACTION_CLICK);&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;这个时候问题来了,当点击过后应该是拆红包的字样,而当我去判断这三个字的时候,发现微信已经把微信换成了 &lt;code&gt;開&lt;/code&gt;这张图片.(好像微信也在判断如果你写了这样的程序,他们就把&lt;code&gt;拆红包&lt;/code&gt;换成&lt;code&gt;開&lt;/code&gt;的图片.只是猜测,我也没弄懂为啥惟独我的微信不是拆红包而变成了開.不要问我为什么是開是张图片,而不是字.反编译一下就看见了) 这个时候该怎么判断呢?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
+    attr width=&#34;50%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;每个发来的红包都有『发了一个红包&amp;hellip;』的字样,我们用findAccessibilityNodeInfosByText(&amp;ldquo;发了一个红包&amp;rdquo;)来返回NodeInfo,而NodeInfo的getParent()方法会返回父控件.我们来判断一个info.getParent().getChindCount();从这个图以及Log信息中看出count的数量是5个.&lt;/p&gt;
+
+&lt;p&gt;我们来对着上图猜测一下View&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;头像+ T^T (TextView)&lt;/li&gt;
+&lt;li&gt;发了一个红包,金额随机(TextView)&lt;/li&gt;
+&lt;li&gt;恭喜发财,大吉大利!(TextView)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;開&lt;/strong&gt; (ImageView)&lt;/li&gt;
+&lt;li&gt;X (View)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;怎么来找到 &lt;strong&gt;開&lt;/strong&gt; 这个图片呢,getChildAt(N)即可.代码中我是遍历所有的childNodeInfo都强制点击了一遍,其实是不用这样的.从布局上看父布局可以猜测RelativeLayout, &lt;strong&gt;X&lt;/strong&gt; (关闭的x)这个View应该是在最后写入的,開是倒数第二个,也就是info.getParent().getChildAt(3).perfoerm(AssessibilityNodeInfo.ACTION_CLICK);有时候count数量也会出现6的时候,忘记是什么情况下了,感兴趣的可以测试一下.所以我还是坚持遍历来拆红包,反正X这个View是声明在最后的.凭感觉;)&lt;/p&gt;
+
+&lt;p&gt;其它的原理都差不多了,懂了上面说的大概看一下代码就都明白了.&lt;/p&gt;
+
+&lt;p&gt;手慢了&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
+    attr width=&#34;50%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;手慢了的情况下,好的处理办法是直接X.但是我点击 &lt;strong&gt;X&lt;/strong&gt; 之后会再次点开这个红包,一直循环.解决办法:当出现手慢了的时候,模拟点击看看大家的手气,然后进入红包详情页面,再关闭即可.&lt;/p&gt;
+
+&lt;p&gt;领取过了&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
+    attr width=&#34;50%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package xyz.isunxu.robredpackage.service;
+
+import android.accessibilityservice.AccessibilityService;
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+import android.util.Log;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
+import android.view.accessibility.AccessibilityRecord;
+import android.webkit.WebView;
+import java.util.List;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import xyz.isunxu.robredpackage.Application.MyApplication;
+
+public class RobRedPackageService extends AccessibilityService {
+
+    private AccessibilityNodeInfo mAccessibilityNodeInfo = null;
+
+
+    @Override public void onAccessibilityEvent(AccessibilityEvent event) {
+
+        AccessibilityNodeInfo previousAccessibilityNodeInfo = null;
+
+        mAccessibilityNodeInfo = event.getSource();
+
+        if (mAccessibilityNodeInfo == null) {
+            return;
+        }
+
+        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED) {
+            List&amp;lt;AccessibilityNodeInfo&amp;gt; accessibilityNodeInfos
+                    = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;微信红包&amp;quot;);
+            if (accessibilityNodeInfos != null &amp;amp;&amp;amp; accessibilityNodeInfos.size() &amp;gt; 0) {
+                AccessibilityNodeInfo info = accessibilityNodeInfos.get(accessibilityNodeInfos.size() - 1);
+                if (previousAccessibilityNodeInfo == null) {
+                    previousAccessibilityNodeInfo = info;
+                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                }
+                else if (previousAccessibilityNodeInfo != null &amp;amp;&amp;amp; previousAccessibilityNodeInfo != info) {
+                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                }
+                else {
+                    return;
+                }
+
+            }
+
+        }
+
+        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
+
+            List&amp;lt;AccessibilityNodeInfo&amp;gt; infos = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;拆红包&amp;quot;);
+            if (infos != null &amp;amp;&amp;amp; infos.size() &amp;gt; 0) {
+                AccessibilityNodeInfo accessibilityNodeInfo = infos.get(infos.size() - 1);
+                accessibilityNodeInfo.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+            }
+
+            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoDetails = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;红包详情&amp;quot;);
+            if (infoDetails != null &amp;amp;&amp;amp; infoDetails.size() &amp;gt; 0) {
+                AccessibilityNodeInfo accessibilityNodeInfo = infoDetails.get(infoDetails.size() - 1);
+                accessibilityNodeInfo.getParent().getChild(0).performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                return;
+            }
+
+            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoSlows = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;手慢了&amp;quot;);
+            if (infoSlows != null &amp;amp;&amp;amp; infoSlows.size() &amp;gt; 0) {
+                AccessibilityNodeInfo accessibilityNodeInfo = infoSlows.get(infoSlows.size() - 1);
+                accessibilityNodeInfo.getParent().getChild(3).performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                return;
+            }
+
+            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoKais = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;发了一个红包&amp;quot;);
+            if (infoKais != null &amp;amp;&amp;amp; infoKais.size() &amp;gt; 0) {
+                AccessibilityNodeInfo accessibilityNodeInfo = infoKais.get(infoKais.size() - 1);
+                int size = accessibilityNodeInfo.getParent().getChildCount();
+                Log.d(&amp;quot;sunxu_log&amp;quot;, &amp;quot;size--&amp;gt;&amp;quot; + size);
+                //for (AccessibilityNodeInfo info : infoKais) {
+                //    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                //}
+                for (int i = 0; i &amp;lt; accessibilityNodeInfo.getParent().getChildCount(); i++) {
+                    accessibilityNodeInfo.getParent().getChild(i).performAction(AccessibilityNodeInfo.ACTION_CLICK);
+                }
+            }
+        }
+    }
+
+    @Override public void onInterrupt() {
+
+    }
+
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;todo:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;TODO&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;如果不是最新的红包,那就不抢.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这牵扯到AccessibilityNodeInfo的比较,我也尝试过.NodeInfo的getContentDescription(),getViewIdResoucreName()当我想打印出它们的信息时,程序后面就不执行了.而且previousNodeInfo的数据储存也没有实现,有兴趣的小伙伴可以实现下.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;开启服务后不能与群里的小伙伴交流,只能一味地抢.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这是因为要说话时,会触碰语音按键,点击按键会出现浮动窗口,此时就是窗口出现变化了.然后就是那一堆判断逻辑了..这个怎么改我还没想好,可能还是涉及到上面的问题,AccessibilityNodeInfo的比较.等我想好了,会继续完善.&lt;/p&gt;
+
+&lt;h4 id=&#34;说明:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;说明&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;保持程序运行在后台与服务开启.&lt;/li&gt;
+&lt;li&gt;要抢红包之前可以先把程序关闭,然后重新开启程序与服务.(以免程序会被系统强制关闭)&lt;/li&gt;
+&lt;li&gt;设置屏幕熄灭时间长一点&lt;/li&gt;
+&lt;li&gt;停留在选择要抢红包的群的页面中.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;支持:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;支持&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在github上给我一个star就好.&lt;/li&gt;
+&lt;li&gt;捐赠: &lt;a href=&#34;https://sunxu.work/about&#34;&gt;https://sunxu.work/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这个程序完全是娱乐为主,并不作商业目的.&lt;/p&gt;
+
+&lt;p&gt;编程让我很快乐,希望能永远快乐下去.&lt;/p&gt;
+
+&lt;p&gt;最后,祝好;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>《Android 50 Hacks》读书笔记-布局篇</title>
+      <link>https://sunxu.work/android/android-50-hack-part-1/</link>
+      <pubDate>Mon, 04 Jan 2016 18:06:04 CST</pubDate>
+      <author>Xu Sun</author>
+      <guid>https://sunxu.work/android/android-50-hack-part-1/</guid>
+      <description>
+
+&lt;p&gt;最近在&lt;a href=&#34;http://www.it-ebooks.info/&#34;&gt;http://www.it-ebooks.info/&lt;/a&gt;看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.&lt;/p&gt;
+
+&lt;p&gt;前言:&lt;/p&gt;
+
+&lt;p&gt;我不知道作为一个没过四级的人是怎么看完这本书的.记得以前英语考试时,读阅读时总是不耐心,读着读着就烦气了.后来的考试总是喜欢看着答案蒙.至于现在为什么能耐心阅读关于计算机的一些英文文档,可能就是我对自己有野心,对程序员这个行业有野心吧.希望有一天我能骄傲地跟别人说我是一个程序员.&lt;/p&gt;
+
+&lt;h3 id=&#34;hack-1-centering-views-using-weights-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;Hack 1 Centering views using weights (Android v1.6+)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What should I write if I want a but- ton to be centered and 50% of its parent width?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;LinearLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+android:layout_width=&amp;quot;fill_parent&amp;quot;
+android:layout_height=&amp;quot;fill_parent&amp;quot;
+android:background=&amp;quot;#FFFFFF&amp;quot;
+android:gravity=&amp;quot;center&amp;quot;
+android:orientation=&amp;quot;horizontal&amp;quot;
+android:weightSum=&amp;quot;1&amp;quot;&amp;gt;
+&amp;lt;Button
+    android:layout_width=&amp;quot;0dp&amp;quot;
+    android:layout_height=&amp;quot;wrap_content&amp;quot;
+    android:layout_weight=&amp;quot;0.5&amp;quot;
+    android:text=&amp;quot;Click me&amp;quot;/&amp;gt;
+&amp;lt;/LinearLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意LinearLayout中的属性 &lt;em&gt;android:weightSum&lt;/em&gt; . 默认情况下weightSum的值是父控件里面所有child的数量.&lt;/p&gt;
+
+&lt;p&gt;上面这段代码实现了button的width是父控件的50%.
+&amp;gt;计算公式:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Button&amp;rsquo;s width + Button&amp;rsquo;s weight * 200 / sum(weight);(假设LinearLayout的宽度是200)&lt;/p&gt;
+
+&lt;p&gt;也就是 控件宽度+父控件剩余宽度*比例 (首先按照控件声明的尺寸进行分配,然后剩下的尺寸按照weight分配)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;hack-2-using-lazy-loading-and-avoiding-replication-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;Hack 2 Using lazy loading and avoiding replication (Android v1.6+)&lt;/h3&gt;
+
+&lt;p&gt;这个技巧将会学到:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;用 &lt;em&gt;include&lt;/em&gt; 标签避免xml代码的重复&lt;/li&gt;
+&lt;li&gt;使用ViewStub Class实现视图的懒加载&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;2-1-avoid-replication-using-the-include-tag:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;2.1 Avoid replication using the &lt;include /&gt; tag&lt;/h4&gt;
+
+&lt;p&gt;我们想象一下在我们应用的每一个页面中添加一个同样的页脚,例如一个只带有应用名字的TextView.如果我们有很多个Activity,很多个xml文件.我们该怎么编辑它们?复制粘贴将会解决这个问题,但是看上去不是高效的.一个简单的途径就是用 &lt;em&gt;include&lt;/em&gt; 标签添加这个页脚到我们应用里.我们的其中一个Activity的xml文件就可以像这样:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;match_parent&amp;quot;
+   &amp;gt;
+  &amp;lt;TextView
+    android:layout_width=&amp;quot;fill_parent&amp;quot;
+    android:layout_height=&amp;quot;wrap_content&amp;quot;
+    android:layout_centerInParent=&amp;quot;true&amp;quot;
+    android:gravity=&amp;quot;center_horizontal&amp;quot;
+    android:text=&amp;quot;@string/hello&amp;quot;/&amp;gt;
+  &amp;lt;include layout=&amp;quot;@layout/footer&amp;quot;/&amp;gt;
+&amp;lt;/RelativeLayout/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;footer的xml代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt; &amp;lt;TextView xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;wrap_content&amp;quot;
+        android:layout_alignParentBottom=&amp;quot;true&amp;quot;
+        android:layout_marginBottom=&amp;quot;30dp&amp;quot;
+        android:gravity=&amp;quot;center_horizontal&amp;quot;
+        android:text=&amp;quot;@string/footer_text&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 &lt;em&gt;include&lt;/em&gt; 标签内定义android:layout_*这些属性.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;fill_parent&amp;quot;&amp;gt;
+
+        &amp;lt;TextView
+            android:layout_width=&amp;quot;fill_parent&amp;quot;
+            android:layout_height=&amp;quot;wrap_content&amp;quot;
+            android:layout_centerInParent=&amp;quot;true&amp;quot;
+            android:gravity=&amp;quot;center_horizontal&amp;quot;
+            android:text=&amp;quot;@string/hello&amp;quot;/&amp;gt;
+
+        &amp;lt;include
+            layout=&amp;quot;@layout/footer&amp;quot;
+            android:layout_width=&amp;quot;fill_parent&amp;quot;
+            android:layout_height=&amp;quot;wrap_content&amp;quot;
+            android:layout_alignParentBottom=&amp;quot;true&amp;quot;
+            android:layout_marginBottom=&amp;quot;30dp&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;修改过后的footer.xml:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;TextView xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+            android:layout_width=&amp;quot;0dp&amp;quot;
+            android:layout_height=&amp;quot;0dp&amp;quot;
+            android:gravity=&amp;quot;center&amp;quot;
+            android:text=&amp;quot;@string/footer_text&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注意footer.xml中的宽和高都要设置才能被有效覆盖.&lt;/p&gt;
+
+&lt;h4 id=&#34;2-2-lazy-loading-views-with-the-viewstub-class:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;2.2 Lazy loading views with the ViewStub class&lt;/h4&gt;
+
+&lt;p&gt;ViewStub Class:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. When a ViewStub is made visible, or when inflate() is invoked, the layout resource is inflated. The ViewStub then replaces itself in its parent with the inflated View or Views.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;你已经知道了ViewStub是什么,让我们来看一下该怎么用.在下面的例子中,你将会用一个ViewStub去懒加载 &lt;em&gt;MapView&lt;/em&gt; .想象创建一个用来描述地方详细信息的View.我们来看以下两种情况:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一些地区没有GPS信息&lt;/li&gt;
+&lt;li&gt;用户可能不需要地图展示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SampleCode:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;  &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+    &amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;fill_parent&amp;quot;&amp;gt;
+
+        &amp;lt;Button
+            android:layout_width=&amp;quot;fill_parent&amp;quot;
+            android:layout_height=&amp;quot;wrap_content&amp;quot;
+            android:text=&amp;quot;@string/show_map&amp;quot;
+            android:onClick=&amp;quot;onShowMap&amp;quot;/&amp;gt;
+
+        &amp;lt;ViewStub
+            android:id=&amp;quot;@+id/map_stub&amp;quot;
+            android:layout_width=&amp;quot;fill_parent&amp;quot;
+            android:layout_height=&amp;quot;fill_parent&amp;quot;
+            android:layout=&amp;quot;@layout/map&amp;quot;
+            android:inflatedId=&amp;quot;@+id/map_view&amp;quot;/&amp;gt;
+    &amp;lt;/RelativeLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;很明显,我们在Activity中用map_stub得到ViewStub,layout属性告诉ViewStub应该去加载哪个布局文件.&lt;/p&gt;
+
+&lt;p&gt;map.xml代码如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;com.google.android.maps.MapView xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;fill_parent&amp;quot;
+        android:clickable=&amp;quot;true&amp;quot;
+        android:apiKey=&amp;quot;my_api_key&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;我们需要讨论的是最后这个属性android:inflatedId.我们可以用 &lt;em&gt;inflate()&lt;/em&gt; 或者 &lt;em&gt;setVisibility&lt;/em&gt; 方法让这个View显示出来.在这个例子中,我们用了 &lt;em&gt;setVisibility(View.VISIBLE)&lt;/em&gt; ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, &lt;em&gt;inflate()&lt;/em&gt; 会返回这个View避免第二次去调用 &lt;em&gt;findViewById()&lt;/em&gt; .&lt;/p&gt;
+
+&lt;p&gt;Activity 代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; public class MainActivity extends MapActivity {
+        private View mViewStub;
+
+
+        @Override public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.main);
+            mViewStub = findViewById(R.id.map_stub);
+        }
+
+
+        public void onShowMap(View v) {
+            mViewStub.setVisibility(View.VISIBLE);
+        }
+
+
+        ...
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就像你看见的一样,是否展示这个地图只需要改变ViewStub的 &lt;em&gt;visibility&lt;/em&gt; 变量值即可.&lt;/p&gt;
+
+&lt;h3 id=&#34;hack-3-creating-a-custom-viewgroup-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;Hack 3 Creating a custom ViewGroup (Android v1.6+)&lt;/h3&gt;
+
+&lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-1.png&#34; alt=&#34;50hacks-1-1&#34;
+    attr width=&#34;40%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;可以在RelativeLayout中设置margin,这是可行的.代码如下:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt; &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+    &amp;lt;RelativeLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;fill_parent&amp;quot;&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:background=&amp;quot;#FF0000&amp;quot;/&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:layout_marginLeft=&amp;quot;30dp&amp;quot;
+            android:layout_marginTop=&amp;quot;20dp&amp;quot;
+            android:background=&amp;quot;#00FF00&amp;quot;/&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:layout_marginLeft=&amp;quot;60dp&amp;quot;
+            android:layout_marginTop=&amp;quot;40dp&amp;quot;
+            android:background=&amp;quot;#0000FF&amp;quot;/&amp;gt;
+    &amp;lt;/RelativeLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果是介个样子的:&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-2.png&#34; alt=&#34;50hacks-1-2&#34;
+    attr width=&#34;40%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;下面介绍另外一种方式来创建相同类型的布局&amp;ndash;创建一个自定义 &lt;em&gt;ViewGroup&lt;/em&gt; .相比在xml中手动添加margins,自定义 &lt;em&gt;ViewGroup&lt;/em&gt; 的优点有:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s easier to maintain if you’re using it in differ- ent activities.&lt;/li&gt;
+&lt;li&gt;You can use custom attributes to customize the position of the ViewGroup chil- dren.&lt;/li&gt;
+&lt;li&gt;The XML will be easier to understand because it’ll be more concise.&lt;/li&gt;
+&lt;li&gt;If you need to change the margins, you won’t need to recalculate by hand every
+child’s margin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;3-1-understanding-how-android-draws-views:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;3.1 Understanding how Android draws views&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Drawing the layout is a two-pass process: a measure pass and a layout pass. The measuring pass is implemented in measure(int, int) and is a top-down traversal of the View tree. Each View pushes dimension specifications down the tree during the recursion. At the end of the measure pass, every View has stored its measurements. The second pass happens in layout(int, int, int, int) and is also top-down. During this pass each parent is responsible for positioning all of its children using the sizes computed in the measure pass.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;为了理解这个概念,我们来分析一下绘制 &lt;em&gt;ViewGroup&lt;/em&gt; 的方式.第一步在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面去测量宽和高.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 会通过里面的子视图来计算它的大小.第二步通过在 &lt;em&gt;onLayout()&lt;/em&gt; 这个方法里面去放置它的子视图.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 通过在 &lt;em&gt;onMeasure()&lt;/em&gt; 方法里收集到子视图的信息来放置它们.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-2-creating-the-cascadelayout:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;3.2 Creating the CascadeLayout&lt;/h4&gt;
+
+&lt;p&gt;xml代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;FrameLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    xmlns:cascade=&amp;quot;http://schemas.android.com/apk/res-auto&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;match_parent&amp;quot;&amp;gt;
+
+    &amp;lt;com.manning.androidhacks.hack003.view.CascadeLayout
+        android:layout_width=&amp;quot;fill_parent&amp;quot;
+        android:layout_height=&amp;quot;fill_parent&amp;quot;
+        cascade:horizontal_spacing=&amp;quot;30dp&amp;quot;
+        cascade:vertical_spacing=&amp;quot;20dp&amp;quot;&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:background=&amp;quot;#FF0000&amp;quot;/&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:background=&amp;quot;#00FF00&amp;quot;/&amp;gt;
+
+        &amp;lt;View
+            android:layout_width=&amp;quot;100dp&amp;quot;
+            android:layout_height=&amp;quot;150dp&amp;quot;
+            android:background=&amp;quot;#0000FF&amp;quot;/&amp;gt;
+    &amp;lt;/com.manning.androidhacks.hack003.view.CascadeLayout&amp;gt;
+&amp;lt;/FrameLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;接着,我们来定义这些自定义属性.在 &lt;em&gt;res/values&lt;/em&gt; 这个文件夹下创建 &lt;em&gt;attrs.xml&lt;/em&gt; .代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+    &amp;lt;resources&amp;gt;
+
+        &amp;lt;declare-styleable name=&amp;quot;CascadeLayout&amp;quot;&amp;gt;
+
+            &amp;lt;attr
+                name=&amp;quot;horizontal_spacing&amp;quot;
+                format=&amp;quot;dimension&amp;quot;/&amp;gt;
+
+            &amp;lt;attr
+                name=&amp;quot;vertical_spacing&amp;quot;
+                format=&amp;quot;dimension&amp;quot;/&amp;gt;
+        &amp;lt;/declare-styleable&amp;gt;
+    &amp;lt;/resources&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在 &lt;em&gt;res/values/dimens.xml&lt;/em&gt; 中定义自定义属性的值.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt; &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+    &amp;lt;resources&amp;gt;
+        &amp;lt;dimen name=&amp;quot;cascade_horizontal_spacing&amp;quot;&amp;gt;10dp&amp;lt;/dimen&amp;gt;
+        &amp;lt;dimen name=&amp;quot;cascade_vertical_spacing&amp;quot;&amp;gt;10dp&amp;lt;/dimen&amp;gt;
+    &amp;lt;/resources&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在理解完Android怎样绘制视图后,你可能该想着去创建一个 &lt;em&gt;CascadeLayout&lt;/em&gt; 的类去继承 &lt;em&gt;ViewGroup&lt;/em&gt; ,在这个类里面去重写 &lt;em&gt;onMeasure()&lt;/em&gt; 和 &lt;em&gt;onLayout()&lt;/em&gt; 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, &lt;em&gt;onMeasure()&lt;/em&gt; , &lt;em&gt;onLayout()&lt;/em&gt; .
+下面是构造方法的代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class CascadeLayout extends ViewGroup {
+    private int mHorizontalSpacing;
+    private int mVerticalSpacing;
+
+    // Constructor called when view instance is created from an XML file.
+    public CascadeLayout(Context context, AttributeSet attrs) {
+        // mHorizontalSpacing and mVerticalSpacing are read from custom attributes. If they’re not present, use default values.
+        super(context, attrs);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CascadeLayout);
+        try {
+            mHorizontalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_horizontal_spacing,
+                    getResources().getDimensionPixelSize(R.dimen.cascade_horizontal_spacing));
+            mVerticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_vertical_spacing,
+                    getResources().getDimensionPixelSize(R.dimen.cascade_vertical_spacing));
+        } finally {
+            a.recycle();
+        }
+    }
+
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面写代码前,我们创建一个自定义的 &lt;em&gt;LayoutParams&lt;/em&gt; 类,作为 &lt;em&gt;CascadeLayout&lt;/em&gt; 的内部类,为每一个子view保留x,y的坐标值.代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public static class LayoutParams extends ViewGroup.LayoutParams {
+        int x;
+        int y;
+
+
+        public LayoutParams(Context context, AttributeSet attrs) {
+            super(context, attrs);
+        }
+
+
+        public LayoutParams(int w, int h) {
+            super(w, h);
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了去使用 &lt;em&gt;CascadeLayout.LayoutParams&lt;/em&gt; 这个类,我们需要在 &lt;em&gt;CascadeLayout&lt;/em&gt; 这个类中重写一些额外的方法: &lt;em&gt;checkLayoutParams()&lt;/em&gt; , &lt;em&gt;generateDefaultLayoutParams()&lt;/em&gt; , &lt;em&gt;generateLayoutParams(AttributeSet attrs)&lt;/em&gt; , &lt;em&gt;generateLayoutParams(ViewGroup.LayoutParams p)&lt;/em&gt; .代码:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;    @Override protected boolean checkLayoutParams(ViewGroup.LayoutParams p) {
+        return p instanceof LayoutParams;
+    }
+
+
+    @Override protected LayoutParams generateDefaultLayoutParams() {
+        return new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+    }
+
+
+    @Override public LayoutParams generateLayoutParams(AttributeSet attrs) {
+        return new LayoutParams(getContext(), attrs);
+    }
+
+
+    @Override protected LayoutParams generateLayoutParams(ViewGroup.LayoutParams p) {
+        return new LayoutParams(p.width, p.height);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;onMeasure()&lt;/em&gt; ,是这个类的关键.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+	     // Use width and height to calculate layout’s final size and children’s x and y positions.
+        int width = 0;
+        int height = getPaddingTop();
+        final int count = getChildCount();
+        for (int i = 0; i &amp;lt; count; i++) {
+            View child = getChildAt(i);
+            // Make every child measure itself.
+            measureChild(child, widthMeasureSpec, heightMeasureSpec);
+            ￼LayoutParams lp = (LayoutParams) child.getLayoutParams();
+            width = getPaddingLeft() + mHorizontalSpacing * i;
+            lp.x = width;
+            lp.y = height;
+            width += child.getMeasuredWidth();
+            height += mVerticalSpacing;
+        }
+        width += getPaddingRight();
+        height += getChildAt(getChildCount() - 1).getMeasuredHeight() + getPaddingBottom();
+        // Uses calculated width and height to set measured dimensions of whole layout.
+        setMeasuredDimension(resolveSize(width, widthMeasureSpec), resolveSize(height, heightMeasureSpec));
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;最后一步是创建 &lt;em&gt;onLayout()&lt;/em&gt; .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Override
+protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        final int count = getChildCount();
+        for (int i = 0; i &amp;lt; count; i++) {
+            View child = getChildAt(i);
+            LayoutParams lp = (LayoutParams) child.getLayoutParams();
+            child.layout(lp.x, lp.y, lp.x + child.getMeasuredWidth(), lp.y + child.getMeasuredHeight());
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;3-3-adding-custom-attributes-to-the-children:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;3.3 Adding custom attributes to the children&lt;/h4&gt;
+
+&lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-3.png&#34; alt=&#34;50hacks-1-3&#34;
+    attr width=&#34;40%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;添加新的属性到 &lt;em&gt;attrs.xml&lt;/em&gt; 中:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;declare-styleable name=&amp;quot;CascadeLayout_LayoutParams&amp;quot;&amp;gt;
+        &amp;lt;attr name=&amp;quot;layout_vertical_spacing&amp;quot;
+            format=&amp;quot;dimension&amp;quot;/&amp;gt;
+    &amp;lt;/declare-styleable&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;因为这个属性名是以 &lt;em&gt;layout_&lt;/em&gt; 开始的,所以它被添加到 &lt;em&gt;LayoutParams&lt;/em&gt; 属性中.在 &lt;em&gt;LayoutParams&lt;/em&gt; 这个构造方法中取出这个属性.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; public LayoutParams(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CascadeLayout_LayoutParams);
+        try {
+            verticalSpacing = a.getDimensionPixelSize(R.styleable.CascadeLayout_LayoutParams_layout_vertical_spacing,
+                    -1);
+        } finally {
+            a.recycle();
+        }
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;verticalSpacing&lt;/em&gt; 是一个 &lt;em&gt;public field&lt;/em&gt; .我们会在 &lt;em&gt;CascadeLayout&lt;/em&gt; 中用到,如果子视图的 &lt;em&gt;LayoutParams&lt;/em&gt; 中包含 &lt;em&gt;verticalSpacing&lt;/em&gt; ,我们就可以使用它.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt; verticalSpacing = mVerticalSpacing;
+        ...
+        LayoutParams lp = (LayoutParams) child.getLayoutParams();
+        if (lp.verticalSpacing &amp;gt;= 0) {
+            verticalSpacing = lp.verticalSpacing;
+        }
+        ...
+        width += child.getMeasuredWidth();
+        height += verticalSpacing;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;hack-4-preferences-hacks-android-v1-6:1e33089dd85e7ee1909260ca9a39f4a5&#34;&gt;Hack 4 Preferences hacks (Android v1.6+)&lt;/h3&gt;
+
+&lt;p&gt;定义一个偏好设置界面,只需要写一些xml,就可以快速生成.大家看代码就可以懂了,跟自定义view类似.&lt;/p&gt;
+
+&lt;p&gt;效果图:&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://sunxu.work/media/50hacks-1-4.png&#34; alt=&#34;50hacks-1-4&#34;
+    attr width=&#34;40%&#34;  /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;在 &lt;em&gt;res/xml&lt;/em&gt; 中创建 &lt;em&gt;prefs.xml&lt;/em&gt; .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-xml&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;!--
+  Copyright (c) 2012 Manning
+  See the file license.txt for copying permission.
+--&amp;gt;
+
+&amp;lt;PreferenceScreen
+    xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    android:key=&amp;quot;pref_first_preferencescreen_key&amp;quot;
+    android:title=&amp;quot;Preferences&amp;quot;&amp;gt;
+
+    &amp;lt;PreferenceCategory
+        android:title=&amp;quot;User&amp;quot;&amp;gt;
+
+        &amp;lt;EditTextPreference
+            android:key=&amp;quot;pref_username&amp;quot;
+            android:summary=&amp;quot;Username:&amp;quot;
+            android:title=&amp;quot;Username&amp;quot;/&amp;gt;
+
+    &amp;lt;/PreferenceCategory&amp;gt;
+
+    &amp;lt;PreferenceCategory
+        android:title=&amp;quot;Application&amp;quot;&amp;gt;
+
+        &amp;lt;Preference
+            android:key=&amp;quot;pref_rate&amp;quot;
+            android:summary=&amp;quot;Rate the app in the store!&amp;quot;
+            android:title=&amp;quot;Rate the app&amp;quot;/&amp;gt;
+
+        &amp;lt;Preference
+            android:key=&amp;quot;pref_share&amp;quot;
+            android:summary=&amp;quot;Share the app with your friends&amp;quot;
+            android:title=&amp;quot;Share it&amp;quot;/&amp;gt;
+
+        &amp;lt;com.manning.androidhacks.hack004.preference.EmailDialog
+            android:dialogIcon=&amp;quot;@drawable/ic_launcher&amp;quot;
+            android:dialogTitle=&amp;quot;Send Feedback&amp;quot;
+            android:dialogMessage=&amp;quot;Do you want to send an email with feedback?&amp;quot;
+            android:key=&amp;quot;pref_sendemail_key&amp;quot;
+            android:negativeButtonText=&amp;quot;Cancel&amp;quot;
+            android:positiveButtonText=&amp;quot;OK&amp;quot;
+            android:summary=&amp;quot;Send your feedback by e-mail&amp;quot;
+            android:title=&amp;quot;Send Feedback&amp;quot;/&amp;gt;
+
+        &amp;lt;com.manning.androidhacks.hack004.preference.AboutDialog
+            android:dialogIcon=&amp;quot;@drawable/ic_launcher&amp;quot;
+            android:dialogTitle=&amp;quot;About&amp;quot;
+            android:key=&amp;quot;pref_about_key&amp;quot;
+            android:negativeButtonText=&amp;quot;@null&amp;quot;
+            android:title=&amp;quot;About&amp;quot;/&amp;gt;
+
+    &amp;lt;/PreferenceCategory&amp;gt;
+
+&amp;lt;/PreferenceScreen&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 &lt;em&gt;android.preference.PreferenceActivity&lt;/em&gt; .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class MainActivity extends PreferenceActivity implements
+    OnSharedPreferenceChangeListener {
+
+  @Override
+  public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    addPreferencesFromResource(R.xml.prefs);
+
+    Preference sharePref = findPreference(&amp;quot;pref_share&amp;quot;);
+    Intent shareIntent = new Intent();
+    shareIntent.setAction(Intent.ACTION_SEND);
+    shareIntent.setType(&amp;quot;text/plain&amp;quot;);
+    shareIntent.putExtra(Intent.EXTRA_SUBJECT, &amp;quot;Check this app!&amp;quot;);
+    shareIntent.putExtra(Intent.EXTRA_TEXT,
+        &amp;quot;Check this awesome app at: ...&amp;quot;);
+    sharePref.setIntent(shareIntent);
+
+    Preference ratePref = findPreference(&amp;quot;pref_rate&amp;quot;);
+    Uri uri = Uri.parse(&amp;quot;market://details?id=&amp;quot; + getPackageName());
+    Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+    ratePref.setIntent(goToMarket);
+
+    updateUserText();
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+
+    getPreferenceScreen().getSharedPreferences()
+        .registerOnSharedPreferenceChangeListener(this);
+
+  }
+
+  @Override
+  protected void onPause() {
+    super.onPause();
+
+    getPreferenceScreen().getSharedPreferences()
+        .unregisterOnSharedPreferenceChangeListener(this);
+  }
+
+  @Override
+  public void onSharedPreferenceChanged(
+      SharedPreferences sharedPreferences, String key) {
+
+    if (key.equals(&amp;quot;pref_username&amp;quot;)) {
+      updateUserText();
+    }
+  }
+
+  private void updateUserText() {
+    EditTextPreference pref;
+    pref = (EditTextPreference) findPreference(&amp;quot;pref_username&amp;quot;);
+    String user = pref.getText();
+
+    if (user == null) {
+      user = &amp;quot;?&amp;quot;;
+    }
+
+    pref.setSummary(String.format(&amp;quot;Username: %s&amp;quot;, user));
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;自定义一个 &lt;em&gt;preferences&lt;/em&gt; 就像自定义view一样.为了更好地理解它,我们来看一下 &lt;em&gt;EmailDialog&lt;/em&gt; 这个类的代码.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;// Custom class should extend some of existing preferences widgets. In this case, we’ll use DialogPreference.
+
+public class EmailDialog extends DialogPreference {
+  Context mContext;
+
+  public EmailDialog(Context context) {
+    this(context, null);
+  }
+
+  public EmailDialog(Context context, AttributeSet attrs) {
+    this(context, attrs, 0);
+  }
+
+  public EmailDialog(Context context, AttributeSet attrs, int defStyle) {
+
+  // Constructors are the same as those used to create a custom view extending the View class.
+
+    super(context, attrs, defStyle);
+    mContext = context;
+  }
+
+  // onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
+
+  @Override
+  public void onClick(DialogInterface dialog, int which) {
+    super.onClick(dialog, which);
+
+    if (DialogInterface.BUTTON_POSITIVE == which) {
+      LaunchEmailUtil.launchEmailToIntent(mContext);
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;好了,以上就是这本书的第一章了,完成了4/50.有什么不对的,或者建议,大家可以直接留言给我,也可以给我发邮件.&lt;/p&gt;
+
+&lt;p&gt;15年就这么过去了,元旦那天朋友圈里,公众号里大家都在忙着自我检讨.想了想去年除了像每年一样都感觉孤独外,还有就是焦虑,每天都在焦虑.这一年有努力,有懈怠,有期待,有迷茫.知乎上的名字是taken2016,还没来得及改.记得当初起这名是想16年是收获的一年,而如今已经步入16年了.今年真的会是收获的一年咩?实在不行就换成taken2017吧:)不断积累,期待着,期待着.&lt;/p&gt;
+
+&lt;p&gt;好了,写了点没用的.希望写的东西对大家有用,非常期待大家对我的建议,无论是生活上还是技术上.毕竟我还是个刚入职不到一年的小菜鸟~~&lt;/p&gt;
+
+&lt;p&gt;有的朋友给我发邮件说这书太老,已经没有翻译的价值,况且世面上已经有中文版了.我去找了下确实,而且还有相应的中文PDF.所以我不打算再写后边的关于这书的篇章了.&lt;/p&gt;
+
+&lt;p&gt;有兴趣的小伙伴可以边看边参考完整的代码.&lt;a href=&#34;https://github.com/Macarse/50AH-code&#34;&gt;本书github项目地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最后,祝好:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Android Studio项目应该提交哪些文件到GitHub上</title>
       <link>https://sunxu.work/android/commit-what-to-github-in-as/</link>
       <pubDate>Fri, 11 Dec 2015 23:34:50 CST</pubDate>
       <author>Xu Sun</author>
       <guid>https://sunxu.work/android/commit-what-to-github-in-as/</guid>
       <description>&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？&lt;/p&gt;
+
 &lt;p&gt;查阅相关资料:&lt;/p&gt;
+
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.jetbrains.com/idea/help/project.html&#34;&gt;http://www.jetbrains.com/idea/help/project.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://qiita.com/amanoiverse/items/71b7dccf992b33930c35&#34;&gt;http://qiita.com/amanoiverse/items/71b7dccf992b33930c35&lt;/a&gt;&lt;/li&gt;
@@ -26,8 +1043,11 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/JakeWharton/butterknife/blob/master/.gitignore&#34;&gt;https://github.com/JakeWharton/butterknife/blob/master/.gitignore&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore&#34;&gt;https://github.com/bboyfeiyu/Colorful/blob/master/.gitignore&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+
 &lt;p&gt;找了一些资料后,每个给出的答案都不一样,我把上面的答案总结后融合了一下添加到平常在在本地练习的 &lt;em&gt;.gitignore&lt;/em&gt; 文件中,并上传到Github上然后down下来重新导入,发现导入没有任何异常,运行顺利.&lt;/p&gt;
+
 &lt;p&gt;融合后的 &lt;em&gt;.gitignore&lt;/em&gt; :&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;# IntelliJ IDEA
 .idea
 *.iml
@@ -89,7 +1109,9 @@ proguard/
 #NDK
 obj/
 jniLibs
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上传到GitHub后的项目预览:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上传到GitHub后的项目预览:
 
 &lt;figure &gt;
     
@@ -99,19 +1121,37 @@ jniLibs
 &lt;/figure&gt;
 
 &lt;/p&gt;
+
 &lt;p&gt;不需要额外的配置即可导入运行,那么这个融合的了 &lt;em&gt;.gitignore&lt;/em&gt; 就是可行的.&lt;/p&gt;
+
 &lt;p&gt;回过头再来看Android Studio中的 &lt;em&gt;.gitignore&lt;/em&gt;,发现有绿色的代码,也有灰色的代码,当把鼠标移过去也会有不一样的提示.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;img src=&amp;quot;/media/test-gitignore-covered.png&amp;quot; alt=&amp;quot;test-gitignore-covered&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- raw HTML omitted --&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://sunxu.work/media/test-gitignore-covered.png&#34; alt=&#34;test-gitignore-covered&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+
 &lt;p&gt;有这种提示的就是文件已经包含在其他的文件夹中,可以删除这些文件.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;pre&gt;&lt;code&gt;    &amp;lt;img src=&amp;quot;/media/test-gitignore-never-used.png&amp;quot; alt=&amp;quot;test-gitignore-never-used&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;有这种提示的就是工程中不包含这种文件,没必要申明在 &lt;em&gt;.gitignore&lt;/em&gt;文件中,也可删除.&lt;/p&gt;
-&lt;p&gt;那么我们删除了上述这种文件后, &lt;em&gt;.gitignore&lt;/em&gt;马上就变得清爽起来.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://sunxu.work/media/test-gitignore-never-used.png&#34; alt=&#34;test-gitignore-never-used&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+
+&lt;p&gt;有这种提示的就是工程中不包含这种文件,没必要申明在 *.gitignore*文件中,也可删除.&lt;/p&gt;
+
+&lt;p&gt;那么我们删除了上述这种文件后, *.gitignore*马上就变得清爽起来.&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;# IntelliJ IDEA
 .idea
 *.iml
@@ -125,800 +1165,24 @@ local.properties
 
 # Mac system files
 .DS_Store
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;为了科学严谨性,再次上传包含这份 &lt;em&gt;.gitignore&lt;/em&gt; 的代码到GitHub中,结构跟上面的图显示是一样的.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;为了科学严谨性,再次上传包含这份 &lt;em&gt;.gitignore&lt;/em&gt; 的代码到GitHub中,结构跟上面的图显示是一样的.&lt;/p&gt;
+
 &lt;p&gt;再次down下来导入AS,运行依旧顺利.&lt;/p&gt;
+
 &lt;p&gt;总结:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;我们当然可以把融合后比较多的代码模板复制到自己的 &lt;em&gt;.gitignore&lt;/em&gt;文件中,这样会容错率高,有助于防止多传一些没必要的东西.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;也可以根据自己代码的实际情况根据提示,决定究竟该上传些什么代码,但应该大于等于上面最后这段代码.(如项目中用到了NDK,就可以加上/obj)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;总之就是提供给大家一种思路,才疏学浅,还请大家多多提意见给我.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;最后,祝好:)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Android保存静态密钥</title>
-      <link>https://sunxu.work/android/encrypt-third-party-keys/</link>
-      <pubDate>Sun, 24 Jun 2018 12:54:51 CST</pubDate>
-      <author>Xu Sun</author>
-      <guid>https://sunxu.work/android/encrypt-third-party-keys/</guid>
-      <description>&lt;h3 id=&#34;参考资料&#34;&gt;参考资料&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://juejin.im/entry/5791c4b78ac247005f0c4333&#34;&gt;android 中保存静态秘钥实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/venusic/article/details/52347316&#34;&gt;JNI签名验证防止恶意调用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;我们当然可以把融合后比较多的代码模板复制到自己的 *.gitignore*文件中,这样会容错率高,有助于防止多传一些没必要的东西.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;也可以根据自己代码的实际情况根据提示,决定究竟该上传些什么代码,但应该大于等于上面最后这段代码.(如项目中用到了NDK,就可以加上/obj)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;总之就是提供给大家一种思路,才疏学浅,还请大家多多提意见给我.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;最后,祝好:)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;先mark再写&#34;&gt;&lt;strong&gt;先mark再写&lt;/strong&gt;&lt;/h4&gt;</description>
-    </item>
-    
-    <item>
-      <title>Android基于HLS和RTMP协议的第三方SDK选择</title>
-      <link>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</link>
-      <pubDate>Wed, 15 Jun 2016 17:50:54 CST</pubDate>
-      <author>Xu Sun</author>
-      <guid>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
-      <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;提到流播放就不得不提到 &lt;em&gt;Vitamio&lt;/em&gt; .协议支持全面，嵌入项目简单，对个人开发者免费。项目地址: &lt;a href=&#34;https://github.com/yixia/VitamioBundle&#34;&gt;https://github.com/yixia/VitamioBundle&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;B站开源出来的 &lt;em&gt;ijkplayer&lt;/em&gt; .项目维护及时，许多大公司都在用。网易云音乐，斗鱼TV，火猫TV等等，影响力可见一斑。支持RTMP，HLS。项目地址:&lt;a href=&#34;https://github.com/Bilibili/ijkplayer&#34;&gt;https://github.com/Bilibili/ijkplayer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;七牛开源出来的 &lt;em&gt;PLDroidPlayer&lt;/em&gt;. 这个是基于B站的 &lt;em&gt;ijkplayer&lt;/em&gt; 进行二次开发的。项目维护也很及时，你去上边提issue，很快就会有人回复你。同样支持RTMP,HLS。继承步骤简单，有wiki，我现在用的就是这个;) ,但以后收不收费就不一定了。项目地址:&lt;a href=&#34;https://github.com/pili-engineering/PLDroidPlayer&#34;&gt;https://github.com/pili-engineering/PLDroidPlayer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;大牛直播出品的 &lt;em&gt;SmarterStreaming&lt;/em&gt;. 个人使用免费，项目地址:&lt;a href=&#34;https://github.com/daniulive/SmarterStreaming&#34;&gt;https://github.com/daniulive/SmarterStreaming&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;新浪开源出来的 &lt;em&gt;sinavideo_playersdk&lt;/em&gt;. 完全免费，你甚至可以修改备注。不过只支持hls协议，定制简单。项目地址:&lt;a href=&#34;https://github.com/SinaVDDeveloper/sinavideo_playersdk&#34;&gt;https://github.com/SinaVDDeveloper/sinavideo_playersdk&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;希望能帮助到一些刚接触流播放的同学，下篇我会写用Mac搭建 &lt;em&gt;nginx&lt;/em&gt; + &lt;em&gt;HLS&lt;/em&gt; 的点播服务器。&lt;/p&gt;
-&lt;p&gt;最后，祝好:)&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>实现全自动微信抢红包自带关闭技能</title>
-      <link>https://sunxu.work/android/auto-rob-red-package/</link>
-      <pubDate>Fri, 15 Jan 2016 01:36:52 CST</pubDate>
-      <author>Xu Sun</author>
-      <guid>https://sunxu.work/android/auto-rob-red-package/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;接受红包的洗礼吧,凡人们！！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;项目地址&#34;&gt;项目地址&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/sunxu3074/AutoRobRedPackage&#34;&gt;https://github.com/sunxu3074/AutoRobRedPackage&lt;/a&gt; 如果觉还不错,请给个 &lt;strong&gt;star&lt;/strong&gt; .&lt;/p&gt;
-&lt;h4 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h4&gt;
-&lt;p&gt;效果展示&lt;/p&gt;
-&lt;p&gt;传到&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html&#34;&gt;优酷空间&lt;/a&gt;里面了,墙外的小伙伴可观看YouTube.&lt;/p&gt;
-&lt;div class=&#34;embed video-player&#34;&gt;
-&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;//www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;效果&lt;/p&gt;
-&lt;p&gt;你只用把手机打开到你想要抢红包的群里,然后把屏幕熄灭时间调到10分钟(如果超过10了还没人发红包,说明你选错群了..)就ok了,然后就可以撒手不管该干嘛干嘛去了.&lt;/p&gt;
-&lt;h3 id=&#34;refer-link&#34;&gt;Refer link&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&#34;&gt;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&#34;&gt;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&#34;&gt;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;refer-video&#34;&gt;Refer video&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://youtu.be/q3HliaMjL38&#34;&gt;https://youtu.be/q3HliaMjL38&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&#34;&gt;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;实现原理&#34;&gt;实现原理&lt;/h3&gt;
-&lt;p&gt;用到了 AccessibilityService 这个类.这个类的目的主要目的就是为了让有障碍人士进行无障碍操作.&lt;/p&gt;
-&lt;p&gt;小伙伴们可以按照上面最后一个Mars老师讲的视频写出个大概,我主要说明一下 &lt;strong&gt;当抢红包后怎么自动关闭&lt;/strong&gt; 以及 &lt;strong&gt;被别人抢了,或者已经是自己抢过的判断逻辑及自动关闭&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;首先我们注册一个Service继承AccessibilityService,重写onAccessibilityEvent() 和onInterrupt() 两个方法.在AndroidManifest.xml 中注册并配置service.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; &amp;lt;service
-            android:name=&amp;quot;.service.RobRedPackageService&amp;quot;
-            android:permission=&amp;quot;android.permission.BIND_ACCESSIBILITY_SERVICE&amp;quot;&amp;gt;
-            &amp;lt;intent-filter&amp;gt;
-                &amp;lt;action android:name=&amp;quot;android.accessibilityservice.AccessibilityService&amp;quot;/&amp;gt;
-            &amp;lt;/intent-filter&amp;gt;
-
-            &amp;lt;meta-data
-                android:name=&amp;quot;android.accessibilityservice&amp;quot;
-                android:resource=&amp;quot;@xml/robber&amp;quot;/&amp;gt;
-        &amp;lt;/service&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至于为啥这样写,android/training上写的很明白.直接复制过来就OK.&lt;/p&gt;
-&lt;p&gt;接着在res/xml中创建robber.xml(名字随意,符合规范就好).&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
-&amp;lt;accessibility-service
-    xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
-    android:description=&amp;quot;@string/app_name&amp;quot;
-    android:accessibilityEventTypes=&amp;quot;typeWindowStateChanged|typeWindowContentChanged&amp;quot;
-    android:packageNames=&amp;quot;com.tencent.mm&amp;quot;
-    android:accessibilityFeedbackType=&amp;quot;feedbackAllMask&amp;quot;
-    android:notificationTimeout=&amp;quot;10&amp;quot;
-    android:accessibilityFlags=&amp;quot;flagDefault&amp;quot;
-    android:canRetrieveWindowContent=&amp;quot;true&amp;quot;
-    /&amp;gt;
-    &amp;lt;!--android:canRequestTouchExplorationMode=&amp;quot;true&amp;quot;--&amp;gt;
-    &amp;lt;!--android:canRequestEnhancedWebAccessibility=&amp;quot;true&amp;quot;--&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;description的属性值会显示在 服务/yourapp/一段描述,说白了就是服务的描述说明,告诉他咋用,我不会骗你,相信我吧!&lt;/li&gt;
-&lt;li&gt;packageNames 对哪个程序有效,com.tencent.mm就是微信的包名&lt;/li&gt;
-&lt;li&gt;accessibilityEventTypes 监听的事件类型. &lt;strong&gt;typeWindowContentChanged&lt;/strong&gt; 是当窗口内容发生变化,也就是当前页面有人说话或者你要打字弹出软键盘,或者有人发红包这都是窗口状态发生变化. &lt;strong&gt;typeWindowStateChanged&lt;/strong&gt; 是在你与应用互动时,当你点开红包,还没有抢时,这个就会被触发.&lt;/li&gt;
-&lt;li&gt;canRetrieveWindowContent这个属性很关键,注意设置为true.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;注意 &lt;strong&gt;android:resource=&amp;rdquo;@xml/robber&amp;rdquo;&lt;/strong&gt; 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.&lt;/p&gt;
-&lt;p&gt;在MainActivity中设置一个按钮打开辅助服务.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;findViewById&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;btn_open_setting&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setOnClickListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; View&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;OnClickListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onClick&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;View v&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                Intent intent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Intent&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Settings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_ACCESSIBILITY_SETTINGS&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                startActivity&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;intent&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This class represents a node of the window content as well as actions that can be requested from its source. From the point of view of an AccessibilityService a window content is presented as tree of accessibility node info which may or may not map one-to-one to the view hierarchy. In other words, a custom view is free to report itself as a tree of accessibility node info.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;微信红包是一个NodeInfo,领取红包也是一个NodeInfo,他们的父布局也是一个NodeInfo.&lt;/p&gt;
-&lt;h4 id=&#34;基本逻辑&#34;&gt;基本逻辑&lt;/h4&gt;
-&lt;p&gt;如图所示:&lt;/p&gt;
-&lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;ul&gt;
-&lt;li&gt;怎么判断？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;判断微信红包这四个字&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;怎么模拟点击操作&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;accessibilityNodeInfo.perform(AccessibilityNodeInfo.ACTION_CLICK);&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;这个时候问题来了,当点击过后应该是拆红包的字样,而当我去判断这三个字的时候,发现微信已经把微信换成了 &lt;code&gt;開&lt;/code&gt;这张图片.(好像微信也在判断如果你写了这样的程序,他们就把&lt;code&gt;拆红包&lt;/code&gt;换成&lt;code&gt;開&lt;/code&gt;的图片.只是猜测,我也没弄懂为啥惟独我的微信不是拆红包而变成了開.不要问我为什么是開是张图片,而不是字.反编译一下就看见了) 这个时候该怎么判断呢?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;每个发来的红包都有『发了一个红包&amp;hellip;』的字样,我们用findAccessibilityNodeInfosByText(&amp;ldquo;发了一个红包&amp;rdquo;)来返回NodeInfo,而NodeInfo的getParent()方法会返回父控件.我们来判断一个info.getParent().getChindCount();从这个图以及Log信息中看出count的数量是5个.&lt;/p&gt;
-&lt;p&gt;我们来对着上图猜测一下View&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;头像+ T^T (TextView)&lt;/li&gt;
-&lt;li&gt;发了一个红包,金额随机(TextView)&lt;/li&gt;
-&lt;li&gt;恭喜发财,大吉大利!(TextView)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;開&lt;/strong&gt; (ImageView)&lt;/li&gt;
-&lt;li&gt;X (View)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;怎么来找到 &lt;strong&gt;開&lt;/strong&gt; 这个图片呢,getChildAt(N)即可.代码中我是遍历所有的childNodeInfo都强制点击了一遍,其实是不用这样的.从布局上看父布局可以猜测RelativeLayout, &lt;strong&gt;X&lt;/strong&gt; (关闭的x)这个View应该是在最后写入的,開是倒数第二个,也就是info.getParent().getChildAt(3).perfoerm(AssessibilityNodeInfo.ACTION_CLICK);有时候count数量也会出现6的时候,忘记是什么情况下了,感兴趣的可以测试一下.所以我还是坚持遍历来拆红包,反正X这个View是声明在最后的.凭感觉;)&lt;/p&gt;
-&lt;p&gt;其它的原理都差不多了,懂了上面说的大概看一下代码就都明白了.&lt;/p&gt;
-&lt;p&gt;手慢了&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;手慢了的情况下,好的处理办法是直接X.但是我点击 &lt;strong&gt;X&lt;/strong&gt; 之后会再次点开这个红包,一直循环.解决办法:当出现手慢了的时候,模拟点击看看大家的手气,然后进入红包详情页面,再关闭即可.&lt;/p&gt;
-&lt;p&gt;领取过了&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; xyz.isunxu.robredpackage.service&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.accessibilityservice.AccessibilityService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.app.Service&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.content.Intent&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.os.IBinder&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.util.Log&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityRecord&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.webkit.WebView&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.List&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.apache.http.NameValuePair&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.apache.http.client.HttpClient&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; xyz.isunxu.robredpackage.Application.MyApplication&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RobRedPackageService&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; AccessibilityService &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; AccessibilityNodeInfo mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onAccessibilityEvent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityEvent event&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-        AccessibilityNodeInfo previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-        mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getSource&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getEventType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TYPE_WINDOW_CONTENT_CHANGED&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; accessibilityNodeInfos
-                    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;微信红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;accessibilityNodeInfos &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                AccessibilityNodeInfo info &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                    previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; info&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-                    info&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; info&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                    info&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getEventType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TYPE_WINDOW_STATE_CHANGED&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infos &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;拆红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infos &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoDetails &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;红包详情&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoDetails &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoSlows &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;手慢了&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoSlows &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoKais &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;发了一个红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoKais &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChildCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-                Log&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sunxu_log&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;size--&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; size&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#75715e&#34;&gt;//for (AccessibilityNodeInfo info : infoKais) {
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#75715e&#34;&gt;//    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#75715e&#34;&gt;//}
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChildCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-                    accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onInterrupt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;todo&#34;&gt;TODO&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;如果不是最新的红包,那就不抢.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这牵扯到AccessibilityNodeInfo的比较,我也尝试过.NodeInfo的getContentDescription(),getViewIdResoucreName()当我想打印出它们的信息时,程序后面就不执行了.而且previousNodeInfo的数据储存也没有实现,有兴趣的小伙伴可以实现下.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;开启服务后不能与群里的小伙伴交流,只能一味地抢.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这是因为要说话时,会触碰语音按键,点击按键会出现浮动窗口,此时就是窗口出现变化了.然后就是那一堆判断逻辑了..这个怎么改我还没想好,可能还是涉及到上面的问题,AccessibilityNodeInfo的比较.等我想好了,会继续完善.&lt;/p&gt;
-&lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;保持程序运行在后台与服务开启.&lt;/li&gt;
-&lt;li&gt;要抢红包之前可以先把程序关闭,然后重新开启程序与服务.(以免程序会被系统强制关闭)&lt;/li&gt;
-&lt;li&gt;设置屏幕熄灭时间长一点&lt;/li&gt;
-&lt;li&gt;停留在选择要抢红包的群的页面中.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;支持&#34;&gt;支持&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;在github上给我一个star就好.&lt;/li&gt;
-&lt;li&gt;捐赠: &lt;a href=&#34;https://sunxu.work/about&#34;&gt;https://sunxu.work/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个程序完全是娱乐为主,并不作商业目的.&lt;/p&gt;
-&lt;p&gt;编程让我很快乐,希望能永远快乐下去.&lt;/p&gt;
-&lt;p&gt;最后,祝好;)&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>《Android 50 Hacks》读书笔记-布局篇</title>
-      <link>https://sunxu.work/android/android-50-hack-part-1/</link>
-      <pubDate>Mon, 04 Jan 2016 18:06:04 CST</pubDate>
-      <author>Xu Sun</author>
-      <guid>https://sunxu.work/android/android-50-hack-part-1/</guid>
-      <description>&lt;p&gt;最近在&lt;a href=&#34;http://www.it-ebooks.info/&#34;&gt;http://www.it-ebooks.info/&lt;/a&gt;看见了一本《50 Android Hacks》,感觉还好.在这里写一下读书笔记.&lt;/p&gt;
-&lt;p&gt;前言:&lt;/p&gt;
-&lt;p&gt;我不知道作为一个没过四级的人是怎么看完这本书的.记得以前英语考试时,读阅读时总是不耐心,读着读着就烦气了.后来的考试总是喜欢看着答案蒙.至于现在为什么能耐心阅读关于计算机的一些英文文档,可能就是我对自己有野心,对程序员这个行业有野心吧.希望有一天我能骄傲地跟别人说我是一个程序员.&lt;/p&gt;
-&lt;h3 id=&#34;hack-1-centering-views-using-weights-android-v16&#34;&gt;Hack 1 Centering views using weights (Android v1.6+)&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;What should I write if I want a but- ton to be centered and 50% of its parent width?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;LinearLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#FFFFFF&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;android:gravity=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;center&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;android:orientation=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;horizontal&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;android:weightSum=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;Button&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0dp&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_weight=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.5&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Click me&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/LinearLayout&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意LinearLayout中的属性 &lt;em&gt;android:weightSum&lt;/em&gt; . 默认情况下weightSum的值是父控件里面所有child的数量.&lt;/p&gt;
-&lt;p&gt;上面这段代码实现了button的width是父控件的50%.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;计算公式:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Button&amp;rsquo;s width + Button&amp;rsquo;s weight * 200 / sum(weight);(假设LinearLayout的宽度是200)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;也就是 控件宽度+父控件剩余宽度*比例 (首先按照控件声明的尺寸进行分配,然后剩下的尺寸按照weight分配)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;hack-2-using-lazy-loading-and-avoiding-replication-android-v16&#34;&gt;Hack 2 Using lazy loading and avoiding replication (Android v1.6+)&lt;/h3&gt;
-&lt;p&gt;这个技巧将会学到:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;用 &lt;em&gt;include&lt;/em&gt; 标签避免xml代码的重复&lt;/li&gt;
-&lt;li&gt;使用ViewStub Class实现视图的懒加载&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;21-avoid-replication-using-the-include--tag&#34;&gt;2.1 Avoid replication using the &lt;!-- raw HTML omitted --&gt; tag&lt;/h4&gt;
-&lt;p&gt;我们想象一下在我们应用的每一个页面中添加一个同样的页脚,例如一个只带有应用名字的TextView.如果我们有很多个Activity,很多个xml文件.我们该怎么编辑它们?复制粘贴将会解决这个问题,但是看上去不是高效的.一个简单的途径就是用 &lt;em&gt;include&lt;/em&gt; 标签添加这个页脚到我们应用里.我们的其中一个Activity的xml文件就可以像这样:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;RelativeLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;match_parent&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;match_parent&amp;#34;&lt;/span&gt;
-   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TextView&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_centerInParent=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:gravity=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;center_horizontal&amp;#34;&lt;/span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@string/hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;include&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;layout=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@layout/footer&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;&lt;/span&gt;/RelativeLayout/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;footer的xml代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TextView&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_alignParentBottom=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginBottom=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;30dp&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:gravity=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;center_horizontal&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@string/footer_text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在第一个例子里面,我们在单独的footer.xml定义属性.可当Activity的xml中父控件是LinearLayout呢?我们再在footer.xml定义上面这些属性就无效了,因为像android:layout_marginBottom这些属性是在RelativeLayout才有效的.下面介绍第二种方式,在 &lt;em&gt;include&lt;/em&gt; 标签内定义android:layout_*这些属性.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;RelativeLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TextView&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_centerInParent=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:gravity=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;center_horizontal&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@string/hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;include&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;layout=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@layout/footer&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_alignParentBottom=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginBottom=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;30dp&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改过后的footer.xml:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;TextView&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:gravity=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;center&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@string/footer_text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注意footer.xml中的宽和高都要设置才能被有效覆盖.#### 2.2 Lazy loading views with the ViewStub class&lt;/p&gt;
-&lt;p&gt;ViewStub Class:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime. When a ViewStub is made visible, or when inflate() is invoked, the layout resource is inflated. The ViewStub then replaces itself in its parent with the inflated View or Views.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;你已经知道了ViewStub是什么,让我们来看一下该怎么用.在下面的例子中,你将会用一个ViewStub去懒加载 &lt;em&gt;MapView&lt;/em&gt; .想象创建一个用来描述地方详细信息的View.我们来看以下两种情况:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;一些地区没有GPS信息&lt;/li&gt;
-&lt;li&gt;用户可能不需要地图展示&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;SampleCode:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;RelativeLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;Button&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wrap_content&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:text=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@string/show_map&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:onClick=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;onShowMap&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;ViewStub&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:id=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@+id/map_stub&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@layout/map&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:inflatedId=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@+id/map_view&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/RelativeLayout&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;很明显,我们在Activity中用map_stub得到ViewStub,layout属性告诉ViewStub应该去加载哪个布局文件.&lt;/p&gt;
-&lt;p&gt;map.xml代码如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;com.google.android.maps.MapView&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:clickable=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:apiKey=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;my_api_key&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们需要讨论的是最后这个属性android:inflatedId.我们可以用 &lt;em&gt;inflate()&lt;/em&gt; 或者 &lt;em&gt;setVisibility&lt;/em&gt; 方法让这个View显示出来.在这个例子中,我们用了 &lt;em&gt;setVisibility(View.VISIBLE)&lt;/em&gt; ,因为我们不要对这个MapView做任何事情.如果我们需要得到一个引用, &lt;em&gt;inflate()&lt;/em&gt; 会返回这个View避免第二次去调用 &lt;em&gt;findViewById()&lt;/em&gt; .&lt;/p&gt;
-&lt;p&gt;Activity 代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MainActivity&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; MapActivity &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; View mViewStub&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Bundle savedInstanceState&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;savedInstanceState&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            setContentView&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            mViewStub &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; findViewById&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;map_stub&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onShowMap&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;View v&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            mViewStub&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setVisibility&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;View&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;VISIBLE&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;就像你看见的一样,是否展示这个地图只需要改变ViewStub的 &lt;em&gt;visibility&lt;/em&gt; 变量值即可.&lt;/p&gt;
-&lt;h3 id=&#34;hack-3-creating-a-custom-viewgroup-android-v16&#34;&gt;Hack 3 Creating a custom ViewGroup (Android v1.6+)&lt;/h3&gt;
-&lt;p&gt;当你正在设计App时,可能在页面中会有复杂的视图去展示.想象你正在创建一个纸牌游戏,并像下图的那样展示手牌.该怎么创建这个视图呢？&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;可以在RelativeLayout中设置margin,这是可行的.代码如下:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;RelativeLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#FF0000&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginLeft=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;30dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;20dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#00FF00&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginLeft=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;60dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;40dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/RelativeLayout&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;效果是介个样子的:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;下面介绍另外一种方式来创建相同类型的布局&amp;ndash;创建一个自定义 &lt;em&gt;ViewGroup&lt;/em&gt; .相比在xml中手动添加margins,自定义 &lt;em&gt;ViewGroup&lt;/em&gt; 的优点有:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;It’s easier to maintain if you’re using it in differ- ent activities.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;You can use custom attributes to customize the position of the ViewGroup chil- dren.&lt;/li&gt;
-&lt;li&gt;The XML will be easier to understand because it’ll be more concise.&lt;/li&gt;
-&lt;li&gt;If you need to change the margins, you won’t need to recalculate by hand everychild’s margin.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;31-understanding-how-android-draws-views&#34;&gt;3.1 Understanding how Android draws views&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Drawing the layout is a two-pass process: a measure pass and a layout pass. The measuring pass is implemented in measure(int, int) and is a top-down traversal of the View tree. Each View pushes dimension specifications down the tree during the recursion. At the end of the measure pass, every View has stored its measurements. The second pass happens in layout(int, int, int, int) and is also top-down. During this pass each parent is responsible for positioning all of its children using the sizes computed in the measure pass.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;为了理解这个概念,我们来分析一下绘制 &lt;em&gt;ViewGroup&lt;/em&gt; 的方式.第一步在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面去测量宽和高.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 会通过里面的子视图来计算它的大小.第二步通过在 &lt;em&gt;onLayout()&lt;/em&gt; 这个方法里面去放置它的子视图.在这个方法里面, &lt;em&gt;ViewGroup&lt;/em&gt; 通过在 &lt;em&gt;onMeasure()&lt;/em&gt; 方法里收集到子视图的信息来放置它们.&lt;/p&gt;
-&lt;h4 id=&#34;32-creating-the-cascadelayout&#34;&gt;3.2 Creating the CascadeLayout&lt;/h4&gt;
-&lt;p&gt;xml代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;FrameLayout&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:cascade=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res-auto&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;match_parent&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;match_parent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;com.manning.androidhacks.hack003.view.CascadeLayout&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fill_parent&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;cascade:horizontal_spacing=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;30dp&amp;#34;&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;cascade:vertical_spacing=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;20dp&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#FF0000&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#00FF00&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;View&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_width=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:layout_height=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;150dp&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:background=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/com.manning.androidhacks.hack003.view.CascadeLayout&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/FrameLayout&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着,我们来定义这些自定义属性.在 &lt;em&gt;res/values&lt;/em&gt; 这个文件夹下创建 &lt;em&gt;attrs.xml&lt;/em&gt; .代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;resources&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;declare-styleable&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;CascadeLayout&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;attr&lt;/span&gt;
-                &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;horizontal_spacing&amp;#34;&lt;/span&gt;
-                &lt;span style=&#34;color:#a6e22e&#34;&gt;format=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dimension&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;attr&lt;/span&gt;
-                &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;vertical_spacing&amp;#34;&lt;/span&gt;
-                &lt;span style=&#34;color:#a6e22e&#34;&gt;format=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dimension&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/declare-styleable&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/resources&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 &lt;em&gt;res/values/dimens.xml&lt;/em&gt; 中定义自定义属性的值.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;resources&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dimen&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cascade_horizontal_spacing&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;10dp&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dimen&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dimen&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cascade_vertical_spacing&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;10dp&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dimen&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/resources&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在理解完Android怎样绘制视图后,你可能该想着去创建一个 &lt;em&gt;CascadeLayout&lt;/em&gt; 的类去继承 &lt;em&gt;ViewGroup&lt;/em&gt; ,在这个类里面去重写 &lt;em&gt;onMeasure()&lt;/em&gt; 和 &lt;em&gt;onLayout()&lt;/em&gt; 这两个方法.因为代码有一点长,我们分三部分来分析:构造方法, &lt;em&gt;onMeasure()&lt;/em&gt; , &lt;em&gt;onLayout()&lt;/em&gt; .
-下面是构造方法的代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; ViewGroup &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; mHorizontalSpacing&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; mVerticalSpacing&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#75715e&#34;&gt;// Constructor called when view instance is created from an XML file.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#75715e&#34;&gt;// mHorizontalSpacing and mVerticalSpacing are read from custom attributes. If they’re not present, use default values.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        TypedArray a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;obtainStyledAttributes&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;attrs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;styleable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            mHorizontalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDimensionPixelSize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;styleable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout_horizontal_spacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
-                    getResources&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDimensionPixelSize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dimen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cascade_horizontal_spacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;));&lt;/span&gt;
-            mVerticalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDimensionPixelSize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;styleable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout_vertical_spacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
-                    getResources&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDimensionPixelSize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dimen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;cascade_vertical_spacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;));&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;finally&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;recycle&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在 &lt;em&gt;onMeasure()&lt;/em&gt; 这个方法里面写代码前,我们创建一个自定义的 &lt;em&gt;LayoutParams&lt;/em&gt; 类,作为 &lt;em&gt;CascadeLayout&lt;/em&gt; 的内部类,为每一个子view保留x,y的坐标值.代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; ViewGroup&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; y&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; w&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; h&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;w&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; h&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;为了去使用 &lt;em&gt;CascadeLayout.LayoutParams&lt;/em&gt; 这个类,我们需要在 &lt;em&gt;CascadeLayout&lt;/em&gt; 这个类中重写一些额外的方法: &lt;em&gt;checkLayoutParams()&lt;/em&gt; , &lt;em&gt;generateDefaultLayoutParams()&lt;/em&gt; , &lt;em&gt;generateLayoutParams(AttributeSet attrs)&lt;/em&gt; , &lt;em&gt;generateLayoutParams(ViewGroup.LayoutParams p)&lt;/em&gt; .代码:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;checkLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ViewGroup&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; p &lt;span style=&#34;color:#66d9ef&#34;&gt;instanceof&lt;/span&gt; LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; LayoutParams &lt;span style=&#34;color:#a6e22e&#34;&gt;generateDefaultLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;WRAP_CONTENT&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;WRAP_CONTENT&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; LayoutParams &lt;span style=&#34;color:#a6e22e&#34;&gt;generateLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;getContext&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; LayoutParams &lt;span style=&#34;color:#a6e22e&#34;&gt;generateLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ViewGroup&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; p&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;onMeasure()&lt;/em&gt; ,是这个类的关键.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onMeasure&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; widthMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; heightMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-	     &lt;span style=&#34;color:#75715e&#34;&gt;// Use width and height to calculate layout’s final size and children’s x and y positions.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; height &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getPaddingTop&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; count &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getChildCount&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            View child &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getChildAt&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#75715e&#34;&gt;// Make every child measure itself.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;            measureChild&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;child&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; widthMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; heightMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;￼&lt;/span&gt;LayoutParams lp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-            width &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getPaddingLeft&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; mHorizontalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-            lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; width&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-            lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; height&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-            width &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getMeasuredWidth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-            height &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; mVerticalSpacing&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        width &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; getPaddingRight&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        height &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; getChildAt&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;getChildCount&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getMeasuredHeight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; getPaddingBottom&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#75715e&#34;&gt;// Uses calculated width and height to set measured dimensions of whole layout.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;        setMeasuredDimension&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;resolveSize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;width&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; widthMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;),&lt;/span&gt; resolveSize&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;height&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; heightMeasureSpec&lt;span style=&#34;color:#f92672&#34;&gt;));&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最后一步是创建 &lt;em&gt;onLayout()&lt;/em&gt; .&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onLayout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;boolean&lt;/span&gt; changed&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; l&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; r&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; count &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getChildCount&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; count&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            View child &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; getChildAt&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-            LayoutParams lp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-            child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;layout&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getMeasuredWidth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(),&lt;/span&gt; lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;y&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getMeasuredHeight&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;33-adding-custom-attributes-to-the-children&#34;&gt;3.3 Adding custom attributes to the children&lt;/h4&gt;
-&lt;p&gt;在最后一个章节中,你将会学到如何为子视图添加自定义属性.例如,为一个特定的子视图重新定义垂直间距.如下图&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;添加新的属性到 &lt;em&gt;attrs.xml&lt;/em&gt; 中:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;declare-styleable&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;CascadeLayout_LayoutParams&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;attr&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;layout_vertical_spacing&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;format=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dimension&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/declare-styleable&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;因为这个属性名是以 *layout_* 开始的,所以它被添加到 *LayoutParams* 属性中.在 *LayoutParams* 这个构造方法中取出这个属性.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;LayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        TypedArray a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;obtainStyledAttributes&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;attrs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;styleable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout_LayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            verticalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getDimensionPixelSize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;styleable&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;CascadeLayout_LayoutParams_layout_vertical_spacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
-                    &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;finally&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            a&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;recycle&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;verticalSpacing&lt;/em&gt; 是一个 &lt;em&gt;public field&lt;/em&gt; .我们会在 &lt;em&gt;CascadeLayout&lt;/em&gt; 中用到,如果子视图的 &lt;em&gt;LayoutParams&lt;/em&gt; 中包含 &lt;em&gt;verticalSpacing&lt;/em&gt; ,我们就可以使用它.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt; verticalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mVerticalSpacing&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-        LayoutParams lp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;LayoutParams&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getLayoutParams&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;verticalSpacing&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-            verticalSpacing &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lp&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;verticalSpacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
-        width &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; child&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getMeasuredWidth&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-        height &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; verticalSpacing&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;hack-4-preferences-hacks-android-v16&#34;&gt;Hack 4 Preferences hacks (Android v1.6+)&lt;/h3&gt;
-&lt;p&gt;定义一个偏好设置界面,只需要写一些xml,就可以快速生成.大家看代码就可以懂了,跟自定义view类似.&lt;/p&gt;
-&lt;p&gt;效果图:&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;在 &lt;em&gt;res/xml&lt;/em&gt; 中创建 &lt;em&gt;prefs.xml&lt;/em&gt; .&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34;?&amp;gt;&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  Copyright (c) 2012 Manning
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;  See the file license.txt for copying permission.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;--&amp;gt;&lt;/span&gt;
-
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;PreferenceScreen&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;xmlns:android=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://schemas.android.com/apk/res/android&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_first_preferencescreen_key&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Preferences&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;PreferenceCategory&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;User&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;EditTextPreference&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_username&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:summary=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Username:&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/PreferenceCategory&amp;gt;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;PreferenceCategory&lt;/span&gt;
-        &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Application&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;Preference&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_rate&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:summary=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Rate the app in the store!&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Rate the app&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;Preference&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_share&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:summary=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Share the app with your friends&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Share it&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;com.manning.androidhacks.hack004.preference.EmailDialog&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:dialogIcon=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@drawable/ic_launcher&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:dialogTitle=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Send Feedback&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:dialogMessage=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Do you want to send an email with feedback?&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_sendemail_key&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:negativeButtonText=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Cancel&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:positiveButtonText=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;OK&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:summary=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Send your feedback by e-mail&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Send Feedback&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;com.manning.androidhacks.hack004.preference.AboutDialog&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:dialogIcon=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@drawable/ic_launcher&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:dialogTitle=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;About&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:key=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_about_key&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:negativeButtonText=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@null&amp;#34;&lt;/span&gt;
-            &lt;span style=&#34;color:#a6e22e&#34;&gt;android:title=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;About&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/PreferenceCategory&amp;gt;&lt;/span&gt;
-
-&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/PreferenceScreen&amp;gt;&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;xml会创建好视图,我们只需在activity中写好逻辑即可.不一样的是,activity需要继承 &lt;em&gt;android.preference.PreferenceActivity&lt;/em&gt; .&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MainActivity&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; PreferenceActivity &lt;span style=&#34;color:#66d9ef&#34;&gt;implements&lt;/span&gt;
-    OnSharedPreferenceChangeListener &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Bundle savedInstanceState&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;savedInstanceState&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    addPreferencesFromResource&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;xml&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;prefs&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-
-    Preference sharePref &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; findPreference&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_share&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    Intent shareIntent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Intent&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-    shareIntent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Intent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_SEND&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    shareIntent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/plain&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    shareIntent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;putExtra&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Intent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;EXTRA_SUBJECT&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Check this app!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    shareIntent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;putExtra&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Intent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;EXTRA_TEXT&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;
-        &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Check this awesome app at: ...&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    sharePref&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setIntent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;shareIntent&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-
-    Preference ratePref &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; findPreference&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_rate&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    Uri uri &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Uri&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;parse&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;market://details?id=&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; getPackageName&lt;span style=&#34;color:#f92672&#34;&gt;());&lt;/span&gt;
-    Intent goToMarket &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Intent&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Intent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_VIEW&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; uri&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    ratePref&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setIntent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;goToMarket&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-
-    updateUserText&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onResume&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onResume&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-
-    getPreferenceScreen&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getSharedPreferences&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;registerOnSharedPreferenceChangeListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;protected&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onPause&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onPause&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-
-    getPreferenceScreen&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getSharedPreferences&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt;
-        &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;unregisterOnSharedPreferenceChangeListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onSharedPreferenceChanged&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;
-      SharedPreferences sharedPreferences&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; String key&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;key&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;equals&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-      updateUserText&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;updateUserText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    EditTextPreference pref&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    pref &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;EditTextPreference&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; findPreference&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pref_username&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    String user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pref&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
-
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;user &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-      user &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;?&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-    pref&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setSummary&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Username: %s&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; user&lt;span style=&#34;color:#f92672&#34;&gt;));&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;自定义一个 &lt;em&gt;preferences&lt;/em&gt; 就像自定义view一样.为了更好地理解它,我们来看一下 &lt;em&gt;EmailDialog&lt;/em&gt; 这个类的代码.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// Custom class should extend some of existing preferences widgets. In this case, we’ll use DialogPreference.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;EmailDialog&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; DialogPreference &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-  Context mContext&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;EmailDialog&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;EmailDialog&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;EmailDialog&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Context context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; AttributeSet attrs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; defStyle&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-
-  &lt;span style=&#34;color:#75715e&#34;&gt;// Constructors are the same as those used to create a custom view extending the View class.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;context&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; attrs&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; defStyle&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    mContext &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; context&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-
-  &lt;span style=&#34;color:#75715e&#34;&gt;// onClick() is overridden. If users press OK button, then we’ll launch email Intent with helper class.
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
-  &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt;
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onClick&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;DialogInterface dialog&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; which&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;onClick&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;dialog&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; which&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;DialogInterface&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;BUTTON_POSITIVE&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; which&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-      LaunchEmailUtil&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;launchEmailToIntent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;mContext&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
-    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;好了,以上就是这本书的第一章了,完成了4/50.有什么不对的,或者建议,大家可以直接留言给我,也可以给我发邮件.&lt;/p&gt;
-&lt;p&gt;15年就这么过去了,元旦那天朋友圈里,公众号里大家都在忙着自我检讨.想了想去年除了像每年一样都感觉孤独外,还有就是焦虑,每天都在焦虑.这一年有努力,有懈怠,有期待,有迷茫.知乎上的名字是taken2016,还没来得及改.记得当初起这名是想16年是收获的一年,而如今已经步入16年了.今年真的会是收获的一年咩?实在不行就换成taken2017吧:)不断积累,期待着,期待着.&lt;/p&gt;
-&lt;p&gt;好了,写了点没用的.希望写的东西对大家有用,非常期待大家对我的建议,无论是生活上还是技术上.毕竟我还是个刚入职不到一年的小菜鸟~~&lt;/p&gt;
-&lt;p&gt;有的朋友给我发邮件说这书太老,已经没有翻译的价值,况且世面上已经有中文版了.我去找了下确实,而且还有相应的中文PDF.所以我不打算再写后边的关于这书的篇章了.&lt;/p&gt;
-&lt;p&gt;有兴趣的小伙伴可以边看边参考完整的代码.&lt;a href=&#34;https://github.com/Macarse/50AH-code&#34;&gt;本书github项目地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;最后,祝好:)&lt;/p&gt;</description>
+</description>
     </item>
     
   </channel>

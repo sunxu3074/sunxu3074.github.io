@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-      <title>key on ban&amp;pick </title>
+      <title>Key on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/key/</link>
     <language>en-us</language>
@@ -14,12 +15,17 @@
       <pubDate>Sun, 24 Jun 2018 12:54:51 CST</pubDate>
       <author>Xu Sun</author>
       <guid>https://sunxu.work/android/encrypt-third-party-keys/</guid>
-      <description>&lt;h3 id=&#34;参考资料&#34;&gt;参考资料&lt;/h3&gt;
+      <description>
+
+&lt;h3 id=&#34;参考资料:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;参考资料&lt;/h3&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://juejin.im/entry/5791c4b78ac247005f0c4333&#34;&gt;android 中保存静态秘钥实践&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/venusic/article/details/52347316&#34;&gt;JNI签名验证防止恶意调用&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;先mark再写&#34;&gt;&lt;strong&gt;先mark再写&lt;/strong&gt;&lt;/h4&gt;</description>
+
+&lt;h4 id=&#34;先mark再写:bb2fccb67c3d77ade7b5e4de8cc0fc46&#34;&gt;&lt;strong&gt;先mark再写&lt;/strong&gt;&lt;/h4&gt;
+</description>
     </item>
     
   </channel>

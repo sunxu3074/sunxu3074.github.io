@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-      <title>ijkplayer on ban&amp;pick </title>
+      <title>Ijkplayer on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/ijkplayer/</link>
     <language>en-us</language>
@@ -15,6 +16,7 @@
       <author>Xu Sun</author>
       <guid>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</guid>
       <description>&lt;p&gt;协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;提到流播放就不得不提到 &lt;em&gt;Vitamio&lt;/em&gt; .协议支持全面，嵌入项目简单，对个人开发者免费。项目地址: &lt;a href=&#34;https://github.com/yixia/VitamioBundle&#34;&gt;https://github.com/yixia/VitamioBundle&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;B站开源出来的 &lt;em&gt;ijkplayer&lt;/em&gt; .项目维护及时，许多大公司都在用。网易云音乐，斗鱼TV，火猫TV等等，影响力可见一斑。支持RTMP，HLS。项目地址:&lt;a href=&#34;https://github.com/Bilibili/ijkplayer&#34;&gt;https://github.com/Bilibili/ijkplayer&lt;/a&gt;.&lt;/li&gt;
@@ -22,8 +24,11 @@
 &lt;li&gt;大牛直播出品的 &lt;em&gt;SmarterStreaming&lt;/em&gt;. 个人使用免费，项目地址:&lt;a href=&#34;https://github.com/daniulive/SmarterStreaming&#34;&gt;https://github.com/daniulive/SmarterStreaming&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;新浪开源出来的 &lt;em&gt;sinavideo_playersdk&lt;/em&gt;. 完全免费，你甚至可以修改备注。不过只支持hls协议，定制简单。项目地址:&lt;a href=&#34;https://github.com/SinaVDDeveloper/sinavideo_playersdk&#34;&gt;https://github.com/SinaVDDeveloper/sinavideo_playersdk&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;希望能帮助到一些刚接触流播放的同学，下篇我会写用Mac搭建 &lt;em&gt;nginx&lt;/em&gt; + &lt;em&gt;HLS&lt;/em&gt; 的点播服务器。&lt;/p&gt;
-&lt;p&gt;最后，祝好:)&lt;/p&gt;</description>
+
+&lt;p&gt;最后，祝好:)&lt;/p&gt;
+</description>
     </item>
     
   </channel>

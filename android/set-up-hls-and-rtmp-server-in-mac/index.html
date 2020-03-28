@@ -53,7 +53,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -77,8 +77,6 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
-
-<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -193,22 +191,45 @@
 
   <div>
         <article itemprop="articleBody" id="content">
-           <p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
-<h3 id="安装-homebrew">安装 homebrew</h3>
+           
+
+<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
+
+<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
+
 <p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
-<h3 id="安装-nginx">安装 nginx</h3>
+
+<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
+
 <pre><code>brew tap homebrew/nginx
-</code></pre><pre><code>brew install nginx-full --with-rtmp-module
-</code></pre><p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
+</code></pre>
+
+<pre><code>brew install nginx-full --with-rtmp-module
+</code></pre>
+
+<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
+
 <pre><code>brew options nginx-full
-</code></pre><p>通过上面这段代码可以看见编译nginx的选项模块。</p>
-<h3 id="运行-nginx">运行 nginx</h3>
+</code></pre>
+
+<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
+
+<h3 id="运行-nginx:4a9c6fc472c116c64096855aa4e81846">运行 nginx</h3>
+
 <p>执行:</p>
+
 <pre><code>nginx
-</code></pre><p>然后在浏览器打开 <a href="localhost:8080">localhost:8080</a> 如果出现nginx，那么你的nginx就安装成功了。</p>
-<h3 id="配置">配置</h3>
+</code></pre>
+
+<p>然后在浏览器打开 <a href="localhost:8080">localhost:8080</a> 如果出现nginx，那么你的nginx就安装成功了。</p>
+
+<h3 id="配置:4a9c6fc472c116c64096855aa4e81846">配置</h3>
+
 <pre><code>brew info nginx
-</code></pre><p>通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。</p>
+</code></pre>
+
+<p>通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。</p>
+
 <pre><code>==&gt; Caveats
 Docroot is: /usr/local/var/www
 
@@ -234,9 +255,15 @@ To have launchd start homebrew/nginx/nginx-full now and restart at login:
   brew services start homebrew/nginx/nginx-full
 Or, if you don't want/need a background service you can just run:
   nginx
-</code></pre><p>nginx的配置文件在:</p>
+</code></pre>
+
+<p>nginx的配置文件在:</p>
+
 <pre><code>/usr/local/etc/nginx/nginx.conf
-</code></pre><p>打开配置文件并编辑:</p>
+</code></pre>
+
+<p>打开配置文件并编辑:</p>
+
 <pre><code>http {
    #  这个模块是默认的，注意rtmp与http平级
 }
@@ -251,19 +278,40 @@ rtmp {
         }
     }
 }
-</code></pre><p>重启nginx:</p>
+</code></pre>
+
+<p>重启nginx:</p>
+
 <pre><code>nginx -s reload
-</code></pre><pre><code>nginx -s stop
-</code></pre><pre><code>nginx
-</code></pre><h3 id="安装-ffmpeg">安装 FFmpeg</h3>
+</code></pre>
+
+<pre><code>nginx -s stop
+</code></pre>
+
+<pre><code>nginx
+</code></pre>
+
+<h3 id="安装-ffmpeg:4a9c6fc472c116c64096855aa4e81846">安装 FFmpeg</h3>
+
 <pre><code>brew install ffmpeg
-</code></pre><h3 id="推流">推流</h3>
+</code></pre>
+
+<h3 id="推流:4a9c6fc472c116c64096855aa4e81846">推流</h3>
+
 <pre><code>ffmpeg -re -i ~/Desktop/test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost:1935/sunxulive/test
-</code></pre><p>然后在支持rtmp协议的机器上播放url即可。</p>
+</code></pre>
+
+<p>然后在支持rtmp协议的机器上播放url即可。</p>
+
 <pre><code>rtmp://localhost:1935/sunxulive/test
-</code></pre><p>这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。</p>
-<h3 id="hls-点播">hls 点播</h3>
+</code></pre>
+
+<p>这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。</p>
+
+<h3 id="hls-点播:4a9c6fc472c116c64096855aa4e81846">hls 点播</h3>
+
 <p>http里面的server模块里添加:</p>
+
 <pre><code>location /hls {   
 		  types {  
              application/vnd.apple.mpegurl m3u8;  
@@ -271,17 +319,32 @@ rtmp {
          }  
          root /temp;
 }  
-</code></pre><p>重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。</p>
+</code></pre>
+
+<p>重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。</p>
+
 <pre><code>http://192.168.0.149:8082/test.m3u8
-</code></pre><p>这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。</p>
+</code></pre>
+
+<p>这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。</p>
+
 <p>如果是很多.m3u8文件，可以每个文件夹放一个.m3u8，然后访问 <a href="http://192.168.0.149:8082/hls/filename/test.m3u8">http://192.168.0.149:8082/hls/filename/test.m3u8</a> 即可。</p>
-<h3 id="切片">切片</h3>
+
+<h3 id="切片:4a9c6fc472c116c64096855aa4e81846">切片</h3>
+
 <pre><code>ffmpeg -i ~/Desktop/1080p_4_3_HQ.mp4 -c:v libx264  -c:a aac -f hls -hls_list_size 0 -hls_time 5 /temp/616/test.m3u8
-</code></pre><h3 id="缓存和视频压缩">缓存和视频压缩</h3>
+</code></pre>
+
+<h3 id="缓存和视频压缩:4a9c6fc472c116c64096855aa4e81846">缓存和视频压缩</h3>
+
 <p>用proxy_cache 实现ts静态资源的缓存，但是试了各种方法参数，还是未能实现，最近查了些资料可能与我只用我的一个MAC有关，因为proxy_cache是反向代理缓存，中间加个代理服务器就行了。</p>
+
 <p>视频压缩涉及到码率，帧率，分辨率，清晰度等一系列的概念，我试了1080p下各种码率下视频的清晰度，然而基于图片质量的高低不同，分辨率和码率没有明确的换算关系，全凭肉眼感觉~尝试压缩一些录屏软件录好的一些720p视频，80k的码率就够用了，而我用电脑录得720p的80k码率视频已经看不清人了！可能跟二次解码有关系，也可能跟我直接转成m3u8文件有关系。<a href="http://blog.csdn.net/leixiaohua1020/article/details/12856087">http://blog.csdn.net/leixiaohua1020/article/details/12856087</a>博客上最后一张图反映出了一般情况下视频质量与码率存在线性关系，一般对视频质量要求不高的情况下，MOS=2或者3应该就差不多了。</p>
+
 <p>这就是最近忙的了，希望能对看到的人有些帮助。</p>
+
 <p>最后，祝好;)</p>
+
         </article>
   </div>
 </section>
@@ -289,25 +352,20 @@ rtmp {
 <aside id=comments>
     <div><h2> Comments </h2></div>
     <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
+<script type="text/javascript">
+    var disqus_shortname = 'taken2016';
+    var disqus_identifier = 'https:\/\/sunxu.work\/android\/set-up-hls-and-rtmp-server-in-mac\/';
+    var disqus_title = 'Mac搭建nginx\x2bhls\x2brtmp服务器';
+    var disqus_url = 'https:\/\/sunxu.work\/android\/set-up-hls-and-rtmp-server-in-mac\/';
+
     (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "taken2016" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </aside>
 
 <footer>
@@ -327,11 +385,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
+    
+    
+    
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i &lt; all.length; i += 1) {
+    for(i = 0; i < all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

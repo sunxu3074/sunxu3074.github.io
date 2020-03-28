@@ -1,6 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://sunxu.work/</loc>
+    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/android/encrypt-third-party-keys/</loc>
+    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/cs/magic_weapon_on_mac/</loc>
+    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/cs/github_starred_repository/</loc>
+    <lastmod>2016-07-05T14:48:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</loc>
+    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</loc>
+    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/android/auto-rob-red-package/</loc>
+    <lastmod>2016-01-15T01:36:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/android/android-50-hack-part-1/</loc>
+    <lastmod>2016-01-04T18:06:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/about/</loc>
+    <lastmod>2015-12-09T00:52:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/google4999e5e555b30243/</loc>
+  </url>
   
   <url>
     <loc>https://sunxu.work/android/commit-what-to-github-in-as/</loc>
@@ -15,195 +64,6 @@
   <url>
     <loc>https://sunxu.work/thinking/2015-12-15-diary/</loc>
     <lastmod>2015-12-15T00:38:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/android/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/encrypt-third-party-keys/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/encrypt/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/key/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/cs/</loc>
-    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/mac/</loc>
-    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/cs/magic_weapon_on_mac/</loc>
-    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/github/</loc>
-    <lastmod>2016-07-05T14:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/cs/github_starred_repository/</loc>
-    <lastmod>2016-07-05T14:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/resource/</loc>
-    <lastmod>2016-07-05T14:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/hls/</loc>
-    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</loc>
-    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/nginx/</loc>
-    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/rtmp/</loc>
-    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/</loc>
-    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/ijkplayer/</loc>
-    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/auto-rob-red-package/</loc>
-    <lastmod>2016-01-15T01:36:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E5%BE%AE%E4%BF%A1/</loc>
-    <lastmod>2016-01-15T01:36:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E6%8A%A2%E7%BA%A2%E5%8C%85/</loc>
-    <lastmod>2016-01-15T01:36:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/hacks/</loc>
-    <lastmod>2016-01-04T18:06:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/android-50-hack-part-1/</loc>
-    <lastmod>2016-01-04T18:06:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/thinking/</loc>
-    <lastmod>2015-12-15T00:38:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E5%91%A8%E8%AE%B0/</loc>
-    <lastmod>2015-12-15T00:38:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E7%8E%8B%E5%9E%A0/</loc>
-    <lastmod>2015-12-15T00:38:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/androidstudio/</loc>
-    <lastmod>2015-12-11T23:34:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/gitignore/</loc>
-    <lastmod>2015-12-11T23:34:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/hugo/</loc>
-    <lastmod>2015-12-09T22:31:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/personal-website/</loc>
-    <lastmod>2015-12-09T22:31:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2015-12-09T22:31:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2015-12-09T22:31:48+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/about/</loc>
-    <lastmod>2015-12-09T00:52:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/</loc>
-    <lastmod>2015-12-09T00:52:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/google4999e5e555b30243/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/categories/</loc>
   </url>
   
 </urlset>

@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>抢红包 on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/%E6%8A%A2%E7%BA%A2%E5%8C%85/</link>
     <language>en-us</language>
-    <author>Xu Sun</author>
+    <author>Sun Xu</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
     <updated>Fri, 15 Jan 2016 01:36:52 CST</updated>
     
@@ -13,57 +12,38 @@
       <title>实现全自动微信抢红包自带关闭技能</title>
       <link>https://sunxu.work/android/auto-rob-red-package/</link>
       <pubDate>Fri, 15 Jan 2016 01:36:52 CST</pubDate>
-      <author>Xu Sun</author>
+      <author>Sun Xu</author>
       <guid>https://sunxu.work/android/auto-rob-red-package/</guid>
-      <description>
-
-&lt;blockquote&gt;
+      <description>&lt;blockquote&gt;
 &lt;p&gt;接受红包的洗礼吧,凡人们！！&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;h4 id=&#34;项目地址:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;项目地址&lt;/h4&gt;
-
+&lt;h4 id=&#34;项目地址&#34;&gt;项目地址&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/sunxu3074/AutoRobRedPackage&#34;&gt;https://github.com/sunxu3074/AutoRobRedPackage&lt;/a&gt; 如果觉还不错,请给个 &lt;strong&gt;star&lt;/strong&gt; .&lt;/p&gt;
-
-&lt;h4 id=&#34;功能介绍:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;功能介绍&lt;/h4&gt;
-
+&lt;h4 id=&#34;功能介绍&#34;&gt;功能介绍&lt;/h4&gt;
 &lt;p&gt;效果展示&lt;/p&gt;
-
 &lt;p&gt;传到&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html&#34;&gt;优酷空间&lt;/a&gt;里面了,墙外的小伙伴可观看YouTube.&lt;/p&gt;
-
 &lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;//www.youtube.com/embed/OvmtSiPuC5I&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
 
-
 &lt;p&gt;效果&lt;/p&gt;
-
 &lt;p&gt;你只用把手机打开到你想要抢红包的群里,然后把屏幕熄灭时间调到10分钟(如果超过10了还没人发红包,说明你选错群了..)就ok了,然后就可以撒手不管该干嘛干嘛去了.&lt;/p&gt;
-
-&lt;h3 id=&#34;refer-link:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;Refer link&lt;/h3&gt;
-
+&lt;h3 id=&#34;refer-link&#34;&gt;Refer link&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&#34;&gt;http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&#34;&gt;http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&#34;&gt;http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;refer-video:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;Refer video&lt;/h3&gt;
-
+&lt;h3 id=&#34;refer-video&#34;&gt;Refer video&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/q3HliaMjL38&#34;&gt;https://youtu.be/q3HliaMjL38&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&#34;&gt;http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;实现原理:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;实现原理&lt;/h3&gt;
-
+&lt;h3 id=&#34;实现原理&#34;&gt;实现原理&lt;/h3&gt;
 &lt;p&gt;用到了 AccessibilityService 这个类.这个类的目的主要目的就是为了让有障碍人士进行无障碍操作.&lt;/p&gt;
-
 &lt;p&gt;小伙伴们可以按照上面最后一个Mars老师讲的视频写出个大概,我主要说明一下 &lt;strong&gt;当抢红包后怎么自动关闭&lt;/strong&gt; 以及 &lt;strong&gt;被别人抢了,或者已经是自己抢过的判断逻辑及自动关闭&lt;/strong&gt;.&lt;/p&gt;
-
 &lt;p&gt;首先我们注册一个Service继承AccessibilityService,重写onAccessibilityEvent() 和onInterrupt() 两个方法.在AndroidManifest.xml 中注册并配置service.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt; &amp;lt;service
             android:name=&amp;quot;.service.RobRedPackageService&amp;quot;
             android:permission=&amp;quot;android.permission.BIND_ACCESSIBILITY_SERVICE&amp;quot;&amp;gt;
@@ -75,12 +55,8 @@
                 android:name=&amp;quot;android.accessibilityservice&amp;quot;
                 android:resource=&amp;quot;@xml/robber&amp;quot;/&amp;gt;
         &amp;lt;/service&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;至于为啥这样写,android/training上写的很明白.直接复制过来就OK.&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;至于为啥这样写,android/training上写的很明白.直接复制过来就OK.&lt;/p&gt;
 &lt;p&gt;接着在res/xml中创建robber.xml(名字随意,符合规范就好).&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
 &amp;lt;accessibility-service
     xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
@@ -95,77 +71,44 @@
     &amp;lt;!--android:canRequestTouchExplorationMode=&amp;quot;true&amp;quot;--&amp;gt;
     &amp;lt;!--android:canRequestEnhancedWebAccessibility=&amp;quot;true&amp;quot;--&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;description的属性值会显示在 服务/yourapp/一段描述,说白了就是服务的描述说明,告诉他咋用,我不会骗你,相信我吧!&lt;/li&gt;
 &lt;li&gt;packageNames 对哪个程序有效,com.tencent.mm就是微信的包名&lt;/li&gt;
 &lt;li&gt;accessibilityEventTypes 监听的事件类型. &lt;strong&gt;typeWindowContentChanged&lt;/strong&gt; 是当窗口内容发生变化,也就是当前页面有人说话或者你要打字弹出软键盘,或者有人发红包这都是窗口状态发生变化. &lt;strong&gt;typeWindowStateChanged&lt;/strong&gt; 是在你与应用互动时,当你点开红包,还没有抢时,这个就会被触发.&lt;/li&gt;
 &lt;li&gt;canRetrieveWindowContent这个属性很关键,注意设置为true.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;注意 &lt;strong&gt;android:resource=&amp;ldquo;@xml/robber&amp;rdquo;&lt;/strong&gt; 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.&lt;/p&gt;
-
+&lt;p&gt;注意 &lt;strong&gt;android:resource=&amp;rdquo;@xml/robber&amp;rdquo;&lt;/strong&gt; 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.&lt;/p&gt;
 &lt;p&gt;在MainActivity中设置一个按钮打开辅助服务.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;findViewById(R.id.btn_open_setting).setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
-                startActivity(intent);
-            }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;findViewById&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;btn_open_setting&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;setOnClickListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; View&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;OnClickListener&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onClick&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;View v&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                Intent intent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; Intent&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Settings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_ACCESSIBILITY_SETTINGS&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                startActivity&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;intent&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This class represents a node of the window content as well as actions that can be requested from its source. From the point of view of an AccessibilityService a window content is presented as tree of accessibility node info which may or may not map one-to-one to the view hierarchy. In other words, a custom view is free to report itself as a tree of accessibility node info.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;https://sunxu.work/media/node_info.png&#34; alt=&#34;node_info&#34;
-    /&gt;
-&lt;/figure&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;微信红包是一个NodeInfo,领取红包也是一个NodeInfo,他们的父布局也是一个NodeInfo.&lt;/p&gt;
-
-&lt;h4 id=&#34;基本逻辑:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;基本逻辑&lt;/h4&gt;
-
+&lt;h4 id=&#34;基本逻辑&#34;&gt;基本逻辑&lt;/h4&gt;
 &lt;p&gt;如图所示:&lt;/p&gt;
-
 &lt;p&gt;当屏幕出现可点击的红包时,我们就去让程序去点击它.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;https://sunxu.work/media/wechat_structure.png&#34; alt=&#34;wechat_structure&#34;
-     /&gt;
-&lt;/figure&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;ul&gt;
 &lt;li&gt;怎么判断？&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;判断微信红包这四个字&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;怎么模拟点击操作&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;accessibilityNodeInfo.perform(AccessibilityNodeInfo.ACTION_CLICK);&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;这个时候问题来了,当点击过后应该是拆红包的字样,而当我去判断这三个字的时候,发现微信已经把微信换成了 &lt;code&gt;開&lt;/code&gt;这张图片.(好像微信也在判断如果你写了这样的程序,他们就把&lt;code&gt;拆红包&lt;/code&gt;换成&lt;code&gt;開&lt;/code&gt;的图片.只是猜测,我也没弄懂为啥惟独我的微信不是拆红包而变成了開.不要问我为什么是開是张图片,而不是字.反编译一下就看见了) 这个时候该怎么判断呢?&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;我们来换一个方式来判断,当别人发来红包时.是介个样子滴.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;https://sunxu.work/media/wechat-open.png&#34; alt=&#34;wechat-open&#34;
-    attr width=&#34;50%&#34;  /&gt;
-&lt;/figure&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;每个发来的红包都有『发了一个红包&amp;hellip;』的字样,我们用findAccessibilityNodeInfosByText(&amp;ldquo;发了一个红包&amp;rdquo;)来返回NodeInfo,而NodeInfo的getParent()方法会返回父控件.我们来判断一个info.getParent().getChindCount();从这个图以及Log信息中看出count的数量是5个.&lt;/p&gt;
-
 &lt;p&gt;我们来对着上图猜测一下View&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;头像+ T^T (TextView)&lt;/li&gt;
 &lt;li&gt;发了一个红包,金额随机(TextView)&lt;/li&gt;
@@ -173,160 +116,132 @@
 &lt;li&gt;&lt;strong&gt;開&lt;/strong&gt; (ImageView)&lt;/li&gt;
 &lt;li&gt;X (View)&lt;/li&gt;
 &lt;/ol&gt;
-
 &lt;p&gt;怎么来找到 &lt;strong&gt;開&lt;/strong&gt; 这个图片呢,getChildAt(N)即可.代码中我是遍历所有的childNodeInfo都强制点击了一遍,其实是不用这样的.从布局上看父布局可以猜测RelativeLayout, &lt;strong&gt;X&lt;/strong&gt; (关闭的x)这个View应该是在最后写入的,開是倒数第二个,也就是info.getParent().getChildAt(3).perfoerm(AssessibilityNodeInfo.ACTION_CLICK);有时候count数量也会出现6的时候,忘记是什么情况下了,感兴趣的可以测试一下.所以我还是坚持遍历来拆红包,反正X这个View是声明在最后的.凭感觉;)&lt;/p&gt;
-
 &lt;p&gt;其它的原理都差不多了,懂了上面说的大概看一下代码就都明白了.&lt;/p&gt;
-
 &lt;p&gt;手慢了&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&#34;https://sunxu.work/media/wechat-slow.png&#34; alt=&#34;wechat-slow&#34;
-    attr width=&#34;50%&#34;  /&gt;
-&lt;/figure&gt;
-
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;手慢了的情况下,好的处理办法是直接X.但是我点击 &lt;strong&gt;X&lt;/strong&gt; 之后会再次点开这个红包,一直循环.解决办法:当出现手慢了的时候,模拟点击看看大家的手气,然后进入红包详情页面,再关闭即可.&lt;/p&gt;
-
 &lt;p&gt;领取过了&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; xyz.isunxu.robredpackage.service&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
 
-&lt;figure&gt;
-    &lt;img src=&#34;https://sunxu.work/media/wechat-details.png&#34; alt=&#34;wechat-details&#34;
-    attr width=&#34;50%&#34;  /&gt;
-&lt;/figure&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.accessibilityservice.AccessibilityService&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.app.Service&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.content.Intent&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.os.IBinder&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.util.Log&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.view.accessibility.AccessibilityRecord&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; android.webkit.WebView&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; java.util.List&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.apache.http.NameValuePair&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; org.apache.http.client.HttpClient&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; xyz.isunxu.robredpackage.Application.MyApplication&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package xyz.isunxu.robredpackage.service;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RobRedPackageService&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; AccessibilityService &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
-import android.accessibilityservice.AccessibilityService;
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
-import android.util.Log;
-import android.view.accessibility.AccessibilityEvent;
-import android.view.accessibility.AccessibilityNodeInfo;
-import android.view.accessibility.AccessibilityRecord;
-import android.webkit.WebView;
-import java.util.List;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import xyz.isunxu.robredpackage.Application.MyApplication;
-
-public class RobRedPackageService extends AccessibilityService {
-
-    private AccessibilityNodeInfo mAccessibilityNodeInfo = null;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;private&lt;/span&gt; AccessibilityNodeInfo mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
 
 
-    @Override public void onAccessibilityEvent(AccessibilityEvent event) {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onAccessibilityEvent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityEvent event&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
-        AccessibilityNodeInfo previousAccessibilityNodeInfo = null;
+        AccessibilityNodeInfo previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
 
-        mAccessibilityNodeInfo = event.getSource();
+        mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getSource&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
 
-        if (mAccessibilityNodeInfo == null) {
-            return;
-        }
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;mAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED) {
-            List&amp;lt;AccessibilityNodeInfo&amp;gt; accessibilityNodeInfos
-                    = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;微信红包&amp;quot;);
-            if (accessibilityNodeInfos != null &amp;amp;&amp;amp; accessibilityNodeInfos.size() &amp;gt; 0) {
-                AccessibilityNodeInfo info = accessibilityNodeInfos.get(accessibilityNodeInfos.size() - 1);
-                if (previousAccessibilityNodeInfo == null) {
-                    previousAccessibilityNodeInfo = info;
-                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-                else if (previousAccessibilityNodeInfo != null &amp;amp;&amp;amp; previousAccessibilityNodeInfo != info) {
-                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-                else {
-                    return;
-                }
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getEventType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TYPE_WINDOW_CONTENT_CHANGED&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; accessibilityNodeInfos
+                    &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;微信红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;accessibilityNodeInfos &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                AccessibilityNodeInfo info &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;accessibilityNodeInfos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; info&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+                    info&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; previousAccessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; info&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    info&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-            }
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-        }
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
+        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;event&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getEventType&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; AccessibilityEvent&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;TYPE_WINDOW_STATE_CHANGED&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
-            List&amp;lt;AccessibilityNodeInfo&amp;gt; infos = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;拆红包&amp;quot;);
-            if (infos != null &amp;amp;&amp;amp; infos.size() &amp;gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infos.get(infos.size() - 1);
-                accessibilityNodeInfo.performAction(AccessibilityNodeInfo.ACTION_CLICK);
-            }
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infos &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;拆红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infos &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infos&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoDetails = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;红包详情&amp;quot;);
-            if (infoDetails != null &amp;amp;&amp;amp; infoDetails.size() &amp;gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoDetails.get(infoDetails.size() - 1);
-                accessibilityNodeInfo.getParent().getChild(0).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                return;
-            }
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoDetails &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;红包详情&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoDetails &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoDetails&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoSlows = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;手慢了&amp;quot;);
-            if (infoSlows != null &amp;amp;&amp;amp; infoSlows.size() &amp;gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoSlows.get(infoSlows.size() - 1);
-                accessibilityNodeInfo.getParent().getChild(3).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                return;
-            }
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoSlows &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;手慢了&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoSlows &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoSlows&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-            List&amp;lt;AccessibilityNodeInfo&amp;gt; infoKais = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&amp;quot;发了一个红包&amp;quot;);
-            if (infoKais != null &amp;amp;&amp;amp; infoKais.size() &amp;gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoKais.get(infoKais.size() - 1);
-                int size = accessibilityNodeInfo.getParent().getChildCount();
-                Log.d(&amp;quot;sunxu_log&amp;quot;, &amp;quot;size--&amp;gt;&amp;quot; + size);
-                //for (AccessibilityNodeInfo info : infoKais) {
-                //    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                //}
-                for (int i = 0; i &amp;lt; accessibilityNodeInfo.getParent().getChildCount(); i++) {
-                    accessibilityNodeInfo.getParent().getChild(i).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-            }
-        }
-    }
+            List&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; infoKais &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mAccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;findAccessibilityNodeInfosByText&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;发了一个红包&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoKais &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                AccessibilityNodeInfo accessibilityNodeInfo &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;infoKais&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;size&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; 1&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; size &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChildCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt;
+                Log&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sunxu_log&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;size--&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; size&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#75715e&#34;&gt;//for (AccessibilityNodeInfo info : infoKais) {
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#75715e&#34;&gt;//    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#75715e&#34;&gt;//}
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChildCount&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;();&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;++)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+                    accessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getParent&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;getChild&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;performAction&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AccessibilityNodeInfo&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;ACTION_CLICK&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
+                &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-    @Override public void onInterrupt() {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;@Override&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;onInterrupt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
 
-    }
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
 
-}
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;todo:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;TODO&lt;/h4&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;todo&#34;&gt;TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;如果不是最新的红包,那就不抢.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;这牵扯到AccessibilityNodeInfo的比较,我也尝试过.NodeInfo的getContentDescription(),getViewIdResoucreName()当我想打印出它们的信息时,程序后面就不执行了.而且previousNodeInfo的数据储存也没有实现,有兴趣的小伙伴可以实现下.&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;开启服务后不能与群里的小伙伴交流,只能一味地抢.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;这是因为要说话时,会触碰语音按键,点击按键会出现浮动窗口,此时就是窗口出现变化了.然后就是那一堆判断逻辑了..这个怎么改我还没想好,可能还是涉及到上面的问题,AccessibilityNodeInfo的比较.等我想好了,会继续完善.&lt;/p&gt;
-
-&lt;h4 id=&#34;说明:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;说明&lt;/h4&gt;
-
+&lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;保持程序运行在后台与服务开启.&lt;/li&gt;
 &lt;li&gt;要抢红包之前可以先把程序关闭,然后重新开启程序与服务.(以免程序会被系统强制关闭)&lt;/li&gt;
 &lt;li&gt;设置屏幕熄灭时间长一点&lt;/li&gt;
 &lt;li&gt;停留在选择要抢红包的群的页面中.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4 id=&#34;支持:10c0bb15698ba9ccc7ae6ac2dfbaad30&#34;&gt;支持&lt;/h4&gt;
-
+&lt;h4 id=&#34;支持&#34;&gt;支持&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;在github上给我一个star就好.&lt;/li&gt;
 &lt;li&gt;捐赠: &lt;a href=&#34;https://sunxu.work/about&#34;&gt;https://sunxu.work/about&lt;/a&gt; (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;这个程序完全是娱乐为主,并不作商业目的.&lt;/p&gt;
-
 &lt;p&gt;编程让我很快乐,希望能永远快乐下去.&lt;/p&gt;
-
-&lt;p&gt;最后,祝好;)&lt;/p&gt;
-</description>
+&lt;p&gt;最后,祝好;)&lt;/p&gt;</description>
     </item>
     
   </channel>

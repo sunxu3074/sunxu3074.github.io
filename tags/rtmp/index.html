@@ -15,7 +15,7 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Rtmp : isunxu.xyz"/>
+<meta property="og:title" content="rtmp : sunxu.work"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -32,9 +32,9 @@
 
 
     <base href="https://sunxu.work/">
-    <title> Rtmp - sunxu.work </title>
+    <title> rtmp - sunxu.work </title>
     <link rel="canonical" href="https://sunxu.work/tags/rtmp/">
-    <link href="https://sunxu.work/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="Rtmp" />
+    <link href="https://sunxu.work/tags/rtmp/index.xml" rel="alternate" type="application/rss+xml" title="rtmp" />
 
     <link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
@@ -47,7 +47,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -71,6 +71,8 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
+
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -154,36 +156,23 @@
 
 <section id="main">
   <div>
-   <h1 id="title">Rtmp</h1>
+   <h1 id="title">rtmp</h1>
     
         <article class="post">
     <header>
       <h2><a href="https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/">Mac搭建nginx&#43;hls&#43;rtmp服务器 </a> </h2>
       <div class="post-meta">Thu, Jun 16, 2016 </div>
     </header>
-    <article itemprop="articleBody" id="content">
-    	<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
 
-<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
-
+    <p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
+<h3 id="安装-homebrew">安装 homebrew</h3>
 <p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
-
-<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
-
+<h3 id="安装-nginx">安装 nginx</h3>
 <pre><code>brew tap homebrew/nginx
-</code></pre>
-
-<pre><code>brew install nginx-full --with-rtmp-module
-</code></pre>
-
-<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
-
+</code></pre><pre><code>brew install nginx-full --with-rtmp-module
+</code></pre><p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
 <pre><code>brew options nginx-full
-</code></pre>
-
-<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
-
-	</article>
+</code></pre><p>通过上面这段代码可以看见编译nginx的选项模块。</p>
     <footer>
         <a href='https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/'><nobr>Read more →</nobr></a>
     </footer>
@@ -195,9 +184,8 @@
       <h2><a href="https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/">Android基于HLS和RTMP协议的第三方SDK选择 </a> </h2>
       <div class="post-meta">Wed, Jun 15, 2016 </div>
     </header>
-    <article itemprop="articleBody" id="content">
-    	<p>协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。</p>
 
+    <p>协议的详解网上资料都太多了，我就不赘述了。Android上3.0开始支持hls，但在4.0以后就支持的不太好了。而对rtmp来说，Android是默认不支持的。网上有一些第三方库支持这两种协议，下面就我找到的第三方库列出并做出比较。</p>
 <ul>
 <li>提到流播放就不得不提到 <em>Vitamio</em> .协议支持全面，嵌入项目简单，对个人开发者免费。项目地址: <a href="https://github.com/yixia/VitamioBundle">https://github.com/yixia/VitamioBundle</a>.</li>
 <li>B站开源出来的 <em>ijkplayer</em> .项目维护及时，许多大公司都在用。网易云音乐，斗鱼TV，火猫TV等等，影响力可见一斑。支持RTMP，HLS。项目地址:<a href="https://github.com/Bilibili/ijkplayer">https://github.com/Bilibili/ijkplayer</a>.</li>
@@ -205,12 +193,8 @@
 <li>大牛直播出品的 <em>SmarterStreaming</em>. 个人使用免费，项目地址:<a href="https://github.com/daniulive/SmarterStreaming">https://github.com/daniulive/SmarterStreaming</a>.</li>
 <li>新浪开源出来的 <em>sinavideo_playersdk</em>. 完全免费，你甚至可以修改备注。不过只支持hls协议，定制简单。项目地址:<a href="https://github.com/SinaVDDeveloper/sinavideo_playersdk">https://github.com/SinaVDDeveloper/sinavideo_playersdk</a>.</li>
 </ul>
-
 <p>希望能帮助到一些刚接触流播放的同学，下篇我会写用Mac搭建 <em>nginx</em> + <em>HLS</em> 的点播服务器。</p>
-
 <p>最后，祝好:)</p>
-
-	</article>
     <footer>
         <a href='https://sunxu.work/android/between-rtmp-and-hls-third-party-choice/'><nobr>Read more →</nobr></a>
     </footer>
@@ -239,11 +223,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

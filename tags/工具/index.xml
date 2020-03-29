@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>工具 on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/%E5%B7%A5%E5%85%B7/</link>
     <language>en-us</language>
-    <author>Xu Sun</author>
+    <author>Sun Xu</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
     <updated>Sat, 23 Jun 2018 23:48:47 CST</updated>
     
@@ -13,19 +12,15 @@
       <title>Mac上的神兵利器（不定时更新）</title>
       <link>https://sunxu.work/cs/magic_weapon_on_mac/</link>
       <pubDate>Sat, 23 Jun 2018 23:48:47 CST</pubDate>
-      <author>Xu Sun</author>
+      <author>Sun Xu</author>
       <guid>https://sunxu.work/cs/magic_weapon_on_mac/</guid>
-      <description>
-
-&lt;blockquote&gt;
+      <description>&lt;blockquote&gt;
 &lt;p&gt;自己用过的一些好用的Mac工具，提升效率妥妥的。也算是做个备份，有兴趣的google 工具名字+教程关键字&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;h4 id=&#34;application:b8627655bbf376489c8a66d877f567ad&#34;&gt;Application&lt;/h4&gt;
-
+&lt;h4 id=&#34;application&#34;&gt;Application&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; 绝对的神器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://brew.sh/&#34;&gt;homebrew&lt;/a&gt;&amp;nbsp;&lt;strong&gt;+&lt;/strong&gt;&amp;nbsp;&lt;a href=&#34;http://ohmyz.sh/&#34;&gt;zsh&lt;/a&gt;&amp;nbsp;&lt;strong&gt;+&lt;/strong&gt;&amp;nbsp;&lt;a href=&#34;https://www.iterm2.com/&#34;&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://brew.sh/&#34;&gt;homebrew&lt;/a&gt; &lt;strong&gt;+&lt;/strong&gt; &lt;a href=&#34;http://ohmyz.sh/&#34;&gt;zsh&lt;/a&gt; &lt;strong&gt;+&lt;/strong&gt; &lt;a href=&#34;https://www.iterm2.com/&#34;&gt;iTerm2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.macupdate.com/app/mac/43222/cheatsheet&#34;&gt;cheatsheet&lt;/a&gt; 长按&lt;strong&gt;Command&lt;/strong&gt;弹出当前程序的快捷键&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.charlesproxy.com/&#34;&gt;charles&lt;/a&gt; 抓包工具，支持https，修改网络状况等&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://paw.cloud/&#34;&gt;paw&lt;/a&gt; API调试&lt;/li&gt;
@@ -40,8 +35,7 @@
 &lt;li&gt;git svn&lt;/li&gt;
 &lt;li&gt;python java javascrpit mysql&lt;/li&gt;
 &lt;li&gt;还没写完&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

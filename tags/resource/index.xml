@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
       <title>Resource on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/resource/</link>
     <language>en-us</language>
-    <author>Xu Sun</author>
+    <author>Sun Xu</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
     <updated>Tue, 05 Jul 2016 14:48:41 CST</updated>
     
@@ -13,15 +12,11 @@
       <title>Github Starred Repository</title>
       <link>https://sunxu.work/cs/github_starred_repository/</link>
       <pubDate>Tue, 05 Jul 2016 14:48:41 CST</pubDate>
-      <author>Xu Sun</author>
+      <author>Sun Xu</author>
       <guid>https://sunxu.work/cs/github_starred_repository/</guid>
-      <description>
-
-&lt;p&gt;对以前star过的项目进行分类整理，大致结构如下。资源类里有很多宝贵的资料，有算法，教程，源码分析等等。时间紧，没有对一些库进行清楚的分类，建议直接搜索关键字，希望对你有所帮助。&lt;/p&gt;
-
-&lt;p&gt;项目地址： &lt;a href=&#34;https://github.com/sunxu3074/StarredRepository&#34;&gt;https://github.com/sunxu3074/StarredRepository&lt;/a&gt; &amp;nbsp;&amp;nbsp;
+      <description>&lt;p&gt;对以前star过的项目进行分类整理，大致结构如下。资源类里有很多宝贵的资料，有算法，教程，源码分析等等。时间紧，没有对一些库进行清楚的分类，建议直接搜索关键字，希望对你有所帮助。&lt;/p&gt;
+&lt;p&gt;项目地址： &lt;a href=&#34;https://github.com/sunxu3074/StarredRepository&#34;&gt;https://github.com/sunxu3074/StarredRepository&lt;/a&gt;   
 欢迎star&amp;amp;fork&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;│------ Android
 │          │----- View
 │					│----- 图表
@@ -55,483 +50,419 @@
 │------ 流媒体
 │------ 杂七杂八
 │
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;android:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Android&lt;/h2&gt;
-
-&lt;h3 id=&#34;view篇:b165defa7204a9db93d2ab27f621cd65&#34;&gt;View篇&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;android&#34;&gt;Android&lt;/h2&gt;
+&lt;h3 id=&#34;view篇&#34;&gt;View篇&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Carbs0126/NumberPickerView&#34;&gt;NumberPickerView&lt;/a&gt; &amp;nbsp;&amp;nbsp; 选择日期 文字&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/romainguy/elegant-underline&#34;&gt;elegant-underline&lt;/a&gt; &amp;nbsp;&amp;nbsp;高逼格下划线&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/barteksc/AndroidPdfViewer&#34;&gt;AndroidPdfViewer&lt;/a&gt;&amp;nbsp;&amp;nbsp;渲染PDF阅读适用&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SuperKung/DashboardView&#34;&gt;DashboardView&lt;/a&gt;&amp;nbsp;&amp;nbsp;自定义仪表盘&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/henrytao-me/smooth-app-bar-layout&#34;&gt;smooth-app-bar-layout&lt;/a&gt;&amp;nbsp;&amp;nbsp;Google Support Design AppBarLayout&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/w1123440793/VideoListDemo&#34;&gt;VideoListDemo&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个视频播放列表demo，视频播放使用的ijkplayer,正在播放视频拖动到不可见区域小窗口播放，可全屏切换&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Arisono/FunnelView&#34;&gt;FunnelView&lt;/a&gt; &amp;nbsp;&amp;nbsp; 销售漏斗图&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Jaouan/Revealator&#34;&gt;Revealator&lt;/a&gt;  &amp;nbsp;&amp;nbsp;An helper to circle reveal/unreveal a view easily&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dalong982242260/SlidingBallViewPager&#34;&gt;SlidingBallViewPager&lt;/a&gt; &amp;nbsp;&amp;nbsp;仿qq身边的人Viewpager实现&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/JeasonWong/BezierLoadingView&#34;&gt;BezierLoadingView&lt;/a&gt;  &amp;nbsp;&amp;nbsp;炫酷的贝塞尔加载View&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/qs-lll/ExpandingPager&#34;&gt;ExpandingPager&lt;/a&gt; &amp;nbsp;&amp;nbsp; a card peek/pop controller&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/binIoter/GuideView&#34;&gt;GuideView&lt;/a&gt;&amp;nbsp;&amp;nbsp; 为控件添加引导提示&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/CircleProgressBar&#34;&gt;CircleProgressBar&lt;/a&gt; &amp;nbsp;&amp;nbsp; 实心和线条两种风格的圆环进度条&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dreamlivemeng/HotImg&#34;&gt;HotImg&lt;/a&gt; &amp;nbsp;&amp;nbsp;图片不规则区域点击事件处理&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/goo4it/MediaPlayer&#34;&gt;MediaPlayer&lt;/a&gt; &amp;nbsp;&amp;nbsp;高仿网易云音乐&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/aritraroy/PinLockView&#34;&gt;PinLockView&lt;/a&gt;  &amp;nbsp;&amp;nbsp;锁屏控件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sfsheng0322/MarqueeView&#34;&gt;MarqueeView&lt;/a&gt; &amp;nbsp;&amp;nbsp;垂直翻页公告&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/north2014/A-MusicView&#34;&gt;A-MusicView&lt;/a&gt; &amp;nbsp;&amp;nbsp;音乐波形图 适用于音乐APP 作者有一系列的自定义VIEW&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Carbs0126/NumberPickerView&#34;&gt;NumberPickerView&lt;/a&gt;    选择日期 文字&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/romainguy/elegant-underline&#34;&gt;elegant-underline&lt;/a&gt;   高逼格下划线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/barteksc/AndroidPdfViewer&#34;&gt;AndroidPdfViewer&lt;/a&gt;  渲染PDF阅读适用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SuperKung/DashboardView&#34;&gt;DashboardView&lt;/a&gt;  自定义仪表盘&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/henrytao-me/smooth-app-bar-layout&#34;&gt;smooth-app-bar-layout&lt;/a&gt;  Google Support Design AppBarLayout&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/w1123440793/VideoListDemo&#34;&gt;VideoListDemo&lt;/a&gt;  一个视频播放列表demo，视频播放使用的ijkplayer,正在播放视频拖动到不可见区域小窗口播放，可全屏切换&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Arisono/FunnelView&#34;&gt;FunnelView&lt;/a&gt;    销售漏斗图&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Jaouan/Revealator&#34;&gt;Revealator&lt;/a&gt;    An helper to circle reveal/unreveal a view easily&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dalong982242260/SlidingBallViewPager&#34;&gt;SlidingBallViewPager&lt;/a&gt;   仿qq身边的人Viewpager实现&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JeasonWong/BezierLoadingView&#34;&gt;BezierLoadingView&lt;/a&gt;    炫酷的贝塞尔加载View&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/qs-lll/ExpandingPager&#34;&gt;ExpandingPager&lt;/a&gt;    a card peek/pop controller&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/binIoter/GuideView&#34;&gt;GuideView&lt;/a&gt;   为控件添加引导提示&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/CircleProgressBar&#34;&gt;CircleProgressBar&lt;/a&gt;    实心和线条两种风格的圆环进度条&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dreamlivemeng/HotImg&#34;&gt;HotImg&lt;/a&gt;   图片不规则区域点击事件处理&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/goo4it/MediaPlayer&#34;&gt;MediaPlayer&lt;/a&gt;   高仿网易云音乐&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/aritraroy/PinLockView&#34;&gt;PinLockView&lt;/a&gt;    锁屏控件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sfsheng0322/MarqueeView&#34;&gt;MarqueeView&lt;/a&gt;   垂直翻页公告&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/north2014/A-MusicView&#34;&gt;A-MusicView&lt;/a&gt;   音乐波形图 适用于音乐APP 作者有一系列的自定义VIEW&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/cooltechworks/ScratchView&#34;&gt;ScratchView&lt;/a&gt; 即开式VIEW 用于开奖等APP&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cpiz/BubbleView/&#34;&gt;BubbleView&lt;/a&gt; &amp;nbsp;&amp;nbsp;带箭头的Android气泡控件/容器类&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Yasic/QQBubbleView&#34;&gt;QQBubbleView&lt;/a&gt;&amp;nbsp;&amp;nbsp;利用三阶贝塞尔曲线模仿QQ空间直播时右下角的礼物冒泡特效&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/afollestad/easy-video-player&#34;&gt;easy-video-player&lt;/a&gt;&amp;nbsp;&amp;nbsp; VideoPlayer ，用可用音乐APP&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/danielzeller/Depth-LIB-Android-&#34;&gt;Depth-LIB-Android-&lt;/a&gt;&amp;nbsp;&amp;nbsp;This library adds depth/thickness to views.Awesome!!!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xiongwei-git/AndroidVideoPlayer&#34;&gt;AndroidVideoPlayer&lt;/a&gt; &amp;nbsp;&amp;nbsp;支持MP4&amp;amp;3GP 横屏竖屏全屏转换&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/7heaven/CurtainSlidingMenu&#34;&gt;CurtainSlidingMenu&lt;/a&gt;&amp;nbsp;&amp;nbsp;SlidingMenu With Curtain Effect&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/HelloVass/FaceTextLayout&#34;&gt;FaceTextLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;将“颜文字”进行萌萌哒排&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SpikeKing/TestAppBar&#34;&gt;TestAppBar&lt;/a&gt;&amp;nbsp;&amp;nbsp;AppBar 布局的使用方式&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/binglingziyu/OwlView&#34;&gt;OwlView&lt;/a&gt;&amp;nbsp;&amp;nbsp;模仿readme.io登陆页面的动画效果,类似B站的登陆页面&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DevLight-Mobile-Agency/ShadowLayout&#34;&gt;ShadowLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;This library allows you to create a shadow effect for your layout based on your child.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/w446108264/XhsWelcomeAnim&#34;&gt;XhsWelcomeAnim&lt;/a&gt; &amp;nbsp;&amp;nbsp;小红书引导页&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-cjj/JJSearchViewAnim&#34;&gt;JJSearchViewAnim&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个炫酷的SearchView搜索动画库&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ryanhoo/Zhihu-Parallax-Animation&#34;&gt;Zhihu-Parallax-Animation&lt;/a&gt;&amp;nbsp;&amp;nbsp;知乎 Android 客户端启动页的视差动画效果实现&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Ramotion/folding-cell-android&#34;&gt;folding-cell-android&lt;/a&gt; &amp;nbsp;&amp;nbsp;炫酷的动画&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Telenav/NodeFlow&#34;&gt;NodeFlow&lt;/a&gt;&amp;nbsp;&amp;nbsp;NodeFlow is a library that makes visualizing hierarchical content easier.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xmuSistone/android-vertical-slide-view&#34;&gt;android-vertical-slide-view&lt;/a&gt;&amp;nbsp;&amp;nbsp;仿照淘宝和聚美优品，在商品详情页，向上拖动时，可以加载下一页&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alorma/TimelineView&#34;&gt;TimelineView&lt;/a&gt;&amp;nbsp;&amp;nbsp;时间线&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/daCapricorn/ArcMenu&#34;&gt;ArcMenu&lt;/a&gt;&amp;nbsp;&amp;nbsp;仿PATH的MENU&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wangjiegulu/DraggableFlagView&#34;&gt;DraggableFlagView&lt;/a&gt;&amp;nbsp;&amp;nbsp;可拖拽的红点，（仿新版QQ，tab下面拖拽标记为已读的效果），拖拽一定的距离可以消失回调。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/geftimov/android-pathview&#34;&gt;android-pathview-SVG&lt;/a&gt; &amp;nbsp;&amp;nbsp;Animate svg.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xujinyang/BiuEditText&#34;&gt;BiuEditText&lt;/a&gt;&amp;nbsp;&amp;nbsp;biu，biu，一个有趣的EditText&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nomanr/ZoomTextView&#34;&gt;ZoomTextView&lt;/a&gt;&amp;nbsp;&amp;nbsp;根据收拾放大TextView.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jd-alexander/LikeButton&#34;&gt;LikeButton&lt;/a&gt;&amp;nbsp;&amp;nbsp;仿Tweet点赞动画效果&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hanks-zyh/HTextView&#34;&gt;HTextView&lt;/a&gt;&amp;nbsp;&amp;nbsp;Animation effects to TextView&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/Highlight&#34;&gt;Highlight&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个用于app指向性功能高亮的库。引导使用&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidViewAnimations&#34;&gt;AndroidViewAnimations&lt;/a&gt;&amp;nbsp;&amp;nbsp;Cute view animation collection.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SpecialCyCi/AndroidResideMenu&#34;&gt;AndroidResideMenu&lt;/a&gt;&amp;nbsp;&amp;nbsp;Look like Double SlidingMenu.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidViewHover&#34;&gt;AndroidViewHover&lt;/a&gt;&amp;nbsp;&amp;nbsp;A hover view, to show menu, to show messages.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe&#34;&gt;RecyclerViewUndoSwipe&lt;/a&gt;&amp;nbsp;&amp;nbsp; ItemTouch helper swipe and drag support for RecyclerView&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Geekince/WaterWaveView&#34;&gt;WaterWaveView&lt;/a&gt;&amp;nbsp;&amp;nbsp;模拟水波纹的效果，实现流量的动态显示。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gumingwei/electric_screen2D&#34;&gt;electric_screen2D&lt;/a&gt;&amp;nbsp;&amp;nbsp;electric screen in your phone,like magic wallpaper&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/elevenetc/TextSurface&#34;&gt;TextSurface&lt;/a&gt;&amp;nbsp;&amp;nbsp;A little animation framework which could help you to show message in a nice looking way&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tyrantgit/ExplosionField&#34;&gt;ExplosionField&lt;/a&gt;&amp;nbsp;&amp;nbsp;explosive dust effect for views.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cpiz/BubbleView/&#34;&gt;BubbleView&lt;/a&gt;   带箭头的Android气泡控件/容器类&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Yasic/QQBubbleView&#34;&gt;QQBubbleView&lt;/a&gt;  利用三阶贝塞尔曲线模仿QQ空间直播时右下角的礼物冒泡特效&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/afollestad/easy-video-player&#34;&gt;easy-video-player&lt;/a&gt;   VideoPlayer ，用可用音乐APP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/danielzeller/Depth-LIB-Android-&#34;&gt;Depth-LIB-Android-&lt;/a&gt;  This library adds depth/thickness to views.Awesome!!!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xiongwei-git/AndroidVideoPlayer&#34;&gt;AndroidVideoPlayer&lt;/a&gt;   支持MP4&amp;amp;3GP 横屏竖屏全屏转换&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/7heaven/CurtainSlidingMenu&#34;&gt;CurtainSlidingMenu&lt;/a&gt;  SlidingMenu With Curtain Effect&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HelloVass/FaceTextLayout&#34;&gt;FaceTextLayout&lt;/a&gt;  将“颜文字”进行萌萌哒排&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SpikeKing/TestAppBar&#34;&gt;TestAppBar&lt;/a&gt;  AppBar 布局的使用方式&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/binglingziyu/OwlView&#34;&gt;OwlView&lt;/a&gt;  模仿readme.io登陆页面的动画效果,类似B站的登陆页面&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DevLight-Mobile-Agency/ShadowLayout&#34;&gt;ShadowLayout&lt;/a&gt;  This library allows you to create a shadow effect for your layout based on your child.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/w446108264/XhsWelcomeAnim&#34;&gt;XhsWelcomeAnim&lt;/a&gt;   小红书引导页&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-cjj/JJSearchViewAnim&#34;&gt;JJSearchViewAnim&lt;/a&gt;  一个炫酷的SearchView搜索动画库&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ryanhoo/Zhihu-Parallax-Animation&#34;&gt;Zhihu-Parallax-Animation&lt;/a&gt;  知乎 Android 客户端启动页的视差动画效果实现&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Ramotion/folding-cell-android&#34;&gt;folding-cell-android&lt;/a&gt;   炫酷的动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Telenav/NodeFlow&#34;&gt;NodeFlow&lt;/a&gt;  NodeFlow is a library that makes visualizing hierarchical content easier.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xmuSistone/android-vertical-slide-view&#34;&gt;android-vertical-slide-view&lt;/a&gt;  仿照淘宝和聚美优品，在商品详情页，向上拖动时，可以加载下一页&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alorma/TimelineView&#34;&gt;TimelineView&lt;/a&gt;  时间线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/daCapricorn/ArcMenu&#34;&gt;ArcMenu&lt;/a&gt;  仿PATH的MENU&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wangjiegulu/DraggableFlagView&#34;&gt;DraggableFlagView&lt;/a&gt;  可拖拽的红点，（仿新版QQ，tab下面拖拽标记为已读的效果），拖拽一定的距离可以消失回调。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/geftimov/android-pathview&#34;&gt;android-pathview-SVG&lt;/a&gt;   Animate svg.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xujinyang/BiuEditText&#34;&gt;BiuEditText&lt;/a&gt;  biu，biu，一个有趣的EditText&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomanr/ZoomTextView&#34;&gt;ZoomTextView&lt;/a&gt;  根据收拾放大TextView.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jd-alexander/LikeButton&#34;&gt;LikeButton&lt;/a&gt;  仿Tweet点赞动画效果&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hanks-zyh/HTextView&#34;&gt;HTextView&lt;/a&gt;  Animation effects to TextView&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/Highlight&#34;&gt;Highlight&lt;/a&gt;  一个用于app指向性功能高亮的库。引导使用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidViewAnimations&#34;&gt;AndroidViewAnimations&lt;/a&gt;  Cute view animation collection.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SpecialCyCi/AndroidResideMenu&#34;&gt;AndroidResideMenu&lt;/a&gt;  Look like Double SlidingMenu.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidViewHover&#34;&gt;AndroidViewHover&lt;/a&gt;  A hover view, to show menu, to show messages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe&#34;&gt;RecyclerViewUndoSwipe&lt;/a&gt;   ItemTouch helper swipe and drag support for RecyclerView&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Geekince/WaterWaveView&#34;&gt;WaterWaveView&lt;/a&gt;  模拟水波纹的效果，实现流量的动态显示。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gumingwei/electric_screen2D&#34;&gt;electric_screen2D&lt;/a&gt;  electric screen in your phone,like magic wallpaper&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/elevenetc/TextSurface&#34;&gt;TextSurface&lt;/a&gt;  A little animation framework which could help you to show message in a nice looking way&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tyrantgit/ExplosionField&#34;&gt;ExplosionField&lt;/a&gt;  explosive dust effect for views.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/zcweng/ToggleButton&#34;&gt;ToggleButton&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/dmytrodanylyk/circular-progress-button&#34;&gt;circular-progress-button&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/xiaopansky/SwitchButton&#34;&gt;SwitchButton&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;图表:b165defa7204a9db93d2ab27f621cd65&#34;&gt;图表&lt;/h5&gt;
-
+&lt;h5 id=&#34;图表&#34;&gt;图表&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/JeasonWong/AndroidChart&#34;&gt;AndroidChart&lt;/a&gt; &amp;nbsp;&amp;nbsp;Some chart.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JeasonWong/AndroidChart&#34;&gt;AndroidChart&lt;/a&gt;   Some chart.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;tab:b165defa7204a9db93d2ab27f621cd65&#34;&gt;TAB&lt;/h5&gt;
-
+&lt;h5 id=&#34;tab&#34;&gt;TAB&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DevLight-Mobile-Agency/NavigationTabStrip&#34;&gt;NavigationTabStrip&lt;/a&gt; &amp;nbsp;&amp;nbsp;高大上的TAB&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/H07000223/FlycoTabLayout/&#34;&gt;FlycoTabLayout&lt;/a&gt; &amp;nbsp;&amp;nbsp;一个Android TabLayout库&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/armcha/LuseenBottomNavigation&#34;&gt;LuseenBottomNavigation&lt;/a&gt; &amp;nbsp;&amp;nbsp;A cool Bottom Navigation.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sunxu3074/Dota2_Max_Tab&#34;&gt;Dota2_Max_Tab&lt;/a&gt;&amp;nbsp;&amp;nbsp;仿Dota2_Max的三角形联动&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nshmura/RecyclerTabLayout&#34;&gt;RecyclerTabLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;An efficient TabLayout library implemented with RecyclerView.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/astuetz/PagerSlidingTabStrip&#34;&gt;PagerSlidingTabStrip&lt;/a&gt;&amp;nbsp;&amp;nbsp;An interactive indicator to navigate between the different pages of a ViewPager&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Kaopiz/android-segmented-control&#34;&gt;android-segmented-control&lt;/a&gt;&amp;nbsp;&amp;nbsp;Based on RadioGroup and RadioButton widget.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DevLight-Mobile-Agency/NavigationTabStrip&#34;&gt;NavigationTabStrip&lt;/a&gt;   高大上的TAB&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/H07000223/FlycoTabLayout/&#34;&gt;FlycoTabLayout&lt;/a&gt;   一个Android TabLayout库&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/armcha/LuseenBottomNavigation&#34;&gt;LuseenBottomNavigation&lt;/a&gt;   A cool Bottom Navigation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sunxu3074/Dota2_Max_Tab&#34;&gt;Dota2_Max_Tab&lt;/a&gt;  仿Dota2_Max的三角形联动&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nshmura/RecyclerTabLayout&#34;&gt;RecyclerTabLayout&lt;/a&gt;  An efficient TabLayout library implemented with RecyclerView.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/astuetz/PagerSlidingTabStrip&#34;&gt;PagerSlidingTabStrip&lt;/a&gt;  An interactive indicator to navigate between the different pages of a ViewPager&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Kaopiz/android-segmented-control&#34;&gt;android-segmented-control&lt;/a&gt;  Based on RadioGroup and RadioButton widget.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;下拉加载:b165defa7204a9db93d2ab27f621cd65&#34;&gt;下拉加载&lt;/h5&gt;
-
+&lt;h5 id=&#34;下拉加载&#34;&gt;下拉加载&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/pull-to-make-soup&#34;&gt;pull-to-make-soup&lt;/a&gt; &amp;nbsp;&amp;nbsp;可用于烹饪类APP 下拉加载使用&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/RecyclerRefreshLayout&#34;&gt;RecyclerRefreshLayout&lt;/a&gt; &amp;nbsp;&amp;nbsp;下拉刷新&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/desmond1121/Android-Ptr-Comparison&#34;&gt;Android-Ptr-Comparison&lt;/a&gt;&amp;nbsp;&amp;nbsp;安卓下拉刷新开源库对比&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/bingoogolapple/BGARefreshLayout-Android&#34;&gt;BGARefreshLayout-Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;多种下拉刷新效果、上拉加载更多、可配置自定义头部广告位&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/pull-to-make-soup&#34;&gt;pull-to-make-soup&lt;/a&gt;   可用于烹饪类APP 下拉加载使用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/RecyclerRefreshLayout&#34;&gt;RecyclerRefreshLayout&lt;/a&gt;   下拉刷新&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/desmond1121/Android-Ptr-Comparison&#34;&gt;Android-Ptr-Comparison&lt;/a&gt;  安卓下拉刷新开源库对比&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bingoogolapple/BGARefreshLayout-Android&#34;&gt;BGARefreshLayout-Android&lt;/a&gt;  多种下拉刷新效果、上拉加载更多、可配置自定义头部广告位&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;loding:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Loding&lt;/h5&gt;
-
+&lt;h5 id=&#34;loding&#34;&gt;Loding&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ybq/Android-SpinKit&#34;&gt;Android-SpinKit&lt;/a&gt; &amp;nbsp;&amp;nbsp;炫酷的加载，实现了&lt;a href=&#34;https://github.com/tobiasahlin/SpinKit&#34;&gt;SpinKit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/LoadingDrawable&#34;&gt;LoadingDrawable&lt;/a&gt; &amp;nbsp;&amp;nbsp;炫酷的Loding动画&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Rogero0o/GifLoadingView&#34;&gt;GifLoadingView&lt;/a&gt;&amp;nbsp;&amp;nbsp;炫酷的Loding动画&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Huyamin150/-dampView-springingView&#34;&gt;-dampView-springingView&lt;/a&gt;&amp;nbsp;&amp;nbsp;带有阻尼效果（橡皮筋效果）跳动的Loading动画&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Yellow5A5/BoilingLoadingView&#34;&gt;BoilingLoadingView&lt;/a&gt;&amp;nbsp;&amp;nbsp;锅煮萝卜的Loading动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ybq/Android-SpinKit&#34;&gt;Android-SpinKit&lt;/a&gt;   炫酷的加载，实现了&lt;a href=&#34;https://github.com/tobiasahlin/SpinKit&#34;&gt;SpinKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dinuscxj/LoadingDrawable&#34;&gt;LoadingDrawable&lt;/a&gt;   炫酷的Loding动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Rogero0o/GifLoadingView&#34;&gt;GifLoadingView&lt;/a&gt;  炫酷的Loding动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Huyamin150/-dampView-springingView&#34;&gt;-dampView-springingView&lt;/a&gt;  带有阻尼效果（橡皮筋效果）跳动的Loading动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Yellow5A5/BoilingLoadingView&#34;&gt;BoilingLoadingView&lt;/a&gt;  锅煮萝卜的Loading动画&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/TomWithJerry/CoolAndroidAnim&#34;&gt;CoolAndroidAnim&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yxping/AdhesiveLoadingView&#34;&gt;AdhesiveLoadingView&lt;/a&gt;&amp;nbsp;&amp;nbsp;具有粘性的滑动小球，跌落反弹形成loading的效果&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/zzz40500/android-shapeLoadingView&#34;&gt;android-shapeLoadingView&lt;/a&gt;&amp;nbsp;&amp;nbsp;高仿新版58 加载动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yxping/AdhesiveLoadingView&#34;&gt;AdhesiveLoadingView&lt;/a&gt;  具有粘性的滑动小球，跌落反弹形成loading的效果&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zzz40500/android-shapeLoadingView&#34;&gt;android-shapeLoadingView&lt;/a&gt;  高仿新版58 加载动画&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jpardogo/GoogleProgressBar&#34;&gt;GoogleProgressBar&lt;/a&gt;Android library to display progress like google does in some of his services.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;viewpager:b165defa7204a9db93d2ab27f621cd65&#34;&gt;ViewPager&lt;/h5&gt;
-
+&lt;h5 id=&#34;viewpager&#34;&gt;ViewPager&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ybq/ParallaxViewPager&#34;&gt;ParallaxViewPager&lt;/a&gt; &amp;nbsp;&amp;nbsp;ParallaxViewPager&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ongakuer/CircleIndicator&#34;&gt;CircleIndicator&lt;/a&gt;&amp;nbsp;&amp;nbsp;A lightweight viewpager indicator&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/MagicViewPager&#34;&gt;MagicViewPager&lt;/a&gt;&amp;nbsp;&amp;nbsp;单页显示3个Item的ViewPager切换，适用于Banner&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jfeinstein10/JazzyViewPager&#34;&gt;JazzyViewPager&lt;/a&gt; &amp;nbsp;&amp;nbsp;类似Google的nexus机子6.0系统的开机动画&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lightSky/InfiniteIndicator&#34;&gt;InfiniteIndicator&lt;/a&gt;&amp;nbsp;&amp;nbsp;This lib can be used for viewpager infinite loop with indicator easily.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ybq/ParallaxViewPager&#34;&gt;ParallaxViewPager&lt;/a&gt;   ParallaxViewPager&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ongakuer/CircleIndicator&#34;&gt;CircleIndicator&lt;/a&gt;  A lightweight viewpager indicator&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/MagicViewPager&#34;&gt;MagicViewPager&lt;/a&gt;  单页显示3个Item的ViewPager切换，适用于Banner&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jfeinstein10/JazzyViewPager&#34;&gt;JazzyViewPager&lt;/a&gt;   类似Google的nexus机子6.0系统的开机动画&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lightSky/InfiniteIndicator&#34;&gt;InfiniteIndicator&lt;/a&gt;  This lib can be used for viewpager infinite loop with indicator easily.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;timepicker:b165defa7204a9db93d2ab27f621cd65&#34;&gt;TimePicker&lt;/h5&gt;
-
+&lt;h5 id=&#34;timepicker&#34;&gt;TimePicker&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/JZXiang/TimePickerDialog&#34;&gt;TimePickerDialog&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android时间选择器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JZXiang/TimePickerDialog&#34;&gt;TimePickerDialog&lt;/a&gt;  Android时间选择器&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;swipeback:b165defa7204a9db93d2ab27f621cd65&#34;&gt;SwipeBack&lt;/h5&gt;
-
+&lt;h5 id=&#34;swipeback&#34;&gt;SwipeBack&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hanhailong/SwipeBackSample&#34;&gt;SwipeBackSample&lt;/a&gt;&amp;nbsp;&amp;nbsp;高仿微信手势滑动返回&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sockeqwe/SwipeBack&#34;&gt;SwipeBack&lt;/a&gt;&amp;nbsp;&amp;nbsp;高仿简书手势滑动返回&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/liuguangqiang/SwipeBack&#34;&gt;SwipeBack&lt;/a&gt;&amp;nbsp;&amp;nbsp;SwipeBack Lib,可定制手势.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe&#34;&gt;RecyclerViewUndoSwipe&lt;/a&gt;&amp;nbsp;&amp;nbsp; ItemTouch helper swipe and drag support for RecyclerView&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidSwipeLayout&#34;&gt;AndroidSwipeLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;The Most Powerful Swipe Layout!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/baoyongzhang/android-PullRefreshLayout&#34;&gt;android-PullRefreshLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;This component like SwipeRefreshLayout, it is more beautiful than SwipeRefreshLayout.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ikew0ng/SwipeBackLayout&#34;&gt;SwipeBackLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;An Android library that help you to build app with swipe back gesture.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hanhailong/SwipeBackSample&#34;&gt;SwipeBackSample&lt;/a&gt;  高仿微信手势滑动返回&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sockeqwe/SwipeBack&#34;&gt;SwipeBack&lt;/a&gt;  高仿简书手势滑动返回&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/liuguangqiang/SwipeBack&#34;&gt;SwipeBack&lt;/a&gt;  SwipeBack Lib,可定制手势.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HoneyNeutrons/RecyclerViewUndoSwipe&#34;&gt;RecyclerViewUndoSwipe&lt;/a&gt;   ItemTouch helper swipe and drag support for RecyclerView&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/daimajia/AndroidSwipeLayout&#34;&gt;AndroidSwipeLayout&lt;/a&gt;  The Most Powerful Swipe Layout!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/baoyongzhang/android-PullRefreshLayout&#34;&gt;android-PullRefreshLayout&lt;/a&gt;  This component like SwipeRefreshLayout, it is more beautiful than SwipeRefreshLayout.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ikew0ng/SwipeBackLayout&#34;&gt;SwipeBackLayout&lt;/a&gt;  An Android library that help you to build app with swipe back gesture.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;高斯模糊:b165defa7204a9db93d2ab27f621cd65&#34;&gt;高斯模糊&lt;/h5&gt;
-
+&lt;h5 id=&#34;高斯模糊&#34;&gt;高斯模糊&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/qiujuer/ImageBlurring&#34;&gt;ImageBlurring&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/kikoso/android-stackblur&#34;&gt;android-stackblur&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SmartDengg/RxBlur&#34;&gt;RxBlur&lt;/a&gt;&amp;nbsp;&amp;nbsp; 用RxJava处理和操作高斯模糊效果的简单用例。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kikoso/android-stackblur&#34;&gt;android-stackblur&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SmartDengg/RxBlur&#34;&gt;RxBlur&lt;/a&gt;   用RxJava处理和操作高斯模糊效果的简单用例。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tvbarthel/BlurDialogFragment&#34;&gt;BlurDialogFragment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;adapter:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Adapter&lt;/h5&gt;
-
+&lt;h5 id=&#34;adapter&#34;&gt;Adapter&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/CymChad/BaseRecyclerViewAdapterHelper&#34;&gt;BaseRecyclerViewAdapterHelper&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个强大并且灵活的RecyclerViewAdapter&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/JoanZapata/base-adapter-helper&#34;&gt;base-adapter-helper&lt;/a&gt;&amp;nbsp;&amp;nbsp;Abstraction for the usual BaseAdapter &amp;ldquo;ViewHolder&amp;rdquo; pattern&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yqritc/RecyclerView-FlexibleDivider&#34;&gt;RecyclerView-FlexibleDivider&lt;/a&gt; &amp;nbsp;&amp;nbsp;RecyclerView分割线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/CymChad/BaseRecyclerViewAdapterHelper&#34;&gt;BaseRecyclerViewAdapterHelper&lt;/a&gt;  一个强大并且灵活的RecyclerViewAdapter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JoanZapata/base-adapter-helper&#34;&gt;base-adapter-helper&lt;/a&gt;  Abstraction for the usual BaseAdapter &amp;ldquo;ViewHolder&amp;rdquo; pattern&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yqritc/RecyclerView-FlexibleDivider&#34;&gt;RecyclerView-FlexibleDivider&lt;/a&gt;   RecyclerView分割线&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;spinner:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Spinner&lt;/h5&gt;
-
+&lt;h5 id=&#34;spinner&#34;&gt;Spinner&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jaredrummler/Material-Spinner&#34;&gt;Material-Spinner&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h5 id=&#34;dialog:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Dialog&lt;/h5&gt;
-
+&lt;h5 id=&#34;dialog&#34;&gt;Dialog&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/afollestad/material-dialogs&#34;&gt;material-dialogs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/drakeet/MaterialDialog&#34;&gt;MaterialDialog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;google:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Google&lt;/h3&gt;
-
+&lt;h3 id=&#34;google&#34;&gt;Google&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/flexbox-layout&#34;&gt;flexbox-layout&lt;/a&gt;&amp;nbsp;&amp;nbsp; Flexbox for Android&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/agera&#34;&gt;agera&lt;/a&gt;&amp;nbsp;&amp;nbsp;Reactive Programming for Android&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/googlesamples/android-architecture&#34;&gt;android-architecture&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android Architecture Blueprints&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt;&amp;nbsp;&amp;nbsp;Material Design icons by Google&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/j2objc&#34;&gt;j2objc&lt;/a&gt;&amp;nbsp;&amp;nbsp;A Java to iOS Objective-C translation tool and runtime.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/flexbox-layout&#34;&gt;flexbox-layout&lt;/a&gt;   Flexbox for Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/agera&#34;&gt;agera&lt;/a&gt;  Reactive Programming for Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/googlesamples/android-architecture&#34;&gt;android-architecture&lt;/a&gt;  Android Architecture Blueprints&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt;  Material Design icons by Google&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/j2objc&#34;&gt;j2objc&lt;/a&gt;  A Java to iOS Objective-C translation tool and runtime.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;facebook:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Facebook&lt;/h3&gt;
-
+&lt;h3 id=&#34;facebook&#34;&gt;Facebook&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/network-connection-class&#34;&gt;network-connection-class&lt;/a&gt;  &amp;nbsp;&amp;nbsp;监听当前网络状况及对当前网络进行质量分类&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/infer&#34;&gt;infer&lt;/a&gt; &amp;nbsp;&amp;nbsp;Infer is a static analysis tool for Java, Objective-C and C, written in OCaml.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/stetho&#34;&gt;stetho&lt;/a&gt;&amp;nbsp;&amp;nbsp;Stetho is a debug bridge for Android applications.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/fresco&#34;&gt;fresco&lt;/a&gt;&amp;nbsp;&amp;nbsp;An Android library for managing images and the memory they use.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/network-connection-class&#34;&gt;network-connection-class&lt;/a&gt;    监听当前网络状况及对当前网络进行质量分类&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/infer&#34;&gt;infer&lt;/a&gt;   Infer is a static analysis tool for Java, Objective-C and C, written in OCaml.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/stetho&#34;&gt;stetho&lt;/a&gt;  Stetho is a debug bridge for Android applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facebook/fresco&#34;&gt;fresco&lt;/a&gt;  An Android library for managing images and the memory they use.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;square:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Square&lt;/h3&gt;
-
+&lt;h3 id=&#34;square&#34;&gt;Square&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/haha&#34;&gt;haha&lt;/a&gt;&amp;nbsp;&amp;nbsp;Java library to automate the analysis of Android heap dumps.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/android-times-square&#34;&gt;android-times-square&lt;/a&gt;&amp;nbsp;&amp;nbsp;Standalone Android widget for picking a single date from a calendar view.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/moshi&#34;&gt;moshi&lt;/a&gt;&amp;nbsp;&amp;nbsp;A modern JSON library for Android and Java.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/retrofit&#34;&gt;retrofit&lt;/a&gt;&amp;nbsp;&amp;nbsp;Type-safe HTTP client for Android and Java.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/okhttp&#34;&gt;okhttp&lt;/a&gt;&amp;nbsp;&amp;nbsp;An HTTP+HTTP/2 client for Android and Java applications.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/picasso&#34;&gt;picasso&lt;/a&gt;&amp;nbsp;&amp;nbsp;A powerful image downloading and caching library for Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/haha&#34;&gt;haha&lt;/a&gt;  Java library to automate the analysis of Android heap dumps.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/android-times-square&#34;&gt;android-times-square&lt;/a&gt;  Standalone Android widget for picking a single date from a calendar view.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/moshi&#34;&gt;moshi&lt;/a&gt;  A modern JSON library for Android and Java.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/retrofit&#34;&gt;retrofit&lt;/a&gt;  Type-safe HTTP client for Android and Java.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/okhttp&#34;&gt;okhttp&lt;/a&gt;  An HTTP+HTTP/2 client for Android and Java applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/picasso&#34;&gt;picasso&lt;/a&gt;  A powerful image downloading and caching library for Android&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;jakewharton:b165defa7204a9db93d2ab27f621cd65&#34;&gt;JakeWharton&lt;/h3&gt;
-
+&lt;h3 id=&#34;jakewharton&#34;&gt;JakeWharton&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/JakeWharton/flip-tables&#34;&gt;flip-tables&lt;/a&gt; &amp;nbsp;&amp;nbsp;Because pretty-printing text tables in Java should be easy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/JakeWharton/flip-tables&#34;&gt;flip-tables&lt;/a&gt;   Because pretty-printing text tables in Java should be easy.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;yalantis:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Yalantis&lt;/h3&gt;
-
+&lt;h3 id=&#34;yalantis&#34;&gt;Yalantis&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/Euclid&#34;&gt;Euclid&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/CameraModule&#34;&gt;CameraModule&lt;/a&gt;&amp;nbsp;&amp;nbsp;Simple camera module for android applications&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/CameraModule&#34;&gt;CameraModule&lt;/a&gt;  Simple camera module for android applications&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/FlipViewPager.Draco&#34;&gt;FlipViewPager.Draco&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/Taurus&#34;&gt;Taurus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/Phoenix&#34;&gt;Phoenix&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/Side-Menu.Android&#34;&gt;Side-Menu.Android&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/Context-Menu.Android&#34;&gt;Context-Menu.Android&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;material-design:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Material Design&lt;/h3&gt;
-
+&lt;h3 id=&#34;material-design&#34;&gt;Material Design&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mwolfson/android-historian&#34;&gt;android-historian&lt;/a&gt; &amp;nbsp;&amp;nbsp;A demo of the Android Material Design Support libraries&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/javiersantos/BottomDialogs&#34;&gt;BottomDialogs&lt;/a&gt; &amp;nbsp;&amp;nbsp;To show  a customizable Material-based bottom sheet.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DmitryMalkovich/material-design-dimens&#34;&gt;material-design-dimens&lt;/a&gt; &amp;nbsp;&amp;nbsp;Default colors and dimens per Material Design guidelines and Android Design guidelines inside one library.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/loonggg/CoordinatorLayoutDemo&#34;&gt;CoordinatorLayoutDemo&lt;/a&gt;&amp;nbsp;&amp;nbsp;使用CoordinatorLayout仿稀土掘金个人界面&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ozodrukh/CircularReveal&#34;&gt;CircularReveal&lt;/a&gt;&amp;nbsp;&amp;nbsp;Lollipop ViewAnimationUtils.createCircularReveal for everyone 4.0+&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ksoichiro/Android-ObservableScrollView&#34;&gt;ObservableScrollView&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android library to observe scroll events on scrollable views.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt;&amp;nbsp;&amp;nbsp;Material Design icons by Google&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Flipboard/bottomsheet&#34;&gt;bottomsheet&lt;/a&gt; &amp;nbsp;&amp;nbsp;类似于知乎的分享&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hitherejoe/animate&#34;&gt;animate&lt;/a&gt;&amp;nbsp;&amp;nbsp;Material Style animations&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/chrisbanes/cheesesquare&#34;&gt;cheesesquare&lt;/a&gt;&amp;nbsp;&amp;nbsp;Demos the new Android Design library.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/1sters/material_design_zh&#34;&gt;material_design_zh&lt;/a&gt;&amp;nbsp;&amp;nbsp;Material Design 中文协同翻译&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lightSky/Awesome-MaterialDesign&#34;&gt;Awesome-MaterialDesign&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android MaterialDesign res and libraries.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mwolfson/android-historian&#34;&gt;android-historian&lt;/a&gt;   A demo of the Android Material Design Support libraries&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/javiersantos/BottomDialogs&#34;&gt;BottomDialogs&lt;/a&gt;   To show  a customizable Material-based bottom sheet.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DmitryMalkovich/material-design-dimens&#34;&gt;material-design-dimens&lt;/a&gt;   Default colors and dimens per Material Design guidelines and Android Design guidelines inside one library.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/loonggg/CoordinatorLayoutDemo&#34;&gt;CoordinatorLayoutDemo&lt;/a&gt;  使用CoordinatorLayout仿稀土掘金个人界面&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ozodrukh/CircularReveal&#34;&gt;CircularReveal&lt;/a&gt;  Lollipop ViewAnimationUtils.createCircularReveal for everyone 4.0+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ksoichiro/Android-ObservableScrollView&#34;&gt;ObservableScrollView&lt;/a&gt;  Android library to observe scroll events on scrollable views.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt;  Material Design icons by Google&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Flipboard/bottomsheet&#34;&gt;bottomsheet&lt;/a&gt;   类似于知乎的分享&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hitherejoe/animate&#34;&gt;animate&lt;/a&gt;  Material Style animations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chrisbanes/cheesesquare&#34;&gt;cheesesquare&lt;/a&gt;  Demos the new Android Design library.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/1sters/material_design_zh&#34;&gt;material_design_zh&lt;/a&gt;  Material Design 中文协同翻译&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lightSky/Awesome-MaterialDesign&#34;&gt;Awesome-MaterialDesign&lt;/a&gt;  Android MaterialDesign res and libraries.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/rey5137/material&#34;&gt;material&lt;/a&gt;A library to bring fully animated Material Design components to pre-Lolipop Android.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;数据库:b165defa7204a9db93d2ab27f621cd65&#34;&gt;数据库&lt;/h3&gt;
-
+&lt;h3 id=&#34;数据库&#34;&gt;数据库&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/greenDAO&#34;&gt;greenDAO&lt;/a&gt;&amp;nbsp;&amp;nbsp;GreenDao&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/LitePalFramework/LitePal&#34;&gt;LitePal&lt;/a&gt;&amp;nbsp;&amp;nbsp; LitePal&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/greenDAO&#34;&gt;greenDAO&lt;/a&gt;  GreenDao&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LitePalFramework/LitePal&#34;&gt;LitePal&lt;/a&gt;   LitePal&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;oauth:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Oauth&lt;/h3&gt;
-
+&lt;h3 id=&#34;oauth&#34;&gt;Oauth&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/oauth-simple&#34;&gt;oauth-simple&lt;/a&gt;&amp;nbsp;&amp;nbsp;forked from &lt;a href=&#34;https://github.com/scribejava/scribejava&#34;&gt;scribejava&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/scribejava/scribejava&#34;&gt;scribejava&lt;/a&gt;&amp;nbsp;&amp;nbsp;Simple OAuth library for Java&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wuman/android-oauth-client&#34;&gt;android-oauth-client&lt;/a&gt;&amp;nbsp;&amp;nbsp;A library that helps to easily add an OAuth flow to an existing Android application.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/oauth-simple&#34;&gt;oauth-simple&lt;/a&gt;  forked from &lt;a href=&#34;https://github.com/scribejava/scribejava&#34;&gt;scribejava&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/scribejava/scribejava&#34;&gt;scribejava&lt;/a&gt;  Simple OAuth library for Java&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wuman/android-oauth-client&#34;&gt;android-oauth-client&lt;/a&gt;  A library that helps to easily add an OAuth flow to an existing Android application.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/elbbbird/ESSocialSDK&#34;&gt;ESSocialSDK&lt;/a&gt;社交登录授权、分享SDK，支持微信、微博和QQ。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/umeng/umeng_community_android&#34;&gt;umeng_community_android&lt;/a&gt;集成友盟微社区SDK的demo,包含了友盟微社区的所有资源以及jar文件。&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;框架类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;框架类&lt;/h3&gt;
-
+&lt;h3 id=&#34;框架类&#34;&gt;框架类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/koush/ion&#34;&gt;ion&lt;/a&gt;&amp;nbsp;&amp;nbsp; Android网络及图片异步加载&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/EventBus&#34;&gt;EventBus&lt;/a&gt; &amp;nbsp;&amp;nbsp;时间总线&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/essentials/&#34;&gt;essentials&lt;/a&gt; &amp;nbsp;&amp;nbsp; 适合Android和Java的工具类&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Bilibili/MagicaSakura&#34;&gt;MagicaSakura&lt;/a&gt; &amp;nbsp;&amp;nbsp; B站开源的多主题框架&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wequick/Small&#34;&gt;Small&lt;/a&gt;  &amp;nbsp;&amp;nbsp;Android 插件化&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yaming116/UpdateApp&#34;&gt;UpdateApp&lt;/a&gt; &amp;nbsp;&amp;nbsp;开箱即用的app更新，主要负责软件下载、软件安装等&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/WuXiaolong/AndroidUtils&#34;&gt;AndroidUtils&lt;/a&gt; &amp;nbsp;&amp;nbsp;Android常用类&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/koral--/android-gif-drawable&#34;&gt;android-gif-drawable&lt;/a&gt; &amp;nbsp;&amp;nbsp;GIF&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/AndroidChangeSkin&#34;&gt;AndroidChangeSkin&lt;/a&gt; &amp;nbsp;&amp;nbsp;鸿洋大神的应用内换肤&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/chrisbanes/PhotoView&#34;&gt;PhotoView&lt;/a&gt; &amp;nbsp;&amp;nbsp;图片缩放&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/YoKeyword/Fragmentation&#34;&gt;Fragmentation&lt;/a&gt;&amp;nbsp;&amp;nbsp;为&amp;rdquo;单Activity ＋ 多Fragment&amp;rdquo;,&amp;ldquo;多模块Activity + 多Fragment&amp;rdquo;架构而生&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/PaoloRotolo/AppIntro&#34;&gt;AppIntro&lt;/a&gt; &amp;nbsp;&amp;nbsp;很飒的APP导航页.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/medyo/android-about-page&#34;&gt;android-about-page&lt;/a&gt;&amp;nbsp;&amp;nbsp;Create an awesome About Page for your Android App in 2 minutes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/okhttp-utils&#34;&gt;okhttp-utils&lt;/a&gt;&amp;nbsp;&amp;nbsp;对okhttp的封装类&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/bumptech/glide&#34;&gt;glide&lt;/a&gt;&amp;nbsp;&amp;nbsp;An image loading and caching library for Android focused on smooth scrolling&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lfkdsk/JustWeEngine&#34;&gt;JustWeEngine&lt;/a&gt;&amp;nbsp;&amp;nbsp;An easy open source Android Native Game FrameWork.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/code4craft/webmagic&#34;&gt;webmagic&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个开源的Java垂直爬虫框架&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alibaba/AndFix&#34;&gt;AndFix&lt;/a&gt;&amp;nbsp;&amp;nbsp;AndFix is a solution to fix the bugs online instead of redistributing Android App.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/alibaba/fastjson&#34;&gt;fastjson&lt;/a&gt;&amp;nbsp;&amp;nbsp;A fast JSON parser/generator for Java.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/AndroidAutoLayout&#34;&gt;AndroidAutoLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android屏幕适配方案&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wyouflf/xUtils3&#34;&gt;xUtils3&lt;/a&gt;&amp;nbsp;&amp;nbsp;android orm, bitmap, http, view inject&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/ChangeSkin&#34;&gt;ChangeSkin&lt;/a&gt;&amp;nbsp;&amp;nbsp;基于插件式的Android换肤框架&lt;/li&gt;
-&lt;li&gt;[](&lt;a href=&#34;https://github.com/chrisbanes/PhotoView)&amp;nbsp;&amp;nbsp;Implementation&#34;&gt;https://github.com/chrisbanes/PhotoView)&amp;nbsp;&amp;nbsp;Implementation&lt;/a&gt; of ImageView for Android that supports zooming, by various touch gestures.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/loopj/android-async-http&#34;&gt;android-async-http&lt;/a&gt;&amp;nbsp;&amp;nbsp;An Asynchronous HTTP Library for Android&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nostra13/Android-Universal-Image-Loader&#34;&gt;Android-Universal-Image-Loader&lt;/a&gt;&amp;nbsp;&amp;nbsp;Powerful and flexible library for loading, caching and displaying images on Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/koush/ion&#34;&gt;ion&lt;/a&gt;   Android网络及图片异步加载&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/EventBus&#34;&gt;EventBus&lt;/a&gt;   时间总线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/greenrobot/essentials/&#34;&gt;essentials&lt;/a&gt;    适合Android和Java的工具类&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Bilibili/MagicaSakura&#34;&gt;MagicaSakura&lt;/a&gt;    B站开源的多主题框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wequick/Small&#34;&gt;Small&lt;/a&gt;    Android 插件化&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yaming116/UpdateApp&#34;&gt;UpdateApp&lt;/a&gt;   开箱即用的app更新，主要负责软件下载、软件安装等&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/WuXiaolong/AndroidUtils&#34;&gt;AndroidUtils&lt;/a&gt;   Android常用类&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/koral--/android-gif-drawable&#34;&gt;android-gif-drawable&lt;/a&gt;   GIF&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/AndroidChangeSkin&#34;&gt;AndroidChangeSkin&lt;/a&gt;   鸿洋大神的应用内换肤&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chrisbanes/PhotoView&#34;&gt;PhotoView&lt;/a&gt;   图片缩放&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/YoKeyword/Fragmentation&#34;&gt;Fragmentation&lt;/a&gt;  为&amp;quot;单Activity ＋ 多Fragment&amp;rdquo;,&amp;ldquo;多模块Activity + 多Fragment&amp;quot;架构而生&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PaoloRotolo/AppIntro&#34;&gt;AppIntro&lt;/a&gt;   很飒的APP导航页.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/medyo/android-about-page&#34;&gt;android-about-page&lt;/a&gt;  Create an awesome About Page for your Android App in 2 minutes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/okhttp-utils&#34;&gt;okhttp-utils&lt;/a&gt;  对okhttp的封装类&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bumptech/glide&#34;&gt;glide&lt;/a&gt;  An image loading and caching library for Android focused on smooth scrolling&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lfkdsk/JustWeEngine&#34;&gt;JustWeEngine&lt;/a&gt;  An easy open source Android Native Game FrameWork.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/code4craft/webmagic&#34;&gt;webmagic&lt;/a&gt;  一个开源的Java垂直爬虫框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alibaba/AndFix&#34;&gt;AndFix&lt;/a&gt;  AndFix is a solution to fix the bugs online instead of redistributing Android App.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alibaba/fastjson&#34;&gt;fastjson&lt;/a&gt;  A fast JSON parser/generator for Java.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/AndroidAutoLayout&#34;&gt;AndroidAutoLayout&lt;/a&gt;  Android屏幕适配方案&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wyouflf/xUtils3&#34;&gt;xUtils3&lt;/a&gt;  android orm, bitmap, http, view inject&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/ChangeSkin&#34;&gt;ChangeSkin&lt;/a&gt;  基于插件式的Android换肤框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chrisbanes/PhotoView&#34;&gt;&lt;/a&gt;  Implementation of ImageView for Android that supports zooming, by various touch gestures.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/loopj/android-async-http&#34;&gt;android-async-http&lt;/a&gt;  An Asynchronous HTTP Library for Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nostra13/Android-Universal-Image-Loader&#34;&gt;Android-Universal-Image-Loader&lt;/a&gt;  Powerful and flexible library for loading, caching and displaying images on Android.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/hdodenhof/CircleImageView&#34;&gt;CircleImageView&lt;/a&gt;A circular ImageView for Android.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;工具类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;工具类&lt;/h3&gt;
-
+&lt;h3 id=&#34;工具类&#34;&gt;工具类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/think2011/localResizeIMG&#34;&gt;localResizeIMG&lt;/a&gt; &amp;nbsp;&amp;nbsp; 本地客户端压缩图片&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Zomato/AndroidPhotoFilters&#34;&gt;AndroidPhotoFilters&lt;/a&gt; &amp;nbsp;&amp;nbsp;图片滤镜 support API 15 and above. 可用于相机APP&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/uCrop&#34;&gt;uCrop&lt;/a&gt; &amp;nbsp;&amp;nbsp;图片剪裁 可用于相机APP&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/baoyachi/StepView&#34;&gt;StepView&lt;/a&gt; &amp;nbsp;&amp;nbsp; 流程图 可用于完成任务阶段 快递送达阶段等&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/badoualy/stepper-indicator&#34;&gt;Stepper indicator&lt;/a&gt; &amp;nbsp;&amp;nbsp;Stepper indicator 类似于&lt;a href=&#34;https://github.com/baoyachi/StepView&#34;&gt;StepView&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/laobie/StatusBarUtil&#34;&gt;StatusBarUtil&lt;/a&gt; &amp;nbsp;&amp;nbsp;4.4及其以上系统中实现 沉浸式状态栏/状态栏变色，支持设置状态栏透明度&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/think2011/localResizeIMG&#34;&gt;localResizeIMG&lt;/a&gt;    本地客户端压缩图片&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Zomato/AndroidPhotoFilters&#34;&gt;AndroidPhotoFilters&lt;/a&gt;   图片滤镜 support API 15 and above. 可用于相机APP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Yalantis/uCrop&#34;&gt;uCrop&lt;/a&gt;   图片剪裁 可用于相机APP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/baoyachi/StepView&#34;&gt;StepView&lt;/a&gt;    流程图 可用于完成任务阶段 快递送达阶段等&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/badoualy/stepper-indicator&#34;&gt;Stepper indicator&lt;/a&gt;   Stepper indicator 类似于&lt;a href=&#34;https://github.com/baoyachi/StepView&#34;&gt;StepView&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/laobie/StatusBarUtil&#34;&gt;StatusBarUtil&lt;/a&gt;   4.4及其以上系统中实现 沉浸式状态栏/状态栏变色，支持设置状态栏透明度&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jgilfelt/SystemBarTint&#34;&gt;SystemBarTint&lt;/a&gt; DEPRECATED&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/H07000223/FlycoSystemBar&#34;&gt;FlycoSystemBar&lt;/a&gt;&amp;nbsp;&amp;nbsp; A Helper for SystemBar include StatusBar and NavigationBar.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shixinzhang/DistanceMeasure&#34;&gt;DistanceMeasure&lt;/a&gt; &amp;nbsp;&amp;nbsp;Android 拍照测距&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/florent37/Carpaccio&#34;&gt;Carpaccio&lt;/a&gt;&amp;nbsp;&amp;nbsp;Data Mapping &amp;amp; Smarter Views framework for android&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jarlen/PhotoEditDemo&#34;&gt;PhotoEditDemo&lt;/a&gt;&amp;nbsp;&amp;nbsp;图片处理sdk&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/HugoMatilla/AudioPlayerView&#34;&gt;AudioPlayerView&lt;/a&gt;&amp;nbsp;&amp;nbsp;AudioPlayerView is an Android view that loads audio from an url and have basic playback tools.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/siyamed/android-shape-imageview&#34;&gt;android-shape-imageview&lt;/a&gt;&amp;nbsp;&amp;nbsp;Custom shaped android imageview components.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wenmingvs/NotifyUtil&#34;&gt;NotifyUtil&lt;/a&gt;&amp;nbsp;&amp;nbsp;高仿淘宝，网易新闻，微信，应用宝，环聊等等热门App的通知视图，并且完通知工具类的封装&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/FolioReader/FolioReader-Android&#34;&gt;FolioReader-Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;A Java ePub reader and parser framework for Android.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trello/RxLifecycle&#34;&gt;RxLifecycle&lt;/a&gt;&amp;nbsp;&amp;nbsp;Lifecycle handling APIs for Android apps using RxJava.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/GTBrowser/Jndroid.js&#34;&gt;Jndroid&lt;/a&gt;&amp;nbsp;&amp;nbsp;Jndroid is a JavaScript framework to write WebApp in Android way.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/litesuits/android-common&#34;&gt;android-common&lt;/a&gt;&amp;nbsp;&amp;nbsp;一系列通用类、辅助类、工具类的集合&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ashqal/NightOwl&#34;&gt;NightOwl&lt;/a&gt;&amp;nbsp;&amp;nbsp;switching day/night mode on Android.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mthli/Knife&#34;&gt;Knife&lt;/a&gt;&amp;nbsp;&amp;nbsp;丰富的文本编辑组件.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/qiujuer/Genius-Android&#34;&gt;Genius-Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;由 Material Design 控件和一些常用类库组合而成。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/amlcurran/ShowcaseView&#34;&gt;ShowcaseView&lt;/a&gt;&amp;nbsp;&amp;nbsp;Highlight the best bits of your app to users quickly, simply, and cool&amp;hellip;ly&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/FlowLayout&#34;&gt;FlowLayout&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android流式布局，支持单选、多选等，适合用于产品标签等。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-quick-dev/NonViewUtils&#34;&gt;NonViewUtils&lt;/a&gt;&amp;nbsp;&amp;nbsp;不涉及视图的工具类，逻辑类的集合&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rharter/android-gesture-detectors&#34;&gt;android-gesture-detectors&lt;/a&gt;&amp;nbsp;&amp;nbsp;Gesture detector framework for multitouch handling on Android.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/Android-Next&#34;&gt;Android-Next&lt;/a&gt;&amp;nbsp;&amp;nbsp;mcxiaoke在日常开发过程中积累下来的一些可复用组件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Trinea/android-common&#34;&gt;android-common-lib&lt;/a&gt;&amp;nbsp;&amp;nbsp;主要包括：缓存(图片缓存、预取缓存、网络缓存)、公共View(下拉及底部加载更多ListView、底部加载更多ScrollView、滑动一页Gallery)及Android常用工具类(网络、下载、Android资源操作、shell、文件、Json、随机数、Collection等等)。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/drakeet/BreathingViewHelper&#34;&gt;BreathingViewHelper&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个简单的小工具类，用来设置警示 View 的呼吸式背景颜色&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/excilys/androidannotations&#34;&gt;androidannotations&lt;/a&gt;&amp;nbsp;&amp;nbsp;Fast Android Development. Easy maintainance.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vinc3m1/RoundedImageView&#34;&gt;RoundedImageView&lt;/a&gt;&amp;nbsp;&amp;nbsp;A fast ImageView that supports rounded corners, ovals, and circles.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Bilibili/DanmakuFlameMaster&#34;&gt;DanmakuFlameMaster&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android开源弹幕引擎·烈焰弹幕使 ～&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/FacePlusPlus/facepp-java-sdk&#34;&gt;facepp-java-sdk&lt;/a&gt;&amp;nbsp;&amp;nbsp;Face++ SDK for Java, can be used in Android project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/H07000223/FlycoSystemBar&#34;&gt;FlycoSystemBar&lt;/a&gt;   A Helper for SystemBar include StatusBar and NavigationBar.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shixinzhang/DistanceMeasure&#34;&gt;DistanceMeasure&lt;/a&gt;   Android 拍照测距&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/florent37/Carpaccio&#34;&gt;Carpaccio&lt;/a&gt;  Data Mapping &amp;amp; Smarter Views framework for android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jarlen/PhotoEditDemo&#34;&gt;PhotoEditDemo&lt;/a&gt;  图片处理sdk&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HugoMatilla/AudioPlayerView&#34;&gt;AudioPlayerView&lt;/a&gt;  AudioPlayerView is an Android view that loads audio from an url and have basic playback tools.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/siyamed/android-shape-imageview&#34;&gt;android-shape-imageview&lt;/a&gt;  Custom shaped android imageview components.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wenmingvs/NotifyUtil&#34;&gt;NotifyUtil&lt;/a&gt;  高仿淘宝，网易新闻，微信，应用宝，环聊等等热门App的通知视图，并且完通知工具类的封装&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FolioReader/FolioReader-Android&#34;&gt;FolioReader-Android&lt;/a&gt;  A Java ePub reader and parser framework for Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trello/RxLifecycle&#34;&gt;RxLifecycle&lt;/a&gt;  Lifecycle handling APIs for Android apps using RxJava.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GTBrowser/Jndroid.js&#34;&gt;Jndroid&lt;/a&gt;  Jndroid is a JavaScript framework to write WebApp in Android way.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/litesuits/android-common&#34;&gt;android-common&lt;/a&gt;  一系列通用类、辅助类、工具类的集合&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ashqal/NightOwl&#34;&gt;NightOwl&lt;/a&gt;  switching day/night mode on Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mthli/Knife&#34;&gt;Knife&lt;/a&gt;  丰富的文本编辑组件.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/qiujuer/Genius-Android&#34;&gt;Genius-Android&lt;/a&gt;  由 Material Design 控件和一些常用类库组合而成。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/amlcurran/ShowcaseView&#34;&gt;ShowcaseView&lt;/a&gt;  Highlight the best bits of your app to users quickly, simply, and cool&amp;hellip;ly&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/FlowLayout&#34;&gt;FlowLayout&lt;/a&gt;  Android流式布局，支持单选、多选等，适合用于产品标签等。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-quick-dev/NonViewUtils&#34;&gt;NonViewUtils&lt;/a&gt;  不涉及视图的工具类，逻辑类的集合&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rharter/android-gesture-detectors&#34;&gt;android-gesture-detectors&lt;/a&gt;  Gesture detector framework for multitouch handling on Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/Android-Next&#34;&gt;Android-Next&lt;/a&gt;  mcxiaoke在日常开发过程中积累下来的一些可复用组件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Trinea/android-common&#34;&gt;android-common-lib&lt;/a&gt;  主要包括：缓存(图片缓存、预取缓存、网络缓存)、公共View(下拉及底部加载更多ListView、底部加载更多ScrollView、滑动一页Gallery)及Android常用工具类(网络、下载、Android资源操作、shell、文件、Json、随机数、Collection等等)。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/drakeet/BreathingViewHelper&#34;&gt;BreathingViewHelper&lt;/a&gt;  一个简单的小工具类，用来设置警示 View 的呼吸式背景颜色&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/excilys/androidannotations&#34;&gt;androidannotations&lt;/a&gt;  Fast Android Development. Easy maintainance.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vinc3m1/RoundedImageView&#34;&gt;RoundedImageView&lt;/a&gt;  A fast ImageView that supports rounded corners, ovals, and circles.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Bilibili/DanmakuFlameMaster&#34;&gt;DanmakuFlameMaster&lt;/a&gt;  Android开源弹幕引擎·烈焰弹幕使 ～&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FacePlusPlus/facepp-java-sdk&#34;&gt;facepp-java-sdk&lt;/a&gt;  Face++ SDK for Java, can be used in Android project.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;架构类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;架构类&lt;/h3&gt;
-
+&lt;h3 id=&#34;架构类&#34;&gt;架构类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/north2014/T-MVP&#34;&gt;T-MVP&lt;/a&gt;&amp;nbsp;&amp;nbsp;泛型深度解耦下的MVP大瘦身&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/north2014/T-MVP&#34;&gt;T-MVP&lt;/a&gt;  泛型深度解耦下的MVP大瘦身&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;android-studio-工具类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Android Studio 工具类&lt;/h3&gt;
-
+&lt;h3 id=&#34;android-studio-工具类&#34;&gt;Android Studio 工具类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/u3shadow/RemoveButterKnife&#34;&gt;RemoveButterKnife&lt;/a&gt; &amp;nbsp;&amp;nbsp; 帮助移除ButterKnife的插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/orhanobut/logger&#34;&gt;logger&lt;/a&gt; &amp;nbsp;&amp;nbsp;简介，美观且强大的Logger&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Skykai521/ECTranslation&#34;&gt;ECTranslation&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android Studio 翻译插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pengwei1024/LogUtils&#34;&gt;LogUtils&lt;/a&gt;&amp;nbsp;&amp;nbsp;More convenient and easy to use android Log manager.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/gradle-packer-plugin&#34;&gt;gradle-packer-plugin&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android渠道打包工具Gradle插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/GavinCT/AndroidMultiChannelBuildTool&#34;&gt;AndroidMultiChannelBuildTool&lt;/a&gt;&amp;nbsp;&amp;nbsp;安卓多渠道打包工具&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/romainguy/ViewServer&#34;&gt;ViewServer&lt;/a&gt;&amp;nbsp;&amp;nbsp;ViewServer is a simple class you can use in your Android application to use the HierarchyViewer inspection tool.&amp;nbsp;&amp;nbsp;API12+&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/packer-ng-plugin&#34;&gt;packer-ng-plugin&lt;/a&gt;&amp;nbsp;&amp;nbsp;下一代Android打包工具，1000个渠道包只需要5秒&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/iBotPeaches/Apktool&#34;&gt;Apktool&lt;/a&gt;&amp;nbsp;&amp;nbsp;It is a tool for reverse engineering 3rd party, closed, binary Android apps.&lt;/li&gt;
-&lt;li&gt;[](&lt;a href=&#34;https://github.com/checkstyle/checkstyle)&amp;nbsp;&amp;nbsp;Checkstyle&#34;&gt;https://github.com/checkstyle/checkstyle)&amp;nbsp;&amp;nbsp;Checkstyle&lt;/a&gt; is a development tool to help programmers write Java code that adheres to a coding standard.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pedrovgs/AndroidWiFiADB&#34;&gt;AndroidWiFiADB&lt;/a&gt;&amp;nbsp;&amp;nbsp;IntelliJ/AndroidStudio plugin which provides a button to connect your Android device over WiFi to install, run and debug your applications without a USB connected.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cundong/MemoryMonitor&#34;&gt;MemoryMonitor&lt;/a&gt; &amp;nbsp;&amp;nbsp;一个给开发者使用的Android App内存清理、监控工具。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/u3shadow/RemoveButterKnife&#34;&gt;RemoveButterKnife&lt;/a&gt;    帮助移除ButterKnife的插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/orhanobut/logger&#34;&gt;logger&lt;/a&gt;   简介，美观且强大的Logger&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Skykai521/ECTranslation&#34;&gt;ECTranslation&lt;/a&gt;  Android Studio 翻译插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pengwei1024/LogUtils&#34;&gt;LogUtils&lt;/a&gt;  More convenient and easy to use android Log manager.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/gradle-packer-plugin&#34;&gt;gradle-packer-plugin&lt;/a&gt;  Android渠道打包工具Gradle插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GavinCT/AndroidMultiChannelBuildTool&#34;&gt;AndroidMultiChannelBuildTool&lt;/a&gt;  安卓多渠道打包工具&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/romainguy/ViewServer&#34;&gt;ViewServer&lt;/a&gt;  ViewServer is a simple class you can use in your Android application to use the HierarchyViewer inspection tool.  API12+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/packer-ng-plugin&#34;&gt;packer-ng-plugin&lt;/a&gt;  下一代Android打包工具，1000个渠道包只需要5秒&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iBotPeaches/Apktool&#34;&gt;Apktool&lt;/a&gt;  It is a tool for reverse engineering 3rd party, closed, binary Android apps.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/checkstyle/checkstyle&#34;&gt;&lt;/a&gt;  Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pedrovgs/AndroidWiFiADB&#34;&gt;AndroidWiFiADB&lt;/a&gt;  IntelliJ/AndroidStudio plugin which provides a button to connect your Android device over WiFi to install, run and debug your applications without a USB connected.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cundong/MemoryMonitor&#34;&gt;MemoryMonitor&lt;/a&gt;   一个给开发者使用的Android App内存清理、监控工具。&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;测试类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;测试类&lt;/h3&gt;
-
+&lt;h3 id=&#34;测试类&#34;&gt;测试类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fabioCollini/LifeCycleBinder&#34;&gt;LifeCycleBinder&lt;/a&gt; &amp;nbsp;&amp;nbsp;测试Activity,Fragment生命周期&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/txusballesteros/Android-Clean-Testing&#34;&gt;Android-Clean-Testing&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android Testing Sample Project.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/square/leakcanary&#34;&gt;leakcanary&lt;/a&gt;&amp;nbsp;&amp;nbsp;A memory leak detection library for Android and Java.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fabioCollini/LifeCycleBinder&#34;&gt;LifeCycleBinder&lt;/a&gt;   测试Activity,Fragment生命周期&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/txusballesteros/Android-Clean-Testing&#34;&gt;Android-Clean-Testing&lt;/a&gt;  Android Testing Sample Project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/square/leakcanary&#34;&gt;leakcanary&lt;/a&gt;  A memory leak detection library for Android and Java.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;权限相关:b165defa7204a9db93d2ab27f621cd65&#34;&gt;权限相关&lt;/h3&gt;
-
+&lt;h3 id=&#34;权限相关&#34;&gt;权限相关&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tajchert/Nammu&#34;&gt;Nammu&lt;/a&gt; &amp;nbsp;&amp;nbsp;后台监听权限并回调&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tajchert/Nammu&#34;&gt;Nammu&lt;/a&gt;   后台监听权限并回调&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;资源类:b165defa7204a9db93d2ab27f621cd65&#34;&gt;资源类&lt;/h3&gt;
-
+&lt;h3 id=&#34;资源类&#34;&gt;资源类&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ruijun/Android-Dev-Favorites&#34;&gt;Android-Dev-Favorites&lt;/a&gt; &amp;nbsp;&amp;nbsp; 收集Android开发相关知识合集&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/google-api-go-client&#34;&gt;google-api-go-client&lt;/a&gt; &amp;nbsp;&amp;nbsp; Auto-generated Google APIs for Go&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/kaedea/android-dynamical-loading&#34;&gt;android-dynamical-loading&lt;/a&gt;&amp;nbsp;&amp;nbsp; Android 动态加载相关资料&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/envyfan/AndroidReview&#34;&gt;AndroidReview&lt;/a&gt; &amp;nbsp;&amp;nbsp;Android面试复习资料&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/DiyCodes/code_news&#34;&gt;Diycode&lt;/a&gt; &amp;nbsp;&amp;nbsp;Diycode每日精选&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Idtk/Blog&#34;&gt;CustomViewBlog&lt;/a&gt; &amp;nbsp;&amp;nbsp;自定义View资料&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/futurice/android-best-practices&#34;&gt;android-best-practices&lt;/a&gt; &amp;nbsp;&amp;nbsp;Futurice的课程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pubyun/macdev&#34;&gt;macdev&lt;/a&gt;&amp;nbsp;&amp;nbsp;使用Mac作为开发工具的过程中的一些体会做个记录和整理&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ruijun/Android-Dev-Favorites&#34;&gt;Android-Dev-Favorites&lt;/a&gt;    收集Android开发相关知识合集&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/google-api-go-client&#34;&gt;google-api-go-client&lt;/a&gt;    Auto-generated Google APIs for Go&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kaedea/android-dynamical-loading&#34;&gt;android-dynamical-loading&lt;/a&gt;   Android 动态加载相关资料&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/envyfan/AndroidReview&#34;&gt;AndroidReview&lt;/a&gt;   Android面试复习资料&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DiyCodes/code_news&#34;&gt;Diycode&lt;/a&gt;   Diycode每日精选&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Idtk/Blog&#34;&gt;CustomViewBlog&lt;/a&gt;   自定义View资料&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/futurice/android-best-practices&#34;&gt;android-best-practices&lt;/a&gt;   Futurice的课程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pubyun/macdev&#34;&gt;macdev&lt;/a&gt;  使用Mac作为开发工具的过程中的一些体会做个记录和整理&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Trinea/android-open-project&#34;&gt;Trinea/android-open-project&lt;/a&gt; Android开源项目集合&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hzlzh/Best-App&#34;&gt;Best-App&lt;/a&gt; &amp;nbsp;&amp;nbsp;Mac 神兵利器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/git-recipes&#34;&gt;git-recipes&lt;/a&gt;&amp;nbsp;&amp;nbsp;高质量的Git中文教程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/msdx/android-proguard-cn&#34;&gt;android-proguard-cn&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android混淆规则&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rujews/android-gradle-book-code&#34;&gt;android-gradle-book-code&lt;/a&gt;&amp;nbsp;&amp;nbsp;《Android Gradle权威指南》的示例代码&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mobileperfman/BookResource&#34;&gt;Android终端专项宝典及资源&lt;/a&gt;&amp;nbsp;&amp;nbsp;适用：终端专项测试&amp;nbsp;&amp;nbsp; 终端系统测试 &amp;nbsp;&amp;nbsp;高级终端开发&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/GcsSloop/AndroidNote&#34;&gt;AndroidNote&lt;/a&gt;&amp;nbsp;&amp;nbsp; 安卓自定义View进阶系列教程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis&#34;&gt;AndroidSdkSourceAnalysis&lt;/a&gt;&amp;nbsp;&amp;nbsp; android sdk 源码解析&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/asLody/TurboDex/&#34;&gt;TurboDex&lt;/a&gt;&amp;nbsp;&amp;nbsp;TurboDex: 在Android瞬间加载Dex&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sfsheng0322/In-depthStudy&#34;&gt;In-depthStudy&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android 深入学习工程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/phodal/growth-ebook&#34;&gt;growth-ebook&lt;/a&gt;&amp;nbsp;&amp;nbsp;《全栈增长工程师指南》&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/kotlin-notes&#34;&gt;kotlin-notes&lt;/a&gt;&amp;nbsp;&amp;nbsp;Kotlin中文教程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jiangqqlmj/FastDev4Android&#34;&gt;FastDev4Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android快速开发框架&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Freelander/Android_Data&#34;&gt;Android_Data&lt;/a&gt; &amp;nbsp;&amp;nbsp;Android学习资料收集&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Jacksgong/JKeyboardPanelSwitch&#34;&gt;JKeyboardPanelSwitch&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android键盘面板冲突 布局闪动处理方案&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Nightonke/LeeCo&#34;&gt;LeeCo&lt;/a&gt; &amp;nbsp;&amp;nbsp;超过300道面试算法题，29个分类，详尽的题解、讨论和评论&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZhaoKaiQiang/AndroidDifficultAnalysis&#34;&gt;AndroidDifficultAnalysis&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android 重难点解析&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/giantray/stackoverflow-java-top-qa&#34;&gt;stackoverflow-java-top-qa&lt;/a&gt;&amp;nbsp;&amp;nbsp;stackoverflow上Java相关回答整理翻译&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hehonghui/android_dp_analysis_code&#34;&gt;android_dp_analysis_code&lt;/a&gt;&amp;nbsp;&amp;nbsp;《Android 源码设计模式解析与实战》示例代码&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pedrovgs/Algorithms&#34;&gt;Algorithms&lt;/a&gt;&amp;nbsp;&amp;nbsp;Solutions for some common algorithm problems written in Java.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wenmingvs/AndroidProcess&#34;&gt;AndroidProcess&lt;/a&gt;&amp;nbsp;&amp;nbsp;6种方法来判断App处于前台还是后台&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hzlzh/Best-App&#34;&gt;Best-App&lt;/a&gt;   Mac 神兵利器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/git-recipes&#34;&gt;git-recipes&lt;/a&gt;  高质量的Git中文教程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/msdx/android-proguard-cn&#34;&gt;android-proguard-cn&lt;/a&gt;  Android混淆规则&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rujews/android-gradle-book-code&#34;&gt;android-gradle-book-code&lt;/a&gt;  《Android Gradle权威指南》的示例代码&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mobileperfman/BookResource&#34;&gt;Android终端专项宝典及资源&lt;/a&gt;  适用：终端专项测试   终端系统测试   高级终端开发&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/GcsSloop/AndroidNote&#34;&gt;AndroidNote&lt;/a&gt;   安卓自定义View进阶系列教程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LittleFriendsGroup/AndroidSdkSourceAnalysis&#34;&gt;AndroidSdkSourceAnalysis&lt;/a&gt;   android sdk 源码解析&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/asLody/TurboDex/&#34;&gt;TurboDex&lt;/a&gt;  TurboDex: 在Android瞬间加载Dex&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sfsheng0322/In-depthStudy&#34;&gt;In-depthStudy&lt;/a&gt;  Android 深入学习工程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/phodal/growth-ebook&#34;&gt;growth-ebook&lt;/a&gt;  《全栈增长工程师指南》&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/kotlin-notes&#34;&gt;kotlin-notes&lt;/a&gt;  Kotlin中文教程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jiangqqlmj/FastDev4Android&#34;&gt;FastDev4Android&lt;/a&gt;  Android快速开发框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Freelander/Android_Data&#34;&gt;Android_Data&lt;/a&gt;   Android学习资料收集&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Jacksgong/JKeyboardPanelSwitch&#34;&gt;JKeyboardPanelSwitch&lt;/a&gt;  Android键盘面板冲突 布局闪动处理方案&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Nightonke/LeeCo&#34;&gt;LeeCo&lt;/a&gt;   超过300道面试算法题，29个分类，详尽的题解、讨论和评论&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ZhaoKaiQiang/AndroidDifficultAnalysis&#34;&gt;AndroidDifficultAnalysis&lt;/a&gt;  Android 重难点解析&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/giantray/stackoverflow-java-top-qa&#34;&gt;stackoverflow-java-top-qa&lt;/a&gt;  stackoverflow上Java相关回答整理翻译&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hehonghui/android_dp_analysis_code&#34;&gt;android_dp_analysis_code&lt;/a&gt;  《Android 源码设计模式解析与实战》示例代码&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pedrovgs/Algorithms&#34;&gt;Algorithms&lt;/a&gt;  Solutions for some common algorithm problems written in Java.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wenmingvs/AndroidProcess&#34;&gt;AndroidProcess&lt;/a&gt;  6种方法来判断App处于前台还是后台&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/simple-android-framework-exchange/the-fucking-traps-in-android-dev&#34;&gt;开发过程中遇到的坑&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pcqpcq/open-source-android-apps&#34;&gt;open-source-android-apps&lt;/a&gt; &amp;nbsp;&amp;nbsp;开源APP集合&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxAndroid&#34;&gt;RxAndroid&lt;/a&gt;&amp;nbsp;&amp;nbsp;RxJava bindings for Android.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mmin18/AndroidDynamicLoader&#34;&gt;AndroidDynamicLoader&lt;/a&gt;&amp;nbsp;&amp;nbsp;动态加载插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wangjiegulu/kotlin-for-android-developers-zh&#34;&gt;kotlin-for-android-developers-zh&lt;/a&gt;&amp;nbsp;&amp;nbsp;Kotlin for android developers in chinese.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nekocode/kotgo&#34;&gt;kotgo&lt;/a&gt; &amp;nbsp;&amp;nbsp; An android development framework on kotlin using MVP architecture.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-discuss&#34;&gt;android-discuss&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android 问题交流讨论坛&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/androidmalin/RengwuxianRxjava&#34;&gt;RengwuxianRxjava&lt;/a&gt;&amp;nbsp;&amp;nbsp;RxJava 入门教程&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/reactnativecn/react-native-guide&#34;&gt;react-native-guide&lt;/a&gt;&amp;nbsp;&amp;nbsp;React-Native学习指南&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jobbole/awesome-java-cn&#34;&gt;awesome-java-cn&lt;/a&gt;&amp;nbsp;&amp;nbsp;Java资源大全中文版&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/julycoding/The-Art-Of-Programming-By-July&#34;&gt;The-Art-Of-Programming-By-July&lt;/a&gt;&amp;nbsp;&amp;nbsp;July的新书《编程之法：面试和算法心得》&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shwenzhang/AndResGuard/&#34;&gt;AndResGuard&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android资源混淆工具使用说明&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xitu/gold-miner&#34;&gt;gold-miner&lt;/a&gt;&amp;nbsp;&amp;nbsp;掘金翻译计划，翻译掘金上优质的英文文章&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/vbauer/android-arsenal.com&#34;&gt;android-arsenal&lt;/a&gt;&amp;nbsp;&amp;nbsp;Source to android-arsenal.herokuapp.com.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/desmond1121/Android-Ptr-Comparison&#34;&gt;Android-Ptr-Comparison&lt;/a&gt;&amp;nbsp;&amp;nbsp;安卓下拉刷新开源库对比&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/singwhatiwanna/dynamic-load-apk&#34;&gt;dynamic-load-apk&lt;/a&gt;&amp;nbsp;&amp;nbsp;Apk动态加载框架&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Macarse/50AH-code&#34;&gt;50AH-code&lt;/a&gt;&amp;nbsp;&amp;nbsp;50 Android Hacks book source code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pcqpcq/open-source-android-apps&#34;&gt;open-source-android-apps&lt;/a&gt;   开源APP集合&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxAndroid&#34;&gt;RxAndroid&lt;/a&gt;  RxJava bindings for Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mmin18/AndroidDynamicLoader&#34;&gt;AndroidDynamicLoader&lt;/a&gt;  动态加载插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wangjiegulu/kotlin-for-android-developers-zh&#34;&gt;kotlin-for-android-developers-zh&lt;/a&gt;  Kotlin for android developers in chinese.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nekocode/kotgo&#34;&gt;kotgo&lt;/a&gt;    An android development framework on kotlin using MVP architecture.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-discuss&#34;&gt;android-discuss&lt;/a&gt;  Android 问题交流讨论坛&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/androidmalin/RengwuxianRxjava&#34;&gt;RengwuxianRxjava&lt;/a&gt;  RxJava 入门教程&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/reactnativecn/react-native-guide&#34;&gt;react-native-guide&lt;/a&gt;  React-Native学习指南&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jobbole/awesome-java-cn&#34;&gt;awesome-java-cn&lt;/a&gt;  Java资源大全中文版&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/julycoding/The-Art-Of-Programming-By-July&#34;&gt;The-Art-Of-Programming-By-July&lt;/a&gt;  July的新书《编程之法：面试和算法心得》&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shwenzhang/AndResGuard/&#34;&gt;AndResGuard&lt;/a&gt;  Android资源混淆工具使用说明&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xitu/gold-miner&#34;&gt;gold-miner&lt;/a&gt;  掘金翻译计划，翻译掘金上优质的英文文章&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/vbauer/android-arsenal.com&#34;&gt;android-arsenal&lt;/a&gt;  Source to android-arsenal.herokuapp.com.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/desmond1121/Android-Ptr-Comparison&#34;&gt;Android-Ptr-Comparison&lt;/a&gt;  安卓下拉刷新开源库对比&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/singwhatiwanna/dynamic-load-apk&#34;&gt;dynamic-load-apk&lt;/a&gt;  Apk动态加载框架&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Macarse/50AH-code&#34;&gt;50AH-code&lt;/a&gt;  50 Android Hacks book source code.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/vhf/free-programming-books&#34;&gt;免费编程书资源&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/leerduo/InterviewQuestion&#34;&gt;InterviewQuestion&lt;/a&gt;&amp;nbsp;&amp;nbsp;整理的常见的问题.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/simple-android-framework/android_design_patterns_analysis&#34;&gt;android_design_patterns_analysis&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android源码设计模式分析项目.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/leerduo/InterviewQuestion&#34;&gt;InterviewQuestion&lt;/a&gt;  整理的常见的问题.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/simple-android-framework/android_design_patterns_analysis&#34;&gt;android_design_patterns_analysis&lt;/a&gt;  Android源码设计模式分析项目.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/zmywly8866/Worth-Reading-the-Android-technical-articles&#34;&gt;值得阅读的android技术文章&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fython/BilibiliAPIDocs&#34;&gt;BilibiliAPIDocs&lt;/a&gt;&amp;nbsp;&amp;nbsp;Bilibili API 第三方文档&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-open-project-analysis&#34;&gt;android-open-project-analysis&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android 开源项目源码解析&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-dev-com&#34;&gt;android-dev-com&lt;/a&gt;&amp;nbsp;&amp;nbsp;国外著名公司及开发者信息&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-dev-cn&#34;&gt;android-dev-cn&lt;/a&gt;&amp;nbsp;&amp;nbsp;国内部分开发者信息&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Aufree/trip-to-iOS&#34;&gt;trip-to-iOS&lt;/a&gt;&amp;nbsp;&amp;nbsp;iOS学习资料整理&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Trinea/android-common&#34;&gt;android-common-lib&lt;/a&gt;&amp;nbsp;&amp;nbsp;主要包括：缓存(图片缓存、预取缓存、网络缓存)、公共View(下拉及底部加载更多ListView、底部加载更多ScrollView、滑动一页Gallery)及Android常用工具类(网络、下载、Android资源操作、shell、文件、Json、随机数、Collection等等)。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/Android_Blog_Demos&#34;&gt;hongyangAndroid-BlogDemos&lt;/a&gt;&amp;nbsp;&amp;nbsp;hongyang大神存储CSDN博客的一些源码&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/1sters/material_design_zh&#34;&gt;material_design_zh&lt;/a&gt;&amp;nbsp;&amp;nbsp;Material Design 中文协同翻译&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hehonghui/android-tech-frontier&#34;&gt;android-tech-frontier&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android开发技术前线&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lzyzsd/Awesome-RxJava&#34;&gt;Awesome-RxJava&lt;/a&gt;&amp;nbsp;&amp;nbsp;RxJava resources&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/FX-Max/Point-of-Android&#34;&gt;Point-of-Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android 一些重要知识点解析整理&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/kesenhoo/android-training-course-in-chinese&#34;&gt;android-training-course-in-chinese&lt;/a&gt;&amp;nbsp;&amp;nbsp;Android官方培训课程中文版&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fython/BilibiliAPIDocs&#34;&gt;BilibiliAPIDocs&lt;/a&gt;  Bilibili API 第三方文档&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-open-project-analysis&#34;&gt;android-open-project-analysis&lt;/a&gt;  Android 开源项目源码解析&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-dev-com&#34;&gt;android-dev-com&lt;/a&gt;  国外著名公司及开发者信息&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/android-cn/android-dev-cn&#34;&gt;android-dev-cn&lt;/a&gt;  国内部分开发者信息&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Aufree/trip-to-iOS&#34;&gt;trip-to-iOS&lt;/a&gt;  iOS学习资料整理&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Trinea/android-common&#34;&gt;android-common-lib&lt;/a&gt;  主要包括：缓存(图片缓存、预取缓存、网络缓存)、公共View(下拉及底部加载更多ListView、底部加载更多ScrollView、滑动一页Gallery)及Android常用工具类(网络、下载、Android资源操作、shell、文件、Json、随机数、Collection等等)。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hongyangAndroid/Android_Blog_Demos&#34;&gt;hongyangAndroid-BlogDemos&lt;/a&gt;  hongyang大神存储CSDN博客的一些源码&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/1sters/material_design_zh&#34;&gt;material_design_zh&lt;/a&gt;  Material Design 中文协同翻译&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hehonghui/android-tech-frontier&#34;&gt;android-tech-frontier&lt;/a&gt;  Android开发技术前线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lzyzsd/Awesome-RxJava&#34;&gt;Awesome-RxJava&lt;/a&gt;  RxJava resources&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FX-Max/Point-of-Android&#34;&gt;Point-of-Android&lt;/a&gt;  Android 一些重要知识点解析整理&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kesenhoo/android-training-course-in-chinese&#34;&gt;android-training-course-in-chinese&lt;/a&gt;  Android官方培训课程中文版&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;app:b165defa7204a9db93d2ab27f621cd65&#34;&gt;APP&lt;/h3&gt;
-
+&lt;h3 id=&#34;app&#34;&gt;APP&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/oxplot/bradybound&#34;&gt;bradybound&lt;/a&gt;&amp;nbsp;&amp;nbsp; Android下载限速&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/oubowu/OuNews&#34;&gt;OuNews&lt;/a&gt; &amp;nbsp;&amp;nbsp;基于MVP的新闻客户端&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maoruibin/TranslateApp&#34;&gt;TranslateApp&lt;/a&gt; &amp;nbsp;&amp;nbsp;『划词翻译』功能的 Android 应用&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fewwind/ZhiHu-Daily&#34;&gt;ZhiHu-Daily&lt;/a&gt; &amp;nbsp;&amp;nbsp;知乎日报&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/YiuChoi/MicroReader&#34;&gt;MicroReader&lt;/a&gt;&amp;nbsp;&amp;nbsp;基于MVP的阅读客户端&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/CzBiX/v2ex-android&#34;&gt;v2ex&lt;/a&gt; &amp;nbsp;&amp;nbsp;v2ex&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nekocode/murmur&#34;&gt;murmur&lt;/a&gt; &amp;nbsp;&amp;nbsp;Murmur 是一个带 白噪声 效果的豆瓣电台第三方客户端。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/qinci/MarkdownEditors&#34;&gt;MarkdownEditors&lt;/a&gt; &amp;nbsp;&amp;nbsp;Android Markdown编辑器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Nightonke/LeeCo&#34;&gt;LeeCo&lt;/a&gt; &amp;nbsp;&amp;nbsp;超过300道面试算法题，29个分类，详尽的题解、讨论和评论&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nickbutcher/plaid&#34;&gt;plaid&lt;/a&gt;  &amp;nbsp;&amp;nbsp;Design news and inspiration.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/PaperAirplane-Dev-Team/BlackLight&#34;&gt;BlackLight&lt;/a&gt;&amp;nbsp;&amp;nbsp;A light Sina Weibo client for Android&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/AzeeSoft/AndroidPhotoshopColorPicker&#34;&gt;AndroidPhotoshopColorPicker&lt;/a&gt;&amp;nbsp;&amp;nbsp;A full featured Color picker Library for Android! Just like the one in Photoshop!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/motianhuo/wechat&#34;&gt;wechat&lt;/a&gt;&amp;nbsp;&amp;nbsp;高仿微信&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/motianhuo/VCameraDemo&#34;&gt;VCameraDemo&lt;/a&gt;&amp;nbsp;&amp;nbsp;微信小视频+秒拍&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pcqpcq/open-source-android-apps&#34;&gt;open-source-android-apps&lt;/a&gt; &amp;nbsp;&amp;nbsp;开源APP集合&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/izzyleung/ZhihuDailyPurify&#34;&gt;ZhihuDailyPurify&lt;/a&gt;&amp;nbsp;&amp;nbsp;更纯净的知乎日报&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/SkillCollege/SimplifyReader&#34;&gt;SimplifyReader&lt;/a&gt;&amp;nbsp;&amp;nbsp;简阅&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/joyoyao/superCleanMaster&#34;&gt;superCleanMaster&lt;/a&gt;&amp;nbsp;&amp;nbsp;一键清理 开源版，包括内存加速，缓存清理，自启管理，软件管理等。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/oxplot/bradybound&#34;&gt;bradybound&lt;/a&gt;   Android下载限速&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/oubowu/OuNews&#34;&gt;OuNews&lt;/a&gt;   基于MVP的新闻客户端&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maoruibin/TranslateApp&#34;&gt;TranslateApp&lt;/a&gt;   『划词翻译』功能的 Android 应用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fewwind/ZhiHu-Daily&#34;&gt;ZhiHu-Daily&lt;/a&gt;   知乎日报&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/YiuChoi/MicroReader&#34;&gt;MicroReader&lt;/a&gt;  基于MVP的阅读客户端&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/CzBiX/v2ex-android&#34;&gt;v2ex&lt;/a&gt;   v2ex&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nekocode/murmur&#34;&gt;murmur&lt;/a&gt;   Murmur 是一个带 白噪声 效果的豆瓣电台第三方客户端。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/qinci/MarkdownEditors&#34;&gt;MarkdownEditors&lt;/a&gt;   Android Markdown编辑器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Nightonke/LeeCo&#34;&gt;LeeCo&lt;/a&gt;   超过300道面试算法题，29个分类，详尽的题解、讨论和评论&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nickbutcher/plaid&#34;&gt;plaid&lt;/a&gt;    Design news and inspiration.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PaperAirplane-Dev-Team/BlackLight&#34;&gt;BlackLight&lt;/a&gt;  A light Sina Weibo client for Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AzeeSoft/AndroidPhotoshopColorPicker&#34;&gt;AndroidPhotoshopColorPicker&lt;/a&gt;  A full featured Color picker Library for Android! Just like the one in Photoshop!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/motianhuo/wechat&#34;&gt;wechat&lt;/a&gt;  高仿微信&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/motianhuo/VCameraDemo&#34;&gt;VCameraDemo&lt;/a&gt;  微信小视频+秒拍&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pcqpcq/open-source-android-apps&#34;&gt;open-source-android-apps&lt;/a&gt;   开源APP集合&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/izzyleung/ZhihuDailyPurify&#34;&gt;ZhihuDailyPurify&lt;/a&gt;  更纯净的知乎日报&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SkillCollege/SimplifyReader&#34;&gt;SimplifyReader&lt;/a&gt;  简阅&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/joyoyao/superCleanMaster&#34;&gt;superCleanMaster&lt;/a&gt;  一键清理 开源版，包括内存加速，缓存清理，自启管理，软件管理等。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/leancloud/leanmessage-demo&#34;&gt;LeanCloud-Demo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/drakeet/Meizhi&#34;&gt;Meizhi&lt;/a&gt;&amp;nbsp;&amp;nbsp;gank.io unofficial client, RxJava &amp;amp; Retrofit.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mthli/Ninja&#34;&gt;Ninja&lt;/a&gt;&amp;nbsp;&amp;nbsp;Yet another web browser for Android.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mikeroelens/HungerMoji&#34;&gt;HungerMoji&lt;/a&gt;&amp;nbsp;&amp;nbsp;Notification Game&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/googlecreativelab/meter&#34;&gt;meter&lt;/a&gt;&amp;nbsp;&amp;nbsp;Meter is a data-driven wallpaper that displays your battery, wireless signal and notifications.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fython/BiliNyan-Android&#34;&gt;BiliNyan-Android&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个 Material Design 风格的第三方哔哩哔哩 Android 客户端&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/MrNerverDie/MiniWeChat-Client&#34;&gt;MiniWeChat-Client&lt;/a&gt;&amp;nbsp;&amp;nbsp;一个基于Unity3D的微信客户端，客户端使用了MVVM架构，并使用protobuf作为网络协议生成语言。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cundong/ZhihuPaper&#34;&gt;ZhihuPaper&lt;/a&gt; &amp;nbsp;&amp;nbsp;一个知乎日报客户端&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/drakeet/Meizhi&#34;&gt;Meizhi&lt;/a&gt;  gank.io unofficial client, RxJava &amp;amp; Retrofit.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mthli/Ninja&#34;&gt;Ninja&lt;/a&gt;  Yet another web browser for Android.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mikeroelens/HungerMoji&#34;&gt;HungerMoji&lt;/a&gt;  Notification Game&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/googlecreativelab/meter&#34;&gt;meter&lt;/a&gt;  Meter is a data-driven wallpaper that displays your battery, wireless signal and notifications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fython/BiliNyan-Android&#34;&gt;BiliNyan-Android&lt;/a&gt;  一个 Material Design 风格的第三方哔哩哔哩 Android 客户端&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/MrNerverDie/MiniWeChat-Client&#34;&gt;MiniWeChat-Client&lt;/a&gt;  一个基于Unity3D的微信客户端，客户端使用了MVVM架构，并使用protobuf作为网络协议生成语言。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cundong/ZhihuPaper&#34;&gt;ZhihuPaper&lt;/a&gt;   一个知乎日报客户端&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mcxiaoke/minicat&#34;&gt;minicat&lt;/a&gt;简介的饭否APP&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;python:b165defa7204a9db93d2ab27f621cd65&#34;&gt;Python&lt;/h2&gt;
-
+&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wklken/stackoverflow-py-top-qa&#34;&gt;stackoverflow-py-top-qa&lt;/a&gt;&amp;nbsp;&amp;nbsp;stackoverflow上Python相关回答整理翻译&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/7sDream/zhihu-py3&#34;&gt;zhihu-py3&lt;/a&gt;&amp;nbsp;&amp;nbsp;知乎非官方API库 with Python3&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/7sDream/zhihu-oauth&#34;&gt;zhihu-oauth&lt;/a&gt;&amp;nbsp;&amp;nbsp;尝试解析出知乎官方未开放的 OAuth2 接口&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lepture/mistune&#34;&gt;mistune&lt;/a&gt;&amp;nbsp;&amp;nbsp;The fastest markdown parser in pure Python with renderer feature, inspired by marked and misaka.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wklken/stackoverflow-py-top-qa&#34;&gt;stackoverflow-py-top-qa&lt;/a&gt;  stackoverflow上Python相关回答整理翻译&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/7sDream/zhihu-py3&#34;&gt;zhihu-py3&lt;/a&gt;  知乎非官方API库 with Python3&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/7sDream/zhihu-oauth&#34;&gt;zhihu-oauth&lt;/a&gt;  尝试解析出知乎官方未开放的 OAuth2 接口&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lepture/mistune&#34;&gt;mistune&lt;/a&gt;  The fastest markdown parser in pure Python with renderer feature, inspired by marked and misaka.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;前端:b165defa7204a9db93d2ab27f621cd65&#34;&gt;前端&lt;/h2&gt;
-
+&lt;h2 id=&#34;前端&#34;&gt;前端&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nieweidong/fetool&#34;&gt;fetool&lt;/a&gt;  &amp;nbsp;&amp;nbsp;大前端的瑞士军刀 前端的一些资料，工具等&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tobiasahlin/SpinKit&#34;&gt;SpinKit&lt;/a&gt;  &amp;nbsp;&amp;nbsp;用CSS制作的加载指示器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fians/Waves&#34;&gt;Waves&lt;/a&gt; &amp;nbsp;&amp;nbsp; Click effect inspired by Google&amp;rsquo;s Material Design &lt;a href=&#34;http://fian.my.id/Waves/&#34;&gt;http://fian.my.id/Waves/&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/FortAwesome/Font-Awesome&#34;&gt;Font-Awesome&lt;/a&gt; &amp;nbsp;&amp;nbsp; The iconic font and CSS framework.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt; &amp;nbsp;&amp;nbsp; Material Design icons by Google.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ScottSavarie/Clipboard-Fill&#34;&gt;Clipboard-Fill&lt;/a&gt;  &amp;nbsp;&amp;nbsp; Sketch plugin to paste an image from your clipboard as the fill for any shape.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nullice/NViconsLib_Silhouette&#34;&gt;NViconsLib_Silhouette&lt;/a&gt;&amp;nbsp;&amp;nbsp;全矢量图标&amp;amp;覆盖主流网站图标.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nieweidong/fetool&#34;&gt;fetool&lt;/a&gt;    大前端的瑞士军刀 前端的一些资料，工具等&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tobiasahlin/SpinKit&#34;&gt;SpinKit&lt;/a&gt;    用CSS制作的加载指示器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fians/Waves&#34;&gt;Waves&lt;/a&gt;    Click effect inspired by Google&amp;rsquo;s Material Design &lt;a href=&#34;http://fian.my.id/Waves/&#34;&gt;http://fian.my.id/Waves/&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FortAwesome/Font-Awesome&#34;&gt;Font-Awesome&lt;/a&gt;    The iconic font and CSS framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-icons&#34;&gt;material-design-icons&lt;/a&gt;    Material Design icons by Google.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ScottSavarie/Clipboard-Fill&#34;&gt;Clipboard-Fill&lt;/a&gt;     Sketch plugin to paste an image from your clipboard as the fill for any shape.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nullice/NViconsLib_Silhouette&#34;&gt;NViconsLib_Silhouette&lt;/a&gt;  全矢量图标&amp;amp;覆盖主流网站图标.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;流媒体:b165defa7204a9db93d2ab27f621cd65&#34;&gt;流媒体&lt;/h2&gt;
-
+&lt;h2 id=&#34;流媒体&#34;&gt;流媒体&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/arut/nginx-rtmp-module&#34;&gt;nginx-rtmp-module&lt;/a&gt; &amp;nbsp;&amp;nbsp; 搭建rtmp流媒体服务器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Red5/red5-server&#34;&gt;red5-server&lt;/a&gt;  &amp;nbsp;&amp;nbsp;Red5&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pili-engineering/PLDroidPlayer&#34;&gt;PLDroidPlayer&lt;/a&gt;&amp;nbsp;&amp;nbsp;七牛云出品 支持RTMP&amp;amp;HLS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/arut/nginx-rtmp-module&#34;&gt;nginx-rtmp-module&lt;/a&gt;    搭建rtmp流媒体服务器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Red5/red5-server&#34;&gt;red5-server&lt;/a&gt;    Red5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pili-engineering/PLDroidPlayer&#34;&gt;PLDroidPlayer&lt;/a&gt;  七牛云出品 支持RTMP&amp;amp;HLS&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Bilibili/ijkplayer&#34;&gt;ijkplayer&lt;/a&gt; B站出品 支持RTMP&amp;amp;HLS&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/SinaVDDeveloper/demo&#34;&gt;SinaVDDeveloper_Demo&lt;/a&gt; sina出品 支持HLS&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/SinaVDDeveloper/sinavideo_playercore&#34;&gt;sinavideo_playercore&lt;/a&gt;sina出品 支持HLS&lt;/li&gt;
@@ -539,31 +470,28 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/daniulive/SmarterStreaming&#34;&gt;SmarterStreaming&lt;/a&gt;支持RTMP&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/yixia/VitamioBundle&#34;&gt;VitamioBundle&lt;/a&gt;Vitamio 个人免费 支持RTMP&amp;amp;HLS&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&#34;杂七杂八:b165defa7204a9db93d2ab27f621cd65&#34;&gt;杂七杂八&lt;/h2&gt;
-
+&lt;h2 id=&#34;杂七杂八&#34;&gt;杂七杂八&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/be5invis/Iosevka&#34;&gt;Iosevka&lt;/a&gt; &amp;nbsp;&amp;nbsp; 字体&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/shadowsocks/Potatso-iOS&#34;&gt;Potatso-iOS&lt;/a&gt;  &amp;nbsp;&amp;nbsp;Shadowsocks in iOS 9&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yumemor/ysale-sms&#34;&gt;ysale-sms&lt;/a&gt; &amp;nbsp;&amp;nbsp;由 NodeJs 实现的短信轰炸器&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/electronic-wechat&#34;&gt;electronic-wechat&lt;/a&gt; &amp;nbsp;&amp;nbsp;Mac上更好的微信客户端&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/github/gitignore&#34;&gt;gitignore&lt;/a&gt;&amp;nbsp;&amp;nbsp; gitignore 模板&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tj/parse-curl.js&#34;&gt;parse-curl.js&lt;/a&gt;&amp;nbsp;&amp;nbsp;Parse curl commands, returning an object representing the request.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/toddmotto/public-apis&#34;&gt;public-apis&lt;/a&gt;&amp;nbsp;&amp;nbsp;A collective list of public JSON APIs for use in web development.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;forum&lt;/a&gt; &amp;nbsp;&amp;nbsp;FQ软件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/anasnakawa/chrome-github-avatars&#34;&gt;chrome-github-avatars&lt;/a&gt;&amp;nbsp;&amp;nbsp;Display user avatars on the Github news feed.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/izacus/RoboGif&#34;&gt;RoboGif&lt;/a&gt; &amp;nbsp;&amp;nbsp;A small utility to record Android device screen to a GIF&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ben174/git-draw&#34;&gt;git-draw&lt;/a&gt;&amp;nbsp;&amp;nbsp;Allows you to draw in your github heatmap.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sunxu3074/AutoRobRedPackage&#34;&gt;AutoRobRedPackage&lt;/a&gt;&amp;nbsp;&amp;nbsp;微信自动抢红包插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/zenorocha/alfred-workflows&#34;&gt;alfred-workflows)&lt;/a&gt;&amp;nbsp;&amp;nbsp;A collection of Alfred 2 workflows that will rock your world.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/WeChatLuckyMoney&#34;&gt;WeChatLuckyMoney&lt;/a&gt;&amp;nbsp;&amp;nbsp;微信抢红包插件&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/0x5e/wechat-deleted-friends&#34;&gt;wechat-deleted-friends&lt;/a&gt;&amp;nbsp;&amp;nbsp;查看被删的微信好友&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/wzyuliyang/qiniu4blog&#34;&gt;qiniu4blog&lt;/a&gt;&amp;nbsp;&amp;nbsp;使用七牛云存储创建自己的图床,用于写博客&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hackerzhou/Love&#34;&gt;Love&lt;/a&gt;&amp;nbsp;&amp;nbsp;浪漫love静态页面- -&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gentilkiwi/mimikatz&#34;&gt;mimikatz&lt;/a&gt;&amp;nbsp;&amp;nbsp;A little tool to play with Windows security &lt;a href=&#34;http://blog.gentilkiwi.com/mimikatz&#34;&gt;http://blog.gentilkiwi.com/mimikatz&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/racaljk/hosts&#34;&gt;hosts&lt;/a&gt;&amp;nbsp;&amp;nbsp;最新可用的google hosts文件。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;li&gt;&lt;a href=&#34;https://github.com/be5invis/Iosevka&#34;&gt;Iosevka&lt;/a&gt;    字体&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shadowsocks/Potatso-iOS&#34;&gt;Potatso-iOS&lt;/a&gt;    Shadowsocks in iOS 9&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yumemor/ysale-sms&#34;&gt;ysale-sms&lt;/a&gt;   由 NodeJs 实现的短信轰炸器&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/electronic-wechat&#34;&gt;electronic-wechat&lt;/a&gt;   Mac上更好的微信客户端&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/github/gitignore&#34;&gt;gitignore&lt;/a&gt;   gitignore 模板&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tj/parse-curl.js&#34;&gt;parse-curl.js&lt;/a&gt;  Parse curl commands, returning an object representing the request.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/toddmotto/public-apis&#34;&gt;public-apis&lt;/a&gt;  A collective list of public JSON APIs for use in web development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;forum&lt;/a&gt;   FQ软件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anasnakawa/chrome-github-avatars&#34;&gt;chrome-github-avatars&lt;/a&gt;  Display user avatars on the Github news feed.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/izacus/RoboGif&#34;&gt;RoboGif&lt;/a&gt;   A small utility to record Android device screen to a GIF&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ben174/git-draw&#34;&gt;git-draw&lt;/a&gt;  Allows you to draw in your github heatmap.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sunxu3074/AutoRobRedPackage&#34;&gt;AutoRobRedPackage&lt;/a&gt;  微信自动抢红包插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zenorocha/alfred-workflows&#34;&gt;alfred-workflows)&lt;/a&gt;  A collection of Alfred 2 workflows that will rock your world.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/geeeeeeeeek/WeChatLuckyMoney&#34;&gt;WeChatLuckyMoney&lt;/a&gt;  微信抢红包插件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/0x5e/wechat-deleted-friends&#34;&gt;wechat-deleted-friends&lt;/a&gt;  查看被删的微信好友&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wzyuliyang/qiniu4blog&#34;&gt;qiniu4blog&lt;/a&gt;  使用七牛云存储创建自己的图床,用于写博客&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hackerzhou/Love&#34;&gt;Love&lt;/a&gt;  浪漫love静态页面- -&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gentilkiwi/mimikatz&#34;&gt;mimikatz&lt;/a&gt;  A little tool to play with Windows security &lt;a href=&#34;http://blog.gentilkiwi.com/mimikatz&#34;&gt;http://blog.gentilkiwi.com/mimikatz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/racaljk/hosts&#34;&gt;hosts&lt;/a&gt;  最新可用的google hosts文件。&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

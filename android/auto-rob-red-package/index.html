@@ -15,7 +15,7 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="实现全自动微信抢红包自带关闭技能 : isunxu.xyz"/>
+<meta property="og:title" content="实现全自动微信抢红包自带关闭技能 : sunxu.work"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -52,7 +52,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -77,13 +77,15 @@
 </script>
 
 
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
+
 
 	
 
 
 </head>
 
-<body lang="en" itemscope itemtype="https://schema.org/Article">
+<body lang="en" itemscope itemtype="http://schema.org/Article">
 <header id="header">
 	<nav id="nav">
 	<div id="title"><a href="/">Sun xu</a></div>
@@ -156,8 +158,242 @@
 
 
 <section id="main">
-  <h1 itemprop="name" >实现全自动微信抢红包自带关闭技能</h1>
-  
+  <h1 itemprop="name" id="title">实现全自动微信抢红包自带关闭技能</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           <blockquote>
+<p>接受红包的洗礼吧,凡人们！！</p>
+</blockquote>
+<h4 id="项目地址">项目地址</h4>
+<p><a href="https://github.com/sunxu3074/AutoRobRedPackage">https://github.com/sunxu3074/AutoRobRedPackage</a> 如果觉还不错,请给个 <strong>star</strong> .</p>
+<h4 id="功能介绍">功能介绍</h4>
+<p>效果展示</p>
+<p>传到<a href="http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html">优酷空间</a>里面了,墙外的小伙伴可观看YouTube.</p>
+<div class="embed video-player">
+<iframe class="youtube-player" type="text/html" width="640" height="385" src="//www.youtube.com/embed/OvmtSiPuC5I" allowfullscreen frameborder="0">
+</iframe>
+</div>
+
+<p>效果</p>
+<p>你只用把手机打开到你想要抢红包的群里,然后把屏幕熄灭时间调到10分钟(如果超过10了还没人发红包,说明你选错群了..)就ok了,然后就可以撒手不管该干嘛干嘛去了.</p>
+<h3 id="refer-link">Refer link</h3>
+<ul>
+<li><a href="http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA">http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA</a></li>
+<li><a href="http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query">http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query</a></li>
+<li><a href="http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html">http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html</a></li>
+</ul>
+<h3 id="refer-video">Refer video</h3>
+<ul>
+<li><a href="https://youtu.be/q3HliaMjL38">https://youtu.be/q3HliaMjL38</a></li>
+<li><a href="http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1">http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1</a></li>
+</ul>
+<h3 id="实现原理">实现原理</h3>
+<p>用到了 AccessibilityService 这个类.这个类的目的主要目的就是为了让有障碍人士进行无障碍操作.</p>
+<p>小伙伴们可以按照上面最后一个Mars老师讲的视频写出个大概,我主要说明一下 <strong>当抢红包后怎么自动关闭</strong> 以及 <strong>被别人抢了,或者已经是自己抢过的判断逻辑及自动关闭</strong>.</p>
+<p>首先我们注册一个Service继承AccessibilityService,重写onAccessibilityEvent() 和onInterrupt() 两个方法.在AndroidManifest.xml 中注册并配置service.</p>
+<pre><code> &lt;service
+            android:name=&quot;.service.RobRedPackageService&quot;
+            android:permission=&quot;android.permission.BIND_ACCESSIBILITY_SERVICE&quot;&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name=&quot;android.accessibilityservice.AccessibilityService&quot;/&gt;
+            &lt;/intent-filter&gt;
+
+            &lt;meta-data
+                android:name=&quot;android.accessibilityservice&quot;
+                android:resource=&quot;@xml/robber&quot;/&gt;
+        &lt;/service&gt;
+</code></pre><p>至于为啥这样写,android/training上写的很明白.直接复制过来就OK.</p>
+<p>接着在res/xml中创建robber.xml(名字随意,符合规范就好).</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;accessibility-service
+    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:description=&quot;@string/app_name&quot;
+    android:accessibilityEventTypes=&quot;typeWindowStateChanged|typeWindowContentChanged&quot;
+    android:packageNames=&quot;com.tencent.mm&quot;
+    android:accessibilityFeedbackType=&quot;feedbackAllMask&quot;
+    android:notificationTimeout=&quot;10&quot;
+    android:accessibilityFlags=&quot;flagDefault&quot;
+    android:canRetrieveWindowContent=&quot;true&quot;
+    /&gt;
+    &lt;!--android:canRequestTouchExplorationMode=&quot;true&quot;--&gt;
+    &lt;!--android:canRequestEnhancedWebAccessibility=&quot;true&quot;--&gt;
+
+</code></pre><ul>
+<li>description的属性值会显示在 服务/yourapp/一段描述,说白了就是服务的描述说明,告诉他咋用,我不会骗你,相信我吧!</li>
+<li>packageNames 对哪个程序有效,com.tencent.mm就是微信的包名</li>
+<li>accessibilityEventTypes 监听的事件类型. <strong>typeWindowContentChanged</strong> 是当窗口内容发生变化,也就是当前页面有人说话或者你要打字弹出软键盘,或者有人发红包这都是窗口状态发生变化. <strong>typeWindowStateChanged</strong> 是在你与应用互动时,当你点开红包,还没有抢时,这个就会被触发.</li>
+<li>canRetrieveWindowContent这个属性很关键,注意设置为true.</li>
+</ul>
+<p>注意 <strong>android:resource=&rdquo;@xml/robber&rdquo;</strong> 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.</p>
+<p>在MainActivity中设置一个按钮打开辅助服务.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">findViewById<span style="color:#f92672">(</span>R<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">.</span><span style="color:#a6e22e">btn_open_setting</span><span style="color:#f92672">).</span><span style="color:#a6e22e">setOnClickListener</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> View<span style="color:#f92672">.</span><span style="color:#a6e22e">OnClickListener</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onClick</span><span style="color:#f92672">(</span>View v<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                Intent intent <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Intent<span style="color:#f92672">(</span>Settings<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_ACCESSIBILITY_SETTINGS</span><span style="color:#f92672">);</span>
+                startActivity<span style="color:#f92672">(</span>intent<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+</code></pre></div><p>接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.</p>
+<blockquote>
+<p>This class represents a node of the window content as well as actions that can be requested from its source. From the point of view of an AccessibilityService a window content is presented as tree of accessibility node info which may or may not map one-to-one to the view hierarchy. In other words, a custom view is free to report itself as a tree of accessibility node info.</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<p>微信红包是一个NodeInfo,领取红包也是一个NodeInfo,他们的父布局也是一个NodeInfo.</p>
+<h4 id="基本逻辑">基本逻辑</h4>
+<p>如图所示:</p>
+<p>当屏幕出现可点击的红包时,我们就去让程序去点击它.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>怎么判断？</li>
+</ul>
+<p>判断微信红包这四个字</p>
+<ul>
+<li>怎么模拟点击操作</li>
+</ul>
+<p>accessibilityNodeInfo.perform(AccessibilityNodeInfo.ACTION_CLICK);</p>
+<ul>
+<li>这个时候问题来了,当点击过后应该是拆红包的字样,而当我去判断这三个字的时候,发现微信已经把微信换成了 <code>開</code>这张图片.(好像微信也在判断如果你写了这样的程序,他们就把<code>拆红包</code>换成<code>開</code>的图片.只是猜测,我也没弄懂为啥惟独我的微信不是拆红包而变成了開.不要问我为什么是開是张图片,而不是字.反编译一下就看见了) 这个时候该怎么判断呢?</li>
+</ul>
+<p>我们来换一个方式来判断,当别人发来红包时.是介个样子滴.</p>
+<!-- raw HTML omitted -->
+<p>每个发来的红包都有『发了一个红包&hellip;』的字样,我们用findAccessibilityNodeInfosByText(&ldquo;发了一个红包&rdquo;)来返回NodeInfo,而NodeInfo的getParent()方法会返回父控件.我们来判断一个info.getParent().getChindCount();从这个图以及Log信息中看出count的数量是5个.</p>
+<p>我们来对着上图猜测一下View</p>
+<ol>
+<li>头像+ T^T (TextView)</li>
+<li>发了一个红包,金额随机(TextView)</li>
+<li>恭喜发财,大吉大利!(TextView)</li>
+<li><strong>開</strong> (ImageView)</li>
+<li>X (View)</li>
+</ol>
+<p>怎么来找到 <strong>開</strong> 这个图片呢,getChildAt(N)即可.代码中我是遍历所有的childNodeInfo都强制点击了一遍,其实是不用这样的.从布局上看父布局可以猜测RelativeLayout, <strong>X</strong> (关闭的x)这个View应该是在最后写入的,開是倒数第二个,也就是info.getParent().getChildAt(3).perfoerm(AssessibilityNodeInfo.ACTION_CLICK);有时候count数量也会出现6的时候,忘记是什么情况下了,感兴趣的可以测试一下.所以我还是坚持遍历来拆红包,反正X这个View是声明在最后的.凭感觉;)</p>
+<p>其它的原理都差不多了,懂了上面说的大概看一下代码就都明白了.</p>
+<p>手慢了</p>
+<!-- raw HTML omitted -->
+<p>手慢了的情况下,好的处理办法是直接X.但是我点击 <strong>X</strong> 之后会再次点开这个红包,一直循环.解决办法:当出现手慢了的时候,模拟点击看看大家的手气,然后进入红包详情页面,再关闭即可.</p>
+<p>领取过了</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">package</span> xyz.isunxu.robredpackage.service<span style="color:#f92672">;</span>
+
+<span style="color:#f92672">import</span> android.accessibilityservice.AccessibilityService<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.app.Service<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.content.Intent<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.os.IBinder<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.util.Log<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.view.accessibility.AccessibilityEvent<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.view.accessibility.AccessibilityNodeInfo<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.view.accessibility.AccessibilityRecord<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> android.webkit.WebView<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> java.util.List<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.http.NameValuePair<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> org.apache.http.client.HttpClient<span style="color:#f92672">;</span>
+<span style="color:#f92672">import</span> xyz.isunxu.robredpackage.Application.MyApplication<span style="color:#f92672">;</span>
+
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RobRedPackageService</span> <span style="color:#66d9ef">extends</span> AccessibilityService <span style="color:#f92672">{</span>
+
+    <span style="color:#66d9ef">private</span> AccessibilityNodeInfo mAccessibilityNodeInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+
+
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onAccessibilityEvent</span><span style="color:#f92672">(</span>AccessibilityEvent event<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        AccessibilityNodeInfo previousAccessibilityNodeInfo <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+
+        mAccessibilityNodeInfo <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span><span style="color:#a6e22e">getSource</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>mAccessibilityNodeInfo <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEventType</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> AccessibilityEvent<span style="color:#f92672">.</span><span style="color:#a6e22e">TYPE_WINDOW_CONTENT_CHANGED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            List<span style="color:#f92672">&lt;</span>AccessibilityNodeInfo<span style="color:#f92672">&gt;</span> accessibilityNodeInfos
+                    <span style="color:#f92672">=</span> mAccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">findAccessibilityNodeInfosByText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;微信红包&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>accessibilityNodeInfos <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> accessibilityNodeInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                AccessibilityNodeInfo info <span style="color:#f92672">=</span> accessibilityNodeInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>accessibilityNodeInfos<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>previousAccessibilityNodeInfo <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                    previousAccessibilityNodeInfo <span style="color:#f92672">=</span> info<span style="color:#f92672">;</span>
+                    info<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+                <span style="color:#f92672">}</span>
+                <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>previousAccessibilityNodeInfo <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> previousAccessibilityNodeInfo <span style="color:#f92672">!=</span> info<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                    info<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+                <span style="color:#f92672">}</span>
+                <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+                    <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+                <span style="color:#f92672">}</span>
+
+            <span style="color:#f92672">}</span>
+
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>event<span style="color:#f92672">.</span><span style="color:#a6e22e">getEventType</span><span style="color:#f92672">()</span> <span style="color:#f92672">==</span> AccessibilityEvent<span style="color:#f92672">.</span><span style="color:#a6e22e">TYPE_WINDOW_STATE_CHANGED</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+            List<span style="color:#f92672">&lt;</span>AccessibilityNodeInfo<span style="color:#f92672">&gt;</span> infos <span style="color:#f92672">=</span> mAccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">findAccessibilityNodeInfosByText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;拆红包&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>infos <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> infos<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                AccessibilityNodeInfo accessibilityNodeInfo <span style="color:#f92672">=</span> infos<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>infos<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+                accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+
+            List<span style="color:#f92672">&lt;</span>AccessibilityNodeInfo<span style="color:#f92672">&gt;</span> infoDetails <span style="color:#f92672">=</span> mAccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">findAccessibilityNodeInfosByText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;红包详情&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>infoDetails <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> infoDetails<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                AccessibilityNodeInfo accessibilityNodeInfo <span style="color:#f92672">=</span> infoDetails<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>infoDetails<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+                accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getChild</span><span style="color:#f92672">(</span>0<span style="color:#f92672">).</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+                <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+
+            List<span style="color:#f92672">&lt;</span>AccessibilityNodeInfo<span style="color:#f92672">&gt;</span> infoSlows <span style="color:#f92672">=</span> mAccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">findAccessibilityNodeInfosByText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;手慢了&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>infoSlows <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> infoSlows<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                AccessibilityNodeInfo accessibilityNodeInfo <span style="color:#f92672">=</span> infoSlows<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>infoSlows<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+                accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getChild</span><span style="color:#f92672">(</span>3<span style="color:#f92672">).</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+                <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+
+            List<span style="color:#f92672">&lt;</span>AccessibilityNodeInfo<span style="color:#f92672">&gt;</span> infoKais <span style="color:#f92672">=</span> mAccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">findAccessibilityNodeInfosByText</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;发了一个红包&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>infoKais <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> infoKais<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                AccessibilityNodeInfo accessibilityNodeInfo <span style="color:#f92672">=</span> infoKais<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>infoKais<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+                <span style="color:#66d9ef">int</span> size <span style="color:#f92672">=</span> accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getChildCount</span><span style="color:#f92672">();</span>
+                Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sunxu_log&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;size--&gt;&#34;</span> <span style="color:#f92672">+</span> size<span style="color:#f92672">);</span>
+                <span style="color:#75715e">//for (AccessibilityNodeInfo info : infoKais) {
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">//    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
+</span><span style="color:#75715e"></span>                <span style="color:#75715e">//}
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getChildCount</span><span style="color:#f92672">();</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+                    accessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getChild</span><span style="color:#f92672">(</span>i<span style="color:#f92672">).</span><span style="color:#a6e22e">performAction</span><span style="color:#f92672">(</span>AccessibilityNodeInfo<span style="color:#f92672">.</span><span style="color:#a6e22e">ACTION_CLICK</span><span style="color:#f92672">);</span>
+                <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#a6e22e">@Override</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onInterrupt</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+
+    <span style="color:#f92672">}</span>
+
+
+<span style="color:#f92672">}</span>
+
+</code></pre></div><h4 id="todo">TODO</h4>
+<ul>
+<li>如果不是最新的红包,那就不抢.</li>
+</ul>
+<p>这牵扯到AccessibilityNodeInfo的比较,我也尝试过.NodeInfo的getContentDescription(),getViewIdResoucreName()当我想打印出它们的信息时,程序后面就不执行了.而且previousNodeInfo的数据储存也没有实现,有兴趣的小伙伴可以实现下.</p>
+<ul>
+<li>开启服务后不能与群里的小伙伴交流,只能一味地抢.</li>
+</ul>
+<p>这是因为要说话时,会触碰语音按键,点击按键会出现浮动窗口,此时就是窗口出现变化了.然后就是那一堆判断逻辑了..这个怎么改我还没想好,可能还是涉及到上面的问题,AccessibilityNodeInfo的比较.等我想好了,会继续完善.</p>
+<h4 id="说明">说明</h4>
+<ul>
+<li>保持程序运行在后台与服务开启.</li>
+<li>要抢红包之前可以先把程序关闭,然后重新开启程序与服务.(以免程序会被系统强制关闭)</li>
+<li>设置屏幕熄灭时间长一点</li>
+<li>停留在选择要抢红包的群的页面中.</li>
+</ul>
+<h4 id="支持">支持</h4>
+<ul>
+<li>在github上给我一个star就好.</li>
+<li>捐赠: <a href="https://sunxu.work/about">https://sunxu.work/about</a> (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)</li>
+</ul>
+<p>这个程序完全是娱乐为主,并不作商业目的.</p>
+<p>编程让我很快乐,希望能永远快乐下去.</p>
+<p>最后,祝好;)</p>
+        </article>
+  </div>
+</section>
+
+
 
 <aside id="meta">
 
@@ -186,341 +422,28 @@
 <meta itemprop="url" content="https://sunxu.work/android/auto-rob-red-package/">
 
 
-  <div>
-        <article itemprop="articleBody" id="content">
-           
-
-<blockquote>
-<p>接受红包的洗礼吧,凡人们！！</p>
-</blockquote>
-
-<h4 id="项目地址:10c0bb15698ba9ccc7ae6ac2dfbaad30">项目地址</h4>
-
-<p><a href="https://github.com/sunxu3074/AutoRobRedPackage">https://github.com/sunxu3074/AutoRobRedPackage</a> 如果觉还不错,请给个 <strong>star</strong> .</p>
-
-<h4 id="功能介绍:10c0bb15698ba9ccc7ae6ac2dfbaad30">功能介绍</h4>
-
-<p>效果展示</p>
-
-<p>传到<a href="http://v.youku.com/v_show/id_XMTQ0NTc0MTM0MA==.html">优酷空间</a>里面了,墙外的小伙伴可观看YouTube.</p>
-
-<div class="embed video-player">
-<iframe class="youtube-player" type="text/html" width="640" height="385" src="//www.youtube.com/embed/OvmtSiPuC5I" allowfullscreen frameborder="0">
-</iframe>
-</div>
-
-
-<p>效果</p>
-
-<p>你只用把手机打开到你想要抢红包的群里,然后把屏幕熄灭时间调到10分钟(如果超过10了还没人发红包,说明你选错群了..)就ok了,然后就可以撒手不管该干嘛干嘛去了.</p>
-
-<h3 id="refer-link:10c0bb15698ba9ccc7ae6ac2dfbaad30">Refer link</h3>
-
-<ul>
-<li><a href="http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA">http://developer.android.com/intl/zh-cn/reference/android/accessibilityservice/AccessibilityService.html#SERVICE_META_DATA</a></li>
-<li><a href="http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query">http://developer.android.com/intl/zh-cn/training/accessibility/service.html#query</a></li>
-<li><a href="http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html">http://developer.android.com/intl/zh-cn/guide/topics/ui/accessibility/index.html</a></li>
-</ul>
-
-<h3 id="refer-video:10c0bb15698ba9ccc7ae6ac2dfbaad30">Refer video</h3>
-
-<ul>
-<li><a href="https://youtu.be/q3HliaMjL38">https://youtu.be/q3HliaMjL38</a></li>
-<li><a href="http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1">http://v.youku.com/v_show/id_XMTQ0MTcwMTE0NA==.html?from=y1.9-3.1</a></li>
-</ul>
-
-<h3 id="实现原理:10c0bb15698ba9ccc7ae6ac2dfbaad30">实现原理</h3>
-
-<p>用到了 AccessibilityService 这个类.这个类的目的主要目的就是为了让有障碍人士进行无障碍操作.</p>
-
-<p>小伙伴们可以按照上面最后一个Mars老师讲的视频写出个大概,我主要说明一下 <strong>当抢红包后怎么自动关闭</strong> 以及 <strong>被别人抢了,或者已经是自己抢过的判断逻辑及自动关闭</strong>.</p>
-
-<p>首先我们注册一个Service继承AccessibilityService,重写onAccessibilityEvent() 和onInterrupt() 两个方法.在AndroidManifest.xml 中注册并配置service.</p>
-
-<pre><code> &lt;service
-            android:name=&quot;.service.RobRedPackageService&quot;
-            android:permission=&quot;android.permission.BIND_ACCESSIBILITY_SERVICE&quot;&gt;
-            &lt;intent-filter&gt;
-                &lt;action android:name=&quot;android.accessibilityservice.AccessibilityService&quot;/&gt;
-            &lt;/intent-filter&gt;
-
-            &lt;meta-data
-                android:name=&quot;android.accessibilityservice&quot;
-                android:resource=&quot;@xml/robber&quot;/&gt;
-        &lt;/service&gt;
-</code></pre>
-
-<p>至于为啥这样写,android/training上写的很明白.直接复制过来就OK.</p>
-
-<p>接着在res/xml中创建robber.xml(名字随意,符合规范就好).</p>
-
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;accessibility-service
-    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    android:description=&quot;@string/app_name&quot;
-    android:accessibilityEventTypes=&quot;typeWindowStateChanged|typeWindowContentChanged&quot;
-    android:packageNames=&quot;com.tencent.mm&quot;
-    android:accessibilityFeedbackType=&quot;feedbackAllMask&quot;
-    android:notificationTimeout=&quot;10&quot;
-    android:accessibilityFlags=&quot;flagDefault&quot;
-    android:canRetrieveWindowContent=&quot;true&quot;
-    /&gt;
-    &lt;!--android:canRequestTouchExplorationMode=&quot;true&quot;--&gt;
-    &lt;!--android:canRequestEnhancedWebAccessibility=&quot;true&quot;--&gt;
-
-</code></pre>
-
-<ul>
-<li>description的属性值会显示在 服务/yourapp/一段描述,说白了就是服务的描述说明,告诉他咋用,我不会骗你,相信我吧!</li>
-<li>packageNames 对哪个程序有效,com.tencent.mm就是微信的包名</li>
-<li>accessibilityEventTypes 监听的事件类型. <strong>typeWindowContentChanged</strong> 是当窗口内容发生变化,也就是当前页面有人说话或者你要打字弹出软键盘,或者有人发红包这都是窗口状态发生变化. <strong>typeWindowStateChanged</strong> 是在你与应用互动时,当你点开红包,还没有抢时,这个就会被触发.</li>
-<li>canRetrieveWindowContent这个属性很关键,注意设置为true.</li>
-</ul>
-
-<p>注意 <strong>android:resource=&ldquo;@xml/robber&rdquo;</strong> 是在API 14后才有,如果不想用这种方式,可以在onServiceConnected()动态添加.</p>
-
-<p>在MainActivity中设置一个按钮打开辅助服务.</p>
-
-<pre><code class="language-java">findViewById(R.id.btn_open_setting).setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                Intent intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
-                startActivity(intent);
-            }
-</code></pre>
-
-<p>接着到了在注册的service里写关键代码的时候了.写之前需要弄清楚一个概念,AccessibilityNodeInfo这个类是啥.</p>
-
-<blockquote>
-<p>This class represents a node of the window content as well as actions that can be requested from its source. From the point of view of an AccessibilityService a window content is presented as tree of accessibility node info which may or may not map one-to-one to the view hierarchy. In other words, a custom view is free to report itself as a tree of accessibility node info.</p>
-</blockquote>
-
-<figure>
-    <img src="/media/node_info.png" alt="node_info"
-    />
-</figure>
-
-<p>微信红包是一个NodeInfo,领取红包也是一个NodeInfo,他们的父布局也是一个NodeInfo.</p>
-
-<h4 id="基本逻辑:10c0bb15698ba9ccc7ae6ac2dfbaad30">基本逻辑</h4>
-
-<p>如图所示:</p>
-
-<p>当屏幕出现可点击的红包时,我们就去让程序去点击它.</p>
-
-<figure>
-    <img src="/media/wechat_structure.png" alt="wechat_structure"
-     />
-</figure>
-
-<ul>
-<li>怎么判断？</li>
-</ul>
-
-<p>判断微信红包这四个字</p>
-
-<ul>
-<li>怎么模拟点击操作</li>
-</ul>
-
-<p>accessibilityNodeInfo.perform(AccessibilityNodeInfo.ACTION_CLICK);</p>
-
-<ul>
-<li>这个时候问题来了,当点击过后应该是拆红包的字样,而当我去判断这三个字的时候,发现微信已经把微信换成了 <code>開</code>这张图片.(好像微信也在判断如果你写了这样的程序,他们就把<code>拆红包</code>换成<code>開</code>的图片.只是猜测,我也没弄懂为啥惟独我的微信不是拆红包而变成了開.不要问我为什么是開是张图片,而不是字.反编译一下就看见了) 这个时候该怎么判断呢?</li>
-</ul>
-
-<p>我们来换一个方式来判断,当别人发来红包时.是介个样子滴.</p>
-
-<figure>
-    <img src="/media/wechat-open.png" alt="wechat-open"
-    attr width="50%"  />
-</figure>
-
-<p>每个发来的红包都有『发了一个红包&hellip;』的字样,我们用findAccessibilityNodeInfosByText(&ldquo;发了一个红包&rdquo;)来返回NodeInfo,而NodeInfo的getParent()方法会返回父控件.我们来判断一个info.getParent().getChindCount();从这个图以及Log信息中看出count的数量是5个.</p>
-
-<p>我们来对着上图猜测一下View</p>
-
-<ol>
-<li>头像+ T^T (TextView)</li>
-<li>发了一个红包,金额随机(TextView)</li>
-<li>恭喜发财,大吉大利!(TextView)</li>
-<li><strong>開</strong> (ImageView)</li>
-<li>X (View)</li>
-</ol>
-
-<p>怎么来找到 <strong>開</strong> 这个图片呢,getChildAt(N)即可.代码中我是遍历所有的childNodeInfo都强制点击了一遍,其实是不用这样的.从布局上看父布局可以猜测RelativeLayout, <strong>X</strong> (关闭的x)这个View应该是在最后写入的,開是倒数第二个,也就是info.getParent().getChildAt(3).perfoerm(AssessibilityNodeInfo.ACTION_CLICK);有时候count数量也会出现6的时候,忘记是什么情况下了,感兴趣的可以测试一下.所以我还是坚持遍历来拆红包,反正X这个View是声明在最后的.凭感觉;)</p>
-
-<p>其它的原理都差不多了,懂了上面说的大概看一下代码就都明白了.</p>
-
-<p>手慢了</p>
-
-<figure>
-    <img src="/media/wechat-slow.png" alt="wechat-slow"
-    attr width="50%"  />
-</figure>
-
-<p>手慢了的情况下,好的处理办法是直接X.但是我点击 <strong>X</strong> 之后会再次点开这个红包,一直循环.解决办法:当出现手慢了的时候,模拟点击看看大家的手气,然后进入红包详情页面,再关闭即可.</p>
-
-<p>领取过了</p>
-
-<figure>
-    <img src="/media/wechat-details.png" alt="wechat-details"
-    attr width="50%"  />
-</figure>
-
-<pre><code class="language-java">package xyz.isunxu.robredpackage.service;
-
-import android.accessibilityservice.AccessibilityService;
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
-import android.util.Log;
-import android.view.accessibility.AccessibilityEvent;
-import android.view.accessibility.AccessibilityNodeInfo;
-import android.view.accessibility.AccessibilityRecord;
-import android.webkit.WebView;
-import java.util.List;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import xyz.isunxu.robredpackage.Application.MyApplication;
-
-public class RobRedPackageService extends AccessibilityService {
-
-    private AccessibilityNodeInfo mAccessibilityNodeInfo = null;
-
-
-    @Override public void onAccessibilityEvent(AccessibilityEvent event) {
-
-        AccessibilityNodeInfo previousAccessibilityNodeInfo = null;
-
-        mAccessibilityNodeInfo = event.getSource();
-
-        if (mAccessibilityNodeInfo == null) {
-            return;
-        }
-
-        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED) {
-            List&lt;AccessibilityNodeInfo&gt; accessibilityNodeInfos
-                    = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&quot;微信红包&quot;);
-            if (accessibilityNodeInfos != null &amp;&amp; accessibilityNodeInfos.size() &gt; 0) {
-                AccessibilityNodeInfo info = accessibilityNodeInfos.get(accessibilityNodeInfos.size() - 1);
-                if (previousAccessibilityNodeInfo == null) {
-                    previousAccessibilityNodeInfo = info;
-                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-                else if (previousAccessibilityNodeInfo != null &amp;&amp; previousAccessibilityNodeInfo != info) {
-                    info.getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-                else {
-                    return;
-                }
-
-            }
-
-        }
-
-        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
-
-            List&lt;AccessibilityNodeInfo&gt; infos = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&quot;拆红包&quot;);
-            if (infos != null &amp;&amp; infos.size() &gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infos.get(infos.size() - 1);
-                accessibilityNodeInfo.performAction(AccessibilityNodeInfo.ACTION_CLICK);
-            }
-
-            List&lt;AccessibilityNodeInfo&gt; infoDetails = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&quot;红包详情&quot;);
-            if (infoDetails != null &amp;&amp; infoDetails.size() &gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoDetails.get(infoDetails.size() - 1);
-                accessibilityNodeInfo.getParent().getChild(0).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                return;
-            }
-
-            List&lt;AccessibilityNodeInfo&gt; infoSlows = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&quot;手慢了&quot;);
-            if (infoSlows != null &amp;&amp; infoSlows.size() &gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoSlows.get(infoSlows.size() - 1);
-                accessibilityNodeInfo.getParent().getChild(3).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                return;
-            }
-
-            List&lt;AccessibilityNodeInfo&gt; infoKais = mAccessibilityNodeInfo.findAccessibilityNodeInfosByText(&quot;发了一个红包&quot;);
-            if (infoKais != null &amp;&amp; infoKais.size() &gt; 0) {
-                AccessibilityNodeInfo accessibilityNodeInfo = infoKais.get(infoKais.size() - 1);
-                int size = accessibilityNodeInfo.getParent().getChildCount();
-                Log.d(&quot;sunxu_log&quot;, &quot;size--&gt;&quot; + size);
-                //for (AccessibilityNodeInfo info : infoKais) {
-                //    info.performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                //}
-                for (int i = 0; i &lt; accessibilityNodeInfo.getParent().getChildCount(); i++) {
-                    accessibilityNodeInfo.getParent().getChild(i).performAction(AccessibilityNodeInfo.ACTION_CLICK);
-                }
-            }
-        }
-    }
-
-    @Override public void onInterrupt() {
-
-    }
-
-
-}
-
-</code></pre>
-
-<h4 id="todo:10c0bb15698ba9ccc7ae6ac2dfbaad30">TODO</h4>
-
-<ul>
-<li>如果不是最新的红包,那就不抢.</li>
-</ul>
-
-<p>这牵扯到AccessibilityNodeInfo的比较,我也尝试过.NodeInfo的getContentDescription(),getViewIdResoucreName()当我想打印出它们的信息时,程序后面就不执行了.而且previousNodeInfo的数据储存也没有实现,有兴趣的小伙伴可以实现下.</p>
-
-<ul>
-<li>开启服务后不能与群里的小伙伴交流,只能一味地抢.</li>
-</ul>
-
-<p>这是因为要说话时,会触碰语音按键,点击按键会出现浮动窗口,此时就是窗口出现变化了.然后就是那一堆判断逻辑了..这个怎么改我还没想好,可能还是涉及到上面的问题,AccessibilityNodeInfo的比较.等我想好了,会继续完善.</p>
-
-<h4 id="说明:10c0bb15698ba9ccc7ae6ac2dfbaad30">说明</h4>
-
-<ul>
-<li>保持程序运行在后台与服务开启.</li>
-<li>要抢红包之前可以先把程序关闭,然后重新开启程序与服务.(以免程序会被系统强制关闭)</li>
-<li>设置屏幕熄灭时间长一点</li>
-<li>停留在选择要抢红包的群的页面中.</li>
-</ul>
-
-<h4 id="支持:10c0bb15698ba9ccc7ae6ac2dfbaad30">支持</h4>
-
-<ul>
-<li>在github上给我一个star就好.</li>
-<li>捐赠: <a href="https://sunxu.work/about">https://sunxu.work/about</a> (支付宝和微信的二维码都在这个页面上,star为主,捐赠为辅)</li>
-</ul>
-
-<p>这个程序完全是娱乐为主,并不作商业目的.</p>
-
-<p>编程让我很快乐,希望能永远快乐下去.</p>
-
-<p>最后,祝好;)</p>
-
-        </article>
-  </div>
-</section>
-
 <aside id=comments>
     <div><h2> Comments </h2></div>
     <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'taken2016';
-    var disqus_identifier = 'https:\/\/sunxu.work\/android\/auto-rob-red-package\/';
-    var disqus_title = '实现全自动微信抢红包自带关闭技能';
-    var disqus_url = 'https:\/\/sunxu.work\/android\/auto-rob-red-package\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taken2016" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </aside>
 
 <footer>
@@ -540,11 +463,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });
@@ -566,5 +489,3 @@ var ptr = PullToRefresh.init({
 </body>
 </html>
 
-
-</body>

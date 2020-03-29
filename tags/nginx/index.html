@@ -15,7 +15,7 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="Nginx : isunxu.xyz"/>
+<meta property="og:title" content="nginx : sunxu.work"/>
 <meta property="og:site_name" content="sunxu personal website"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -32,9 +32,9 @@
 
 
     <base href="https://sunxu.work/">
-    <title> Nginx - sunxu.work </title>
+    <title> nginx - sunxu.work </title>
     <link rel="canonical" href="https://sunxu.work/tags/nginx/">
-    <link href="https://sunxu.work/tags/nginx/index.xml" rel="alternate" type="application/rss+xml" title="Nginx" />
+    <link href="https://sunxu.work/tags/nginx/index.xml" rel="alternate" type="application/rss+xml" title="nginx" />
 
     <link href='//fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/static/css/style.css">
@@ -47,7 +47,7 @@
     margin-bottom: 0px;
     -webkit-box-shadow: 0 0 0px #000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
 	></a>
-
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
@@ -71,6 +71,8 @@
   gtag('config', 'UA-71515383-1');
 </script>
 
+
+<script data-ad-client=“ca-pub-3656264040400727” async src=“https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js”></script>
 
 
 	
@@ -154,36 +156,23 @@
 
 <section id="main">
   <div>
-   <h1 id="title">Nginx</h1>
+   <h1 id="title">nginx</h1>
     
         <article class="post">
     <header>
       <h2><a href="https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/">Mac搭建nginx&#43;hls&#43;rtmp服务器 </a> </h2>
       <div class="post-meta">Thu, Jun 16, 2016 </div>
     </header>
-    <article itemprop="articleBody" id="content">
-    	<p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
 
-<h3 id="安装-homebrew:4a9c6fc472c116c64096855aa4e81846">安装 homebrew</h3>
-
+    <p>我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。</p>
+<h3 id="安装-homebrew">安装 homebrew</h3>
 <p>去 <em>homebrew</em> 的官网<a href="http://brew.sh/">http://brew.sh/</a>下载homebrew ，如果有则省略该步骤。</p>
-
-<h3 id="安装-nginx:4a9c6fc472c116c64096855aa4e81846">安装 nginx</h3>
-
+<h3 id="安装-nginx">安装 nginx</h3>
 <pre><code>brew tap homebrew/nginx
-</code></pre>
-
-<pre><code>brew install nginx-full --with-rtmp-module
-</code></pre>
-
-<p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
-
+</code></pre><pre><code>brew install nginx-full --with-rtmp-module
+</code></pre><p>这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &ndash;with-rtmp-module 这段代码。</p>
 <pre><code>brew options nginx-full
-</code></pre>
-
-<p>通过上面这段代码可以看见编译nginx的选项模块。</p>
-
-	</article>
+</code></pre><p>通过上面这段代码可以看见编译nginx的选项模块。</p>
     <footer>
         <a href='https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/'><nobr>Read more →</nobr></a>
     </footer>
@@ -212,11 +201,11 @@ fitText(document.getElementById('title'), 1)
 </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
-    
-    
-    
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
     var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
+    for(i = 0; i &lt; all.length; i += 1) {
         all[i].SourceElement().parentNode.className += ' has-jax';
     }
 });

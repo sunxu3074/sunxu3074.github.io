@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-      <title>Nginx on ban&amp;pick </title>
+      <title>nginx on ban&amp;pick </title>
       <generator uri="https://gohugo.io">Hugo</generator>
     <link>https://sunxu.work/tags/nginx/</link>
     <language>en-us</language>
-    <author>Xu Sun</author>
+    <author>Sun Xu</author>
     <copyright>Copyright (c) 2015, Xu Sun; all rights reserved.</copyright>
     <updated>Thu, 16 Jun 2016 23:51:45 CST</updated>
     
@@ -13,47 +12,24 @@
       <title>Mac搭建nginx&#43;hls&#43;rtmp服务器</title>
       <link>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</link>
       <pubDate>Thu, 16 Jun 2016 23:51:45 CST</pubDate>
-      <author>Xu Sun</author>
+      <author>Sun Xu</author>
       <guid>https://sunxu.work/android/set-up-hls-and-rtmp-server-in-mac/</guid>
-      <description>
-
-&lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;
-
-&lt;h3 id=&#34;安装-homebrew:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 homebrew&lt;/h3&gt;
-
+      <description>&lt;p&gt;我是在自己电脑上搭建的环境，每个机器的环境可能不一样，搭建的问题也各有不同。无论怎样，多查，多看，多实践。&lt;/p&gt;
+&lt;h3 id=&#34;安装-homebrew&#34;&gt;安装 homebrew&lt;/h3&gt;
 &lt;p&gt;去 &lt;em&gt;homebrew&lt;/em&gt; 的官网&lt;a href=&#34;http://brew.sh/&#34;&gt;http://brew.sh/&lt;/a&gt;下载homebrew ，如果有则省略该步骤。&lt;/p&gt;
-
-&lt;h3 id=&#34;安装-nginx:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 nginx&lt;/h3&gt;
-
+&lt;h3 id=&#34;安装-nginx&#34;&gt;安装 nginx&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;brew tap homebrew/nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install nginx-full --with-rtmp-module
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &amp;ndash;with-rtmp-module 这段代码。&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;brew install nginx-full --with-rtmp-module
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样nginx和rtmp模块就安装好了，如果不需要rtmp就不用 &amp;ndash;with-rtmp-module 这段代码。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;brew options nginx-full
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通过上面这段代码可以看见编译nginx的选项模块。&lt;/p&gt;
-
-&lt;h3 id=&#34;运行-nginx:4a9c6fc472c116c64096855aa4e81846&#34;&gt;运行 nginx&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;通过上面这段代码可以看见编译nginx的选项模块。&lt;/p&gt;
+&lt;h3 id=&#34;运行-nginx&#34;&gt;运行 nginx&lt;/h3&gt;
 &lt;p&gt;执行:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后在浏览器打开 &lt;a href=&#34;localhost:8080&#34;&gt;localhost:8080&lt;/a&gt; 如果出现nginx，那么你的nginx就安装成功了。&lt;/p&gt;
-
-&lt;h3 id=&#34;配置:4a9c6fc472c116c64096855aa4e81846&#34;&gt;配置&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后在浏览器打开 &lt;a href=&#34;localhost:8080&#34;&gt;localhost:8080&lt;/a&gt; 如果出现nginx，那么你的nginx就安装成功了。&lt;/p&gt;
+&lt;h3 id=&#34;配置&#34;&gt;配置&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;brew info nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;通过运行上面的命令，会出现一些信息，这些信息对你非常有帮助。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;==&amp;gt; Caveats
 Docroot is: /usr/local/var/www
 
@@ -79,15 +55,9 @@ To have launchd start homebrew/nginx/nginx-full now and restart at login:
   brew services start homebrew/nginx/nginx-full
 Or, if you don&#39;t want/need a background service you can just run:
   nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;nginx的配置文件在:&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;nginx的配置文件在:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;/usr/local/etc/nginx/nginx.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;打开配置文件并编辑:&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;打开配置文件并编辑:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;http {
    #  这个模块是默认的，注意rtmp与http平级
 }
@@ -102,40 +72,19 @@ rtmp {
         }
     }
 }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;重启nginx:&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重启nginx:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;nginx -s reload
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;nginx -s stop
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;安装-ffmpeg:4a9c6fc472c116c64096855aa4e81846&#34;&gt;安装 FFmpeg&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;nginx -s stop
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;安装-ffmpeg&#34;&gt;安装 FFmpeg&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;brew install ffmpeg
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;推流:4a9c6fc472c116c64096855aa4e81846&#34;&gt;推流&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;推流&#34;&gt;推流&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;ffmpeg -re -i ~/Desktop/test.mp4 -vcodec libx264 -acodec aac -f flv rtmp://localhost:1935/sunxulive/test
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后在支持rtmp协议的机器上播放url即可。&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后在支持rtmp协议的机器上播放url即可。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;rtmp://localhost:1935/sunxulive/test
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。&lt;/p&gt;
-
-&lt;h3 id=&#34;hls-点播:4a9c6fc472c116c64096855aa4e81846&#34;&gt;hls 点播&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里就完成了rtmp的直播。下面说一些基于hls协议的点播，点播也是配置nginx的配置文件，一样很简单。&lt;/p&gt;
+&lt;h3 id=&#34;hls-点播&#34;&gt;hls 点播&lt;/h3&gt;
 &lt;p&gt;http里面的server模块里添加:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;location /hls {   
 		  types {  
              application/vnd.apple.mpegurl m3u8;  
@@ -143,32 +92,17 @@ rtmp {
          }  
          root /temp;
 }  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重新reload下nginx，并重启后。在/temp 目录下放置一个test.m3u8文件即可。然后通过url访问即可观看视频。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;http://192.168.0.149:8082/test.m3u8
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。&lt;/p&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里我设置的端口是8082，大家可以在不被占用的端口随便设置一个。192.168.0.149是我本机的IP地址。&lt;/p&gt;
 &lt;p&gt;如果是很多.m3u8文件，可以每个文件夹放一个.m3u8，然后访问 &lt;a href=&#34;http://192.168.0.149:8082/hls/filename/test.m3u8&#34;&gt;http://192.168.0.149:8082/hls/filename/test.m3u8&lt;/a&gt; 即可。&lt;/p&gt;
-
-&lt;h3 id=&#34;切片:4a9c6fc472c116c64096855aa4e81846&#34;&gt;切片&lt;/h3&gt;
-
+&lt;h3 id=&#34;切片&#34;&gt;切片&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;ffmpeg -i ~/Desktop/1080p_4_3_HQ.mp4 -c:v libx264  -c:a aac -f hls -hls_list_size 0 -hls_time 5 /temp/616/test.m3u8
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;缓存和视频压缩:4a9c6fc472c116c64096855aa4e81846&#34;&gt;缓存和视频压缩&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;缓存和视频压缩&#34;&gt;缓存和视频压缩&lt;/h3&gt;
 &lt;p&gt;用proxy_cache 实现ts静态资源的缓存，但是试了各种方法参数，还是未能实现，最近查了些资料可能与我只用我的一个MAC有关，因为proxy_cache是反向代理缓存，中间加个代理服务器就行了。&lt;/p&gt;
-
 &lt;p&gt;视频压缩涉及到码率，帧率，分辨率，清晰度等一系列的概念，我试了1080p下各种码率下视频的清晰度，然而基于图片质量的高低不同，分辨率和码率没有明确的换算关系，全凭肉眼感觉~尝试压缩一些录屏软件录好的一些720p视频，80k的码率就够用了，而我用电脑录得720p的80k码率视频已经看不清人了！可能跟二次解码有关系，也可能跟我直接转成m3u8文件有关系。&lt;a href=&#34;http://blog.csdn.net/leixiaohua1020/article/details/12856087&#34;&gt;http://blog.csdn.net/leixiaohua1020/article/details/12856087&lt;/a&gt;博客上最后一张图反映出了一般情况下视频质量与码率存在线性关系，一般对视频质量要求不高的情况下，MOS=2或者3应该就差不多了。&lt;/p&gt;
-
 &lt;p&gt;这就是最近忙的了，希望能对看到的人有些帮助。&lt;/p&gt;
-
-&lt;p&gt;最后，祝好;)&lt;/p&gt;
-</description>
+&lt;p&gt;最后，祝好;)&lt;/p&gt;</description>
     </item>
     
   </channel>

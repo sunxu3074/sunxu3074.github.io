@@ -17,39 +17,40 @@
       <description>&lt;p&gt;对以前star过的项目进行分类整理，大致结构如下。资源类里有很多宝贵的资料，有算法，教程，源码分析等等。时间紧，没有对一些库进行清楚的分类，建议直接搜索关键字，希望对你有所帮助。&lt;/p&gt;
 &lt;p&gt;项目地址： &lt;a href=&#34;https://github.com/sunxu3074/StarredRepository&#34;&gt;https://github.com/sunxu3074/StarredRepository&lt;/a&gt;   
 欢迎star&amp;amp;fork&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;│------ Android
-│          │----- View
-│					│----- 图表
-│					│----- TAB
-│					│----- 下拉加载
-│					│----- Loding
-│					│----- ViewPager
-│					│----- TimePicker
-│					│----- 高斯模糊
-│					│----- SwipeBack
-│					│----- Dialog
-│					│----- Spinner
-│					│----- Adapter
-│          │----- Google
-│          │----- Facebook
-│          │----- Square
-│          │----- JakeWharton
-│          │----- Yalantis
-│          │----- Material Design
-│          │----- 数据库
-│          │----- Oauth
-│          │----- 框架类
-│          │----- 工具类
-│          │----- 架构类
-│          │----- 测试类
-│          │----- 权限相关
-│          │----- 资源类
-│          │----- APP
-│------ Python
-│------ 前端
-│------ 流媒体
-│------ 杂七杂八
-│
+&lt;pre&gt;&lt;code&gt;.
+├── Android
+│   ├── View
+│   │   ├── Adapter
+│   │   ├── Dialog
+│   │   ├── Loading
+│   │   ├── Spinner
+│   │   ├── SwipeBack
+│   │   ├── TAB
+│   │   ├── TimePicker
+│   │   ├── ViewPager
+│   │   ├── 图表
+│   │   ├── 下拉加载
+│   │   └── 高斯模糊
+│   ├── App
+│   ├── Facebook
+│   ├── Google
+│   ├── JakeWharton
+│   ├── MaterialDesign
+│   ├── Oauth
+│   ├── Square
+│   ├── Yalantis
+│   ├── 工具类
+│   ├── 数据库
+│   ├── 架构类
+│   ├── 框架类
+│   ├── 测试类
+│   ├── 资源类
+│   └── 权限相关
+├── Python
+├── 前端
+├── 流媒体
+└── 杂七杂八
+
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;android&#34;&gt;Android&lt;/h2&gt;
 &lt;h3 id=&#34;view篇&#34;&gt;View篇&lt;/h3&gt;
 &lt;ul&gt;
@@ -1009,7 +1010,9 @@
       <pubDate>Fri, 11 Dec 2015 23:34:50 CST</pubDate>
       <author>Sun Xu</author>
       <guid>https://sunxu.work/android/commit-what-to-github-in-as/</guid>
-      <description>&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;code&gt;UPDATE&lt;/code&gt;: &lt;a href=&#34;http://gitignore.io/&#34;&gt;http://gitignore.io/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在知乎上看到的提问,原问题链接: &lt;a href=&#34;http://www.zhihu.com/question/37910193&#34;&gt;http://www.zhihu.com/question/37910193&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;当我们上传用AS写的Android代码时,上传没必要的代码不仅浪费空间,有时还会引起项目共同合作人员在提交代码时的冲突,那么究竟什么代码该上传,什么代码不该上传呢？&lt;/p&gt;
 &lt;p&gt;查阅相关资料:&lt;/p&gt;
 &lt;ol&gt;

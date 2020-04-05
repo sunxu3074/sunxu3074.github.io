@@ -3,36 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sunxu.work/tags/android/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/android/encrypt-third-party-keys/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/encrypt/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/key/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sunxu.work/tags/</loc>
-    <lastmod>2018-06-24T12:54:51+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sunxu.work/cs/</loc>
     <lastmod>2018-06-23T23:48:47+08:00</lastmod>
   </url>
@@ -44,6 +14,11 @@
   
   <url>
     <loc>https://sunxu.work/cs/magic_weapon_on_mac/</loc>
+    <lastmod>2018-06-23T23:48:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/tags/</loc>
     <lastmod>2018-06-23T23:48:47+08:00</lastmod>
   </url>
   
@@ -73,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://sunxu.work/android/</loc>
+    <lastmod>2016-06-16T23:51:45+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sunxu.work/tags/hls/</loc>
     <lastmod>2016-06-16T23:51:45+08:00</lastmod>
   </url>
@@ -90,6 +70,11 @@
   <url>
     <loc>https://sunxu.work/tags/rtmp/</loc>
     <lastmod>2016-06-16T23:51:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sunxu.work/tags/android/</loc>
+    <lastmod>2016-06-15T17:50:54+08:00</lastmod>
   </url>
   
   <url>
